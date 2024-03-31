@@ -13,11 +13,7 @@ export class CommandBusStack extends Stack {
     private props: StackProps & DeploymentEnvironmentAware;
     public readonly bus: event.EventBus;
 
-    constructor(
-        scope: Construct,
-        id: string,
-        props: StackProps & DeploymentEnvironmentAware,
-    ) {
+    constructor(scope: Construct, id: string, props: StackProps & DeploymentEnvironmentAware) {
         super(scope, id, props);
         this.props = props;
 
@@ -32,13 +28,9 @@ export class CommandBusStack extends Stack {
     }
 
     logAllCommands() {
-        const logGroup = new logs.LogGroup(
-            this,
-            "tracking-poker-command-bus-logs",
-            {
-                logGroupName: "tracking-poker-command-bus-logs",
-            },
-        );
+        const logGroup = new logs.LogGroup(this, "tracking-poker-command-bus-logs", {
+            logGroupName: "tracking-poker-command-bus-logs",
+        });
         new event.Rule(this, `tracking-poker-command-bus-logs-rule`, {
             ruleName: `tracking-poker-command-bus-logs-rule`,
             eventBus: this.bus,

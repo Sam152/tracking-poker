@@ -1,5 +1,4 @@
-const moneyExpression =
-    /^\$(?<numbers>[0-9, ]+)(?<million>M)?(?<thousand>K)?(?<arrows>[AV])?$/;
+const moneyExpression = /^\$(?<numbers>[0-9, ]+)(?<million>M)?(?<thousand>K)?(?<arrows>[AV])?$/;
 
 export function looksLikeMoney(input: string): boolean {
     return !!input.match(moneyExpression);

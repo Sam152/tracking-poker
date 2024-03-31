@@ -16,20 +16,14 @@ describe("VideoMetadata", () => {
             VideoMetadata.fromApiResponse({
                 something_different: "Foo",
             }),
-        ).toThrow(
-            new Error("Video metadata was invalid, missing duration property."),
-        );
+        ).toThrow(new Error("Video metadata was invalid, missing duration property."));
     });
 });
 
 describe("VideoDuration", () => {
     test("duration is formatted in a way that can be used to identify video seconds", () => {
-        expect(
-            VideoDuration.fromSeconds(60 * 60 * 3.47823).formatAsSection(),
-        ).toEqual("03:28:41");
-        expect(VideoDuration.fromSeconds(30).formatAsSection()).toEqual(
-            "00:00:30",
-        );
+        expect(VideoDuration.fromSeconds(60 * 60 * 3.47823).formatAsSection()).toEqual("03:28:41");
+        expect(VideoDuration.fromSeconds(30).formatAsSection()).toEqual("00:00:30");
     });
 
     test("seconds can be added to durations", () => {

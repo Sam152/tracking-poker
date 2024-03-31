@@ -1,10 +1,6 @@
 import * as iam from "aws-cdk-lib/aws-iam";
 import { RemovalPolicy, Stack } from "aws-cdk-lib";
-import {
-    BlockPublicAccess,
-    Bucket,
-    BucketEncryption,
-} from "aws-cdk-lib/aws-s3";
+import { BlockPublicAccess, Bucket, BucketEncryption } from "aws-cdk-lib/aws-s3";
 
 export function s3WriteObjectsToWholeBucketPolicy(
     stack: Stack,

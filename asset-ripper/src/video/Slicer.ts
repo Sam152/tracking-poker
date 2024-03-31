@@ -11,10 +11,7 @@ export class Slicer {
         return new Slicer(videoFile);
     }
 
-    public async sliceFrames(
-        framerate: number,
-        destination: string,
-    ): Promise<ExecOutput> {
+    public async sliceFrames(framerate: number, destination: string): Promise<ExecOutput> {
         return exec("ffmpeg", [
             `-i ${this.videoFile}`,
             `-vf fps=${framerate}`,

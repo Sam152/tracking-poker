@@ -4,17 +4,12 @@ import { DockerImageCode, DockerImageFunction } from "aws-cdk-lib/aws-lambda";
 import { Platform } from "aws-cdk-lib/aws-ecr-assets";
 import * as path from "path";
 import { Duration, Size } from "aws-cdk-lib/core";
-import {
-    s3CreateSimpleBucket,
-    s3WriteObjectsToWholeBucketPolicy,
-} from "./utility/s3";
+import { s3CreateSimpleBucket, s3WriteObjectsToWholeBucketPolicy } from "./utility/s3";
 import { DeploymentEnvironmentAware } from "./utility/deployment-environment";
 import { CommandBusAware } from "./CommandBusStack";
 import { invokeLambdaOnEventDetail } from "./utility/eventBridge";
 
-type AssetRipperStackProps = StackProps &
-    DeploymentEnvironmentAware &
-    CommandBusAware;
+type AssetRipperStackProps = StackProps & DeploymentEnvironmentAware & CommandBusAware;
 
 export class AssetRipperStack extends Stack {
     private props: AssetRipperStackProps;
@@ -39,14 +34,11 @@ export class AssetRipperStack extends Stack {
             environment: {
                 BUCKET_NAME: this.getBucketName(),
             },
-            code: DockerImageCode.fromImageAsset(
-                path.join(__dirname, "../../asset-ripper/"),
-                {
-                    cmd: ["index.handler"],
-                    entrypoint: ["/lambda-entrypoint.sh"],
-                    platform: Platform.LINUX_AMD64,
-                },
-            ),
+            code: DockerImageCode.fromImageAsset(path.join(__dirname, "../../asset-ripper/"), {
+                cmd: ["index.handler"],
+                entrypoint: ["/lambda-entrypoint.sh"],
+                platform: Platform.LINUX_AMD64,
+            }),
         });
 
         // Allow the lambda to write to S3.

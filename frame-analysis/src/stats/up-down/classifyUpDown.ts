@@ -32,7 +32,5 @@ export async function classifyUpDown(image: Buffer): Promise<UpOrDown> {
         previousRowWhitePixels = totalWhitePixels;
     }
 
-    return trend.reduce((count: number, value: number) => count + value, 0) > 0
-        ? 1
-        : -1;
+    return trend.reduce((count: number, value: number) => count + value, 0) > 0 ? 1 : -1;
 }

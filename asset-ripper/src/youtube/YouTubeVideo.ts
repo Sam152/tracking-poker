@@ -18,9 +18,7 @@ export class YouTubeVideo {
             /^https?:\/\/(www\.)?(youtube\.com\/watch\?.*v=|youtu\.be\/)(?<id>[0-9A-Za-z_-]*)/,
         );
         if (!matches) {
-            throw new Error(
-                `YouTube URL provided "${url}" could not be parsed, invalid format.`,
-            );
+            throw new Error(`YouTube URL provided "${url}" could not be parsed, invalid format.`);
         }
         return YouTubeVideo.fromId(matches.groups!.id);
     }
@@ -28,9 +26,7 @@ export class YouTubeVideo {
     /**
      * Downloading the last 5 minutes, to capture the final session statistics.
      */
-    public async downloadLastTenMinutes(
-        destinationFolder: string,
-    ): Promise<string> {
+    public async downloadLastTenMinutes(destinationFolder: string): Promise<string> {
         const metadata = await this.resolveMetadata();
         const fiveFromEnd = metadata.duration().sub(60 * 10);
 

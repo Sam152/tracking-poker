@@ -14,10 +14,7 @@ export function documentContainsAnyTypeTriggerWord(document: string): boolean {
 /**
  * Try to roughly guess if the given trigger words are present in a specific document.
  */
-export function triggerWordsFoundInDocument(
-    document: string,
-    triggerWordList: string[],
-): boolean {
+export function triggerWordsFoundInDocument(document: string, triggerWordList: string[]): boolean {
     const documentWordsSplit = document
         .toUpperCase()
         .replace("\n", " ")
@@ -35,9 +32,7 @@ export function triggerWordsFoundInDocument(
                 // Allow the odd mis-classified character.
                 return closestMatchInDocument <= 1;
             });
-            return (
-                hits.filter((hit) => hit).length === triggerWordsSplit.length
-            );
+            return hits.filter((hit) => hit).length === triggerWordsSplit.length;
         })
         .includes(true);
 }

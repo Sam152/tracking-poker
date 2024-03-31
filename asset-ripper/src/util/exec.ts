@@ -6,10 +6,7 @@ export type ExecOutput = Promise<{
     stderr: string;
 }>;
 
-export async function exec(
-    command: string,
-    args: string[] = [],
-): Promise<ExecOutput> {
+export async function exec(command: string, args: string[] = []): Promise<ExecOutput> {
     const joinedCommand = `${command} ${args.join(" ")}`;
     console.log(`Executing command: ${joinedCommand}`);
     return promiseExec(joinedCommand, {

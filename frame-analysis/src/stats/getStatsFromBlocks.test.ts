@@ -11,9 +11,7 @@ describe("getAnalysisFromBlocks", () => {
                     await resolveBlocks(testFrame),
                     fs.readFileSync(testFrame.framePath),
                 );
-                expect(analysis).toMatchSnapshot(
-                    `${testFrame.videoId}/${testFrame.frameId}`,
-                );
+                expect(analysis).toMatchSnapshot(`${testFrame.videoId}/${testFrame.frameId}`);
             });
         });
 });

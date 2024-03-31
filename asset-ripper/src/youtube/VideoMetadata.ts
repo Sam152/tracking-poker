@@ -11,9 +11,7 @@ export class VideoMetadata {
 
     public static fromApiResponse(raw: Record<any, any>): VideoMetadata {
         if (!raw.duration) {
-            throw new Error(
-                "Video metadata was invalid, missing duration property.",
-            );
+            throw new Error("Video metadata was invalid, missing duration property.");
         }
         return new VideoMetadata(raw as RawMetadata);
     }

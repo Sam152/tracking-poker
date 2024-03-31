@@ -7,14 +7,10 @@ import { resolveTypeFromBlocks } from "./resolveTypeFromBlocks";
 export async function getStatsFromBlocks(
     blocks: Block[],
     frame: Buffer,
-): Promise<
-    [type: StatType, analysis: PlayerStatCollection<number> | undefined]
-> {
+): Promise<[type: StatType, analysis: PlayerStatCollection<number> | undefined]> {
     const typeMetadata = resolveTypeFromBlocks(blocks);
     if (!typeMetadata) {
-        throw new Error(
-            "Unable to resolve type when getting analysis from blocks.",
-        );
+        throw new Error("Unable to resolve type when getting analysis from blocks.");
     }
 
     const document = new trp.TextractDocument({

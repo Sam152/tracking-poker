@@ -1,8 +1,4 @@
-import {
-    AnalyzeDocumentCommand,
-    FeatureType,
-    TextractClient,
-} from "@aws-sdk/client-textract";
+import { AnalyzeDocumentCommand, FeatureType, TextractClient } from "@aws-sdk/client-textract";
 import { Block } from "@aws-sdk/client-textract/dist-types/models/models_0";
 import { cropMiddle } from "../preprocess/cropMiddle";
 

@@ -15,6 +15,4 @@ export const serviceInvocationEventsSchema = z.union([
     }),
 ]);
 
-export type ServiceInvocationEvents = z.infer<
-    typeof serviceInvocationEventsSchema
->;
+export type ServiceInvocationEvents = z.infer<typeof serviceInvocationEventsSchema>;

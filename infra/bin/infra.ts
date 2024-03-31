@@ -11,17 +11,12 @@ const app = new cdk.App();
 // accounts (ie, s3 buckets).
 const defaultStackProps = {
     deploymentEnvironment:
-        app.node.tryGetContext("deploymentEnvironment") ??
-        DeploymentEnvironment.Staging,
+        app.node.tryGetContext("deploymentEnvironment") ?? DeploymentEnvironment.Staging,
     env: { account: "390772177583", region: "us-east-2" },
 };
 
 // Create stacks for each service.
-const commandBusStack = new CommandBusStack(
-    app,
-    "CommandBusStack",
-    defaultStackProps,
-);
+const commandBusStack = new CommandBusStack(app, "CommandBusStack", defaultStackProps);
 new AssetRipperStack(app, "AssetRipperStack", {
     ...defaultStackProps,
     commandBusStack,

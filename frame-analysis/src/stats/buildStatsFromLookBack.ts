@@ -17,18 +17,15 @@ export function buildStatsFromLookBack<T extends string | number>(
 ) {
     const page = extract.pageNumber(1);
     const lines = [...page.iterLines()];
-    return lines.reduce(
-        (stats: PlayerStatCollection<T>, line: LineGeneric<Page>, index) => {
-            if (matchCondition(line.text)) {
-                stats.push({
-                    stat: parser(line),
-                    playerName: lines[index - 1].text,
-                });
-            }
-            return stats;
-        },
-        [],
-    );
+    return lines.reduce((stats: PlayerStatCollection<T>, line: LineGeneric<Page>, index) => {
+        if (matchCondition(line.text)) {
+            stats.push({
+                stat: parser(line),
+                playerName: lines[index - 1].text,
+            });
+        }
+        return stats;
+    }, []);
 }
 
 /**
@@ -61,35 +58,27 @@ export function buildStatsFromLookBackAndAhead<T extends string | number>(
         if (index === 0) {
             return false;
         }
-        return (
-            matchCondition(line.text) && matchCondition(lines[index - 1].text)
-        );
+        return matchCondition(line.text) && matchCondition(lines[index - 1].text);
     });
     if (!containsAnyTwoConsecutiveMatchingLines) {
         return buildStatsFromLookBack(extract, matchCondition, parser);
     }
 
-    return lines.reduce(
-        (stats: PlayerStatCollection<T>, line: LineGeneric<Page>, index) => {
-            // If the current line and the line before match the condition.
-            if (
-                matchCondition(line.text) &&
-                matchCondition(lines[index - 1].text)
-            ) {
-                if (matchCondition(lines[index - 2].text)) {
-                    throw new Error(
-                        "Something went wrong, there are three consecutive matching lines.",
-                    );
-                }
-
-                stats.push({
-                    stat: parser(line),
-                    // Look back two places.
-                    playerName: lines[index - 2].text,
-                });
+    return lines.reduce((stats: PlayerStatCollection<T>, line: LineGeneric<Page>, index) => {
+        // If the current line and the line before match the condition.
+        if (matchCondition(line.text) && matchCondition(lines[index - 1].text)) {
+            if (matchCondition(lines[index - 2].text)) {
+                throw new Error(
+                    "Something went wrong, there are three consecutive matching lines.",
+                );
             }
-            return stats;
-        },
-        [],
-    );
+
+            stats.push({
+                stat: parser(line),
+                // Look back two places.
+                playerName: lines[index - 2].text,
+            });
+        }
+        return stats;
+    }, []);
 }

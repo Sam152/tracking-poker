@@ -7,9 +7,7 @@ export enum StatType {
     VPIP = "vpip",
 }
 
-export type PlayerStatCollection<TStat extends string | number> = Array<
-    PlayerStat<TStat>
->;
+export type PlayerStatCollection<TStat extends string | number> = Array<PlayerStat<TStat>>;
 
 export type PlayerStat<TStat extends string | number> = {
     playerName: string;

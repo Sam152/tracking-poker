@@ -5,9 +5,7 @@ jest.setTimeout(60 * 60 * 1000);
 describe("extractBlocksFromFrame", () => {
     test("false positive frame can be extracted", async () => {
         const ocrFalsePositive = testFrames().find(
-            (frame) =>
-                frame.videoId === "-aLsrDQUQZw" &&
-                frame.frameId === "zilch_0091",
+            (frame) => frame.videoId === "-aLsrDQUQZw" && frame.frameId === "zilch_0091",
         )!;
         const extraction = await resolveBlocks(ocrFalsePositive);
         expect(extraction.length).toBeGreaterThan(0);

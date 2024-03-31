@@ -10,6 +10,4 @@ export const serviceInvocationEventsSchema = z.object({
     }),
 });
 
-export type ServiceInvocationEvents = z.infer<
-    typeof serviceInvocationEventsSchema
->;
+export type ServiceInvocationEvents = z.infer<typeof serviceInvocationEventsSchema>;

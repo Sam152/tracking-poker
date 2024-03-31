@@ -2,12 +2,7 @@ import { isFrameOfInterest } from "./isFrameOfInterest";
 import * as fs from "fs";
 import { documentContainsAnyTypeTriggerWord } from "./triggerWordsFoundInDocument";
 import { ocrFrame } from "./ocrFrame";
-import {
-    fixturePath,
-    TestFrame,
-    testFrames,
-    writeFixture,
-} from "../__fixtures__/fixturePath";
+import { fixturePath, TestFrame, testFrames, writeFixture } from "../__fixtures__/fixturePath";
 
 jest.setTimeout(6 * 60 * 60 * 1000);
 
@@ -21,9 +16,7 @@ jest.setTimeout(6 * 60 * 60 * 1000);
 describe("classifyIsFrameOfInterest", () => {
     test("function returns correct classification", async () => {
         expect(
-            await isFrameOfInterest(
-                fs.readFileSync(fixturePath("frames/-_HPip8wiYk/cc_1.jpg")),
-            ),
+            await isFrameOfInterest(fs.readFileSync(fixturePath("frames/-_HPip8wiYk/cc_1.jpg"))),
         ).toEqual(true);
     });
 
@@ -31,10 +24,7 @@ describe("classifyIsFrameOfInterest", () => {
     // are multiple frames per stat and some stats in general aren't that integrating to aggregate.
     const knownErrors = ["-njynZfx9mg/cc_1", "-aLsrDQUQZw/zilch_0091"];
     testFrames()
-        .filter(
-            (frame) =>
-                !knownErrors.includes(`${frame.videoId}/${frame.frameId}`),
-        )
+        .filter((frame) => !knownErrors.includes(`${frame.videoId}/${frame.frameId}`))
         .map((testFrame) => {
             test(`${testFrame.videoId}/${testFrame.frameId} identified (${testFrame.framePath}) (${testFrame.ocr.cachePath})`, async () => {
                 const document = await resolveDocument(testFrame);

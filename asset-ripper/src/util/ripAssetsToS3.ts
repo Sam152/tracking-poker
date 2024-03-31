@@ -9,25 +9,17 @@ export async function ripAssetsToS3(video: YouTubeVideo) {
     console.log(`Starting rip in workspace ${workspace.directory()}`);
 
     // Download the last 10 minutes of a video for analysis.
-    const videoFilename = await video.downloadLastTenMinutes(
-        workspace.directory(),
-    );
+    const videoFilename = await video.downloadLastTenMinutes(workspace.directory());
     console.log(`Downloaded video to location: ${videoFilename}`);
     await createObject(`${video.id}/video.webm`, videoFilename);
 
     // Slice into individual frame images at a very low framerate, only need to capture final statistics.
     const framesDirectory = workspace.createSubDirectory("frames");
-    await Slicer.fromVideoFile(videoFilename).sliceFrames(
-        0.25,
-        framesDirectory,
-    );
+    await Slicer.fromVideoFile(videoFilename).sliceFrames(0.25, framesDirectory);
     const frames = listFiles(framesDirectory);
     console.log(`Sliced frames from video: ${frames.join(", ")}`);
     for (const frame of frames) {
-        await createObject(
-            `${video.id}/frames/${frame}`,
-            `${framesDirectory}/${frame}`,
-        );
+        await createObject(`${video.id}/frames/${frame}`, `${framesDirectory}/${frame}`);
     }
 
     workspace.cleanUp();

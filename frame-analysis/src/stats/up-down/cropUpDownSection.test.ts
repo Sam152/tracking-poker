@@ -34,7 +34,9 @@ describe("cropUpDownSection", () => {
 
                 let index = 0;
                 for (const geometryItem of geometry) {
-                    expect(await cropUpDownSection(frameImage, geometryItem.boundingBox)).toMatchImageSnapshot({
+                    expect(
+                        await cropUpDownSection(frameImage, geometryItem.boundingBox),
+                    ).toMatchImageSnapshot({
                         customSnapshotIdentifier: `frame-${frame.videoId}-${frame.frameId}-${index}`,
                     });
                     index++;
