@@ -1,6 +1,7 @@
 import {LineGeneric} from "amazon-textract-response-parser/dist/types/content";
 import {Line, Page, TextractDocument} from "amazon-textract-response-parser";
-import {PlayerStatCollection} from "../types/typeCollection";
+
+import {PlayerStatCollection} from "./types/StatType";
 
 /**
  * Find stats with lines organised as:

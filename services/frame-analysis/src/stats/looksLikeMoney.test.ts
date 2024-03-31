@@ -1,4 +1,4 @@
-import {looksLikeMoneyStat, parseMoney} from "./looksLikeMoneyStat";
+import {looksLikeMoney, parseMoney} from "./looksLikeMoney";
 
 const cases = [
     ['$16,600', true, 16600],
@@ -17,7 +17,7 @@ const cases = [
 
 describe.each(cases)("looksLikeMoney", (input, expected, parsedValue) => {
     test(`money that looks like ${input} is correctly identified as ${expected ? 'true' : 'false'}`, () => {
-        expect(looksLikeMoneyStat(input)).toEqual(expected);
+        expect(looksLikeMoney(input)).toEqual(expected);
         if (parsedValue === null) {
             expect(() => parseMoney(input)).toThrow();
         }

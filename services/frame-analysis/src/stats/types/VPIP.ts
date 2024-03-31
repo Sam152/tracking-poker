@@ -1,15 +1,12 @@
-import {FrameAnalysisType} from "./FrameAnalysisType";
+import {PlayerStatCollection, StatMetadata, StatType} from "./StatType";
 import {TextractDocument} from "amazon-textract-response-parser";
-import {PlayerStatCollection} from "./typeCollection";
-import {buildStatsFromLookBack} from "../util/buildStatsFromLookBack";
+import {buildStatsFromLookBack} from "../buildStatsFromLookBack";
 
-export class PreflopRaise implements FrameAnalysisType<number> {
-    getTriggerWords(): string[] {
-        return [
-            "PRE FLOP RAISE",
-            "PRE-FLOP RAISE",
-        ];
-    }
+export const VPIP: StatMetadata = {
+
+    type: StatType.VPIP,
+
+    triggerWords: ["VPIP"],
 
     getStatsFromDocument(extract: TextractDocument, frame: Buffer): Promise<PlayerStatCollection<number>> {
         const stats = buildStatsFromLookBack(

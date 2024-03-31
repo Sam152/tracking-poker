@@ -1,7 +1,22 @@
 import {TextractDocument} from "amazon-textract-response-parser";
-import {PlayerStatCollection} from "./typeCollection";
 
-export interface FrameAnalysisType<TStatType extends string|number> {
+export enum StatType {
+    ChipCount = 'cc',
+    CumulativeWinnings = 'cw',
+    PreflopRaise = 'pfr',
+    VPIP = 'vpip',
+}
+
+export type PlayerStatCollection<TStat extends string | number> = Array<PlayerStat<TStat>>;
+
+export type PlayerStat<TStat extends string | number> = {
+    playerName: string,
+    stat: TStat,
+}
+
+export type StatMetadata = {
+
+    type: StatType;
 
     /**
      * The word that should be detected using cheap (but inaccurate) OCR,
@@ -14,10 +29,10 @@ export interface FrameAnalysisType<TStatType extends string|number> {
      * for example ["FOO", "BAR"] would match if either was represented
      * in the document.
      */
-    getTriggerWords(): string[];
+    triggerWords: string[];
 
     /**
-     * Get the frame analysis stats from a given document.
+     * Get the stats from a given document.
      */
-    getStatsFromDocument(extract: TextractDocument, frame: Buffer): Promise<PlayerStatCollection<number>>;
+    getStatsFromDocument: (extract: TextractDocument, frame: Buffer) => Promise<PlayerStatCollection<number>>;
 }

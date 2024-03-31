@@ -1,7 +1,7 @@
 
 const moneyExpression = /^\$(?<numbers>[0-9, ]+)(?<million>M)?(?<thousand>K)?(?<arrows>[AV])?$/;
 
-export function looksLikeMoneyStat(input: string): boolean {
+export function looksLikeMoney(input: string): boolean {
     return !!input.match(moneyExpression);
 }
 

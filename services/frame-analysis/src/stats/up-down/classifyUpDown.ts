@@ -6,7 +6,7 @@ type UpOrDown = 1 | -1;
  * Measure a trend in light or dark pixels. If the trend is for white pixels to generally increase, an arrow is
  * classified as pointing up, otherwise down.
  */
-export async function extractUpDownFromImage(image: Buffer): Promise<UpOrDown> {
+export async function classifyUpDown(image: Buffer): Promise<UpOrDown> {
 
     const frame = sharp(image);
     const metadata = await frame.metadata();

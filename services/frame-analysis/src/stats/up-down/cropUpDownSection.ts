@@ -1,6 +1,6 @@
 import {BoundingBox} from "amazon-textract-response-parser";
 import sharp from "sharp";
-import {cropMiddle} from "./cropMiddle";
+import {cropMiddle} from "../../preprocess/cropMiddle";
 
 export async function cropUpDownSection(frame: Buffer, boundingBox: BoundingBox<any, any>) {
     const middle = await cropMiddle(frame);

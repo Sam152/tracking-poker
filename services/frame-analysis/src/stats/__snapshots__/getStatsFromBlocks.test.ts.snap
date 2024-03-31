@@ -2,7 +2,7 @@
 
 exports[`getAnalysisFromBlocks Analysis of from -_HPip8wiYk/cc_1 resolved: -_HPip8wiYk/cc_1 1`] = `
 [
-  ChipCount {},
+  "cc",
   [
     {
       "playerName": "LUDA CHRIS",
@@ -42,7 +42,7 @@ exports[`getAnalysisFromBlocks Analysis of from -_HPip8wiYk/cc_1 resolved: -_HPi
 
 exports[`getAnalysisFromBlocks Analysis of from -_HPip8wiYk/cc_2 resolved: -_HPip8wiYk/cc_2 1`] = `
 [
-  ChipCount {},
+  "cc",
   [
     {
       "playerName": "LUDA CHRIS",
@@ -82,7 +82,7 @@ exports[`getAnalysisFromBlocks Analysis of from -_HPip8wiYk/cc_2 resolved: -_HPi
 
 exports[`getAnalysisFromBlocks Analysis of from -_HPip8wiYk/cc_3 resolved: -_HPip8wiYk/cc_3 1`] = `
 [
-  ChipCount {},
+  "cc",
   [
     {
       "playerName": "LUDA CHRIS",
@@ -122,7 +122,7 @@ exports[`getAnalysisFromBlocks Analysis of from -_HPip8wiYk/cc_3 resolved: -_HPi
 
 exports[`getAnalysisFromBlocks Analysis of from -_HPip8wiYk/cc_4 resolved: -_HPip8wiYk/cc_4 1`] = `
 [
-  ChipCount {},
+  "cc",
   [
     {
       "playerName": "LUDA CHRIS",
@@ -162,7 +162,7 @@ exports[`getAnalysisFromBlocks Analysis of from -_HPip8wiYk/cc_4 resolved: -_HPi
 
 exports[`getAnalysisFromBlocks Analysis of from -_HPip8wiYk/cw_1 resolved: -_HPip8wiYk/cw_1 1`] = `
 [
-  CumulativeWinnings {},
+  "cw",
   [
     {
       "playerName": "LUDA CHRIS",
@@ -202,7 +202,7 @@ exports[`getAnalysisFromBlocks Analysis of from -_HPip8wiYk/cw_1 resolved: -_HPi
 
 exports[`getAnalysisFromBlocks Analysis of from -_HPip8wiYk/cw_2 resolved: -_HPip8wiYk/cw_2 1`] = `
 [
-  CumulativeWinnings {},
+  "cw",
   [
     {
       "playerName": "LUDA CHRIS",
@@ -242,7 +242,7 @@ exports[`getAnalysisFromBlocks Analysis of from -_HPip8wiYk/cw_2 resolved: -_HPi
 
 exports[`getAnalysisFromBlocks Analysis of from -_HPip8wiYk/cw_3 resolved: -_HPip8wiYk/cw_3 1`] = `
 [
-  CumulativeWinnings {},
+  "cw",
   [
     {
       "playerName": "LUDA CHRIS",
@@ -282,7 +282,7 @@ exports[`getAnalysisFromBlocks Analysis of from -_HPip8wiYk/cw_3 resolved: -_HPi
 
 exports[`getAnalysisFromBlocks Analysis of from -_HPip8wiYk/cw_4 resolved: -_HPip8wiYk/cw_4 1`] = `
 [
-  CumulativeWinnings {},
+  "cw",
   [
     {
       "playerName": "LUDA CHRIS",
@@ -322,7 +322,7 @@ exports[`getAnalysisFromBlocks Analysis of from -_HPip8wiYk/cw_4 resolved: -_HPi
 
 exports[`getAnalysisFromBlocks Analysis of from -_HPip8wiYk/cw_5 resolved: -_HPip8wiYk/cw_5 1`] = `
 [
-  CumulativeWinnings {},
+  "cw",
   [
     {
       "playerName": "LUDA CHRIS",
@@ -362,7 +362,7 @@ exports[`getAnalysisFromBlocks Analysis of from -_HPip8wiYk/cw_5 resolved: -_HPi
 
 exports[`getAnalysisFromBlocks Analysis of from -_HPip8wiYk/pfr_2 resolved: -_HPip8wiYk/pfr_2 1`] = `
 [
-  PreflopRaise {},
+  "pfr",
   [
     {
       "playerName": "LUDA CHRIS",
@@ -406,7 +406,7 @@ exports[`getAnalysisFromBlocks Analysis of from -_HPip8wiYk/pfr_2 resolved: -_HP
 
 exports[`getAnalysisFromBlocks Analysis of from -_HPip8wiYk/vpip_1 resolved: -_HPip8wiYk/vpip_1 1`] = `
 [
-  VPIP {},
+  "vpip",
   [
     {
       "playerName": "BIG JOHN",
@@ -450,7 +450,7 @@ exports[`getAnalysisFromBlocks Analysis of from -_HPip8wiYk/vpip_1 resolved: -_H
 
 exports[`getAnalysisFromBlocks Analysis of from -_HPip8wiYk/vpip_2 resolved: -_HPip8wiYk/vpip_2 1`] = `
 [
-  VPIP {},
+  "vpip",
   [
     {
       "playerName": "BIG JOHN",
@@ -494,7 +494,7 @@ exports[`getAnalysisFromBlocks Analysis of from -_HPip8wiYk/vpip_2 resolved: -_H
 
 exports[`getAnalysisFromBlocks Analysis of from -_HPip8wiYk/vpip_3 resolved: -_HPip8wiYk/vpip_3 1`] = `
 [
-  VPIP {},
+  "vpip",
   [
     {
       "playerName": "BIG JOHN",
@@ -538,7 +538,7 @@ exports[`getAnalysisFromBlocks Analysis of from -_HPip8wiYk/vpip_3 resolved: -_H
 
 exports[`getAnalysisFromBlocks Analysis of from -_tNYQNkPB0/cc_1 resolved: -_tNYQNkPB0/cc_1 1`] = `
 [
-  ChipCount {},
+  "cc",
   [
     {
       "playerName": "CHARLES",
@@ -582,7 +582,7 @@ exports[`getAnalysisFromBlocks Analysis of from -_tNYQNkPB0/cc_1 resolved: -_tNY
 
 exports[`getAnalysisFromBlocks Analysis of from -_tNYQNkPB0/cc_2 resolved: -_tNYQNkPB0/cc_2 1`] = `
 [
-  ChipCount {},
+  "cc",
   [
     {
       "playerName": "CHARLES",
@@ -626,7 +626,7 @@ exports[`getAnalysisFromBlocks Analysis of from -_tNYQNkPB0/cc_2 resolved: -_tNY
 
 exports[`getAnalysisFromBlocks Analysis of from -_tNYQNkPB0/cc_3 resolved: -_tNYQNkPB0/cc_3 1`] = `
 [
-  ChipCount {},
+  "cc",
   [
     {
       "playerName": "CHARLES",
@@ -670,7 +670,7 @@ exports[`getAnalysisFromBlocks Analysis of from -_tNYQNkPB0/cc_3 resolved: -_tNY
 
 exports[`getAnalysisFromBlocks Analysis of from -_tNYQNkPB0/cc_4 resolved: -_tNYQNkPB0/cc_4 1`] = `
 [
-  ChipCount {},
+  "cc",
   [
     {
       "playerName": "CHARLES",
@@ -714,7 +714,7 @@ exports[`getAnalysisFromBlocks Analysis of from -_tNYQNkPB0/cc_4 resolved: -_tNY
 
 exports[`getAnalysisFromBlocks Analysis of from -_tNYQNkPB0/cc_5 resolved: -_tNYQNkPB0/cc_5 1`] = `
 [
-  ChipCount {},
+  "cc",
   [
     {
       "playerName": "CHARLES",
@@ -758,7 +758,7 @@ exports[`getAnalysisFromBlocks Analysis of from -_tNYQNkPB0/cc_5 resolved: -_tNY
 
 exports[`getAnalysisFromBlocks Analysis of from -_tNYQNkPB0/cc_6 resolved: -_tNYQNkPB0/cc_6 1`] = `
 [
-  ChipCount {},
+  "cc",
   [
     {
       "playerName": "CHARLES",
@@ -802,7 +802,7 @@ exports[`getAnalysisFromBlocks Analysis of from -_tNYQNkPB0/cc_6 resolved: -_tNY
 
 exports[`getAnalysisFromBlocks Analysis of from -_tNYQNkPB0/cc_7 resolved: -_tNYQNkPB0/cc_7 1`] = `
 [
-  ChipCount {},
+  "cc",
   [
     {
       "playerName": "CHARLES",
@@ -846,7 +846,7 @@ exports[`getAnalysisFromBlocks Analysis of from -_tNYQNkPB0/cc_7 resolved: -_tNY
 
 exports[`getAnalysisFromBlocks Analysis of from -_tNYQNkPB0/cw_1 resolved: -_tNYQNkPB0/cw_1 1`] = `
 [
-  CumulativeWinnings {},
+  "cw",
   [
     {
       "playerName": "CHARLES",
@@ -890,7 +890,7 @@ exports[`getAnalysisFromBlocks Analysis of from -_tNYQNkPB0/cw_1 resolved: -_tNY
 
 exports[`getAnalysisFromBlocks Analysis of from -_tNYQNkPB0/cw_2 resolved: -_tNYQNkPB0/cw_2 1`] = `
 [
-  CumulativeWinnings {},
+  "cw",
   [
     {
       "playerName": "CHARLES",
@@ -934,7 +934,7 @@ exports[`getAnalysisFromBlocks Analysis of from -_tNYQNkPB0/cw_2 resolved: -_tNY
 
 exports[`getAnalysisFromBlocks Analysis of from -_tNYQNkPB0/cw_3 resolved: -_tNYQNkPB0/cw_3 1`] = `
 [
-  CumulativeWinnings {},
+  "cw",
   [
     {
       "playerName": "CHARLES",
@@ -978,7 +978,7 @@ exports[`getAnalysisFromBlocks Analysis of from -_tNYQNkPB0/cw_3 resolved: -_tNY
 
 exports[`getAnalysisFromBlocks Analysis of from -_tNYQNkPB0/cw_4 resolved: -_tNYQNkPB0/cw_4 1`] = `
 [
-  CumulativeWinnings {},
+  "cw",
   [
     {
       "playerName": "CHARLES",
@@ -1022,7 +1022,7 @@ exports[`getAnalysisFromBlocks Analysis of from -_tNYQNkPB0/cw_4 resolved: -_tNY
 
 exports[`getAnalysisFromBlocks Analysis of from -_tNYQNkPB0/cw_5 resolved: -_tNYQNkPB0/cw_5 1`] = `
 [
-  CumulativeWinnings {},
+  "cw",
   [
     {
       "playerName": "CHARLES",
@@ -1066,7 +1066,7 @@ exports[`getAnalysisFromBlocks Analysis of from -_tNYQNkPB0/cw_5 resolved: -_tNY
 
 exports[`getAnalysisFromBlocks Analysis of from -_tNYQNkPB0/cw_6 resolved: -_tNYQNkPB0/cw_6 1`] = `
 [
-  CumulativeWinnings {},
+  "cw",
   [
     {
       "playerName": "CHARLES",
@@ -1110,7 +1110,7 @@ exports[`getAnalysisFromBlocks Analysis of from -_tNYQNkPB0/cw_6 resolved: -_tNY
 
 exports[`getAnalysisFromBlocks Analysis of from -_tNYQNkPB0/cw_7 resolved: -_tNYQNkPB0/cw_7 1`] = `
 [
-  CumulativeWinnings {},
+  "cw",
   [
     {
       "playerName": "CHARLES",
@@ -1154,7 +1154,7 @@ exports[`getAnalysisFromBlocks Analysis of from -_tNYQNkPB0/cw_7 resolved: -_tNY
 
 exports[`getAnalysisFromBlocks Analysis of from -_tNYQNkPB0/cw_8 resolved: -_tNYQNkPB0/cw_8 1`] = `
 [
-  CumulativeWinnings {},
+  "cw",
   [
     {
       "playerName": "CHARLES",
@@ -1198,7 +1198,7 @@ exports[`getAnalysisFromBlocks Analysis of from -_tNYQNkPB0/cw_8 resolved: -_tNY
 
 exports[`getAnalysisFromBlocks Analysis of from -_tNYQNkPB0/pfr_1 resolved: -_tNYQNkPB0/pfr_1 1`] = `
 [
-  PreflopRaise {},
+  "pfr",
   [
     {
       "playerName": "CHARLES",
@@ -1246,7 +1246,7 @@ exports[`getAnalysisFromBlocks Analysis of from -_tNYQNkPB0/pfr_1 resolved: -_tN
 
 exports[`getAnalysisFromBlocks Analysis of from -_tNYQNkPB0/pfr_2 resolved: -_tNYQNkPB0/pfr_2 1`] = `
 [
-  PreflopRaise {},
+  "pfr",
   [
     {
       "playerName": "CHARLES",
@@ -1294,7 +1294,7 @@ exports[`getAnalysisFromBlocks Analysis of from -_tNYQNkPB0/pfr_2 resolved: -_tN
 
 exports[`getAnalysisFromBlocks Analysis of from -_tNYQNkPB0/pfr_3 resolved: -_tNYQNkPB0/pfr_3 1`] = `
 [
-  PreflopRaise {},
+  "pfr",
   [
     {
       "playerName": "CHARLES",
@@ -1342,7 +1342,7 @@ exports[`getAnalysisFromBlocks Analysis of from -_tNYQNkPB0/pfr_3 resolved: -_tN
 
 exports[`getAnalysisFromBlocks Analysis of from -_tNYQNkPB0/vpip_1 resolved: -_tNYQNkPB0/vpip_1 1`] = `
 [
-  VPIP {},
+  "vpip",
   [
     {
       "playerName": "KEATING",
@@ -1390,7 +1390,7 @@ exports[`getAnalysisFromBlocks Analysis of from -_tNYQNkPB0/vpip_1 resolved: -_t
 
 exports[`getAnalysisFromBlocks Analysis of from -_tNYQNkPB0/vpip_2 resolved: -_tNYQNkPB0/vpip_2 1`] = `
 [
-  VPIP {},
+  "vpip",
   [
     {
       "playerName": "KEATING",
@@ -1438,7 +1438,7 @@ exports[`getAnalysisFromBlocks Analysis of from -_tNYQNkPB0/vpip_2 resolved: -_t
 
 exports[`getAnalysisFromBlocks Analysis of from -_tNYQNkPB0/vpip_3 resolved: -_tNYQNkPB0/vpip_3 1`] = `
 [
-  VPIP {},
+  "vpip",
   [
     {
       "playerName": "KEATING",
@@ -1486,7 +1486,7 @@ exports[`getAnalysisFromBlocks Analysis of from -_tNYQNkPB0/vpip_3 resolved: -_t
 
 exports[`getAnalysisFromBlocks Analysis of from -_tNYQNkPB0/vpip_4 resolved: -_tNYQNkPB0/vpip_4 1`] = `
 [
-  VPIP {},
+  "vpip",
   [
     {
       "playerName": "KEATING",
@@ -1534,7 +1534,7 @@ exports[`getAnalysisFromBlocks Analysis of from -_tNYQNkPB0/vpip_4 resolved: -_t
 
 exports[`getAnalysisFromBlocks Analysis of from -0PTY2_kpRc/cc resolved: -0PTY2_kpRc/cc 1`] = `
 [
-  ChipCount {},
+  "cc",
   [
     {
       "playerName": "NIK AIRBALL",
@@ -1578,7 +1578,7 @@ exports[`getAnalysisFromBlocks Analysis of from -0PTY2_kpRc/cc resolved: -0PTY2_
 
 exports[`getAnalysisFromBlocks Analysis of from -0PTY2_kpRc/cc_2 resolved: -0PTY2_kpRc/cc_2 1`] = `
 [
-  ChipCount {},
+  "cc",
   [
     {
       "playerName": "NIK AIRBALL",
@@ -1622,7 +1622,7 @@ exports[`getAnalysisFromBlocks Analysis of from -0PTY2_kpRc/cc_2 resolved: -0PTY
 
 exports[`getAnalysisFromBlocks Analysis of from -0PTY2_kpRc/cc_3 resolved: -0PTY2_kpRc/cc_3 1`] = `
 [
-  ChipCount {},
+  "cc",
   [
     {
       "playerName": "NIK AIRBALL",
@@ -1666,7 +1666,7 @@ exports[`getAnalysisFromBlocks Analysis of from -0PTY2_kpRc/cc_3 resolved: -0PTY
 
 exports[`getAnalysisFromBlocks Analysis of from -0PTY2_kpRc/cw_1 resolved: -0PTY2_kpRc/cw_1 1`] = `
 [
-  CumulativeWinnings {},
+  "cw",
   [
     {
       "playerName": "TAL",
@@ -1710,7 +1710,7 @@ exports[`getAnalysisFromBlocks Analysis of from -0PTY2_kpRc/cw_1 resolved: -0PTY
 
 exports[`getAnalysisFromBlocks Analysis of from -0PTY2_kpRc/cw_2 resolved: -0PTY2_kpRc/cw_2 1`] = `
 [
-  CumulativeWinnings {},
+  "cw",
   [
     {
       "playerName": "TAL",
@@ -1754,7 +1754,7 @@ exports[`getAnalysisFromBlocks Analysis of from -0PTY2_kpRc/cw_2 resolved: -0PTY
 
 exports[`getAnalysisFromBlocks Analysis of from -0PTY2_kpRc/cw_3 resolved: -0PTY2_kpRc/cw_3 1`] = `
 [
-  CumulativeWinnings {},
+  "cw",
   [
     {
       "playerName": "TAL",
@@ -1798,7 +1798,7 @@ exports[`getAnalysisFromBlocks Analysis of from -0PTY2_kpRc/cw_3 resolved: -0PTY
 
 exports[`getAnalysisFromBlocks Analysis of from -0PTY2_kpRc/cw_4 resolved: -0PTY2_kpRc/cw_4 1`] = `
 [
-  CumulativeWinnings {},
+  "cw",
   [
     {
       "playerName": "TAL",
@@ -1842,7 +1842,7 @@ exports[`getAnalysisFromBlocks Analysis of from -0PTY2_kpRc/cw_4 resolved: -0PTY
 
 exports[`getAnalysisFromBlocks Analysis of from -0PTY2_kpRc/cw_5 resolved: -0PTY2_kpRc/cw_5 1`] = `
 [
-  CumulativeWinnings {},
+  "cw",
   [
     {
       "playerName": "TAL",
@@ -1886,7 +1886,7 @@ exports[`getAnalysisFromBlocks Analysis of from -0PTY2_kpRc/cw_5 resolved: -0PTY
 
 exports[`getAnalysisFromBlocks Analysis of from -0PTY2_kpRc/cw_6 resolved: -0PTY2_kpRc/cw_6 1`] = `
 [
-  CumulativeWinnings {},
+  "cw",
   [
     {
       "playerName": "TAL",
@@ -1930,7 +1930,7 @@ exports[`getAnalysisFromBlocks Analysis of from -0PTY2_kpRc/cw_6 resolved: -0PTY
 
 exports[`getAnalysisFromBlocks Analysis of from -0PTY2_kpRc/pfr_1 resolved: -0PTY2_kpRc/pfr_1 1`] = `
 [
-  PreflopRaise {},
+  "pfr",
   [
     {
       "playerName": "BRIAN",
@@ -1974,7 +1974,7 @@ exports[`getAnalysisFromBlocks Analysis of from -0PTY2_kpRc/pfr_1 resolved: -0PT
 
 exports[`getAnalysisFromBlocks Analysis of from -0PTY2_kpRc/pfr_2 resolved: -0PTY2_kpRc/pfr_2 1`] = `
 [
-  PreflopRaise {},
+  "pfr",
   [
     {
       "playerName": "BRIAN",
@@ -2018,7 +2018,7 @@ exports[`getAnalysisFromBlocks Analysis of from -0PTY2_kpRc/pfr_2 resolved: -0PT
 
 exports[`getAnalysisFromBlocks Analysis of from -0PTY2_kpRc/vpip_1 resolved: -0PTY2_kpRc/vpip_1 1`] = `
 [
-  VPIP {},
+  "vpip",
   [
     {
       "playerName": "JBOOGS",
@@ -2062,7 +2062,7 @@ exports[`getAnalysisFromBlocks Analysis of from -0PTY2_kpRc/vpip_1 resolved: -0P
 
 exports[`getAnalysisFromBlocks Analysis of from -0PTY2_kpRc/vpip_2 resolved: -0PTY2_kpRc/vpip_2 1`] = `
 [
-  VPIP {},
+  "vpip",
   [
     {
       "playerName": "JBOOGS",
@@ -2106,7 +2106,7 @@ exports[`getAnalysisFromBlocks Analysis of from -0PTY2_kpRc/vpip_2 resolved: -0P
 
 exports[`getAnalysisFromBlocks Analysis of from -0PTY2_kpRc/vpip_3 resolved: -0PTY2_kpRc/vpip_3 1`] = `
 [
-  VPIP {},
+  "vpip",
   [
     {
       "playerName": "JBOOGS",
@@ -2150,7 +2150,7 @@ exports[`getAnalysisFromBlocks Analysis of from -0PTY2_kpRc/vpip_3 resolved: -0P
 
 exports[`getAnalysisFromBlocks Analysis of from -0PTY2_kpRc/vpip_4 resolved: -0PTY2_kpRc/vpip_4 1`] = `
 [
-  VPIP {},
+  "vpip",
   [
     {
       "playerName": "JBOOGS",
@@ -2194,7 +2194,7 @@ exports[`getAnalysisFromBlocks Analysis of from -0PTY2_kpRc/vpip_4 resolved: -0P
 
 exports[`getAnalysisFromBlocks Analysis of from -KCpgHxnZWg/cc_1 resolved: -KCpgHxnZWg/cc_1 1`] = `
 [
-  ChipCount {},
+  "cc",
   [
     {
       "playerName": "RONNIE",
@@ -2238,7 +2238,7 @@ exports[`getAnalysisFromBlocks Analysis of from -KCpgHxnZWg/cc_1 resolved: -KCpg
 
 exports[`getAnalysisFromBlocks Analysis of from -KCpgHxnZWg/cc_2 resolved: -KCpgHxnZWg/cc_2 1`] = `
 [
-  ChipCount {},
+  "cc",
   [
     {
       "playerName": "RONNIE",
@@ -2282,7 +2282,7 @@ exports[`getAnalysisFromBlocks Analysis of from -KCpgHxnZWg/cc_2 resolved: -KCpg
 
 exports[`getAnalysisFromBlocks Analysis of from -KCpgHxnZWg/cc_3 resolved: -KCpgHxnZWg/cc_3 1`] = `
 [
-  ChipCount {},
+  "cc",
   [
     {
       "playerName": "RONNIE",
@@ -2326,7 +2326,7 @@ exports[`getAnalysisFromBlocks Analysis of from -KCpgHxnZWg/cc_3 resolved: -KCpg
 
 exports[`getAnalysisFromBlocks Analysis of from -KCpgHxnZWg/cw_1 resolved: -KCpgHxnZWg/cw_1 1`] = `
 [
-  CumulativeWinnings {},
+  "cw",
   [
     {
       "playerName": "RONNIE",
@@ -2370,7 +2370,7 @@ exports[`getAnalysisFromBlocks Analysis of from -KCpgHxnZWg/cw_1 resolved: -KCpg
 
 exports[`getAnalysisFromBlocks Analysis of from -KCpgHxnZWg/cw_2 resolved: -KCpgHxnZWg/cw_2 1`] = `
 [
-  CumulativeWinnings {},
+  "cw",
   [
     {
       "playerName": "RONNIE",
@@ -2414,7 +2414,7 @@ exports[`getAnalysisFromBlocks Analysis of from -KCpgHxnZWg/cw_2 resolved: -KCpg
 
 exports[`getAnalysisFromBlocks Analysis of from -KCpgHxnZWg/cw_3 resolved: -KCpgHxnZWg/cw_3 1`] = `
 [
-  CumulativeWinnings {},
+  "cw",
   [
     {
       "playerName": "RONNIE",
@@ -2458,7 +2458,7 @@ exports[`getAnalysisFromBlocks Analysis of from -KCpgHxnZWg/cw_3 resolved: -KCpg
 
 exports[`getAnalysisFromBlocks Analysis of from -KCpgHxnZWg/cw_4 resolved: -KCpgHxnZWg/cw_4 1`] = `
 [
-  CumulativeWinnings {},
+  "cw",
   [
     {
       "playerName": "RONNIE",
@@ -2502,14 +2502,14 @@ exports[`getAnalysisFromBlocks Analysis of from -KCpgHxnZWg/cw_4 resolved: -KCpg
 
 exports[`getAnalysisFromBlocks Analysis of from -KCpgHxnZWg/pfr_1 resolved: -KCpgHxnZWg/pfr_1 1`] = `
 [
-  PreflopRaise {},
+  "pfr",
   [],
 ]
 `;
 
 exports[`getAnalysisFromBlocks Analysis of from -KCpgHxnZWg/pfr_2 resolved: -KCpgHxnZWg/pfr_2 1`] = `
 [
-  PreflopRaise {},
+  "pfr",
   [
     {
       "playerName": "WESLEY",
@@ -2553,7 +2553,7 @@ exports[`getAnalysisFromBlocks Analysis of from -KCpgHxnZWg/pfr_2 resolved: -KCp
 
 exports[`getAnalysisFromBlocks Analysis of from -KCpgHxnZWg/vpip_1 resolved: -KCpgHxnZWg/vpip_1 1`] = `
 [
-  VPIP {},
+  "vpip",
   [
     {
       "playerName": "WESLEY",
@@ -2597,7 +2597,7 @@ exports[`getAnalysisFromBlocks Analysis of from -KCpgHxnZWg/vpip_1 resolved: -KC
 
 exports[`getAnalysisFromBlocks Analysis of from -KCpgHxnZWg/vpip_2 resolved: -KCpgHxnZWg/vpip_2 1`] = `
 [
-  VPIP {},
+  "vpip",
   [
     {
       "playerName": "WESLEY",
@@ -2641,7 +2641,7 @@ exports[`getAnalysisFromBlocks Analysis of from -KCpgHxnZWg/vpip_2 resolved: -KC
 
 exports[`getAnalysisFromBlocks Analysis of from -aLsrDQUQZw/cc_1 resolved: -aLsrDQUQZw/cc_1 1`] = `
 [
-  ChipCount {},
+  "cc",
   [
     {
       "playerName": "SAMMY MAC",
@@ -2681,7 +2681,7 @@ exports[`getAnalysisFromBlocks Analysis of from -aLsrDQUQZw/cc_1 resolved: -aLsr
 
 exports[`getAnalysisFromBlocks Analysis of from -aLsrDQUQZw/cc_2 resolved: -aLsrDQUQZw/cc_2 1`] = `
 [
-  ChipCount {},
+  "cc",
   [
     {
       "playerName": "SAMMY MAC",
@@ -2721,7 +2721,7 @@ exports[`getAnalysisFromBlocks Analysis of from -aLsrDQUQZw/cc_2 resolved: -aLsr
 
 exports[`getAnalysisFromBlocks Analysis of from -aLsrDQUQZw/cc_3 resolved: -aLsrDQUQZw/cc_3 1`] = `
 [
-  ChipCount {},
+  "cc",
   [
     {
       "playerName": "SAMMY MAC",
@@ -2761,7 +2761,7 @@ exports[`getAnalysisFromBlocks Analysis of from -aLsrDQUQZw/cc_3 resolved: -aLsr
 
 exports[`getAnalysisFromBlocks Analysis of from -aLsrDQUQZw/cw_1 resolved: -aLsrDQUQZw/cw_1 1`] = `
 [
-  CumulativeWinnings {},
+  "cw",
   [
     {
       "playerName": "DGAF",
@@ -2801,7 +2801,7 @@ exports[`getAnalysisFromBlocks Analysis of from -aLsrDQUQZw/cw_1 resolved: -aLsr
 
 exports[`getAnalysisFromBlocks Analysis of from -aLsrDQUQZw/cw_2 resolved: -aLsrDQUQZw/cw_2 1`] = `
 [
-  CumulativeWinnings {},
+  "cw",
   [
     {
       "playerName": "DGAF",
@@ -2841,7 +2841,7 @@ exports[`getAnalysisFromBlocks Analysis of from -aLsrDQUQZw/cw_2 resolved: -aLsr
 
 exports[`getAnalysisFromBlocks Analysis of from -aLsrDQUQZw/cw_3 resolved: -aLsrDQUQZw/cw_3 1`] = `
 [
-  CumulativeWinnings {},
+  "cw",
   [
     {
       "playerName": "DGAF",
@@ -2881,7 +2881,7 @@ exports[`getAnalysisFromBlocks Analysis of from -aLsrDQUQZw/cw_3 resolved: -aLsr
 
 exports[`getAnalysisFromBlocks Analysis of from -aLsrDQUQZw/cw_4 resolved: -aLsrDQUQZw/cw_4 1`] = `
 [
-  CumulativeWinnings {},
+  "cw",
   [
     {
       "playerName": "DGAF",
@@ -2921,7 +2921,7 @@ exports[`getAnalysisFromBlocks Analysis of from -aLsrDQUQZw/cw_4 resolved: -aLsr
 
 exports[`getAnalysisFromBlocks Analysis of from -aLsrDQUQZw/cw_5 resolved: -aLsrDQUQZw/cw_5 1`] = `
 [
-  CumulativeWinnings {},
+  "cw",
   [
     {
       "playerName": "DGAF",
@@ -2961,7 +2961,7 @@ exports[`getAnalysisFromBlocks Analysis of from -aLsrDQUQZw/cw_5 resolved: -aLsr
 
 exports[`getAnalysisFromBlocks Analysis of from -aLsrDQUQZw/pfr_1 resolved: -aLsrDQUQZw/pfr_1 1`] = `
 [
-  PreflopRaise {},
+  "pfr",
   [
     {
       "playerName": "DGAF",
@@ -3005,7 +3005,7 @@ exports[`getAnalysisFromBlocks Analysis of from -aLsrDQUQZw/pfr_1 resolved: -aLs
 
 exports[`getAnalysisFromBlocks Analysis of from -aLsrDQUQZw/vpip_1 resolved: -aLsrDQUQZw/vpip_1 1`] = `
 [
-  VPIP {},
+  "vpip",
   [
     {
       "playerName": "DGAF",
@@ -3049,7 +3049,7 @@ exports[`getAnalysisFromBlocks Analysis of from -aLsrDQUQZw/vpip_1 resolved: -aL
 
 exports[`getAnalysisFromBlocks Analysis of from -bL2jGrq02c/cc_1 resolved: -bL2jGrq02c/cc_1 1`] = `
 [
-  ChipCount {},
+  "cc",
   [
     {
       "playerName": "LUDA CHRIS",
@@ -3093,7 +3093,7 @@ exports[`getAnalysisFromBlocks Analysis of from -bL2jGrq02c/cc_1 resolved: -bL2j
 
 exports[`getAnalysisFromBlocks Analysis of from -bL2jGrq02c/cc_2 resolved: -bL2jGrq02c/cc_2 1`] = `
 [
-  ChipCount {},
+  "cc",
   [
     {
       "playerName": "LUDA CHRIS",
@@ -3137,7 +3137,7 @@ exports[`getAnalysisFromBlocks Analysis of from -bL2jGrq02c/cc_2 resolved: -bL2j
 
 exports[`getAnalysisFromBlocks Analysis of from -bL2jGrq02c/cc_3 resolved: -bL2jGrq02c/cc_3 1`] = `
 [
-  ChipCount {},
+  "cc",
   [
     {
       "playerName": "LUDA CHRIS",
@@ -3181,7 +3181,7 @@ exports[`getAnalysisFromBlocks Analysis of from -bL2jGrq02c/cc_3 resolved: -bL2j
 
 exports[`getAnalysisFromBlocks Analysis of from -bL2jGrq02c/cw_1 resolved: -bL2jGrq02c/cw_1 1`] = `
 [
-  CumulativeWinnings {},
+  "cw",
   [
     {
       "playerName": "MAYHEM",
@@ -3225,7 +3225,7 @@ exports[`getAnalysisFromBlocks Analysis of from -bL2jGrq02c/cw_1 resolved: -bL2j
 
 exports[`getAnalysisFromBlocks Analysis of from -bL2jGrq02c/cw_2 resolved: -bL2jGrq02c/cw_2 1`] = `
 [
-  CumulativeWinnings {},
+  "cw",
   [
     {
       "playerName": "MAYHEM",
@@ -3269,7 +3269,7 @@ exports[`getAnalysisFromBlocks Analysis of from -bL2jGrq02c/cw_2 resolved: -bL2j
 
 exports[`getAnalysisFromBlocks Analysis of from -bL2jGrq02c/cw_3 resolved: -bL2jGrq02c/cw_3 1`] = `
 [
-  CumulativeWinnings {},
+  "cw",
   [
     {
       "playerName": "MAYHEM",
@@ -3313,7 +3313,7 @@ exports[`getAnalysisFromBlocks Analysis of from -bL2jGrq02c/cw_3 resolved: -bL2j
 
 exports[`getAnalysisFromBlocks Analysis of from -bL2jGrq02c/cw_4 resolved: -bL2jGrq02c/cw_4 1`] = `
 [
-  CumulativeWinnings {},
+  "cw",
   [
     {
       "playerName": "MAYHEM",
@@ -3357,7 +3357,7 @@ exports[`getAnalysisFromBlocks Analysis of from -bL2jGrq02c/cw_4 resolved: -bL2j
 
 exports[`getAnalysisFromBlocks Analysis of from -bL2jGrq02c/cw_5 resolved: -bL2jGrq02c/cw_5 1`] = `
 [
-  CumulativeWinnings {},
+  "cw",
   [
     {
       "playerName": "MAYHEM",
@@ -3401,7 +3401,7 @@ exports[`getAnalysisFromBlocks Analysis of from -bL2jGrq02c/cw_5 resolved: -bL2j
 
 exports[`getAnalysisFromBlocks Analysis of from -bL2jGrq02c/pfr_1 resolved: -bL2jGrq02c/pfr_1 1`] = `
 [
-  PreflopRaise {},
+  "pfr",
   [
     {
       "playerName": "VICTOR",
@@ -3445,7 +3445,7 @@ exports[`getAnalysisFromBlocks Analysis of from -bL2jGrq02c/pfr_1 resolved: -bL2
 
 exports[`getAnalysisFromBlocks Analysis of from -bL2jGrq02c/vpip_1 resolved: -bL2jGrq02c/vpip_1 1`] = `
 [
-  VPIP {},
+  "vpip",
   [
     {
       "playerName": "BIG JOHN",
@@ -3489,7 +3489,7 @@ exports[`getAnalysisFromBlocks Analysis of from -bL2jGrq02c/vpip_1 resolved: -bL
 
 exports[`getAnalysisFromBlocks Analysis of from -bL2jGrq02c/vpip_2 resolved: -bL2jGrq02c/vpip_2 1`] = `
 [
-  VPIP {},
+  "vpip",
   [
     {
       "playerName": "BIG JOHN",
@@ -3533,7 +3533,7 @@ exports[`getAnalysisFromBlocks Analysis of from -bL2jGrq02c/vpip_2 resolved: -bL
 
 exports[`getAnalysisFromBlocks Analysis of from -njynZfx9mg/cc_1 resolved: -njynZfx9mg/cc_1 1`] = `
 [
-  ChipCount {},
+  "cc",
   [
     {
       "playerName": "GARRETT",
@@ -3565,7 +3565,7 @@ exports[`getAnalysisFromBlocks Analysis of from -njynZfx9mg/cc_1 resolved: -njyn
 
 exports[`getAnalysisFromBlocks Analysis of from -njynZfx9mg/cc_2 resolved: -njynZfx9mg/cc_2 1`] = `
 [
-  ChipCount {},
+  "cc",
   [
     {
       "playerName": "GARRETT",
@@ -3597,7 +3597,7 @@ exports[`getAnalysisFromBlocks Analysis of from -njynZfx9mg/cc_2 resolved: -njyn
 
 exports[`getAnalysisFromBlocks Analysis of from -njynZfx9mg/cc_3 resolved: -njynZfx9mg/cc_3 1`] = `
 [
-  ChipCount {},
+  "cc",
   [
     {
       "playerName": "GARRETT",
@@ -3629,7 +3629,7 @@ exports[`getAnalysisFromBlocks Analysis of from -njynZfx9mg/cc_3 resolved: -njyn
 
 exports[`getAnalysisFromBlocks Analysis of from -njynZfx9mg/cw_1 resolved: -njynZfx9mg/cw_1 1`] = `
 [
-  CumulativeWinnings {},
+  "cw",
   [
     {
       "playerName": "GARRETT",
@@ -3661,7 +3661,7 @@ exports[`getAnalysisFromBlocks Analysis of from -njynZfx9mg/cw_1 resolved: -njyn
 
 exports[`getAnalysisFromBlocks Analysis of from -njynZfx9mg/cw_2 resolved: -njynZfx9mg/cw_2 1`] = `
 [
-  CumulativeWinnings {},
+  "cw",
   [
     {
       "playerName": "GARRETT",
@@ -3693,7 +3693,7 @@ exports[`getAnalysisFromBlocks Analysis of from -njynZfx9mg/cw_2 resolved: -njyn
 
 exports[`getAnalysisFromBlocks Analysis of from -njynZfx9mg/cw_3 resolved: -njynZfx9mg/cw_3 1`] = `
 [
-  CumulativeWinnings {},
+  "cw",
   [
     {
       "playerName": "GARRETT",
@@ -3725,7 +3725,7 @@ exports[`getAnalysisFromBlocks Analysis of from -njynZfx9mg/cw_3 resolved: -njyn
 
 exports[`getAnalysisFromBlocks Analysis of from -njynZfx9mg/cw_4 resolved: -njynZfx9mg/cw_4 1`] = `
 [
-  CumulativeWinnings {},
+  "cw",
   [
     {
       "playerName": "GARRETT",
@@ -3757,7 +3757,7 @@ exports[`getAnalysisFromBlocks Analysis of from -njynZfx9mg/cw_4 resolved: -njyn
 
 exports[`getAnalysisFromBlocks Analysis of from -njynZfx9mg/cw_5 resolved: -njynZfx9mg/cw_5 1`] = `
 [
-  CumulativeWinnings {},
+  "cw",
   [
     {
       "playerName": "GARRETT",
@@ -3789,14 +3789,14 @@ exports[`getAnalysisFromBlocks Analysis of from -njynZfx9mg/cw_5 resolved: -njyn
 
 exports[`getAnalysisFromBlocks Analysis of from -njynZfx9mg/pfr_1 resolved: -njynZfx9mg/pfr_1 1`] = `
 [
-  PreflopRaise {},
+  "pfr",
   [],
 ]
 `;
 
 exports[`getAnalysisFromBlocks Analysis of from -njynZfx9mg/pfr_2 resolved: -njynZfx9mg/pfr_2 1`] = `
 [
-  PreflopRaise {},
+  "pfr",
   [
     {
       "playerName": "ELI",
@@ -3828,7 +3828,7 @@ exports[`getAnalysisFromBlocks Analysis of from -njynZfx9mg/pfr_2 resolved: -njy
 
 exports[`getAnalysisFromBlocks Analysis of from -njynZfx9mg/vpip_1 resolved: -njynZfx9mg/vpip_1 1`] = `
 [
-  VPIP {},
+  "vpip",
   [
     {
       "playerName": "WESLEY",
@@ -3860,7 +3860,7 @@ exports[`getAnalysisFromBlocks Analysis of from -njynZfx9mg/vpip_1 resolved: -nj
 
 exports[`getAnalysisFromBlocks Analysis of from -njynZfx9mg/vpip_2 resolved: -njynZfx9mg/vpip_2 1`] = `
 [
-  VPIP {},
+  "vpip",
   [
     {
       "playerName": "WESLEY",
@@ -3892,14 +3892,14 @@ exports[`getAnalysisFromBlocks Analysis of from -njynZfx9mg/vpip_2 resolved: -nj
 
 exports[`getAnalysisFromBlocks Analysis of from -uQBNBsPczM/cc_1 resolved: -uQBNBsPczM/cc_1 1`] = `
 [
-  ChipCount {},
+  "cc",
   [],
 ]
 `;
 
 exports[`getAnalysisFromBlocks Analysis of from -uQBNBsPczM/cc_2 resolved: -uQBNBsPczM/cc_2 1`] = `
 [
-  ChipCount {},
+  "cc",
   [
     {
       "playerName": "RONNIE",
@@ -3935,7 +3935,7 @@ exports[`getAnalysisFromBlocks Analysis of from -uQBNBsPczM/cc_2 resolved: -uQBN
 
 exports[`getAnalysisFromBlocks Analysis of from -uQBNBsPczM/cc_3 resolved: -uQBNBsPczM/cc_3 1`] = `
 [
-  ChipCount {},
+  "cc",
   [
     {
       "playerName": "RONNIE",
@@ -3971,7 +3971,7 @@ exports[`getAnalysisFromBlocks Analysis of from -uQBNBsPczM/cc_3 resolved: -uQBN
 
 exports[`getAnalysisFromBlocks Analysis of from -uQBNBsPczM/cc_4 resolved: -uQBNBsPczM/cc_4 1`] = `
 [
-  ChipCount {},
+  "cc",
   [
     {
       "playerName": "RONNIE",
@@ -4007,14 +4007,14 @@ exports[`getAnalysisFromBlocks Analysis of from -uQBNBsPczM/cc_4 resolved: -uQBN
 
 exports[`getAnalysisFromBlocks Analysis of from -uQBNBsPczM/cw_1 resolved: -uQBNBsPczM/cw_1 1`] = `
 [
-  CumulativeWinnings {},
+  "cw",
   [],
 ]
 `;
 
 exports[`getAnalysisFromBlocks Analysis of from -uQBNBsPczM/cw_2 resolved: -uQBNBsPczM/cw_2 1`] = `
 [
-  CumulativeWinnings {},
+  "cw",
   [
     {
       "playerName": "LG",
@@ -4054,7 +4054,7 @@ exports[`getAnalysisFromBlocks Analysis of from -uQBNBsPczM/cw_2 resolved: -uQBN
 
 exports[`getAnalysisFromBlocks Analysis of from -uQBNBsPczM/cw_3 resolved: -uQBNBsPczM/cw_3 1`] = `
 [
-  CumulativeWinnings {},
+  "cw",
   [
     {
       "playerName": "LG",
@@ -4094,7 +4094,7 @@ exports[`getAnalysisFromBlocks Analysis of from -uQBNBsPczM/cw_3 resolved: -uQBN
 
 exports[`getAnalysisFromBlocks Analysis of from -uQBNBsPczM/cw_4 resolved: -uQBNBsPczM/cw_4 1`] = `
 [
-  CumulativeWinnings {},
+  "cw",
   [
     {
       "playerName": "LG",
@@ -4134,7 +4134,7 @@ exports[`getAnalysisFromBlocks Analysis of from -uQBNBsPczM/cw_4 resolved: -uQBN
 
 exports[`getAnalysisFromBlocks Analysis of from -uQBNBsPczM/pfr_1 resolved: -uQBNBsPczM/pfr_1 1`] = `
 [
-  PreflopRaise {},
+  "pfr",
   [
     {
       "playerName": "ELI",
@@ -4174,7 +4174,7 @@ exports[`getAnalysisFromBlocks Analysis of from -uQBNBsPczM/pfr_1 resolved: -uQB
 
 exports[`getAnalysisFromBlocks Analysis of from -uQBNBsPczM/vpip_1 resolved: -uQBNBsPczM/vpip_1 1`] = `
 [
-  VPIP {},
+  "vpip",
   [
     {
       "playerName": "ELI",
@@ -4210,7 +4210,7 @@ exports[`getAnalysisFromBlocks Analysis of from -uQBNBsPczM/vpip_1 resolved: -uQ
 
 exports[`getAnalysisFromBlocks Analysis of from -uQBNBsPczM/vpip_2 resolved: -uQBNBsPczM/vpip_2 1`] = `
 [
-  VPIP {},
+  "vpip",
   [
     {
       "playerName": "ELI",
@@ -4250,7 +4250,7 @@ exports[`getAnalysisFromBlocks Analysis of from -uQBNBsPczM/vpip_2 resolved: -uQ
 
 exports[`getAnalysisFromBlocks Analysis of from -uQBNBsPczM/vpip_3 resolved: -uQBNBsPczM/vpip_3 1`] = `
 [
-  VPIP {},
+  "vpip",
   [
     {
       "playerName": "ELI",
@@ -4290,7 +4290,7 @@ exports[`getAnalysisFromBlocks Analysis of from -uQBNBsPczM/vpip_3 resolved: -uQ
 
 exports[`getAnalysisFromBlocks Analysis of from -v-cQ2iJBIc/cc_1 resolved: -v-cQ2iJBIc/cc_1 1`] = `
 [
-  ChipCount {},
+  "cc",
   [
     {
       "playerName": "RAHUL",
@@ -4334,7 +4334,7 @@ exports[`getAnalysisFromBlocks Analysis of from -v-cQ2iJBIc/cc_1 resolved: -v-cQ
 
 exports[`getAnalysisFromBlocks Analysis of from -v-cQ2iJBIc/cc_2 resolved: -v-cQ2iJBIc/cc_2 1`] = `
 [
-  ChipCount {},
+  "cc",
   [
     {
       "playerName": "RAHUL",
@@ -4378,7 +4378,7 @@ exports[`getAnalysisFromBlocks Analysis of from -v-cQ2iJBIc/cc_2 resolved: -v-cQ
 
 exports[`getAnalysisFromBlocks Analysis of from -v-cQ2iJBIc/cc_3 resolved: -v-cQ2iJBIc/cc_3 1`] = `
 [
-  ChipCount {},
+  "cc",
   [
     {
       "playerName": "RAHUL",
@@ -4422,7 +4422,7 @@ exports[`getAnalysisFromBlocks Analysis of from -v-cQ2iJBIc/cc_3 resolved: -v-cQ
 
 exports[`getAnalysisFromBlocks Analysis of from -v-cQ2iJBIc/cc_4 resolved: -v-cQ2iJBIc/cc_4 1`] = `
 [
-  ChipCount {},
+  "cc",
   [
     {
       "playerName": "RAHUL",
@@ -4466,7 +4466,7 @@ exports[`getAnalysisFromBlocks Analysis of from -v-cQ2iJBIc/cc_4 resolved: -v-cQ
 
 exports[`getAnalysisFromBlocks Analysis of from -v-cQ2iJBIc/cw_1 resolved: -v-cQ2iJBIc/cw_1 1`] = `
 [
-  CumulativeWinnings {},
+  "cw",
   [
     {
       "playerName": "RAHUL",
@@ -4510,7 +4510,7 @@ exports[`getAnalysisFromBlocks Analysis of from -v-cQ2iJBIc/cw_1 resolved: -v-cQ
 
 exports[`getAnalysisFromBlocks Analysis of from -v-cQ2iJBIc/cw_2 resolved: -v-cQ2iJBIc/cw_2 1`] = `
 [
-  CumulativeWinnings {},
+  "cw",
   [
     {
       "playerName": "RAHUL",
@@ -4554,7 +4554,7 @@ exports[`getAnalysisFromBlocks Analysis of from -v-cQ2iJBIc/cw_2 resolved: -v-cQ
 
 exports[`getAnalysisFromBlocks Analysis of from -v-cQ2iJBIc/cw_3 resolved: -v-cQ2iJBIc/cw_3 1`] = `
 [
-  CumulativeWinnings {},
+  "cw",
   [
     {
       "playerName": "RAHUL",
@@ -4598,7 +4598,7 @@ exports[`getAnalysisFromBlocks Analysis of from -v-cQ2iJBIc/cw_3 resolved: -v-cQ
 
 exports[`getAnalysisFromBlocks Analysis of from -v-cQ2iJBIc/cw_4 resolved: -v-cQ2iJBIc/cw_4 1`] = `
 [
-  CumulativeWinnings {},
+  "cw",
   [
     {
       "playerName": "RAHUL",
@@ -4642,7 +4642,7 @@ exports[`getAnalysisFromBlocks Analysis of from -v-cQ2iJBIc/cw_4 resolved: -v-cQ
 
 exports[`getAnalysisFromBlocks Analysis of from -v-cQ2iJBIc/cw_5 resolved: -v-cQ2iJBIc/cw_5 1`] = `
 [
-  CumulativeWinnings {},
+  "cw",
   [
     {
       "playerName": "RAHUL",
@@ -4686,7 +4686,7 @@ exports[`getAnalysisFromBlocks Analysis of from -v-cQ2iJBIc/cw_5 resolved: -v-cQ
 
 exports[`getAnalysisFromBlocks Analysis of from -v-cQ2iJBIc/pfr_1 resolved: -v-cQ2iJBIc/pfr_1 1`] = `
 [
-  PreflopRaise {},
+  "pfr",
   [
     {
       "playerName": "TIGER",
@@ -4730,7 +4730,7 @@ exports[`getAnalysisFromBlocks Analysis of from -v-cQ2iJBIc/pfr_1 resolved: -v-c
 
 exports[`getAnalysisFromBlocks Analysis of from -v-cQ2iJBIc/vpip_1 resolved: -v-cQ2iJBIc/vpip_1 1`] = `
 [
-  VPIP {},
+  "vpip",
   [
     {
       "playerName": "NICK LUCAS",
@@ -4774,7 +4774,7 @@ exports[`getAnalysisFromBlocks Analysis of from -v-cQ2iJBIc/vpip_1 resolved: -v-
 
 exports[`getAnalysisFromBlocks Analysis of from -v-cQ2iJBIc/vpip_2 resolved: -v-cQ2iJBIc/vpip_2 1`] = `
 [
-  VPIP {},
+  "vpip",
   [
     {
       "playerName": "NICK LUCAS",
@@ -4818,7 +4818,7 @@ exports[`getAnalysisFromBlocks Analysis of from -v-cQ2iJBIc/vpip_2 resolved: -v-
 
 exports[`getAnalysisFromBlocks Analysis of from -v-cQ2iJBIc/vpip_4 resolved: -v-cQ2iJBIc/vpip_4 1`] = `
 [
-  VPIP {},
+  "vpip",
   [
     {
       "playerName": "NICK LUCAS",
@@ -4862,7 +4862,7 @@ exports[`getAnalysisFromBlocks Analysis of from -v-cQ2iJBIc/vpip_4 resolved: -v-
 
 exports[`getAnalysisFromBlocks Analysis of from -wx2d3EudeM/cc_1 resolved: -wx2d3EudeM/cc_1 1`] = `
 [
-  ChipCount {},
+  "cc",
   [
     {
       "playerName": "ANDY",
@@ -4898,7 +4898,7 @@ exports[`getAnalysisFromBlocks Analysis of from -wx2d3EudeM/cc_1 resolved: -wx2d
 
 exports[`getAnalysisFromBlocks Analysis of from -wx2d3EudeM/cc_2 resolved: -wx2d3EudeM/cc_2 1`] = `
 [
-  ChipCount {},
+  "cc",
   [
     {
       "playerName": "ANDY",
@@ -4934,7 +4934,7 @@ exports[`getAnalysisFromBlocks Analysis of from -wx2d3EudeM/cc_2 resolved: -wx2d
 
 exports[`getAnalysisFromBlocks Analysis of from -wx2d3EudeM/cc_3 resolved: -wx2d3EudeM/cc_3 1`] = `
 [
-  ChipCount {},
+  "cc",
   [
     {
       "playerName": "ANDY",
@@ -4970,7 +4970,7 @@ exports[`getAnalysisFromBlocks Analysis of from -wx2d3EudeM/cc_3 resolved: -wx2d
 
 exports[`getAnalysisFromBlocks Analysis of from -wx2d3EudeM/cc_4 resolved: -wx2d3EudeM/cc_4 1`] = `
 [
-  ChipCount {},
+  "cc",
   [
     {
       "playerName": "ANDY",
@@ -5006,7 +5006,7 @@ exports[`getAnalysisFromBlocks Analysis of from -wx2d3EudeM/cc_4 resolved: -wx2d
 
 exports[`getAnalysisFromBlocks Analysis of from -wx2d3EudeM/cw_1 resolved: -wx2d3EudeM/cw_1 1`] = `
 [
-  CumulativeWinnings {},
+  "cw",
   [
     {
       "playerName": "ANDY",
@@ -5042,7 +5042,7 @@ exports[`getAnalysisFromBlocks Analysis of from -wx2d3EudeM/cw_1 resolved: -wx2d
 
 exports[`getAnalysisFromBlocks Analysis of from -wx2d3EudeM/cw_2 resolved: -wx2d3EudeM/cw_2 1`] = `
 [
-  CumulativeWinnings {},
+  "cw",
   [
     {
       "playerName": "ANDY",
@@ -5078,7 +5078,7 @@ exports[`getAnalysisFromBlocks Analysis of from -wx2d3EudeM/cw_2 resolved: -wx2d
 
 exports[`getAnalysisFromBlocks Analysis of from -wx2d3EudeM/cw_3 resolved: -wx2d3EudeM/cw_3 1`] = `
 [
-  CumulativeWinnings {},
+  "cw",
   [
     {
       "playerName": "ANDY",
@@ -5114,7 +5114,7 @@ exports[`getAnalysisFromBlocks Analysis of from -wx2d3EudeM/cw_3 resolved: -wx2d
 
 exports[`getAnalysisFromBlocks Analysis of from -wx2d3EudeM/cw_4 resolved: -wx2d3EudeM/cw_4 1`] = `
 [
-  CumulativeWinnings {},
+  "cw",
   [
     {
       "playerName": "ANDY",
@@ -5150,7 +5150,7 @@ exports[`getAnalysisFromBlocks Analysis of from -wx2d3EudeM/cw_4 resolved: -wx2d
 
 exports[`getAnalysisFromBlocks Analysis of from -wx2d3EudeM/cw_5 resolved: -wx2d3EudeM/cw_5 1`] = `
 [
-  CumulativeWinnings {},
+  "cw",
   [
     {
       "playerName": "ANDY",
@@ -5186,7 +5186,7 @@ exports[`getAnalysisFromBlocks Analysis of from -wx2d3EudeM/cw_5 resolved: -wx2d
 
 exports[`getAnalysisFromBlocks Analysis of from -wx2d3EudeM/cw_6 resolved: -wx2d3EudeM/cw_6 1`] = `
 [
-  CumulativeWinnings {},
+  "cw",
   [
     {
       "playerName": "ANDY",
@@ -5222,7 +5222,7 @@ exports[`getAnalysisFromBlocks Analysis of from -wx2d3EudeM/cw_6 resolved: -wx2d
 
 exports[`getAnalysisFromBlocks Analysis of from -wx2d3EudeM/cw_7 resolved: -wx2d3EudeM/cw_7 1`] = `
 [
-  CumulativeWinnings {},
+  "cw",
   [
     {
       "playerName": "ANDY",
@@ -5258,7 +5258,7 @@ exports[`getAnalysisFromBlocks Analysis of from -wx2d3EudeM/cw_7 resolved: -wx2d
 
 exports[`getAnalysisFromBlocks Analysis of from -wx2d3EudeM/pfr_1 resolved: -wx2d3EudeM/pfr_1 1`] = `
 [
-  PreflopRaise {},
+  "pfr",
   [
     {
       "playerName": "JUNGLEMAN",
@@ -5298,7 +5298,7 @@ exports[`getAnalysisFromBlocks Analysis of from -wx2d3EudeM/pfr_1 resolved: -wx2
 
 exports[`getAnalysisFromBlocks Analysis of from -wx2d3EudeM/pfr_2 resolved: -wx2d3EudeM/pfr_2 1`] = `
 [
-  PreflopRaise {},
+  "pfr",
   [
     {
       "playerName": "JUNGLEMAN",
@@ -5338,7 +5338,7 @@ exports[`getAnalysisFromBlocks Analysis of from -wx2d3EudeM/pfr_2 resolved: -wx2
 
 exports[`getAnalysisFromBlocks Analysis of from -wx2d3EudeM/vpip_1 resolved: -wx2d3EudeM/vpip_1 1`] = `
 [
-  VPIP {},
+  "vpip",
   [
     {
       "playerName": "JIMMY",
@@ -5378,7 +5378,7 @@ exports[`getAnalysisFromBlocks Analysis of from -wx2d3EudeM/vpip_1 resolved: -wx
 
 exports[`getAnalysisFromBlocks Analysis of from -wx2d3EudeM/vpip_2 resolved: -wx2d3EudeM/vpip_2 1`] = `
 [
-  VPIP {},
+  "vpip",
   [
     {
       "playerName": "JIMMY",
@@ -5418,7 +5418,7 @@ exports[`getAnalysisFromBlocks Analysis of from -wx2d3EudeM/vpip_2 resolved: -wx
 
 exports[`getAnalysisFromBlocks Analysis of from -xxUat01rRc/cc_1 resolved: -xxUat01rRc/cc_1 1`] = `
 [
-  ChipCount {},
+  "cc",
   [
     {
       "playerName": "SANDOR",
@@ -5462,7 +5462,7 @@ exports[`getAnalysisFromBlocks Analysis of from -xxUat01rRc/cc_1 resolved: -xxUa
 
 exports[`getAnalysisFromBlocks Analysis of from -xxUat01rRc/cc_2 resolved: -xxUat01rRc/cc_2 1`] = `
 [
-  ChipCount {},
+  "cc",
   [
     {
       "playerName": "SANDOR",
@@ -5506,7 +5506,7 @@ exports[`getAnalysisFromBlocks Analysis of from -xxUat01rRc/cc_2 resolved: -xxUa
 
 exports[`getAnalysisFromBlocks Analysis of from -xxUat01rRc/cc_3 resolved: -xxUat01rRc/cc_3 1`] = `
 [
-  ChipCount {},
+  "cc",
   [
     {
       "playerName": "SANDOR",
@@ -5550,7 +5550,7 @@ exports[`getAnalysisFromBlocks Analysis of from -xxUat01rRc/cc_3 resolved: -xxUa
 
 exports[`getAnalysisFromBlocks Analysis of from -xxUat01rRc/cw_1 resolved: -xxUat01rRc/cw_1 1`] = `
 [
-  CumulativeWinnings {},
+  "cw",
   [
     {
       "playerName": "SANDOR",
@@ -5594,7 +5594,7 @@ exports[`getAnalysisFromBlocks Analysis of from -xxUat01rRc/cw_1 resolved: -xxUa
 
 exports[`getAnalysisFromBlocks Analysis of from -xxUat01rRc/cw_2 resolved: -xxUat01rRc/cw_2 1`] = `
 [
-  CumulativeWinnings {},
+  "cw",
   [
     {
       "playerName": "SANDOR",
@@ -5638,7 +5638,7 @@ exports[`getAnalysisFromBlocks Analysis of from -xxUat01rRc/cw_2 resolved: -xxUa
 
 exports[`getAnalysisFromBlocks Analysis of from -xxUat01rRc/cw_3 resolved: -xxUat01rRc/cw_3 1`] = `
 [
-  CumulativeWinnings {},
+  "cw",
   [
     {
       "playerName": "SANDOR",
@@ -5682,7 +5682,7 @@ exports[`getAnalysisFromBlocks Analysis of from -xxUat01rRc/cw_3 resolved: -xxUa
 
 exports[`getAnalysisFromBlocks Analysis of from -xxUat01rRc/cw_4 resolved: -xxUat01rRc/cw_4 1`] = `
 [
-  CumulativeWinnings {},
+  "cw",
   [
     {
       "playerName": "SANDOR",
@@ -5726,7 +5726,7 @@ exports[`getAnalysisFromBlocks Analysis of from -xxUat01rRc/cw_4 resolved: -xxUa
 
 exports[`getAnalysisFromBlocks Analysis of from -xxUat01rRc/pfr_1 resolved: -xxUat01rRc/pfr_1 1`] = `
 [
-  PreflopRaise {},
+  "pfr",
   [
     {
       "playerName": "SIA THE BOT",
@@ -5774,7 +5774,7 @@ exports[`getAnalysisFromBlocks Analysis of from -xxUat01rRc/pfr_1 resolved: -xxU
 
 exports[`getAnalysisFromBlocks Analysis of from -xxUat01rRc/pfr_2 resolved: -xxUat01rRc/pfr_2 1`] = `
 [
-  PreflopRaise {},
+  "pfr",
   [
     {
       "playerName": "SIA THE BOT",
@@ -5822,7 +5822,7 @@ exports[`getAnalysisFromBlocks Analysis of from -xxUat01rRc/pfr_2 resolved: -xxU
 
 exports[`getAnalysisFromBlocks Analysis of from -xxUat01rRc/vpip_1 resolved: -xxUat01rRc/vpip_1 1`] = `
 [
-  VPIP {},
+  "vpip",
   [
     {
       "playerName": "DGAF",
@@ -5870,7 +5870,7 @@ exports[`getAnalysisFromBlocks Analysis of from -xxUat01rRc/vpip_1 resolved: -xx
 
 exports[`getAnalysisFromBlocks Analysis of from -xxUat01rRc/vpip_2 resolved: -xxUat01rRc/vpip_2 1`] = `
 [
-  VPIP {},
+  "vpip",
   [
     {
       "playerName": "DGAF",
@@ -5918,7 +5918,7 @@ exports[`getAnalysisFromBlocks Analysis of from -xxUat01rRc/vpip_2 resolved: -xx
 
 exports[`getAnalysisFromBlocks Analysis of from 02UxNqNVXuc/cc_1 resolved: 02UxNqNVXuc/cc_1 1`] = `
 [
-  ChipCount {},
+  "cc",
   [
     {
       "playerName": "CALVIN",
@@ -5962,7 +5962,7 @@ exports[`getAnalysisFromBlocks Analysis of from 02UxNqNVXuc/cc_1 resolved: 02UxN
 
 exports[`getAnalysisFromBlocks Analysis of from 02UxNqNVXuc/cc_2 resolved: 02UxNqNVXuc/cc_2 1`] = `
 [
-  ChipCount {},
+  "cc",
   [
     {
       "playerName": "CALVIN",
@@ -6006,7 +6006,7 @@ exports[`getAnalysisFromBlocks Analysis of from 02UxNqNVXuc/cc_2 resolved: 02UxN
 
 exports[`getAnalysisFromBlocks Analysis of from 02UxNqNVXuc/cc_3 resolved: 02UxNqNVXuc/cc_3 1`] = `
 [
-  ChipCount {},
+  "cc",
   [
     {
       "playerName": "CALVIN",
@@ -6050,7 +6050,7 @@ exports[`getAnalysisFromBlocks Analysis of from 02UxNqNVXuc/cc_3 resolved: 02UxN
 
 exports[`getAnalysisFromBlocks Analysis of from 02UxNqNVXuc/cw_1 resolved: 02UxNqNVXuc/cw_1 1`] = `
 [
-  CumulativeWinnings {},
+  "cw",
   [
     {
       "playerName": "CALVIN",
@@ -6094,7 +6094,7 @@ exports[`getAnalysisFromBlocks Analysis of from 02UxNqNVXuc/cw_1 resolved: 02UxN
 
 exports[`getAnalysisFromBlocks Analysis of from 02UxNqNVXuc/cw_2 resolved: 02UxNqNVXuc/cw_2 1`] = `
 [
-  CumulativeWinnings {},
+  "cw",
   [
     {
       "playerName": "CALVIN",
@@ -6138,7 +6138,7 @@ exports[`getAnalysisFromBlocks Analysis of from 02UxNqNVXuc/cw_2 resolved: 02UxN
 
 exports[`getAnalysisFromBlocks Analysis of from 02UxNqNVXuc/cw_3 resolved: 02UxNqNVXuc/cw_3 1`] = `
 [
-  CumulativeWinnings {},
+  "cw",
   [
     {
       "playerName": "CALVIN",
@@ -6182,7 +6182,7 @@ exports[`getAnalysisFromBlocks Analysis of from 02UxNqNVXuc/cw_3 resolved: 02UxN
 
 exports[`getAnalysisFromBlocks Analysis of from 02UxNqNVXuc/cw_4 resolved: 02UxNqNVXuc/cw_4 1`] = `
 [
-  CumulativeWinnings {},
+  "cw",
   [
     {
       "playerName": "CALVIN",
@@ -6226,7 +6226,7 @@ exports[`getAnalysisFromBlocks Analysis of from 02UxNqNVXuc/cw_4 resolved: 02UxN
 
 exports[`getAnalysisFromBlocks Analysis of from 02UxNqNVXuc/cw_5 resolved: 02UxNqNVXuc/cw_5 1`] = `
 [
-  CumulativeWinnings {},
+  "cw",
   [
     {
       "playerName": "CALVIN",
@@ -6270,7 +6270,7 @@ exports[`getAnalysisFromBlocks Analysis of from 02UxNqNVXuc/cw_5 resolved: 02UxN
 
 exports[`getAnalysisFromBlocks Analysis of from 02UxNqNVXuc/cw_6 resolved: 02UxNqNVXuc/cw_6 1`] = `
 [
-  CumulativeWinnings {},
+  "cw",
   [
     {
       "playerName": "CALVIN",
@@ -6314,7 +6314,7 @@ exports[`getAnalysisFromBlocks Analysis of from 02UxNqNVXuc/cw_6 resolved: 02UxN
 
 exports[`getAnalysisFromBlocks Analysis of from 02UxNqNVXuc/cw_7 resolved: 02UxNqNVXuc/cw_7 1`] = `
 [
-  CumulativeWinnings {},
+  "cw",
   [
     {
       "playerName": "CALVIN",
@@ -6358,7 +6358,7 @@ exports[`getAnalysisFromBlocks Analysis of from 02UxNqNVXuc/cw_7 resolved: 02UxN
 
 exports[`getAnalysisFromBlocks Analysis of from 02UxNqNVXuc/pfr_1 resolved: 02UxNqNVXuc/pfr_1 1`] = `
 [
-  PreflopRaise {},
+  "pfr",
   [
     {
       "playerName": "MARIANO",
@@ -6402,7 +6402,7 @@ exports[`getAnalysisFromBlocks Analysis of from 02UxNqNVXuc/pfr_1 resolved: 02Ux
 
 exports[`getAnalysisFromBlocks Analysis of from 02UxNqNVXuc/vpip_1 resolved: 02UxNqNVXuc/vpip_1 1`] = `
 [
-  VPIP {},
+  "vpip",
   [
     {
       "playerName": "SONNY",
@@ -6446,7 +6446,7 @@ exports[`getAnalysisFromBlocks Analysis of from 02UxNqNVXuc/vpip_1 resolved: 02U
 
 exports[`getAnalysisFromBlocks Analysis of from 02UxNqNVXuc/vpip_2 resolved: 02UxNqNVXuc/vpip_2 1`] = `
 [
-  VPIP {},
+  "vpip",
   [
     {
       "playerName": "SONNY",
@@ -6490,7 +6490,7 @@ exports[`getAnalysisFromBlocks Analysis of from 02UxNqNVXuc/vpip_2 resolved: 02U
 
 exports[`getAnalysisFromBlocks Analysis of from 02UxNqNVXuc/vpip_3 resolved: 02UxNqNVXuc/vpip_3 1`] = `
 [
-  VPIP {},
+  "vpip",
   [
     {
       "playerName": "SONNY",
@@ -6534,7 +6534,7 @@ exports[`getAnalysisFromBlocks Analysis of from 02UxNqNVXuc/vpip_3 resolved: 02U
 
 exports[`getAnalysisFromBlocks Analysis of from 06cbriCEa-A/cc_1 resolved: 06cbriCEa-A/cc_1 1`] = `
 [
-  ChipCount {},
+  "cc",
   [
     {
       "playerName": "FAT AL",
@@ -6570,7 +6570,7 @@ exports[`getAnalysisFromBlocks Analysis of from 06cbriCEa-A/cc_1 resolved: 06cbr
 
 exports[`getAnalysisFromBlocks Analysis of from 06cbriCEa-A/cc_2 resolved: 06cbriCEa-A/cc_2 1`] = `
 [
-  ChipCount {},
+  "cc",
   [
     {
       "playerName": "FAT AL",
@@ -6606,7 +6606,7 @@ exports[`getAnalysisFromBlocks Analysis of from 06cbriCEa-A/cc_2 resolved: 06cbr
 
 exports[`getAnalysisFromBlocks Analysis of from 06cbriCEa-A/cw_1 resolved: 06cbriCEa-A/cw_1 1`] = `
 [
-  CumulativeWinnings {},
+  "cw",
   [
     {
       "playerName": "CHARLES",
@@ -6642,7 +6642,7 @@ exports[`getAnalysisFromBlocks Analysis of from 06cbriCEa-A/cw_1 resolved: 06cbr
 
 exports[`getAnalysisFromBlocks Analysis of from 06cbriCEa-A/cw_2 resolved: 06cbriCEa-A/cw_2 1`] = `
 [
-  CumulativeWinnings {},
+  "cw",
   [
     {
       "playerName": "CHARLES",
@@ -6678,7 +6678,7 @@ exports[`getAnalysisFromBlocks Analysis of from 06cbriCEa-A/cw_2 resolved: 06cbr
 
 exports[`getAnalysisFromBlocks Analysis of from 06cbriCEa-A/cw_3 resolved: 06cbriCEa-A/cw_3 1`] = `
 [
-  CumulativeWinnings {},
+  "cw",
   [
     {
       "playerName": "CHARLES",
@@ -6714,7 +6714,7 @@ exports[`getAnalysisFromBlocks Analysis of from 06cbriCEa-A/cw_3 resolved: 06cbr
 
 exports[`getAnalysisFromBlocks Analysis of from 06cbriCEa-A/cw_4 resolved: 06cbriCEa-A/cw_4 1`] = `
 [
-  CumulativeWinnings {},
+  "cw",
   [
     {
       "playerName": "CHARLES",
@@ -6750,7 +6750,7 @@ exports[`getAnalysisFromBlocks Analysis of from 06cbriCEa-A/cw_4 resolved: 06cbr
 
 exports[`getAnalysisFromBlocks Analysis of from 06cbriCEa-A/cw_5 resolved: 06cbriCEa-A/cw_5 1`] = `
 [
-  CumulativeWinnings {},
+  "cw",
   [
     {
       "playerName": "CHARLES",
@@ -6786,7 +6786,7 @@ exports[`getAnalysisFromBlocks Analysis of from 06cbriCEa-A/cw_5 resolved: 06cbr
 
 exports[`getAnalysisFromBlocks Analysis of from 06cbriCEa-A/cw_6 resolved: 06cbriCEa-A/cw_6 1`] = `
 [
-  CumulativeWinnings {},
+  "cw",
   [
     {
       "playerName": "CHARLES",
@@ -6822,7 +6822,7 @@ exports[`getAnalysisFromBlocks Analysis of from 06cbriCEa-A/cw_6 resolved: 06cbr
 
 exports[`getAnalysisFromBlocks Analysis of from 06cbriCEa-A/cw_7 resolved: 06cbriCEa-A/cw_7 1`] = `
 [
-  CumulativeWinnings {},
+  "cw",
   [
     {
       "playerName": "CHARLES",
@@ -6858,7 +6858,7 @@ exports[`getAnalysisFromBlocks Analysis of from 06cbriCEa-A/cw_7 resolved: 06cbr
 
 exports[`getAnalysisFromBlocks Analysis of from 06cbriCEa-A/pfr_1 resolved: 06cbriCEa-A/pfr_1 1`] = `
 [
-  PreflopRaise {},
+  "pfr",
   [
     {
       "playerName": "FAT AL",
@@ -6898,7 +6898,7 @@ exports[`getAnalysisFromBlocks Analysis of from 06cbriCEa-A/pfr_1 resolved: 06cb
 
 exports[`getAnalysisFromBlocks Analysis of from 06cbriCEa-A/vpip_1 resolved: 06cbriCEa-A/vpip_1 1`] = `
 [
-  VPIP {},
+  "vpip",
   [
     {
       "playerName": "AUSSIE MATT",
@@ -6938,7 +6938,7 @@ exports[`getAnalysisFromBlocks Analysis of from 06cbriCEa-A/vpip_1 resolved: 06c
 
 exports[`getAnalysisFromBlocks Analysis of from 06cbriCEa-A/vpip_2 resolved: 06cbriCEa-A/vpip_2 1`] = `
 [
-  VPIP {},
+  "vpip",
   [
     {
       "playerName": "AUSSIE MATT",
@@ -6978,7 +6978,7 @@ exports[`getAnalysisFromBlocks Analysis of from 06cbriCEa-A/vpip_2 resolved: 06c
 
 exports[`getAnalysisFromBlocks Analysis of from 049-vzJIek8/cc_1 resolved: 049-vzJIek8/cc_1 1`] = `
 [
-  ChipCount {},
+  "cc",
   [
     {
       "playerName": "NICK",
@@ -7018,7 +7018,7 @@ exports[`getAnalysisFromBlocks Analysis of from 049-vzJIek8/cc_1 resolved: 049-v
 
 exports[`getAnalysisFromBlocks Analysis of from 049-vzJIek8/cc_2 resolved: 049-vzJIek8/cc_2 1`] = `
 [
-  ChipCount {},
+  "cc",
   [
     {
       "playerName": "NICK",
@@ -7058,7 +7058,7 @@ exports[`getAnalysisFromBlocks Analysis of from 049-vzJIek8/cc_2 resolved: 049-v
 
 exports[`getAnalysisFromBlocks Analysis of from 049-vzJIek8/cc_3 resolved: 049-vzJIek8/cc_3 1`] = `
 [
-  ChipCount {},
+  "cc",
   [
     {
       "playerName": "NICK",
@@ -7098,7 +7098,7 @@ exports[`getAnalysisFromBlocks Analysis of from 049-vzJIek8/cc_3 resolved: 049-v
 
 exports[`getAnalysisFromBlocks Analysis of from 049-vzJIek8/cw_1 resolved: 049-vzJIek8/cw_1 1`] = `
 [
-  CumulativeWinnings {},
+  "cw",
   [
     {
       "playerName": "NICK",
@@ -7138,7 +7138,7 @@ exports[`getAnalysisFromBlocks Analysis of from 049-vzJIek8/cw_1 resolved: 049-v
 
 exports[`getAnalysisFromBlocks Analysis of from 049-vzJIek8/cw_2 resolved: 049-vzJIek8/cw_2 1`] = `
 [
-  CumulativeWinnings {},
+  "cw",
   [
     {
       "playerName": "NICK",
@@ -7178,7 +7178,7 @@ exports[`getAnalysisFromBlocks Analysis of from 049-vzJIek8/cw_2 resolved: 049-v
 
 exports[`getAnalysisFromBlocks Analysis of from 049-vzJIek8/cw_3 resolved: 049-vzJIek8/cw_3 1`] = `
 [
-  CumulativeWinnings {},
+  "cw",
   [
     {
       "playerName": "NICK",
@@ -7218,7 +7218,7 @@ exports[`getAnalysisFromBlocks Analysis of from 049-vzJIek8/cw_3 resolved: 049-v
 
 exports[`getAnalysisFromBlocks Analysis of from 049-vzJIek8/cw_4 resolved: 049-vzJIek8/cw_4 1`] = `
 [
-  CumulativeWinnings {},
+  "cw",
   [
     {
       "playerName": "NICK",
@@ -7258,7 +7258,7 @@ exports[`getAnalysisFromBlocks Analysis of from 049-vzJIek8/cw_4 resolved: 049-v
 
 exports[`getAnalysisFromBlocks Analysis of from 049-vzJIek8/cw_5 resolved: 049-vzJIek8/cw_5 1`] = `
 [
-  CumulativeWinnings {},
+  "cw",
   [
     {
       "playerName": "NICK",
@@ -7298,7 +7298,7 @@ exports[`getAnalysisFromBlocks Analysis of from 049-vzJIek8/cw_5 resolved: 049-v
 
 exports[`getAnalysisFromBlocks Analysis of from 049-vzJIek8/pfr_1 resolved: 049-vzJIek8/pfr_1 1`] = `
 [
-  PreflopRaise {},
+  "pfr",
   [
     {
       "playerName": "LUDA CHRIS",
@@ -7342,7 +7342,7 @@ exports[`getAnalysisFromBlocks Analysis of from 049-vzJIek8/pfr_1 resolved: 049-
 
 exports[`getAnalysisFromBlocks Analysis of from 049-vzJIek8/pfr_2 resolved: 049-vzJIek8/pfr_2 1`] = `
 [
-  PreflopRaise {},
+  "pfr",
   [
     {
       "playerName": "LUDA CHRIS",
@@ -7386,7 +7386,7 @@ exports[`getAnalysisFromBlocks Analysis of from 049-vzJIek8/pfr_2 resolved: 049-
 
 exports[`getAnalysisFromBlocks Analysis of from 049-vzJIek8/vpip_1 resolved: 049-vzJIek8/vpip_1 1`] = `
 [
-  VPIP {},
+  "vpip",
   [
     {
       "playerName": "LUDA CHRIS",
@@ -7430,7 +7430,7 @@ exports[`getAnalysisFromBlocks Analysis of from 049-vzJIek8/vpip_1 resolved: 049
 
 exports[`getAnalysisFromBlocks Analysis of from 049-vzJIek8/vpip_2 resolved: 049-vzJIek8/vpip_2 1`] = `
 [
-  VPIP {},
+  "vpip",
   [
     {
       "playerName": "LUDA CHRIS",
@@ -7474,7 +7474,7 @@ exports[`getAnalysisFromBlocks Analysis of from 049-vzJIek8/vpip_2 resolved: 049
 
 exports[`getAnalysisFromBlocks Analysis of from 049-vzJIek8/vpip_3 resolved: 049-vzJIek8/vpip_3 1`] = `
 [
-  VPIP {},
+  "vpip",
   [
     {
       "playerName": "LUDA CHRIS",
@@ -7518,7 +7518,7 @@ exports[`getAnalysisFromBlocks Analysis of from 049-vzJIek8/vpip_3 resolved: 049
 
 exports[`getAnalysisFromBlocks Analysis of from 0Dtd4UWcWek/cc_1 resolved: 0Dtd4UWcWek/cc_1 1`] = `
 [
-  ChipCount {},
+  "cc",
   [
     {
       "playerName": "WESLEY",
@@ -7558,7 +7558,7 @@ exports[`getAnalysisFromBlocks Analysis of from 0Dtd4UWcWek/cc_1 resolved: 0Dtd4
 
 exports[`getAnalysisFromBlocks Analysis of from 0Dtd4UWcWek/cc_2 resolved: 0Dtd4UWcWek/cc_2 1`] = `
 [
-  ChipCount {},
+  "cc",
   [
     {
       "playerName": "WESLEY",
@@ -7598,7 +7598,7 @@ exports[`getAnalysisFromBlocks Analysis of from 0Dtd4UWcWek/cc_2 resolved: 0Dtd4
 
 exports[`getAnalysisFromBlocks Analysis of from 0Dtd4UWcWek/cc_3 resolved: 0Dtd4UWcWek/cc_3 1`] = `
 [
-  ChipCount {},
+  "cc",
   [
     {
       "playerName": "WESLEY",
@@ -7638,7 +7638,7 @@ exports[`getAnalysisFromBlocks Analysis of from 0Dtd4UWcWek/cc_3 resolved: 0Dtd4
 
 exports[`getAnalysisFromBlocks Analysis of from 0Dtd4UWcWek/cc_4 resolved: 0Dtd4UWcWek/cc_4 1`] = `
 [
-  ChipCount {},
+  "cc",
   [
     {
       "playerName": "WESLEY",
@@ -7678,7 +7678,7 @@ exports[`getAnalysisFromBlocks Analysis of from 0Dtd4UWcWek/cc_4 resolved: 0Dtd4
 
 exports[`getAnalysisFromBlocks Analysis of from 0Dtd4UWcWek/cw_1 resolved: 0Dtd4UWcWek/cw_1 1`] = `
 [
-  CumulativeWinnings {},
+  "cw",
   [
     {
       "playerName": "WESLEY",
@@ -7718,7 +7718,7 @@ exports[`getAnalysisFromBlocks Analysis of from 0Dtd4UWcWek/cw_1 resolved: 0Dtd4
 
 exports[`getAnalysisFromBlocks Analysis of from 0Dtd4UWcWek/cw_2 resolved: 0Dtd4UWcWek/cw_2 1`] = `
 [
-  CumulativeWinnings {},
+  "cw",
   [
     {
       "playerName": "WESLEY",
@@ -7758,7 +7758,7 @@ exports[`getAnalysisFromBlocks Analysis of from 0Dtd4UWcWek/cw_2 resolved: 0Dtd4
 
 exports[`getAnalysisFromBlocks Analysis of from 0Dtd4UWcWek/cw_3 resolved: 0Dtd4UWcWek/cw_3 1`] = `
 [
-  CumulativeWinnings {},
+  "cw",
   [
     {
       "playerName": "WESLEY",
@@ -7798,7 +7798,7 @@ exports[`getAnalysisFromBlocks Analysis of from 0Dtd4UWcWek/cw_3 resolved: 0Dtd4
 
 exports[`getAnalysisFromBlocks Analysis of from 0Dtd4UWcWek/cw_4 resolved: 0Dtd4UWcWek/cw_4 1`] = `
 [
-  CumulativeWinnings {},
+  "cw",
   [
     {
       "playerName": "WESLEY",
@@ -7838,7 +7838,7 @@ exports[`getAnalysisFromBlocks Analysis of from 0Dtd4UWcWek/cw_4 resolved: 0Dtd4
 
 exports[`getAnalysisFromBlocks Analysis of from 0Dtd4UWcWek/cw_5 resolved: 0Dtd4UWcWek/cw_5 1`] = `
 [
-  CumulativeWinnings {},
+  "cw",
   [
     {
       "playerName": "WESLEY",
@@ -7878,7 +7878,7 @@ exports[`getAnalysisFromBlocks Analysis of from 0Dtd4UWcWek/cw_5 resolved: 0Dtd4
 
 exports[`getAnalysisFromBlocks Analysis of from 0Dtd4UWcWek/cw_6 resolved: 0Dtd4UWcWek/cw_6 1`] = `
 [
-  CumulativeWinnings {},
+  "cw",
   [
     {
       "playerName": "WESLEY",
@@ -7918,7 +7918,7 @@ exports[`getAnalysisFromBlocks Analysis of from 0Dtd4UWcWek/cw_6 resolved: 0Dtd4
 
 exports[`getAnalysisFromBlocks Analysis of from 0Dtd4UWcWek/cw_7 resolved: 0Dtd4UWcWek/cw_7 1`] = `
 [
-  CumulativeWinnings {},
+  "cw",
   [
     {
       "playerName": "WESLEY",
@@ -7958,7 +7958,7 @@ exports[`getAnalysisFromBlocks Analysis of from 0Dtd4UWcWek/cw_7 resolved: 0Dtd4
 
 exports[`getAnalysisFromBlocks Analysis of from 0Dtd4UWcWek/pfr_1 resolved: 0Dtd4UWcWek/pfr_1 1`] = `
 [
-  PreflopRaise {},
+  "pfr",
   [
     {
       "playerName": "MARIANO",
@@ -8002,7 +8002,7 @@ exports[`getAnalysisFromBlocks Analysis of from 0Dtd4UWcWek/pfr_1 resolved: 0Dtd
 
 exports[`getAnalysisFromBlocks Analysis of from 0Dtd4UWcWek/pfr_2 resolved: 0Dtd4UWcWek/pfr_2 1`] = `
 [
-  PreflopRaise {},
+  "pfr",
   [
     {
       "playerName": "MARIANO",
@@ -8046,7 +8046,7 @@ exports[`getAnalysisFromBlocks Analysis of from 0Dtd4UWcWek/pfr_2 resolved: 0Dtd
 
 exports[`getAnalysisFromBlocks Analysis of from 0Dtd4UWcWek/vpip_1 resolved: 0Dtd4UWcWek/vpip_1 1`] = `
 [
-  VPIP {},
+  "vpip",
   [
     {
       "playerName": "WILL",
@@ -8090,7 +8090,7 @@ exports[`getAnalysisFromBlocks Analysis of from 0Dtd4UWcWek/vpip_1 resolved: 0Dt
 
 exports[`getAnalysisFromBlocks Analysis of from 0Dtd4UWcWek/vpip_2 resolved: 0Dtd4UWcWek/vpip_2 1`] = `
 [
-  VPIP {},
+  "vpip",
   [
     {
       "playerName": "WILL",
@@ -8134,7 +8134,7 @@ exports[`getAnalysisFromBlocks Analysis of from 0Dtd4UWcWek/vpip_2 resolved: 0Dt
 
 exports[`getAnalysisFromBlocks Analysis of from 0Dtd4UWcWek/vpip_3 resolved: 0Dtd4UWcWek/vpip_3 1`] = `
 [
-  VPIP {},
+  "vpip",
   [
     {
       "playerName": "WILL",
@@ -8178,7 +8178,7 @@ exports[`getAnalysisFromBlocks Analysis of from 0Dtd4UWcWek/vpip_3 resolved: 0Dt
 
 exports[`getAnalysisFromBlocks Analysis of from 0Dtd4UWcWek/vpip_4 resolved: 0Dtd4UWcWek/vpip_4 1`] = `
 [
-  VPIP {},
+  "vpip",
   [
     {
       "playerName": "WILL",
@@ -8222,7 +8222,7 @@ exports[`getAnalysisFromBlocks Analysis of from 0Dtd4UWcWek/vpip_4 resolved: 0Dt
 
 exports[`getAnalysisFromBlocks Analysis of from 0P4qt3KxkzI/cc_1 resolved: 0P4qt3KxkzI/cc_1 1`] = `
 [
-  ChipCount {},
+  "cc",
   [
     {
       "playerName": "DGAF",
@@ -8266,7 +8266,7 @@ exports[`getAnalysisFromBlocks Analysis of from 0P4qt3KxkzI/cc_1 resolved: 0P4qt
 
 exports[`getAnalysisFromBlocks Analysis of from 0P4qt3KxkzI/cc_2 resolved: 0P4qt3KxkzI/cc_2 1`] = `
 [
-  ChipCount {},
+  "cc",
   [
     {
       "playerName": "DGAF",
@@ -8310,7 +8310,7 @@ exports[`getAnalysisFromBlocks Analysis of from 0P4qt3KxkzI/cc_2 resolved: 0P4qt
 
 exports[`getAnalysisFromBlocks Analysis of from 0P4qt3KxkzI/cc_3 resolved: 0P4qt3KxkzI/cc_3 1`] = `
 [
-  ChipCount {},
+  "cc",
   [
     {
       "playerName": "DGAF",
@@ -8354,7 +8354,7 @@ exports[`getAnalysisFromBlocks Analysis of from 0P4qt3KxkzI/cc_3 resolved: 0P4qt
 
 exports[`getAnalysisFromBlocks Analysis of from 0P4qt3KxkzI/cw_1 resolved: 0P4qt3KxkzI/cw_1 1`] = `
 [
-  CumulativeWinnings {},
+  "cw",
   [
     {
       "playerName": "DGAF",
@@ -8398,7 +8398,7 @@ exports[`getAnalysisFromBlocks Analysis of from 0P4qt3KxkzI/cw_1 resolved: 0P4qt
 
 exports[`getAnalysisFromBlocks Analysis of from 0P4qt3KxkzI/cw_2 resolved: 0P4qt3KxkzI/cw_2 1`] = `
 [
-  CumulativeWinnings {},
+  "cw",
   [
     {
       "playerName": "DGAF",
@@ -8442,7 +8442,7 @@ exports[`getAnalysisFromBlocks Analysis of from 0P4qt3KxkzI/cw_2 resolved: 0P4qt
 
 exports[`getAnalysisFromBlocks Analysis of from 0P4qt3KxkzI/cw_3 resolved: 0P4qt3KxkzI/cw_3 1`] = `
 [
-  CumulativeWinnings {},
+  "cw",
   [
     {
       "playerName": "DGAF",
@@ -8486,7 +8486,7 @@ exports[`getAnalysisFromBlocks Analysis of from 0P4qt3KxkzI/cw_3 resolved: 0P4qt
 
 exports[`getAnalysisFromBlocks Analysis of from 0P4qt3KxkzI/cw_4 resolved: 0P4qt3KxkzI/cw_4 1`] = `
 [
-  CumulativeWinnings {},
+  "cw",
   [
     {
       "playerName": "DGAF",
@@ -8530,7 +8530,7 @@ exports[`getAnalysisFromBlocks Analysis of from 0P4qt3KxkzI/cw_4 resolved: 0P4qt
 
 exports[`getAnalysisFromBlocks Analysis of from 0P4qt3KxkzI/cw_5 resolved: 0P4qt3KxkzI/cw_5 1`] = `
 [
-  CumulativeWinnings {},
+  "cw",
   [
     {
       "playerName": "DGAF",
@@ -8574,7 +8574,7 @@ exports[`getAnalysisFromBlocks Analysis of from 0P4qt3KxkzI/cw_5 resolved: 0P4qt
 
 exports[`getAnalysisFromBlocks Analysis of from 0P4qt3KxkzI/pfr_1 resolved: 0P4qt3KxkzI/pfr_1 1`] = `
 [
-  PreflopRaise {},
+  "pfr",
   [
     {
       "playerName": "DGAF",
@@ -8622,7 +8622,7 @@ exports[`getAnalysisFromBlocks Analysis of from 0P4qt3KxkzI/pfr_1 resolved: 0P4q
 
 exports[`getAnalysisFromBlocks Analysis of from 0P4qt3KxkzI/vpip_1 resolved: 0P4qt3KxkzI/vpip_1 1`] = `
 [
-  VPIP {},
+  "vpip",
   [
     {
       "playerName": "DGAF",
@@ -8670,7 +8670,7 @@ exports[`getAnalysisFromBlocks Analysis of from 0P4qt3KxkzI/vpip_1 resolved: 0P4
 
 exports[`getAnalysisFromBlocks Analysis of from 0P4qt3KxkzI/vpip_2 resolved: 0P4qt3KxkzI/vpip_2 1`] = `
 [
-  VPIP {},
+  "vpip",
   [
     {
       "playerName": "DGAF",
@@ -8718,7 +8718,7 @@ exports[`getAnalysisFromBlocks Analysis of from 0P4qt3KxkzI/vpip_2 resolved: 0P4
 
 exports[`getAnalysisFromBlocks Analysis of from 0YK70SMElkY/cc_1 resolved: 0YK70SMElkY/cc_1 1`] = `
 [
-  ChipCount {},
+  "cc",
   [
     {
       "playerName": "WESLEY",
@@ -8762,7 +8762,7 @@ exports[`getAnalysisFromBlocks Analysis of from 0YK70SMElkY/cc_1 resolved: 0YK70
 
 exports[`getAnalysisFromBlocks Analysis of from 0YK70SMElkY/cc_2 resolved: 0YK70SMElkY/cc_2 1`] = `
 [
-  ChipCount {},
+  "cc",
   [
     {
       "playerName": "WESLEY",
@@ -8806,7 +8806,7 @@ exports[`getAnalysisFromBlocks Analysis of from 0YK70SMElkY/cc_2 resolved: 0YK70
 
 exports[`getAnalysisFromBlocks Analysis of from 0YK70SMElkY/cc_3 resolved: 0YK70SMElkY/cc_3 1`] = `
 [
-  ChipCount {},
+  "cc",
   [
     {
       "playerName": "WESLEY",
@@ -8850,7 +8850,7 @@ exports[`getAnalysisFromBlocks Analysis of from 0YK70SMElkY/cc_3 resolved: 0YK70
 
 exports[`getAnalysisFromBlocks Analysis of from 0YK70SMElkY/cc_4 resolved: 0YK70SMElkY/cc_4 1`] = `
 [
-  ChipCount {},
+  "cc",
   [
     {
       "playerName": "WESLEY",
@@ -8894,7 +8894,7 @@ exports[`getAnalysisFromBlocks Analysis of from 0YK70SMElkY/cc_4 resolved: 0YK70
 
 exports[`getAnalysisFromBlocks Analysis of from 0YK70SMElkY/cw_1 resolved: 0YK70SMElkY/cw_1 1`] = `
 [
-  CumulativeWinnings {},
+  "cw",
   [
     {
       "playerName": "RAMPAGE",
@@ -8938,7 +8938,7 @@ exports[`getAnalysisFromBlocks Analysis of from 0YK70SMElkY/cw_1 resolved: 0YK70
 
 exports[`getAnalysisFromBlocks Analysis of from 0YK70SMElkY/cw_2 resolved: 0YK70SMElkY/cw_2 1`] = `
 [
-  CumulativeWinnings {},
+  "cw",
   [
     {
       "playerName": "RAMPAGE",
@@ -8982,7 +8982,7 @@ exports[`getAnalysisFromBlocks Analysis of from 0YK70SMElkY/cw_2 resolved: 0YK70
 
 exports[`getAnalysisFromBlocks Analysis of from 0YK70SMElkY/cw_3 resolved: 0YK70SMElkY/cw_3 1`] = `
 [
-  CumulativeWinnings {},
+  "cw",
   [
     {
       "playerName": "RAMPAGE",
@@ -9026,7 +9026,7 @@ exports[`getAnalysisFromBlocks Analysis of from 0YK70SMElkY/cw_3 resolved: 0YK70
 
 exports[`getAnalysisFromBlocks Analysis of from 0YK70SMElkY/cw_4 resolved: 0YK70SMElkY/cw_4 1`] = `
 [
-  CumulativeWinnings {},
+  "cw",
   [
     {
       "playerName": "RAMPAGE",
@@ -9070,7 +9070,7 @@ exports[`getAnalysisFromBlocks Analysis of from 0YK70SMElkY/cw_4 resolved: 0YK70
 
 exports[`getAnalysisFromBlocks Analysis of from 0YK70SMElkY/pfr_1 resolved: 0YK70SMElkY/pfr_1 1`] = `
 [
-  PreflopRaise {},
+  "pfr",
   [
     {
       "playerName": "WESLEY",
@@ -9114,7 +9114,7 @@ exports[`getAnalysisFromBlocks Analysis of from 0YK70SMElkY/pfr_1 resolved: 0YK7
 
 exports[`getAnalysisFromBlocks Analysis of from 0YK70SMElkY/pfr_2 resolved: 0YK70SMElkY/pfr_2 1`] = `
 [
-  PreflopRaise {},
+  "pfr",
   [
     {
       "playerName": "WESLEY",
@@ -9158,7 +9158,7 @@ exports[`getAnalysisFromBlocks Analysis of from 0YK70SMElkY/pfr_2 resolved: 0YK7
 
 exports[`getAnalysisFromBlocks Analysis of from 0YK70SMElkY/vpip_1 resolved: 0YK70SMElkY/vpip_1 1`] = `
 [
-  VPIP {},
+  "vpip",
   [
     {
       "playerName": "WESLEY",
@@ -9202,7 +9202,7 @@ exports[`getAnalysisFromBlocks Analysis of from 0YK70SMElkY/vpip_1 resolved: 0YK
 
 exports[`getAnalysisFromBlocks Analysis of from 0YK70SMElkY/vpip_2 resolved: 0YK70SMElkY/vpip_2 1`] = `
 [
-  VPIP {},
+  "vpip",
   [
     {
       "playerName": "WESLEY",
@@ -9246,7 +9246,7 @@ exports[`getAnalysisFromBlocks Analysis of from 0YK70SMElkY/vpip_2 resolved: 0YK
 
 exports[`getAnalysisFromBlocks Analysis of from 0YK70SMElkY/vpip_3 resolved: 0YK70SMElkY/vpip_3 1`] = `
 [
-  VPIP {},
+  "vpip",
   [
     {
       "playerName": "WESLEY",
@@ -9290,7 +9290,7 @@ exports[`getAnalysisFromBlocks Analysis of from 0YK70SMElkY/vpip_3 resolved: 0YK
 
 exports[`getAnalysisFromBlocks Analysis of from 0YK70SMElkY/vpip_4 resolved: 0YK70SMElkY/vpip_4 1`] = `
 [
-  VPIP {},
+  "vpip",
   [
     {
       "playerName": "WESLEY",
@@ -9334,7 +9334,7 @@ exports[`getAnalysisFromBlocks Analysis of from 0YK70SMElkY/vpip_4 resolved: 0YK
 
 exports[`getAnalysisFromBlocks Analysis of from 0bkHGcVRmKM/cc_1 resolved: 0bkHGcVRmKM/cc_1 1`] = `
 [
-  ChipCount {},
+  "cc",
   [
     {
       "playerName": "LUDA CHRIS",
@@ -9370,7 +9370,7 @@ exports[`getAnalysisFromBlocks Analysis of from 0bkHGcVRmKM/cc_1 resolved: 0bkHG
 
 exports[`getAnalysisFromBlocks Analysis of from 0bkHGcVRmKM/cc_2 resolved: 0bkHGcVRmKM/cc_2 1`] = `
 [
-  ChipCount {},
+  "cc",
   [
     {
       "playerName": "LUDA CHRIS",
@@ -9406,7 +9406,7 @@ exports[`getAnalysisFromBlocks Analysis of from 0bkHGcVRmKM/cc_2 resolved: 0bkHG
 
 exports[`getAnalysisFromBlocks Analysis of from 0bkHGcVRmKM/cw_1 resolved: 0bkHGcVRmKM/cw_1 1`] = `
 [
-  CumulativeWinnings {},
+  "cw",
   [
     {
       "playerName": "LUDA CHRIS",
@@ -9434,7 +9434,7 @@ exports[`getAnalysisFromBlocks Analysis of from 0bkHGcVRmKM/cw_1 resolved: 0bkHG
 
 exports[`getAnalysisFromBlocks Analysis of from 0bkHGcVRmKM/cw_2 resolved: 0bkHGcVRmKM/cw_2 1`] = `
 [
-  CumulativeWinnings {},
+  "cw",
   [
     {
       "playerName": "BIG JOHN",
@@ -9478,7 +9478,7 @@ exports[`getAnalysisFromBlocks Analysis of from 0bkHGcVRmKM/cw_2 resolved: 0bkHG
 
 exports[`getAnalysisFromBlocks Analysis of from 0bkHGcVRmKM/cw_3 resolved: 0bkHGcVRmKM/cw_3 1`] = `
 [
-  CumulativeWinnings {},
+  "cw",
   [
     {
       "playerName": "BIG JOHN",
@@ -9522,7 +9522,7 @@ exports[`getAnalysisFromBlocks Analysis of from 0bkHGcVRmKM/cw_3 resolved: 0bkHG
 
 exports[`getAnalysisFromBlocks Analysis of from 0bkHGcVRmKM/cw_4 resolved: 0bkHGcVRmKM/cw_4 1`] = `
 [
-  CumulativeWinnings {},
+  "cw",
   [
     {
       "playerName": "BIG JOHN",
@@ -9566,7 +9566,7 @@ exports[`getAnalysisFromBlocks Analysis of from 0bkHGcVRmKM/cw_4 resolved: 0bkHG
 
 exports[`getAnalysisFromBlocks Analysis of from 0bkHGcVRmKM/cw_5 resolved: 0bkHGcVRmKM/cw_5 1`] = `
 [
-  CumulativeWinnings {},
+  "cw",
   [
     {
       "playerName": "BIG JOHN",
@@ -9610,7 +9610,7 @@ exports[`getAnalysisFromBlocks Analysis of from 0bkHGcVRmKM/cw_5 resolved: 0bkHG
 
 exports[`getAnalysisFromBlocks Analysis of from 0bkHGcVRmKM/cw_6 resolved: 0bkHGcVRmKM/cw_6 1`] = `
 [
-  CumulativeWinnings {},
+  "cw",
   [
     {
       "playerName": "BIG JOHN",
@@ -9654,7 +9654,7 @@ exports[`getAnalysisFromBlocks Analysis of from 0bkHGcVRmKM/cw_6 resolved: 0bkHG
 
 exports[`getAnalysisFromBlocks Analysis of from 0bkHGcVRmKM/pfr_1 resolved: 0bkHGcVRmKM/pfr_1 1`] = `
 [
-  PreflopRaise {},
+  "pfr",
   [
     {
       "playerName": "LINGLIN",
@@ -9698,7 +9698,7 @@ exports[`getAnalysisFromBlocks Analysis of from 0bkHGcVRmKM/pfr_1 resolved: 0bkH
 
 exports[`getAnalysisFromBlocks Analysis of from 0bkHGcVRmKM/pfr_2 resolved: 0bkHGcVRmKM/pfr_2 1`] = `
 [
-  PreflopRaise {},
+  "pfr",
   [
     {
       "playerName": "LINGLIN",
@@ -9742,7 +9742,7 @@ exports[`getAnalysisFromBlocks Analysis of from 0bkHGcVRmKM/pfr_2 resolved: 0bkH
 
 exports[`getAnalysisFromBlocks Analysis of from 0bkHGcVRmKM/vpip_1 resolved: 0bkHGcVRmKM/vpip_1 1`] = `
 [
-  VPIP {},
+  "vpip",
   [
     {
       "playerName": "SANTA",
@@ -9786,7 +9786,7 @@ exports[`getAnalysisFromBlocks Analysis of from 0bkHGcVRmKM/vpip_1 resolved: 0bk
 
 exports[`getAnalysisFromBlocks Analysis of from 0bkHGcVRmKM/vpip_2 resolved: 0bkHGcVRmKM/vpip_2 1`] = `
 [
-  VPIP {},
+  "vpip",
   [
     {
       "playerName": "SANTA",
@@ -9830,7 +9830,7 @@ exports[`getAnalysisFromBlocks Analysis of from 0bkHGcVRmKM/vpip_2 resolved: 0bk
 
 exports[`getAnalysisFromBlocks Analysis of from 0bkHGcVRmKM/vpip_3 resolved: 0bkHGcVRmKM/vpip_3 1`] = `
 [
-  VPIP {},
+  "vpip",
   [
     {
       "playerName": "SANTA",
@@ -9874,7 +9874,7 @@ exports[`getAnalysisFromBlocks Analysis of from 0bkHGcVRmKM/vpip_3 resolved: 0bk
 
 exports[`getAnalysisFromBlocks Analysis of from 0g2BSx3NXHM/cc_1 resolved: 0g2BSx3NXHM/cc_1 1`] = `
 [
-  ChipCount {},
+  "cc",
   [
     {
       "playerName": "SIA THE BOT",
@@ -9918,7 +9918,7 @@ exports[`getAnalysisFromBlocks Analysis of from 0g2BSx3NXHM/cc_1 resolved: 0g2BS
 
 exports[`getAnalysisFromBlocks Analysis of from 0g2BSx3NXHM/cc_2 resolved: 0g2BSx3NXHM/cc_2 1`] = `
 [
-  ChipCount {},
+  "cc",
   [
     {
       "playerName": "SIA THE BOT",
@@ -9962,7 +9962,7 @@ exports[`getAnalysisFromBlocks Analysis of from 0g2BSx3NXHM/cc_2 resolved: 0g2BS
 
 exports[`getAnalysisFromBlocks Analysis of from 0g2BSx3NXHM/cw_1 resolved: 0g2BSx3NXHM/cw_1 1`] = `
 [
-  CumulativeWinnings {},
+  "cw",
   [
     {
       "playerName": "SIA THE BOT",
@@ -10006,7 +10006,7 @@ exports[`getAnalysisFromBlocks Analysis of from 0g2BSx3NXHM/cw_1 resolved: 0g2BS
 
 exports[`getAnalysisFromBlocks Analysis of from 0g2BSx3NXHM/cw_2 resolved: 0g2BSx3NXHM/cw_2 1`] = `
 [
-  CumulativeWinnings {},
+  "cw",
   [
     {
       "playerName": "SIA THE BOT",
@@ -10050,7 +10050,7 @@ exports[`getAnalysisFromBlocks Analysis of from 0g2BSx3NXHM/cw_2 resolved: 0g2BS
 
 exports[`getAnalysisFromBlocks Analysis of from 0g2BSx3NXHM/cw_3 resolved: 0g2BSx3NXHM/cw_3 1`] = `
 [
-  CumulativeWinnings {},
+  "cw",
   [
     {
       "playerName": "SIA THE BOT",
@@ -10094,7 +10094,7 @@ exports[`getAnalysisFromBlocks Analysis of from 0g2BSx3NXHM/cw_3 resolved: 0g2BS
 
 exports[`getAnalysisFromBlocks Analysis of from 0g2BSx3NXHM/cw_4 resolved: 0g2BSx3NXHM/cw_4 1`] = `
 [
-  CumulativeWinnings {},
+  "cw",
   [
     {
       "playerName": "SIA THE BOT",
@@ -10138,7 +10138,7 @@ exports[`getAnalysisFromBlocks Analysis of from 0g2BSx3NXHM/cw_4 resolved: 0g2BS
 
 exports[`getAnalysisFromBlocks Analysis of from 0g2BSx3NXHM/cw_5 resolved: 0g2BSx3NXHM/cw_5 1`] = `
 [
-  CumulativeWinnings {},
+  "cw",
   [
     {
       "playerName": "SIA THE BOT",
@@ -10182,7 +10182,7 @@ exports[`getAnalysisFromBlocks Analysis of from 0g2BSx3NXHM/cw_5 resolved: 0g2BS
 
 exports[`getAnalysisFromBlocks Analysis of from 0g2BSx3NXHM/cw_6 resolved: 0g2BSx3NXHM/cw_6 1`] = `
 [
-  CumulativeWinnings {},
+  "cw",
   [
     {
       "playerName": "SIA THE BOT",
@@ -10226,7 +10226,7 @@ exports[`getAnalysisFromBlocks Analysis of from 0g2BSx3NXHM/cw_6 resolved: 0g2BS
 
 exports[`getAnalysisFromBlocks Analysis of from 0g2BSx3NXHM/pfr_1 resolved: 0g2BSx3NXHM/pfr_1 1`] = `
 [
-  PreflopRaise {},
+  "pfr",
   [
     {
       "playerName": "DJ WASHBURN",
@@ -10270,7 +10270,7 @@ exports[`getAnalysisFromBlocks Analysis of from 0g2BSx3NXHM/pfr_1 resolved: 0g2B
 
 exports[`getAnalysisFromBlocks Analysis of from 0g2BSx3NXHM/vpip_1 resolved: 0g2BSx3NXHM/vpip_1 1`] = `
 [
-  VPIP {},
+  "vpip",
   [
     {
       "playerName": "DJ WASHBURN",
@@ -10314,7 +10314,7 @@ exports[`getAnalysisFromBlocks Analysis of from 0g2BSx3NXHM/vpip_1 resolved: 0g2
 
 exports[`getAnalysisFromBlocks Analysis of from 0g2BSx3NXHM/vpip_2 resolved: 0g2BSx3NXHM/vpip_2 1`] = `
 [
-  VPIP {},
+  "vpip",
   [
     {
       "playerName": "DJ WASHBURN",
@@ -10358,7 +10358,7 @@ exports[`getAnalysisFromBlocks Analysis of from 0g2BSx3NXHM/vpip_2 resolved: 0g2
 
 exports[`getAnalysisFromBlocks Analysis of from 0iVVwYYRCYw/cc_1 resolved: 0iVVwYYRCYw/cc_1 1`] = `
 [
-  ChipCount {},
+  "cc",
   [
     {
       "playerName": "ZEO",
@@ -10402,7 +10402,7 @@ exports[`getAnalysisFromBlocks Analysis of from 0iVVwYYRCYw/cc_1 resolved: 0iVVw
 
 exports[`getAnalysisFromBlocks Analysis of from 0iVVwYYRCYw/cc_2 resolved: 0iVVwYYRCYw/cc_2 1`] = `
 [
-  ChipCount {},
+  "cc",
   [
     {
       "playerName": "ZEO",
@@ -10446,7 +10446,7 @@ exports[`getAnalysisFromBlocks Analysis of from 0iVVwYYRCYw/cc_2 resolved: 0iVVw
 
 exports[`getAnalysisFromBlocks Analysis of from 0iVVwYYRCYw/cc_3 resolved: 0iVVwYYRCYw/cc_3 1`] = `
 [
-  ChipCount {},
+  "cc",
   [
     {
       "playerName": "ZEO",
@@ -10490,7 +10490,7 @@ exports[`getAnalysisFromBlocks Analysis of from 0iVVwYYRCYw/cc_3 resolved: 0iVVw
 
 exports[`getAnalysisFromBlocks Analysis of from 0iVVwYYRCYw/cw_1 resolved: 0iVVwYYRCYw/cw_1 1`] = `
 [
-  CumulativeWinnings {},
+  "cw",
   [
     {
       "playerName": "DONGER",
@@ -10534,7 +10534,7 @@ exports[`getAnalysisFromBlocks Analysis of from 0iVVwYYRCYw/cw_1 resolved: 0iVVw
 
 exports[`getAnalysisFromBlocks Analysis of from 0iVVwYYRCYw/cw_2 resolved: 0iVVwYYRCYw/cw_2 1`] = `
 [
-  CumulativeWinnings {},
+  "cw",
   [
     {
       "playerName": "DONGER",
@@ -10578,7 +10578,7 @@ exports[`getAnalysisFromBlocks Analysis of from 0iVVwYYRCYw/cw_2 resolved: 0iVVw
 
 exports[`getAnalysisFromBlocks Analysis of from 0iVVwYYRCYw/cw_3 resolved: 0iVVwYYRCYw/cw_3 1`] = `
 [
-  CumulativeWinnings {},
+  "cw",
   [
     {
       "playerName": "DONGER",
@@ -10622,7 +10622,7 @@ exports[`getAnalysisFromBlocks Analysis of from 0iVVwYYRCYw/cw_3 resolved: 0iVVw
 
 exports[`getAnalysisFromBlocks Analysis of from 0iVVwYYRCYw/cw_4 resolved: 0iVVwYYRCYw/cw_4 1`] = `
 [
-  CumulativeWinnings {},
+  "cw",
   [
     {
       "playerName": "DONGER",
@@ -10666,7 +10666,7 @@ exports[`getAnalysisFromBlocks Analysis of from 0iVVwYYRCYw/cw_4 resolved: 0iVVw
 
 exports[`getAnalysisFromBlocks Analysis of from 0iVVwYYRCYw/cw_5 resolved: 0iVVwYYRCYw/cw_5 1`] = `
 [
-  CumulativeWinnings {},
+  "cw",
   [
     {
       "playerName": "DONGER",
@@ -10710,7 +10710,7 @@ exports[`getAnalysisFromBlocks Analysis of from 0iVVwYYRCYw/cw_5 resolved: 0iVVw
 
 exports[`getAnalysisFromBlocks Analysis of from 0iVVwYYRCYw/pfr_1 resolved: 0iVVwYYRCYw/pfr_1 1`] = `
 [
-  PreflopRaise {},
+  "pfr",
   [
     {
       "playerName": "JOHNNY",
@@ -10754,7 +10754,7 @@ exports[`getAnalysisFromBlocks Analysis of from 0iVVwYYRCYw/pfr_1 resolved: 0iVV
 
 exports[`getAnalysisFromBlocks Analysis of from 0iVVwYYRCYw/pfr_2 resolved: 0iVVwYYRCYw/pfr_2 1`] = `
 [
-  PreflopRaise {},
+  "pfr",
   [
     {
       "playerName": "JOHNNY",
@@ -10798,7 +10798,7 @@ exports[`getAnalysisFromBlocks Analysis of from 0iVVwYYRCYw/pfr_2 resolved: 0iVV
 
 exports[`getAnalysisFromBlocks Analysis of from 0iVVwYYRCYw/vpip_1 resolved: 0iVVwYYRCYw/vpip_1 1`] = `
 [
-  VPIP {},
+  "vpip",
   [
     {
       "playerName": "JOHNNY",
@@ -10842,7 +10842,7 @@ exports[`getAnalysisFromBlocks Analysis of from 0iVVwYYRCYw/vpip_1 resolved: 0iV
 
 exports[`getAnalysisFromBlocks Analysis of from 0iVVwYYRCYw/vpip_2 resolved: 0iVVwYYRCYw/vpip_2 1`] = `
 [
-  VPIP {},
+  "vpip",
   [
     {
       "playerName": "JOHNNY",
@@ -10886,7 +10886,7 @@ exports[`getAnalysisFromBlocks Analysis of from 0iVVwYYRCYw/vpip_2 resolved: 0iV
 
 exports[`getAnalysisFromBlocks Analysis of from 1Ehhamhn9oA/cc_1 resolved: 1Ehhamhn9oA/cc_1 1`] = `
 [
-  ChipCount {},
+  "cc",
   [
     {
       "playerName": "DAN",
@@ -10926,7 +10926,7 @@ exports[`getAnalysisFromBlocks Analysis of from 1Ehhamhn9oA/cc_1 resolved: 1Ehha
 
 exports[`getAnalysisFromBlocks Analysis of from 1Ehhamhn9oA/cc_2 resolved: 1Ehhamhn9oA/cc_2 1`] = `
 [
-  ChipCount {},
+  "cc",
   [
     {
       "playerName": "DAN",
@@ -10966,7 +10966,7 @@ exports[`getAnalysisFromBlocks Analysis of from 1Ehhamhn9oA/cc_2 resolved: 1Ehha
 
 exports[`getAnalysisFromBlocks Analysis of from 1Ehhamhn9oA/cc_3 resolved: 1Ehhamhn9oA/cc_3 1`] = `
 [
-  ChipCount {},
+  "cc",
   [
     {
       "playerName": "DAN",
@@ -11006,7 +11006,7 @@ exports[`getAnalysisFromBlocks Analysis of from 1Ehhamhn9oA/cc_3 resolved: 1Ehha
 
 exports[`getAnalysisFromBlocks Analysis of from 1Ehhamhn9oA/cc_4 resolved: 1Ehhamhn9oA/cc_4 1`] = `
 [
-  ChipCount {},
+  "cc",
   [
     {
       "playerName": "DAN",
@@ -11046,7 +11046,7 @@ exports[`getAnalysisFromBlocks Analysis of from 1Ehhamhn9oA/cc_4 resolved: 1Ehha
 
 exports[`getAnalysisFromBlocks Analysis of from 1Ehhamhn9oA/cw_1 resolved: 1Ehhamhn9oA/cw_1 1`] = `
 [
-  CumulativeWinnings {},
+  "cw",
   [
     {
       "playerName": "DAN",
@@ -11086,7 +11086,7 @@ exports[`getAnalysisFromBlocks Analysis of from 1Ehhamhn9oA/cw_1 resolved: 1Ehha
 
 exports[`getAnalysisFromBlocks Analysis of from 1Ehhamhn9oA/cw_2 resolved: 1Ehhamhn9oA/cw_2 1`] = `
 [
-  CumulativeWinnings {},
+  "cw",
   [
     {
       "playerName": "DAN",
@@ -11126,7 +11126,7 @@ exports[`getAnalysisFromBlocks Analysis of from 1Ehhamhn9oA/cw_2 resolved: 1Ehha
 
 exports[`getAnalysisFromBlocks Analysis of from 1Ehhamhn9oA/cw_3 resolved: 1Ehhamhn9oA/cw_3 1`] = `
 [
-  CumulativeWinnings {},
+  "cw",
   [
     {
       "playerName": "DAN",
@@ -11166,7 +11166,7 @@ exports[`getAnalysisFromBlocks Analysis of from 1Ehhamhn9oA/cw_3 resolved: 1Ehha
 
 exports[`getAnalysisFromBlocks Analysis of from 1Ehhamhn9oA/cw_4 resolved: 1Ehhamhn9oA/cw_4 1`] = `
 [
-  CumulativeWinnings {},
+  "cw",
   [
     {
       "playerName": "DAN",
@@ -11206,7 +11206,7 @@ exports[`getAnalysisFromBlocks Analysis of from 1Ehhamhn9oA/cw_4 resolved: 1Ehha
 
 exports[`getAnalysisFromBlocks Analysis of from 1Ehhamhn9oA/cw_5 resolved: 1Ehhamhn9oA/cw_5 1`] = `
 [
-  CumulativeWinnings {},
+  "cw",
   [
     {
       "playerName": "DAN",
@@ -11246,7 +11246,7 @@ exports[`getAnalysisFromBlocks Analysis of from 1Ehhamhn9oA/cw_5 resolved: 1Ehha
 
 exports[`getAnalysisFromBlocks Analysis of from 1Ehhamhn9oA/pfr_1 resolved: 1Ehhamhn9oA/pfr_1 1`] = `
 [
-  PreflopRaise {},
+  "pfr",
   [
     {
       "playerName": "DAN",
@@ -11286,7 +11286,7 @@ exports[`getAnalysisFromBlocks Analysis of from 1Ehhamhn9oA/pfr_1 resolved: 1Ehh
 
 exports[`getAnalysisFromBlocks Analysis of from 1Ehhamhn9oA/vpip_1 resolved: 1Ehhamhn9oA/vpip_1 1`] = `
 [
-  VPIP {},
+  "vpip",
   [
     {
       "playerName": "BROWN BALLA",
@@ -11326,7 +11326,7 @@ exports[`getAnalysisFromBlocks Analysis of from 1Ehhamhn9oA/vpip_1 resolved: 1Eh
 
 exports[`getAnalysisFromBlocks Analysis of from 1Ehhamhn9oA/vpip_2 resolved: 1Ehhamhn9oA/vpip_2 1`] = `
 [
-  VPIP {},
+  "vpip",
   [
     {
       "playerName": "BROWN BALLA",
@@ -11366,7 +11366,7 @@ exports[`getAnalysisFromBlocks Analysis of from 1Ehhamhn9oA/vpip_2 resolved: 1Eh
 
 exports[`getAnalysisFromBlocks Analysis of from 1MVx764v090/cc_1 resolved: 1MVx764v090/cc_1 1`] = `
 [
-  ChipCount {},
+  "cc",
   [
     {
       "playerName": "GARRETT",
@@ -11402,7 +11402,7 @@ exports[`getAnalysisFromBlocks Analysis of from 1MVx764v090/cc_1 resolved: 1MVx7
 
 exports[`getAnalysisFromBlocks Analysis of from 1MVx764v090/cc_2 resolved: 1MVx764v090/cc_2 1`] = `
 [
-  ChipCount {},
+  "cc",
   [
     {
       "playerName": "GARRETT",
@@ -11438,7 +11438,7 @@ exports[`getAnalysisFromBlocks Analysis of from 1MVx764v090/cc_2 resolved: 1MVx7
 
 exports[`getAnalysisFromBlocks Analysis of from 1MVx764v090/cc_3 resolved: 1MVx764v090/cc_3 1`] = `
 [
-  ChipCount {},
+  "cc",
   [
     {
       "playerName": "GARRETT",
@@ -11474,7 +11474,7 @@ exports[`getAnalysisFromBlocks Analysis of from 1MVx764v090/cc_3 resolved: 1MVx7
 
 exports[`getAnalysisFromBlocks Analysis of from 1MVx764v090/cc_4 resolved: 1MVx764v090/cc_4 1`] = `
 [
-  ChipCount {},
+  "cc",
   [
     {
       "playerName": "GARRETT",
@@ -11510,7 +11510,7 @@ exports[`getAnalysisFromBlocks Analysis of from 1MVx764v090/cc_4 resolved: 1MVx7
 
 exports[`getAnalysisFromBlocks Analysis of from 1MVx764v090/cc_5 resolved: 1MVx764v090/cc_5 1`] = `
 [
-  ChipCount {},
+  "cc",
   [
     {
       "playerName": "GARRETT",
@@ -11546,7 +11546,7 @@ exports[`getAnalysisFromBlocks Analysis of from 1MVx764v090/cc_5 resolved: 1MVx7
 
 exports[`getAnalysisFromBlocks Analysis of from 1MVx764v090/cc_6 resolved: 1MVx764v090/cc_6 1`] = `
 [
-  ChipCount {},
+  "cc",
   [
     {
       "playerName": "GARRETT",
@@ -11582,7 +11582,7 @@ exports[`getAnalysisFromBlocks Analysis of from 1MVx764v090/cc_6 resolved: 1MVx7
 
 exports[`getAnalysisFromBlocks Analysis of from 1MVx764v090/cw_1 resolved: 1MVx764v090/cw_1 1`] = `
 [
-  CumulativeWinnings {},
+  "cw",
   [
     {
       "playerName": "GARRETT",
@@ -11622,7 +11622,7 @@ exports[`getAnalysisFromBlocks Analysis of from 1MVx764v090/cw_1 resolved: 1MVx7
 
 exports[`getAnalysisFromBlocks Analysis of from 1MVx764v090/cw_2 resolved: 1MVx764v090/cw_2 1`] = `
 [
-  CumulativeWinnings {},
+  "cw",
   [
     {
       "playerName": "GARRETT",
@@ -11662,7 +11662,7 @@ exports[`getAnalysisFromBlocks Analysis of from 1MVx764v090/cw_2 resolved: 1MVx7
 
 exports[`getAnalysisFromBlocks Analysis of from 1MVx764v090/cw_3 resolved: 1MVx764v090/cw_3 1`] = `
 [
-  CumulativeWinnings {},
+  "cw",
   [
     {
       "playerName": "GARRETT",
@@ -11702,7 +11702,7 @@ exports[`getAnalysisFromBlocks Analysis of from 1MVx764v090/cw_3 resolved: 1MVx7
 
 exports[`getAnalysisFromBlocks Analysis of from 1MVx764v090/cw_4 resolved: 1MVx764v090/cw_4 1`] = `
 [
-  CumulativeWinnings {},
+  "cw",
   [
     {
       "playerName": "GARRETT",
@@ -11742,7 +11742,7 @@ exports[`getAnalysisFromBlocks Analysis of from 1MVx764v090/cw_4 resolved: 1MVx7
 
 exports[`getAnalysisFromBlocks Analysis of from 1MVx764v090/cw_5 resolved: 1MVx764v090/cw_5 1`] = `
 [
-  CumulativeWinnings {},
+  "cw",
   [
     {
       "playerName": "GARRETT",
@@ -11782,7 +11782,7 @@ exports[`getAnalysisFromBlocks Analysis of from 1MVx764v090/cw_5 resolved: 1MVx7
 
 exports[`getAnalysisFromBlocks Analysis of from 1MVx764v090/cw_6 resolved: 1MVx764v090/cw_6 1`] = `
 [
-  CumulativeWinnings {},
+  "cw",
   [
     {
       "playerName": "GARRETT",
@@ -11822,7 +11822,7 @@ exports[`getAnalysisFromBlocks Analysis of from 1MVx764v090/cw_6 resolved: 1MVx7
 
 exports[`getAnalysisFromBlocks Analysis of from 1MVx764v090/cw_7 resolved: 1MVx764v090/cw_7 1`] = `
 [
-  CumulativeWinnings {},
+  "cw",
   [
     {
       "playerName": "GARRETT",
@@ -11858,7 +11858,7 @@ exports[`getAnalysisFromBlocks Analysis of from 1MVx764v090/cw_7 resolved: 1MVx7
 
 exports[`getAnalysisFromBlocks Analysis of from 1MVx764v090/pfr_1 resolved: 1MVx764v090/pfr_1 1`] = `
 [
-  PreflopRaise {},
+  "pfr",
   [
     {
       "playerName": "TIGER",
@@ -11898,7 +11898,7 @@ exports[`getAnalysisFromBlocks Analysis of from 1MVx764v090/pfr_1 resolved: 1MVx
 
 exports[`getAnalysisFromBlocks Analysis of from 1MVx764v090/vpip_1 resolved: 1MVx764v090/vpip_1 1`] = `
 [
-  VPIP {},
+  "vpip",
   [
     {
       "playerName": "TIGER",
@@ -11938,7 +11938,7 @@ exports[`getAnalysisFromBlocks Analysis of from 1MVx764v090/vpip_1 resolved: 1MV
 
 exports[`getAnalysisFromBlocks Analysis of from 1MVx764v090/vpip_2 resolved: 1MVx764v090/vpip_2 1`] = `
 [
-  VPIP {},
+  "vpip",
   [
     {
       "playerName": "TIGER",
@@ -11978,7 +11978,7 @@ exports[`getAnalysisFromBlocks Analysis of from 1MVx764v090/vpip_2 resolved: 1MV
 
 exports[`getAnalysisFromBlocks Analysis of from 1MVx764v090/vpip_3 resolved: 1MVx764v090/vpip_3 1`] = `
 [
-  VPIP {},
+  "vpip",
   [
     {
       "playerName": "TIGER",
@@ -12018,7 +12018,7 @@ exports[`getAnalysisFromBlocks Analysis of from 1MVx764v090/vpip_3 resolved: 1MV
 
 exports[`getAnalysisFromBlocks Analysis of from 1TNrPx9f53k/cc_1 resolved: 1TNrPx9f53k/cc_1 1`] = `
 [
-  ChipCount {},
+  "cc",
   [
     {
       "playerName": "NICK V",
@@ -12050,7 +12050,7 @@ exports[`getAnalysisFromBlocks Analysis of from 1TNrPx9f53k/cc_1 resolved: 1TNrP
 
 exports[`getAnalysisFromBlocks Analysis of from 1TNrPx9f53k/cc_2 resolved: 1TNrPx9f53k/cc_2 1`] = `
 [
-  ChipCount {},
+  "cc",
   [
     {
       "playerName": "NICK V",
@@ -12082,7 +12082,7 @@ exports[`getAnalysisFromBlocks Analysis of from 1TNrPx9f53k/cc_2 resolved: 1TNrP
 
 exports[`getAnalysisFromBlocks Analysis of from 1TNrPx9f53k/cc_3 resolved: 1TNrPx9f53k/cc_3 1`] = `
 [
-  ChipCount {},
+  "cc",
   [
     {
       "playerName": "NICK V",
@@ -12114,7 +12114,7 @@ exports[`getAnalysisFromBlocks Analysis of from 1TNrPx9f53k/cc_3 resolved: 1TNrP
 
 exports[`getAnalysisFromBlocks Analysis of from 1TNrPx9f53k/cw_1 resolved: 1TNrPx9f53k/cw_1 1`] = `
 [
-  CumulativeWinnings {},
+  "cw",
   [
     {
       "playerName": "IVAN",
@@ -12138,7 +12138,7 @@ exports[`getAnalysisFromBlocks Analysis of from 1TNrPx9f53k/cw_1 resolved: 1TNrP
 
 exports[`getAnalysisFromBlocks Analysis of from 1TNrPx9f53k/cw_2 resolved: 1TNrPx9f53k/cw_2 1`] = `
 [
-  CumulativeWinnings {},
+  "cw",
   [
     {
       "playerName": "IVAN",
@@ -12182,7 +12182,7 @@ exports[`getAnalysisFromBlocks Analysis of from 1TNrPx9f53k/cw_2 resolved: 1TNrP
 
 exports[`getAnalysisFromBlocks Analysis of from 1TNrPx9f53k/cw_3 resolved: 1TNrPx9f53k/cw_3 1`] = `
 [
-  CumulativeWinnings {},
+  "cw",
   [
     {
       "playerName": "IVAN",
@@ -12226,7 +12226,7 @@ exports[`getAnalysisFromBlocks Analysis of from 1TNrPx9f53k/cw_3 resolved: 1TNrP
 
 exports[`getAnalysisFromBlocks Analysis of from 1TNrPx9f53k/cw_4 resolved: 1TNrPx9f53k/cw_4 1`] = `
 [
-  CumulativeWinnings {},
+  "cw",
   [
     {
       "playerName": "IVAN",
@@ -12270,7 +12270,7 @@ exports[`getAnalysisFromBlocks Analysis of from 1TNrPx9f53k/cw_4 resolved: 1TNrP
 
 exports[`getAnalysisFromBlocks Analysis of from 1TNrPx9f53k/cw_5 resolved: 1TNrPx9f53k/cw_5 1`] = `
 [
-  CumulativeWinnings {},
+  "cw",
   [
     {
       "playerName": "IVAN",
@@ -12310,7 +12310,7 @@ exports[`getAnalysisFromBlocks Analysis of from 1TNrPx9f53k/cw_5 resolved: 1TNrP
 
 exports[`getAnalysisFromBlocks Analysis of from 1TNrPx9f53k/cw_6 resolved: 1TNrPx9f53k/cw_6 1`] = `
 [
-  CumulativeWinnings {},
+  "cw",
   [
     {
       "playerName": "IVAN",
@@ -12354,7 +12354,7 @@ exports[`getAnalysisFromBlocks Analysis of from 1TNrPx9f53k/cw_6 resolved: 1TNrP
 
 exports[`getAnalysisFromBlocks Analysis of from 1TNrPx9f53k/cw_7 resolved: 1TNrPx9f53k/cw_7 1`] = `
 [
-  CumulativeWinnings {},
+  "cw",
   [
     {
       "playerName": "IVAN",
@@ -12398,7 +12398,7 @@ exports[`getAnalysisFromBlocks Analysis of from 1TNrPx9f53k/cw_7 resolved: 1TNrP
 
 exports[`getAnalysisFromBlocks Analysis of from 1TNrPx9f53k/cw_8 resolved: 1TNrPx9f53k/cw_8 1`] = `
 [
-  CumulativeWinnings {},
+  "cw",
   [
     {
       "playerName": "IVAN",
@@ -12442,7 +12442,7 @@ exports[`getAnalysisFromBlocks Analysis of from 1TNrPx9f53k/cw_8 resolved: 1TNrP
 
 exports[`getAnalysisFromBlocks Analysis of from 1TNrPx9f53k/pfr_1 resolved: 1TNrPx9f53k/pfr_1 1`] = `
 [
-  PreflopRaise {},
+  "pfr",
   [
     {
       "playerName": "SALIM",
@@ -12486,7 +12486,7 @@ exports[`getAnalysisFromBlocks Analysis of from 1TNrPx9f53k/pfr_1 resolved: 1TNr
 
 exports[`getAnalysisFromBlocks Analysis of from 1TNrPx9f53k/vpip_1 resolved: 1TNrPx9f53k/vpip_1 1`] = `
 [
-  VPIP {},
+  "vpip",
   [
     {
       "playerName": "BARRY",
@@ -12530,7 +12530,7 @@ exports[`getAnalysisFromBlocks Analysis of from 1TNrPx9f53k/vpip_1 resolved: 1TN
 
 exports[`getAnalysisFromBlocks Analysis of from 1TNrPx9f53k/vpip_2 resolved: 1TNrPx9f53k/vpip_2 1`] = `
 [
-  VPIP {},
+  "vpip",
   [
     {
       "playerName": "BARRY",
@@ -12574,7 +12574,7 @@ exports[`getAnalysisFromBlocks Analysis of from 1TNrPx9f53k/vpip_2 resolved: 1TN
 
 exports[`getAnalysisFromBlocks Analysis of from 1TNrPx9f53k/vpip_3 resolved: 1TNrPx9f53k/vpip_3 1`] = `
 [
-  VPIP {},
+  "vpip",
   [
     {
       "playerName": "BARRY",
@@ -12618,7 +12618,7 @@ exports[`getAnalysisFromBlocks Analysis of from 1TNrPx9f53k/vpip_3 resolved: 1TN
 
 exports[`getAnalysisFromBlocks Analysis of from 1nSm98xicug/cc_1 resolved: 1nSm98xicug/cc_1 1`] = `
 [
-  ChipCount {},
+  "cc",
   [
     {
       "playerName": "BRAZIL GOD",
@@ -12662,7 +12662,7 @@ exports[`getAnalysisFromBlocks Analysis of from 1nSm98xicug/cc_1 resolved: 1nSm9
 
 exports[`getAnalysisFromBlocks Analysis of from 1nSm98xicug/cc_2 resolved: 1nSm98xicug/cc_2 1`] = `
 [
-  ChipCount {},
+  "cc",
   [
     {
       "playerName": "BRAZIL GOD",
@@ -12706,7 +12706,7 @@ exports[`getAnalysisFromBlocks Analysis of from 1nSm98xicug/cc_2 resolved: 1nSm9
 
 exports[`getAnalysisFromBlocks Analysis of from 1nSm98xicug/cc_3 resolved: 1nSm98xicug/cc_3 1`] = `
 [
-  ChipCount {},
+  "cc",
   [
     {
       "playerName": "BRAZIL GOD",
@@ -12750,7 +12750,7 @@ exports[`getAnalysisFromBlocks Analysis of from 1nSm98xicug/cc_3 resolved: 1nSm9
 
 exports[`getAnalysisFromBlocks Analysis of from 1nSm98xicug/cc_4 resolved: 1nSm98xicug/cc_4 1`] = `
 [
-  ChipCount {},
+  "cc",
   [
     {
       "playerName": "BRAZIL GOD",
@@ -12794,7 +12794,7 @@ exports[`getAnalysisFromBlocks Analysis of from 1nSm98xicug/cc_4 resolved: 1nSm9
 
 exports[`getAnalysisFromBlocks Analysis of from 1nSm98xicug/cc_5 resolved: 1nSm98xicug/cc_5 1`] = `
 [
-  ChipCount {},
+  "cc",
   [
     {
       "playerName": "BRAZIL GOD",
@@ -12838,7 +12838,7 @@ exports[`getAnalysisFromBlocks Analysis of from 1nSm98xicug/cc_5 resolved: 1nSm9
 
 exports[`getAnalysisFromBlocks Analysis of from 1nSm98xicug/cw_1 resolved: 1nSm98xicug/cw_1 1`] = `
 [
-  CumulativeWinnings {},
+  "cw",
   [
     {
       "playerName": "DK",
@@ -12878,7 +12878,7 @@ exports[`getAnalysisFromBlocks Analysis of from 1nSm98xicug/cw_1 resolved: 1nSm9
 
 exports[`getAnalysisFromBlocks Analysis of from 1nSm98xicug/cw_2 resolved: 1nSm98xicug/cw_2 1`] = `
 [
-  CumulativeWinnings {},
+  "cw",
   [
     {
       "playerName": "DK",
@@ -12922,7 +12922,7 @@ exports[`getAnalysisFromBlocks Analysis of from 1nSm98xicug/cw_2 resolved: 1nSm9
 
 exports[`getAnalysisFromBlocks Analysis of from 1nSm98xicug/cw_3 resolved: 1nSm98xicug/cw_3 1`] = `
 [
-  CumulativeWinnings {},
+  "cw",
   [
     {
       "playerName": "DK",
@@ -12966,7 +12966,7 @@ exports[`getAnalysisFromBlocks Analysis of from 1nSm98xicug/cw_3 resolved: 1nSm9
 
 exports[`getAnalysisFromBlocks Analysis of from 1nSm98xicug/cw_4 resolved: 1nSm98xicug/cw_4 1`] = `
 [
-  CumulativeWinnings {},
+  "cw",
   [
     {
       "playerName": "DK",
@@ -13006,7 +13006,7 @@ exports[`getAnalysisFromBlocks Analysis of from 1nSm98xicug/cw_4 resolved: 1nSm9
 
 exports[`getAnalysisFromBlocks Analysis of from 1nSm98xicug/cw_5 resolved: 1nSm98xicug/cw_5 1`] = `
 [
-  CumulativeWinnings {},
+  "cw",
   [
     {
       "playerName": "DK",
@@ -13050,7 +13050,7 @@ exports[`getAnalysisFromBlocks Analysis of from 1nSm98xicug/cw_5 resolved: 1nSm9
 
 exports[`getAnalysisFromBlocks Analysis of from 1nSm98xicug/cw_6 resolved: 1nSm98xicug/cw_6 1`] = `
 [
-  CumulativeWinnings {},
+  "cw",
   [
     {
       "playerName": "DK",
@@ -13094,7 +13094,7 @@ exports[`getAnalysisFromBlocks Analysis of from 1nSm98xicug/cw_6 resolved: 1nSm9
 
 exports[`getAnalysisFromBlocks Analysis of from 1nSm98xicug/cw_7 resolved: 1nSm98xicug/cw_7 1`] = `
 [
-  CumulativeWinnings {},
+  "cw",
   [
     {
       "playerName": "DK",
@@ -13138,7 +13138,7 @@ exports[`getAnalysisFromBlocks Analysis of from 1nSm98xicug/cw_7 resolved: 1nSm9
 
 exports[`getAnalysisFromBlocks Analysis of from 1nSm98xicug/cw_8 resolved: 1nSm98xicug/cw_8 1`] = `
 [
-  CumulativeWinnings {},
+  "cw",
   [
     {
       "playerName": "DK",
@@ -13182,7 +13182,7 @@ exports[`getAnalysisFromBlocks Analysis of from 1nSm98xicug/cw_8 resolved: 1nSm9
 
 exports[`getAnalysisFromBlocks Analysis of from 1nSm98xicug/pfr_1 resolved: 1nSm98xicug/pfr_1 1`] = `
 [
-  PreflopRaise {},
+  "pfr",
   [
     {
       "playerName": "BRAZIL GOD",
@@ -13226,7 +13226,7 @@ exports[`getAnalysisFromBlocks Analysis of from 1nSm98xicug/pfr_1 resolved: 1nSm
 
 exports[`getAnalysisFromBlocks Analysis of from 1nSm98xicug/pfr_2 resolved: 1nSm98xicug/pfr_2 1`] = `
 [
-  PreflopRaise {},
+  "pfr",
   [
     {
       "playerName": "BRAZIL GOD",
@@ -13270,7 +13270,7 @@ exports[`getAnalysisFromBlocks Analysis of from 1nSm98xicug/pfr_2 resolved: 1nSm
 
 exports[`getAnalysisFromBlocks Analysis of from 1nSm98xicug/vpip_1 resolved: 1nSm98xicug/vpip_1 1`] = `
 [
-  VPIP {},
+  "vpip",
   [
     {
       "playerName": "DQ",
@@ -13314,7 +13314,7 @@ exports[`getAnalysisFromBlocks Analysis of from 1nSm98xicug/vpip_1 resolved: 1nS
 
 exports[`getAnalysisFromBlocks Analysis of from 1nSm98xicug/vpip_2 resolved: 1nSm98xicug/vpip_2 1`] = `
 [
-  VPIP {},
+  "vpip",
   [
     {
       "playerName": "DQ",
@@ -13358,7 +13358,7 @@ exports[`getAnalysisFromBlocks Analysis of from 1nSm98xicug/vpip_2 resolved: 1nS
 
 exports[`getAnalysisFromBlocks Analysis of from 1nSm98xicug/vpip_3 resolved: 1nSm98xicug/vpip_3 1`] = `
 [
-  VPIP {},
+  "vpip",
   [
     {
       "playerName": "DQ",
@@ -13402,7 +13402,7 @@ exports[`getAnalysisFromBlocks Analysis of from 1nSm98xicug/vpip_3 resolved: 1nS
 
 exports[`getAnalysisFromBlocks Analysis of from 6q_ygc3c-Ck/cc_1 resolved: 6q_ygc3c-Ck/cc_1 1`] = `
 [
-  ChipCount {},
+  "cc",
   [
     {
       "playerName": "ANDY",
@@ -13446,7 +13446,7 @@ exports[`getAnalysisFromBlocks Analysis of from 6q_ygc3c-Ck/cc_1 resolved: 6q_yg
 
 exports[`getAnalysisFromBlocks Analysis of from 6q_ygc3c-Ck/cc_2 resolved: 6q_ygc3c-Ck/cc_2 1`] = `
 [
-  ChipCount {},
+  "cc",
   [
     {
       "playerName": "ANDY",
@@ -13490,7 +13490,7 @@ exports[`getAnalysisFromBlocks Analysis of from 6q_ygc3c-Ck/cc_2 resolved: 6q_yg
 
 exports[`getAnalysisFromBlocks Analysis of from 6q_ygc3c-Ck/cw_1 resolved: 6q_ygc3c-Ck/cw_1 1`] = `
 [
-  CumulativeWinnings {},
+  "cw",
   [
     {
       "playerName": "RAYMOND",
@@ -13534,7 +13534,7 @@ exports[`getAnalysisFromBlocks Analysis of from 6q_ygc3c-Ck/cw_1 resolved: 6q_yg
 
 exports[`getAnalysisFromBlocks Analysis of from 6q_ygc3c-Ck/cw_2 resolved: 6q_ygc3c-Ck/cw_2 1`] = `
 [
-  CumulativeWinnings {},
+  "cw",
   [
     {
       "playerName": "RAYMOND",
@@ -13578,7 +13578,7 @@ exports[`getAnalysisFromBlocks Analysis of from 6q_ygc3c-Ck/cw_2 resolved: 6q_yg
 
 exports[`getAnalysisFromBlocks Analysis of from 6q_ygc3c-Ck/cw_3 resolved: 6q_ygc3c-Ck/cw_3 1`] = `
 [
-  CumulativeWinnings {},
+  "cw",
   [
     {
       "playerName": "RAYMOND",
@@ -13622,7 +13622,7 @@ exports[`getAnalysisFromBlocks Analysis of from 6q_ygc3c-Ck/cw_3 resolved: 6q_yg
 
 exports[`getAnalysisFromBlocks Analysis of from 6q_ygc3c-Ck/cw_4 resolved: 6q_ygc3c-Ck/cw_4 1`] = `
 [
-  CumulativeWinnings {},
+  "cw",
   [
     {
       "playerName": "RAYMOND",
@@ -13666,7 +13666,7 @@ exports[`getAnalysisFromBlocks Analysis of from 6q_ygc3c-Ck/cw_4 resolved: 6q_yg
 
 exports[`getAnalysisFromBlocks Analysis of from 6q_ygc3c-Ck/cw_5 resolved: 6q_ygc3c-Ck/cw_5 1`] = `
 [
-  CumulativeWinnings {},
+  "cw",
   [
     {
       "playerName": "RAYMOND",
@@ -13710,7 +13710,7 @@ exports[`getAnalysisFromBlocks Analysis of from 6q_ygc3c-Ck/cw_5 resolved: 6q_yg
 
 exports[`getAnalysisFromBlocks Analysis of from 6q_ygc3c-Ck/pfr_1 resolved: 6q_ygc3c-Ck/pfr_1 1`] = `
 [
-  PreflopRaise {},
+  "pfr",
   [
     {
       "playerName": "NIK AIRBALL",
@@ -13754,7 +13754,7 @@ exports[`getAnalysisFromBlocks Analysis of from 6q_ygc3c-Ck/pfr_1 resolved: 6q_y
 
 exports[`getAnalysisFromBlocks Analysis of from 6q_ygc3c-Ck/vpip_1 resolved: 6q_ygc3c-Ck/vpip_1 1`] = `
 [
-  VPIP {},
+  "vpip",
   [
     {
       "playerName": "NIK AIRBALL",
@@ -13798,7 +13798,7 @@ exports[`getAnalysisFromBlocks Analysis of from 6q_ygc3c-Ck/vpip_1 resolved: 6q_
 
 exports[`getAnalysisFromBlocks Analysis of from 6q_ygc3c-Ck/vpip_2 resolved: 6q_ygc3c-Ck/vpip_2 1`] = `
 [
-  VPIP {},
+  "vpip",
   [
     {
       "playerName": "NIK AIRBALL",
@@ -13842,7 +13842,7 @@ exports[`getAnalysisFromBlocks Analysis of from 6q_ygc3c-Ck/vpip_2 resolved: 6q_
 
 exports[`getAnalysisFromBlocks Analysis of from 12hi1AHMdd8/cc_1 resolved: 12hi1AHMdd8/cc_1 1`] = `
 [
-  ChipCount {},
+  "cc",
   [
     {
       "playerName": "NIKOS",
@@ -13882,7 +13882,7 @@ exports[`getAnalysisFromBlocks Analysis of from 12hi1AHMdd8/cc_1 resolved: 12hi1
 
 exports[`getAnalysisFromBlocks Analysis of from 12hi1AHMdd8/cc_2 resolved: 12hi1AHMdd8/cc_2 1`] = `
 [
-  ChipCount {},
+  "cc",
   [
     {
       "playerName": "NIKOS",
@@ -13922,7 +13922,7 @@ exports[`getAnalysisFromBlocks Analysis of from 12hi1AHMdd8/cc_2 resolved: 12hi1
 
 exports[`getAnalysisFromBlocks Analysis of from 12hi1AHMdd8/cc_3 resolved: 12hi1AHMdd8/cc_3 1`] = `
 [
-  ChipCount {},
+  "cc",
   [
     {
       "playerName": "NIKOS",
@@ -13962,7 +13962,7 @@ exports[`getAnalysisFromBlocks Analysis of from 12hi1AHMdd8/cc_3 resolved: 12hi1
 
 exports[`getAnalysisFromBlocks Analysis of from 12hi1AHMdd8/cw_1 resolved: 12hi1AHMdd8/cw_1 1`] = `
 [
-  CumulativeWinnings {},
+  "cw",
   [
     {
       "playerName": "NIKOS",
@@ -14002,7 +14002,7 @@ exports[`getAnalysisFromBlocks Analysis of from 12hi1AHMdd8/cw_1 resolved: 12hi1
 
 exports[`getAnalysisFromBlocks Analysis of from 12hi1AHMdd8/cw_2 resolved: 12hi1AHMdd8/cw_2 1`] = `
 [
-  CumulativeWinnings {},
+  "cw",
   [
     {
       "playerName": "NIKOS",
@@ -14042,7 +14042,7 @@ exports[`getAnalysisFromBlocks Analysis of from 12hi1AHMdd8/cw_2 resolved: 12hi1
 
 exports[`getAnalysisFromBlocks Analysis of from 12hi1AHMdd8/cw_3 resolved: 12hi1AHMdd8/cw_3 1`] = `
 [
-  CumulativeWinnings {},
+  "cw",
   [
     {
       "playerName": "NIKOS",
@@ -14082,7 +14082,7 @@ exports[`getAnalysisFromBlocks Analysis of from 12hi1AHMdd8/cw_3 resolved: 12hi1
 
 exports[`getAnalysisFromBlocks Analysis of from 12hi1AHMdd8/cw_4 resolved: 12hi1AHMdd8/cw_4 1`] = `
 [
-  CumulativeWinnings {},
+  "cw",
   [
     {
       "playerName": "NIKOS",
@@ -14122,7 +14122,7 @@ exports[`getAnalysisFromBlocks Analysis of from 12hi1AHMdd8/cw_4 resolved: 12hi1
 
 exports[`getAnalysisFromBlocks Analysis of from 12hi1AHMdd8/cw_5 resolved: 12hi1AHMdd8/cw_5 1`] = `
 [
-  CumulativeWinnings {},
+  "cw",
   [
     {
       "playerName": "NIKOS",
@@ -14162,7 +14162,7 @@ exports[`getAnalysisFromBlocks Analysis of from 12hi1AHMdd8/cw_5 resolved: 12hi1
 
 exports[`getAnalysisFromBlocks Analysis of from 12hi1AHMdd8/cw_6 resolved: 12hi1AHMdd8/cw_6 1`] = `
 [
-  CumulativeWinnings {},
+  "cw",
   [
     {
       "playerName": "NIKOS",
@@ -14202,7 +14202,7 @@ exports[`getAnalysisFromBlocks Analysis of from 12hi1AHMdd8/cw_6 resolved: 12hi1
 
 exports[`getAnalysisFromBlocks Analysis of from 12hi1AHMdd8/pfr_1 resolved: 12hi1AHMdd8/pfr_1 1`] = `
 [
-  PreflopRaise {},
+  "pfr",
   [
     {
       "playerName": "DGAF",
@@ -14246,7 +14246,7 @@ exports[`getAnalysisFromBlocks Analysis of from 12hi1AHMdd8/pfr_1 resolved: 12hi
 
 exports[`getAnalysisFromBlocks Analysis of from 12hi1AHMdd8/vpip_1 resolved: 12hi1AHMdd8/vpip_1 1`] = `
 [
-  VPIP {},
+  "vpip",
   [
     {
       "playerName": "NIKOS",
@@ -14290,7 +14290,7 @@ exports[`getAnalysisFromBlocks Analysis of from 12hi1AHMdd8/vpip_1 resolved: 12h
 
 exports[`getAnalysisFromBlocks Analysis of from 12hi1AHMdd8/vpip_2 resolved: 12hi1AHMdd8/vpip_2 1`] = `
 [
-  VPIP {},
+  "vpip",
   [
     {
       "playerName": "NIKOS",
@@ -14334,7 +14334,7 @@ exports[`getAnalysisFromBlocks Analysis of from 12hi1AHMdd8/vpip_2 resolved: 12h
 
 exports[`getAnalysisFromBlocks Analysis of from 12hi1AHMdd8/vpip_3 resolved: 12hi1AHMdd8/vpip_3 1`] = `
 [
-  VPIP {},
+  "vpip",
   [
     {
       "playerName": "NIKOS",
@@ -14378,7 +14378,7 @@ exports[`getAnalysisFromBlocks Analysis of from 12hi1AHMdd8/vpip_3 resolved: 12h
 
 exports[`getAnalysisFromBlocks Analysis of from Ge3ZvqPSNBk/cc_1 resolved: Ge3ZvqPSNBk/cc_1 1`] = `
 [
-  ChipCount {},
+  "cc",
   [
     {
       "playerName": "WESLEY",
@@ -14406,7 +14406,7 @@ exports[`getAnalysisFromBlocks Analysis of from Ge3ZvqPSNBk/cc_1 resolved: Ge3Zv
 
 exports[`getAnalysisFromBlocks Analysis of from Ge3ZvqPSNBk/cc_2 resolved: Ge3ZvqPSNBk/cc_2 1`] = `
 [
-  ChipCount {},
+  "cc",
   [
     {
       "playerName": "WESLEY",
@@ -14434,7 +14434,7 @@ exports[`getAnalysisFromBlocks Analysis of from Ge3ZvqPSNBk/cc_2 resolved: Ge3Zv
 
 exports[`getAnalysisFromBlocks Analysis of from Ge3ZvqPSNBk/cc_3 resolved: Ge3ZvqPSNBk/cc_3 1`] = `
 [
-  ChipCount {},
+  "cc",
   [
     {
       "playerName": "WESLEY",
@@ -14462,7 +14462,7 @@ exports[`getAnalysisFromBlocks Analysis of from Ge3ZvqPSNBk/cc_3 resolved: Ge3Zv
 
 exports[`getAnalysisFromBlocks Analysis of from Ge3ZvqPSNBk/cc_4 resolved: Ge3ZvqPSNBk/cc_4 1`] = `
 [
-  ChipCount {},
+  "cc",
   [
     {
       "playerName": "WESLEY",
@@ -14490,7 +14490,7 @@ exports[`getAnalysisFromBlocks Analysis of from Ge3ZvqPSNBk/cc_4 resolved: Ge3Zv
 
 exports[`getAnalysisFromBlocks Analysis of from Ge3ZvqPSNBk/cc_5 resolved: Ge3ZvqPSNBk/cc_5 1`] = `
 [
-  ChipCount {},
+  "cc",
   [
     {
       "playerName": "WESLEY",
@@ -14518,7 +14518,7 @@ exports[`getAnalysisFromBlocks Analysis of from Ge3ZvqPSNBk/cc_5 resolved: Ge3Zv
 
 exports[`getAnalysisFromBlocks Analysis of from Ge3ZvqPSNBk/cw_1 resolved: Ge3ZvqPSNBk/cw_1 1`] = `
 [
-  CumulativeWinnings {},
+  "cw",
   [
     {
       "playerName": "WESLEY",
@@ -14534,7 +14534,7 @@ exports[`getAnalysisFromBlocks Analysis of from Ge3ZvqPSNBk/cw_1 resolved: Ge3Zv
 
 exports[`getAnalysisFromBlocks Analysis of from Ge3ZvqPSNBk/cw_2 resolved: Ge3ZvqPSNBk/cw_2 1`] = `
 [
-  CumulativeWinnings {},
+  "cw",
   [
     {
       "playerName": "WESLEY",
@@ -14558,7 +14558,7 @@ exports[`getAnalysisFromBlocks Analysis of from Ge3ZvqPSNBk/cw_2 resolved: Ge3Zv
 
 exports[`getAnalysisFromBlocks Analysis of from Ge3ZvqPSNBk/cw_3 resolved: Ge3ZvqPSNBk/cw_3 1`] = `
 [
-  CumulativeWinnings {},
+  "cw",
   [
     {
       "playerName": "WESLEY",
@@ -14570,7 +14570,7 @@ exports[`getAnalysisFromBlocks Analysis of from Ge3ZvqPSNBk/cw_3 resolved: Ge3Zv
 
 exports[`getAnalysisFromBlocks Analysis of from Ge3ZvqPSNBk/cw_4 resolved: Ge3ZvqPSNBk/cw_4 1`] = `
 [
-  CumulativeWinnings {},
+  "cw",
   [
     {
       "playerName": "WESLEY",
@@ -14594,7 +14594,7 @@ exports[`getAnalysisFromBlocks Analysis of from Ge3ZvqPSNBk/cw_4 resolved: Ge3Zv
 
 exports[`getAnalysisFromBlocks Analysis of from Ge3ZvqPSNBk/cw_5 resolved: Ge3ZvqPSNBk/cw_5 1`] = `
 [
-  CumulativeWinnings {},
+  "cw",
   [
     {
       "playerName": "WESLEY",
@@ -14614,7 +14614,7 @@ exports[`getAnalysisFromBlocks Analysis of from Ge3ZvqPSNBk/cw_5 resolved: Ge3Zv
 
 exports[`getAnalysisFromBlocks Analysis of from Ge3ZvqPSNBk/cw_6 resolved: Ge3ZvqPSNBk/cw_6 1`] = `
 [
-  CumulativeWinnings {},
+  "cw",
   [
     {
       "playerName": "WESLEY",
@@ -14626,7 +14626,7 @@ exports[`getAnalysisFromBlocks Analysis of from Ge3ZvqPSNBk/cw_6 resolved: Ge3Zv
 
 exports[`getAnalysisFromBlocks Analysis of from Ge3ZvqPSNBk/cw_7 resolved: Ge3ZvqPSNBk/cw_7 1`] = `
 [
-  CumulativeWinnings {},
+  "cw",
   [
     {
       "playerName": "WESLEY",
@@ -14646,7 +14646,7 @@ exports[`getAnalysisFromBlocks Analysis of from Ge3ZvqPSNBk/cw_7 resolved: Ge3Zv
 
 exports[`getAnalysisFromBlocks Analysis of from Ge3ZvqPSNBk/cw_8 resolved: Ge3ZvqPSNBk/cw_8 1`] = `
 [
-  CumulativeWinnings {},
+  "cw",
   [
     {
       "playerName": "WESLEY",
@@ -14670,7 +14670,7 @@ exports[`getAnalysisFromBlocks Analysis of from Ge3ZvqPSNBk/cw_8 resolved: Ge3Zv
 
 exports[`getAnalysisFromBlocks Analysis of from Ge3ZvqPSNBk/cw_9 resolved: Ge3ZvqPSNBk/cw_9 1`] = `
 [
-  CumulativeWinnings {},
+  "cw",
   [
     {
       "playerName": "WESLEY",
@@ -14698,7 +14698,7 @@ exports[`getAnalysisFromBlocks Analysis of from Ge3ZvqPSNBk/cw_9 resolved: Ge3Zv
 
 exports[`getAnalysisFromBlocks Analysis of from Ge3ZvqPSNBk/pfr_1 resolved: Ge3ZvqPSNBk/pfr_1 1`] = `
 [
-  PreflopRaise {},
+  "pfr",
   [
     {
       "playerName": "PAV",
@@ -14738,7 +14738,7 @@ exports[`getAnalysisFromBlocks Analysis of from Ge3ZvqPSNBk/pfr_1 resolved: Ge3Z
 
 exports[`getAnalysisFromBlocks Analysis of from Ge3ZvqPSNBk/pfr_2 resolved: Ge3ZvqPSNBk/pfr_2 1`] = `
 [
-  PreflopRaise {},
+  "pfr",
   [
     {
       "playerName": "PAV",
@@ -14778,7 +14778,7 @@ exports[`getAnalysisFromBlocks Analysis of from Ge3ZvqPSNBk/pfr_2 resolved: Ge3Z
 
 exports[`getAnalysisFromBlocks Analysis of from Ge3ZvqPSNBk/vpip_1 resolved: Ge3ZvqPSNBk/vpip_1 1`] = `
 [
-  VPIP {},
+  "vpip",
   [
     {
       "playerName": "PAV",
@@ -14818,7 +14818,7 @@ exports[`getAnalysisFromBlocks Analysis of from Ge3ZvqPSNBk/vpip_1 resolved: Ge3
 
 exports[`getAnalysisFromBlocks Analysis of from Ge3ZvqPSNBk/vpip_2 resolved: Ge3ZvqPSNBk/vpip_2 1`] = `
 [
-  VPIP {},
+  "vpip",
   [
     {
       "playerName": "PAV",
@@ -14858,7 +14858,7 @@ exports[`getAnalysisFromBlocks Analysis of from Ge3ZvqPSNBk/vpip_2 resolved: Ge3
 
 exports[`getAnalysisFromBlocks Analysis of from LaD_b_YPnDk/cc_1 resolved: LaD_b_YPnDk/cc_1 1`] = `
 [
-  ChipCount {},
+  "cc",
   [
     {
       "playerName": "BRANDON",
@@ -14898,7 +14898,7 @@ exports[`getAnalysisFromBlocks Analysis of from LaD_b_YPnDk/cc_1 resolved: LaD_b
 
 exports[`getAnalysisFromBlocks Analysis of from LaD_b_YPnDk/cc_2 resolved: LaD_b_YPnDk/cc_2 1`] = `
 [
-  ChipCount {},
+  "cc",
   [
     {
       "playerName": "BRANDON",
@@ -14938,7 +14938,7 @@ exports[`getAnalysisFromBlocks Analysis of from LaD_b_YPnDk/cc_2 resolved: LaD_b
 
 exports[`getAnalysisFromBlocks Analysis of from LaD_b_YPnDk/cw_1 resolved: LaD_b_YPnDk/cw_1 1`] = `
 [
-  CumulativeWinnings {},
+  "cw",
   [
     {
       "playerName": "SANDOR",
@@ -14978,7 +14978,7 @@ exports[`getAnalysisFromBlocks Analysis of from LaD_b_YPnDk/cw_1 resolved: LaD_b
 
 exports[`getAnalysisFromBlocks Analysis of from LaD_b_YPnDk/cw_2 resolved: LaD_b_YPnDk/cw_2 1`] = `
 [
-  CumulativeWinnings {},
+  "cw",
   [
     {
       "playerName": "SANDOR",
@@ -15018,7 +15018,7 @@ exports[`getAnalysisFromBlocks Analysis of from LaD_b_YPnDk/cw_2 resolved: LaD_b
 
 exports[`getAnalysisFromBlocks Analysis of from LaD_b_YPnDk/cw_3 resolved: LaD_b_YPnDk/cw_3 1`] = `
 [
-  CumulativeWinnings {},
+  "cw",
   [
     {
       "playerName": "SANDOR",
@@ -15058,7 +15058,7 @@ exports[`getAnalysisFromBlocks Analysis of from LaD_b_YPnDk/cw_3 resolved: LaD_b
 
 exports[`getAnalysisFromBlocks Analysis of from LaD_b_YPnDk/cw_4 resolved: LaD_b_YPnDk/cw_4 1`] = `
 [
-  CumulativeWinnings {},
+  "cw",
   [
     {
       "playerName": "SANDOR",
@@ -15098,7 +15098,7 @@ exports[`getAnalysisFromBlocks Analysis of from LaD_b_YPnDk/cw_4 resolved: LaD_b
 
 exports[`getAnalysisFromBlocks Analysis of from LaD_b_YPnDk/cw_5 resolved: LaD_b_YPnDk/cw_5 1`] = `
 [
-  CumulativeWinnings {},
+  "cw",
   [
     {
       "playerName": "SANDOR",
@@ -15138,7 +15138,7 @@ exports[`getAnalysisFromBlocks Analysis of from LaD_b_YPnDk/cw_5 resolved: LaD_b
 
 exports[`getAnalysisFromBlocks Analysis of from LaD_b_YPnDk/pfr_1 resolved: LaD_b_YPnDk/pfr_1 1`] = `
 [
-  PreflopRaise {},
+  "pfr",
   [
     {
       "playerName": "DGAF",
@@ -15186,7 +15186,7 @@ exports[`getAnalysisFromBlocks Analysis of from LaD_b_YPnDk/pfr_1 resolved: LaD_
 
 exports[`getAnalysisFromBlocks Analysis of from LaD_b_YPnDk/vpip_1 resolved: LaD_b_YPnDk/vpip_1 1`] = `
 [
-  VPIP {},
+  "vpip",
   [
     {
       "playerName": "DGAF",
@@ -15234,7 +15234,7 @@ exports[`getAnalysisFromBlocks Analysis of from LaD_b_YPnDk/vpip_1 resolved: LaD
 
 exports[`getAnalysisFromBlocks Analysis of from LaD_b_YPnDk/vpip_2 resolved: LaD_b_YPnDk/vpip_2 1`] = `
 [
-  VPIP {},
+  "vpip",
   [
     {
       "playerName": "DGAF",
@@ -15282,7 +15282,7 @@ exports[`getAnalysisFromBlocks Analysis of from LaD_b_YPnDk/vpip_2 resolved: LaD
 
 exports[`getAnalysisFromBlocks Analysis of from LaD_b_YPnDk/vpip_3 resolved: LaD_b_YPnDk/vpip_3 1`] = `
 [
-  VPIP {},
+  "vpip",
   [
     {
       "playerName": "DGAF",
@@ -15330,7 +15330,7 @@ exports[`getAnalysisFromBlocks Analysis of from LaD_b_YPnDk/vpip_3 resolved: LaD
 
 exports[`getAnalysisFromBlocks Analysis of from Orp0JkXArjM/cc_1 resolved: Orp0JkXArjM/cc_1 1`] = `
 [
-  ChipCount {},
+  "cc",
   [
     {
       "playerName": "MARIANO",
@@ -15374,7 +15374,7 @@ exports[`getAnalysisFromBlocks Analysis of from Orp0JkXArjM/cc_1 resolved: Orp0J
 
 exports[`getAnalysisFromBlocks Analysis of from Orp0JkXArjM/cc_2 resolved: Orp0JkXArjM/cc_2 1`] = `
 [
-  ChipCount {},
+  "cc",
   [
     {
       "playerName": "MARIANO",
@@ -15418,7 +15418,7 @@ exports[`getAnalysisFromBlocks Analysis of from Orp0JkXArjM/cc_2 resolved: Orp0J
 
 exports[`getAnalysisFromBlocks Analysis of from Orp0JkXArjM/cc_3 resolved: Orp0JkXArjM/cc_3 1`] = `
 [
-  ChipCount {},
+  "cc",
   [
     {
       "playerName": "MARIANO",
@@ -15462,7 +15462,7 @@ exports[`getAnalysisFromBlocks Analysis of from Orp0JkXArjM/cc_3 resolved: Orp0J
 
 exports[`getAnalysisFromBlocks Analysis of from Orp0JkXArjM/cc_4 resolved: Orp0JkXArjM/cc_4 1`] = `
 [
-  ChipCount {},
+  "cc",
   [
     {
       "playerName": "MARIANO",
@@ -15506,7 +15506,7 @@ exports[`getAnalysisFromBlocks Analysis of from Orp0JkXArjM/cc_4 resolved: Orp0J
 
 exports[`getAnalysisFromBlocks Analysis of from Orp0JkXArjM/cw_1 resolved: Orp0JkXArjM/cw_1 1`] = `
 [
-  CumulativeWinnings {},
+  "cw",
   [
     {
       "playerName": "ALEC",
@@ -15550,7 +15550,7 @@ exports[`getAnalysisFromBlocks Analysis of from Orp0JkXArjM/cw_1 resolved: Orp0J
 
 exports[`getAnalysisFromBlocks Analysis of from Orp0JkXArjM/cw_2 resolved: Orp0JkXArjM/cw_2 1`] = `
 [
-  CumulativeWinnings {},
+  "cw",
   [
     {
       "playerName": "ALEC",
@@ -15594,7 +15594,7 @@ exports[`getAnalysisFromBlocks Analysis of from Orp0JkXArjM/cw_2 resolved: Orp0J
 
 exports[`getAnalysisFromBlocks Analysis of from Orp0JkXArjM/cw_3 resolved: Orp0JkXArjM/cw_3 1`] = `
 [
-  CumulativeWinnings {},
+  "cw",
   [
     {
       "playerName": "ALEC",
@@ -15638,7 +15638,7 @@ exports[`getAnalysisFromBlocks Analysis of from Orp0JkXArjM/cw_3 resolved: Orp0J
 
 exports[`getAnalysisFromBlocks Analysis of from Orp0JkXArjM/cw_4 resolved: Orp0JkXArjM/cw_4 1`] = `
 [
-  CumulativeWinnings {},
+  "cw",
   [
     {
       "playerName": "ALEC",
@@ -15682,7 +15682,7 @@ exports[`getAnalysisFromBlocks Analysis of from Orp0JkXArjM/cw_4 resolved: Orp0J
 
 exports[`getAnalysisFromBlocks Analysis of from Orp0JkXArjM/cw_5 resolved: Orp0JkXArjM/cw_5 1`] = `
 [
-  CumulativeWinnings {},
+  "cw",
   [
     {
       "playerName": "ALEC",
@@ -15726,7 +15726,7 @@ exports[`getAnalysisFromBlocks Analysis of from Orp0JkXArjM/cw_5 resolved: Orp0J
 
 exports[`getAnalysisFromBlocks Analysis of from Orp0JkXArjM/pfr_1 resolved: Orp0JkXArjM/pfr_1 1`] = `
 [
-  PreflopRaise {},
+  "pfr",
   [
     {
       "playerName": "MONEYMAKER",
@@ -15770,7 +15770,7 @@ exports[`getAnalysisFromBlocks Analysis of from Orp0JkXArjM/pfr_1 resolved: Orp0
 
 exports[`getAnalysisFromBlocks Analysis of from Orp0JkXArjM/pfr_2 resolved: Orp0JkXArjM/pfr_2 1`] = `
 [
-  PreflopRaise {},
+  "pfr",
   [
     {
       "playerName": "MONEYMAKER",
@@ -15814,7 +15814,7 @@ exports[`getAnalysisFromBlocks Analysis of from Orp0JkXArjM/pfr_2 resolved: Orp0
 
 exports[`getAnalysisFromBlocks Analysis of from Orp0JkXArjM/vpip_1 resolved: Orp0JkXArjM/vpip_1 1`] = `
 [
-  VPIP {},
+  "vpip",
   [
     {
       "playerName": "JIBRAEL",
@@ -15858,7 +15858,7 @@ exports[`getAnalysisFromBlocks Analysis of from Orp0JkXArjM/vpip_1 resolved: Orp
 
 exports[`getAnalysisFromBlocks Analysis of from Orp0JkXArjM/vpip_2 resolved: Orp0JkXArjM/vpip_2 1`] = `
 [
-  VPIP {},
+  "vpip",
   [
     {
       "playerName": "JIBRAEL",
@@ -15902,7 +15902,7 @@ exports[`getAnalysisFromBlocks Analysis of from Orp0JkXArjM/vpip_2 resolved: Orp
 
 exports[`getAnalysisFromBlocks Analysis of from Orp0JkXArjM/vpip_3 resolved: Orp0JkXArjM/vpip_3 1`] = `
 [
-  VPIP {},
+  "vpip",
   [
     {
       "playerName": "JIBRAEL",
@@ -15946,7 +15946,7 @@ exports[`getAnalysisFromBlocks Analysis of from Orp0JkXArjM/vpip_3 resolved: Orp
 
 exports[`getAnalysisFromBlocks Analysis of from Qal9--4B2Gk/cc_1 resolved: Qal9--4B2Gk/cc_1 1`] = `
 [
-  ChipCount {},
+  "cc",
   [
     {
       "playerName": "LUDA CHRIS",
@@ -15982,7 +15982,7 @@ exports[`getAnalysisFromBlocks Analysis of from Qal9--4B2Gk/cc_1 resolved: Qal9-
 
 exports[`getAnalysisFromBlocks Analysis of from Qal9--4B2Gk/cc_2 resolved: Qal9--4B2Gk/cc_2 1`] = `
 [
-  ChipCount {},
+  "cc",
   [
     {
       "playerName": "LUDA CHRIS",
@@ -16018,7 +16018,7 @@ exports[`getAnalysisFromBlocks Analysis of from Qal9--4B2Gk/cc_2 resolved: Qal9-
 
 exports[`getAnalysisFromBlocks Analysis of from Qal9--4B2Gk/cc_3 resolved: Qal9--4B2Gk/cc_3 1`] = `
 [
-  ChipCount {},
+  "cc",
   [
     {
       "playerName": "LUDA CHRIS",
@@ -16054,7 +16054,7 @@ exports[`getAnalysisFromBlocks Analysis of from Qal9--4B2Gk/cc_3 resolved: Qal9-
 
 exports[`getAnalysisFromBlocks Analysis of from Qal9--4B2Gk/cw_1 resolved: Qal9--4B2Gk/cw_1 1`] = `
 [
-  CumulativeWinnings {},
+  "cw",
   [
     {
       "playerName": "PENNZOIL DON",
@@ -16090,7 +16090,7 @@ exports[`getAnalysisFromBlocks Analysis of from Qal9--4B2Gk/cw_1 resolved: Qal9-
 
 exports[`getAnalysisFromBlocks Analysis of from Qal9--4B2Gk/cw_2 resolved: Qal9--4B2Gk/cw_2 1`] = `
 [
-  CumulativeWinnings {},
+  "cw",
   [
     {
       "playerName": "PENNZOIL DON",
@@ -16126,7 +16126,7 @@ exports[`getAnalysisFromBlocks Analysis of from Qal9--4B2Gk/cw_2 resolved: Qal9-
 
 exports[`getAnalysisFromBlocks Analysis of from Qal9--4B2Gk/cw_3 resolved: Qal9--4B2Gk/cw_3 1`] = `
 [
-  CumulativeWinnings {},
+  "cw",
   [
     {
       "playerName": "PENNZOIL DON",
@@ -16162,7 +16162,7 @@ exports[`getAnalysisFromBlocks Analysis of from Qal9--4B2Gk/cw_3 resolved: Qal9-
 
 exports[`getAnalysisFromBlocks Analysis of from Qal9--4B2Gk/cw_4 resolved: Qal9--4B2Gk/cw_4 1`] = `
 [
-  CumulativeWinnings {},
+  "cw",
   [
     {
       "playerName": "PENNZOIL DON",
@@ -16198,7 +16198,7 @@ exports[`getAnalysisFromBlocks Analysis of from Qal9--4B2Gk/cw_4 resolved: Qal9-
 
 exports[`getAnalysisFromBlocks Analysis of from Qal9--4B2Gk/cw_5 resolved: Qal9--4B2Gk/cw_5 1`] = `
 [
-  CumulativeWinnings {},
+  "cw",
   [
     {
       "playerName": "PENNZOIL DON",
@@ -16234,7 +16234,7 @@ exports[`getAnalysisFromBlocks Analysis of from Qal9--4B2Gk/cw_5 resolved: Qal9-
 
 exports[`getAnalysisFromBlocks Analysis of from Qal9--4B2Gk/cw_6 resolved: Qal9--4B2Gk/cw_6 1`] = `
 [
-  CumulativeWinnings {},
+  "cw",
   [
     {
       "playerName": "PENNZOIL DON",
@@ -16270,7 +16270,7 @@ exports[`getAnalysisFromBlocks Analysis of from Qal9--4B2Gk/cw_6 resolved: Qal9-
 
 exports[`getAnalysisFromBlocks Analysis of from Qal9--4B2Gk/cw_7 resolved: Qal9--4B2Gk/cw_7 1`] = `
 [
-  CumulativeWinnings {},
+  "cw",
   [
     {
       "playerName": "PENNZOIL DON",
@@ -16306,7 +16306,7 @@ exports[`getAnalysisFromBlocks Analysis of from Qal9--4B2Gk/cw_7 resolved: Qal9-
 
 exports[`getAnalysisFromBlocks Analysis of from Qal9--4B2Gk/cw_8 resolved: Qal9--4B2Gk/cw_8 1`] = `
 [
-  CumulativeWinnings {},
+  "cw",
   [
     {
       "playerName": "PENNZOIL DON",
@@ -16342,7 +16342,7 @@ exports[`getAnalysisFromBlocks Analysis of from Qal9--4B2Gk/cw_8 resolved: Qal9-
 
 exports[`getAnalysisFromBlocks Analysis of from Qal9--4B2Gk/pfr_1 resolved: Qal9--4B2Gk/pfr_1 1`] = `
 [
-  PreflopRaise {},
+  "pfr",
   [
     {
       "playerName": "LUDA CHRIS",
@@ -16386,7 +16386,7 @@ exports[`getAnalysisFromBlocks Analysis of from Qal9--4B2Gk/pfr_1 resolved: Qal9
 
 exports[`getAnalysisFromBlocks Analysis of from Qal9--4B2Gk/pfr_2 resolved: Qal9--4B2Gk/pfr_2 1`] = `
 [
-  PreflopRaise {},
+  "pfr",
   [
     {
       "playerName": "LUDA CHRIS",
@@ -16430,7 +16430,7 @@ exports[`getAnalysisFromBlocks Analysis of from Qal9--4B2Gk/pfr_2 resolved: Qal9
 
 exports[`getAnalysisFromBlocks Analysis of from Qal9--4B2Gk/vpip_1 resolved: Qal9--4B2Gk/vpip_1 1`] = `
 [
-  VPIP {},
+  "vpip",
   [
     {
       "playerName": "DR. H",
@@ -16474,7 +16474,7 @@ exports[`getAnalysisFromBlocks Analysis of from Qal9--4B2Gk/vpip_1 resolved: Qal
 
 exports[`getAnalysisFromBlocks Analysis of from Qal9--4B2Gk/vpip_2 resolved: Qal9--4B2Gk/vpip_2 1`] = `
 [
-  VPIP {},
+  "vpip",
   [
     {
       "playerName": "DR. H",
@@ -16518,7 +16518,7 @@ exports[`getAnalysisFromBlocks Analysis of from Qal9--4B2Gk/vpip_2 resolved: Qal
 
 exports[`getAnalysisFromBlocks Analysis of from m-HqQpVXLXM/cc_1 resolved: m-HqQpVXLXM/cc_1 1`] = `
 [
-  ChipCount {},
+  "cc",
   [
     {
       "playerName": "ANDY",
@@ -16558,7 +16558,7 @@ exports[`getAnalysisFromBlocks Analysis of from m-HqQpVXLXM/cc_1 resolved: m-HqQ
 
 exports[`getAnalysisFromBlocks Analysis of from m-HqQpVXLXM/cc_2 resolved: m-HqQpVXLXM/cc_2 1`] = `
 [
-  ChipCount {},
+  "cc",
   [
     {
       "playerName": "ANDY",
@@ -16598,7 +16598,7 @@ exports[`getAnalysisFromBlocks Analysis of from m-HqQpVXLXM/cc_2 resolved: m-HqQ
 
 exports[`getAnalysisFromBlocks Analysis of from m-HqQpVXLXM/cc_3 resolved: m-HqQpVXLXM/cc_3 1`] = `
 [
-  ChipCount {},
+  "cc",
   [
     {
       "playerName": "ANDY",
@@ -16638,7 +16638,7 @@ exports[`getAnalysisFromBlocks Analysis of from m-HqQpVXLXM/cc_3 resolved: m-HqQ
 
 exports[`getAnalysisFromBlocks Analysis of from m-HqQpVXLXM/cc_4 resolved: m-HqQpVXLXM/cc_4 1`] = `
 [
-  ChipCount {},
+  "cc",
   [
     {
       "playerName": "ANDY",
@@ -16678,7 +16678,7 @@ exports[`getAnalysisFromBlocks Analysis of from m-HqQpVXLXM/cc_4 resolved: m-HqQ
 
 exports[`getAnalysisFromBlocks Analysis of from m-HqQpVXLXM/cw_1 resolved: m-HqQpVXLXM/cw_1 1`] = `
 [
-  CumulativeWinnings {},
+  "cw",
   [
     {
       "playerName": "TOM DWAN",
@@ -16718,7 +16718,7 @@ exports[`getAnalysisFromBlocks Analysis of from m-HqQpVXLXM/cw_1 resolved: m-HqQ
 
 exports[`getAnalysisFromBlocks Analysis of from m-HqQpVXLXM/cw_2 resolved: m-HqQpVXLXM/cw_2 1`] = `
 [
-  CumulativeWinnings {},
+  "cw",
   [
     {
       "playerName": "TOM DWAN",
@@ -16758,7 +16758,7 @@ exports[`getAnalysisFromBlocks Analysis of from m-HqQpVXLXM/cw_2 resolved: m-HqQ
 
 exports[`getAnalysisFromBlocks Analysis of from m-HqQpVXLXM/cw_3 resolved: m-HqQpVXLXM/cw_3 1`] = `
 [
-  CumulativeWinnings {},
+  "cw",
   [
     {
       "playerName": "TOM DWAN",
@@ -16798,7 +16798,7 @@ exports[`getAnalysisFromBlocks Analysis of from m-HqQpVXLXM/cw_3 resolved: m-HqQ
 
 exports[`getAnalysisFromBlocks Analysis of from m-HqQpVXLXM/cw_4 resolved: m-HqQpVXLXM/cw_4 1`] = `
 [
-  CumulativeWinnings {},
+  "cw",
   [
     {
       "playerName": "TOM DWAN",
@@ -16838,7 +16838,7 @@ exports[`getAnalysisFromBlocks Analysis of from m-HqQpVXLXM/cw_4 resolved: m-HqQ
 
 exports[`getAnalysisFromBlocks Analysis of from m-HqQpVXLXM/cw_5 resolved: m-HqQpVXLXM/cw_5 1`] = `
 [
-  CumulativeWinnings {},
+  "cw",
   [
     {
       "playerName": "TOM DWAN",
@@ -16878,7 +16878,7 @@ exports[`getAnalysisFromBlocks Analysis of from m-HqQpVXLXM/cw_5 resolved: m-HqQ
 
 exports[`getAnalysisFromBlocks Analysis of from m-HqQpVXLXM/cw_6 resolved: m-HqQpVXLXM/cw_6 1`] = `
 [
-  CumulativeWinnings {},
+  "cw",
   [
     {
       "playerName": "TOM DWAN",
@@ -16918,7 +16918,7 @@ exports[`getAnalysisFromBlocks Analysis of from m-HqQpVXLXM/cw_6 resolved: m-HqQ
 
 exports[`getAnalysisFromBlocks Analysis of from m-HqQpVXLXM/pfr_1 resolved: m-HqQpVXLXM/pfr_1 1`] = `
 [
-  PreflopRaise {},
+  "pfr",
   [
     {
       "playerName": "CHARLES",
@@ -16958,7 +16958,7 @@ exports[`getAnalysisFromBlocks Analysis of from m-HqQpVXLXM/pfr_1 resolved: m-Hq
 
 exports[`getAnalysisFromBlocks Analysis of from m-HqQpVXLXM/pfr_2 resolved: m-HqQpVXLXM/pfr_2 1`] = `
 [
-  PreflopRaise {},
+  "pfr",
   [
     {
       "playerName": "CHARLES",
@@ -16998,7 +16998,7 @@ exports[`getAnalysisFromBlocks Analysis of from m-HqQpVXLXM/pfr_2 resolved: m-Hq
 
 exports[`getAnalysisFromBlocks Analysis of from m-HqQpVXLXM/vpip_1 resolved: m-HqQpVXLXM/vpip_1 1`] = `
 [
-  VPIP {},
+  "vpip",
   [
     {
       "playerName": "TOM DWAN",
@@ -17038,7 +17038,7 @@ exports[`getAnalysisFromBlocks Analysis of from m-HqQpVXLXM/vpip_1 resolved: m-H
 
 exports[`getAnalysisFromBlocks Analysis of from m-HqQpVXLXM/vpip_2 resolved: m-HqQpVXLXM/vpip_2 1`] = `
 [
-  VPIP {},
+  "vpip",
   [
     {
       "playerName": "TOM DWAN",
@@ -17078,7 +17078,7 @@ exports[`getAnalysisFromBlocks Analysis of from m-HqQpVXLXM/vpip_2 resolved: m-H
 
 exports[`getAnalysisFromBlocks Analysis of from sWfmWkvUV6k/cc_1 resolved: sWfmWkvUV6k/cc_1 1`] = `
 [
-  ChipCount {},
+  "cc",
   [
     {
       "playerName": "NIK AIRBALL",
@@ -17110,7 +17110,7 @@ exports[`getAnalysisFromBlocks Analysis of from sWfmWkvUV6k/cc_1 resolved: sWfmW
 
 exports[`getAnalysisFromBlocks Analysis of from sWfmWkvUV6k/cc_2 resolved: sWfmWkvUV6k/cc_2 1`] = `
 [
-  ChipCount {},
+  "cc",
   [
     {
       "playerName": "NIK AIRBALL",
@@ -17142,7 +17142,7 @@ exports[`getAnalysisFromBlocks Analysis of from sWfmWkvUV6k/cc_2 resolved: sWfmW
 
 exports[`getAnalysisFromBlocks Analysis of from sWfmWkvUV6k/cw_1 resolved: sWfmWkvUV6k/cw_1 1`] = `
 [
-  CumulativeWinnings {},
+  "cw",
   [
     {
       "playerName": "MIKE X",
@@ -17174,7 +17174,7 @@ exports[`getAnalysisFromBlocks Analysis of from sWfmWkvUV6k/cw_1 resolved: sWfmW
 
 exports[`getAnalysisFromBlocks Analysis of from sWfmWkvUV6k/cw_2 resolved: sWfmWkvUV6k/cw_2 1`] = `
 [
-  CumulativeWinnings {},
+  "cw",
   [
     {
       "playerName": "MIKE X",
@@ -17206,7 +17206,7 @@ exports[`getAnalysisFromBlocks Analysis of from sWfmWkvUV6k/cw_2 resolved: sWfmW
 
 exports[`getAnalysisFromBlocks Analysis of from sWfmWkvUV6k/cw_3 resolved: sWfmWkvUV6k/cw_3 1`] = `
 [
-  CumulativeWinnings {},
+  "cw",
   [
     {
       "playerName": "MIKE X",
@@ -17238,7 +17238,7 @@ exports[`getAnalysisFromBlocks Analysis of from sWfmWkvUV6k/cw_3 resolved: sWfmW
 
 exports[`getAnalysisFromBlocks Analysis of from sWfmWkvUV6k/cw_4 resolved: sWfmWkvUV6k/cw_4 1`] = `
 [
-  CumulativeWinnings {},
+  "cw",
   [
     {
       "playerName": "MIKE X",
@@ -17270,7 +17270,7 @@ exports[`getAnalysisFromBlocks Analysis of from sWfmWkvUV6k/cw_4 resolved: sWfmW
 
 exports[`getAnalysisFromBlocks Analysis of from sWfmWkvUV6k/cw_5 resolved: sWfmWkvUV6k/cw_5 1`] = `
 [
-  CumulativeWinnings {},
+  "cw",
   [
     {
       "playerName": "MIKE X",
@@ -17302,7 +17302,7 @@ exports[`getAnalysisFromBlocks Analysis of from sWfmWkvUV6k/cw_5 resolved: sWfmW
 
 exports[`getAnalysisFromBlocks Analysis of from sWfmWkvUV6k/cw_6 resolved: sWfmWkvUV6k/cw_6 1`] = `
 [
-  CumulativeWinnings {},
+  "cw",
   [
     {
       "playerName": "MIKE X",
@@ -17334,7 +17334,7 @@ exports[`getAnalysisFromBlocks Analysis of from sWfmWkvUV6k/cw_6 resolved: sWfmW
 
 exports[`getAnalysisFromBlocks Analysis of from sWfmWkvUV6k/pfr_1 resolved: sWfmWkvUV6k/pfr_1 1`] = `
 [
-  PreflopRaise {},
+  "pfr",
   [
     {
       "playerName": "NIK AIRBALL",
@@ -17374,7 +17374,7 @@ exports[`getAnalysisFromBlocks Analysis of from sWfmWkvUV6k/pfr_1 resolved: sWfm
 
 exports[`getAnalysisFromBlocks Analysis of from sWfmWkvUV6k/pfr_2 resolved: sWfmWkvUV6k/pfr_2 1`] = `
 [
-  PreflopRaise {},
+  "pfr",
   [
     {
       "playerName": "NIK AIRBALL",
@@ -17414,7 +17414,7 @@ exports[`getAnalysisFromBlocks Analysis of from sWfmWkvUV6k/pfr_2 resolved: sWfm
 
 exports[`getAnalysisFromBlocks Analysis of from sWfmWkvUV6k/vpip_1 resolved: sWfmWkvUV6k/vpip_1 1`] = `
 [
-  VPIP {},
+  "vpip",
   [
     {
       "playerName": "GASTON",
@@ -17454,7 +17454,7 @@ exports[`getAnalysisFromBlocks Analysis of from sWfmWkvUV6k/vpip_1 resolved: sWf
 
 exports[`getAnalysisFromBlocks Analysis of from t0i1wrO9JLw/cc_1 resolved: t0i1wrO9JLw/cc_1 1`] = `
 [
-  ChipCount {},
+  "cc",
   [
     {
       "playerName": "CONNOR",
@@ -17494,7 +17494,7 @@ exports[`getAnalysisFromBlocks Analysis of from t0i1wrO9JLw/cc_1 resolved: t0i1w
 
 exports[`getAnalysisFromBlocks Analysis of from t0i1wrO9JLw/cc_2 resolved: t0i1wrO9JLw/cc_2 1`] = `
 [
-  ChipCount {},
+  "cc",
   [
     {
       "playerName": "CONNOR",
@@ -17534,7 +17534,7 @@ exports[`getAnalysisFromBlocks Analysis of from t0i1wrO9JLw/cc_2 resolved: t0i1w
 
 exports[`getAnalysisFromBlocks Analysis of from t0i1wrO9JLw/cw_1 resolved: t0i1wrO9JLw/cw_1 1`] = `
 [
-  CumulativeWinnings {},
+  "cw",
   [
     {
       "playerName": "CONNOR",
@@ -17574,7 +17574,7 @@ exports[`getAnalysisFromBlocks Analysis of from t0i1wrO9JLw/cw_1 resolved: t0i1w
 
 exports[`getAnalysisFromBlocks Analysis of from t0i1wrO9JLw/cw_2 resolved: t0i1wrO9JLw/cw_2 1`] = `
 [
-  CumulativeWinnings {},
+  "cw",
   [
     {
       "playerName": "CONNOR",
@@ -17614,7 +17614,7 @@ exports[`getAnalysisFromBlocks Analysis of from t0i1wrO9JLw/cw_2 resolved: t0i1w
 
 exports[`getAnalysisFromBlocks Analysis of from t0i1wrO9JLw/cw_3 resolved: t0i1wrO9JLw/cw_3 1`] = `
 [
-  CumulativeWinnings {},
+  "cw",
   [
     {
       "playerName": "CONNOR",
@@ -17654,7 +17654,7 @@ exports[`getAnalysisFromBlocks Analysis of from t0i1wrO9JLw/cw_3 resolved: t0i1w
 
 exports[`getAnalysisFromBlocks Analysis of from t0i1wrO9JLw/cw_4 resolved: t0i1wrO9JLw/cw_4 1`] = `
 [
-  CumulativeWinnings {},
+  "cw",
   [
     {
       "playerName": "CONNOR",
@@ -17694,7 +17694,7 @@ exports[`getAnalysisFromBlocks Analysis of from t0i1wrO9JLw/cw_4 resolved: t0i1w
 
 exports[`getAnalysisFromBlocks Analysis of from t0i1wrO9JLw/cw_5 resolved: t0i1wrO9JLw/cw_5 1`] = `
 [
-  CumulativeWinnings {},
+  "cw",
   [
     {
       "playerName": "CONNOR",
@@ -17734,7 +17734,7 @@ exports[`getAnalysisFromBlocks Analysis of from t0i1wrO9JLw/cw_5 resolved: t0i1w
 
 exports[`getAnalysisFromBlocks Analysis of from t0i1wrO9JLw/cw_6 resolved: t0i1wrO9JLw/cw_6 1`] = `
 [
-  CumulativeWinnings {},
+  "cw",
   [
     {
       "playerName": "CONNOR",
@@ -17774,7 +17774,7 @@ exports[`getAnalysisFromBlocks Analysis of from t0i1wrO9JLw/cw_6 resolved: t0i1w
 
 exports[`getAnalysisFromBlocks Analysis of from t0i1wrO9JLw/cw_7 resolved: t0i1wrO9JLw/cw_7 1`] = `
 [
-  CumulativeWinnings {},
+  "cw",
   [
     {
       "playerName": "CONNOR",
@@ -17814,7 +17814,7 @@ exports[`getAnalysisFromBlocks Analysis of from t0i1wrO9JLw/cw_7 resolved: t0i1w
 
 exports[`getAnalysisFromBlocks Analysis of from t0i1wrO9JLw/cw_8 resolved: t0i1wrO9JLw/cw_8 1`] = `
 [
-  CumulativeWinnings {},
+  "cw",
   [
     {
       "playerName": "CONNOR",
@@ -17854,7 +17854,7 @@ exports[`getAnalysisFromBlocks Analysis of from t0i1wrO9JLw/cw_8 resolved: t0i1w
 
 exports[`getAnalysisFromBlocks Analysis of from t0i1wrO9JLw/cw_9 resolved: t0i1wrO9JLw/cw_9 1`] = `
 [
-  CumulativeWinnings {},
+  "cw",
   [
     {
       "playerName": "CONNOR",
@@ -17894,7 +17894,7 @@ exports[`getAnalysisFromBlocks Analysis of from t0i1wrO9JLw/cw_9 resolved: t0i1w
 
 exports[`getAnalysisFromBlocks Analysis of from t0i1wrO9JLw/cw_10 resolved: t0i1wrO9JLw/cw_10 1`] = `
 [
-  CumulativeWinnings {},
+  "cw",
   [
     {
       "playerName": "CONNOR",
@@ -17934,7 +17934,7 @@ exports[`getAnalysisFromBlocks Analysis of from t0i1wrO9JLw/cw_10 resolved: t0i1
 
 exports[`getAnalysisFromBlocks Analysis of from t0i1wrO9JLw/cw_11 resolved: t0i1wrO9JLw/cw_11 1`] = `
 [
-  CumulativeWinnings {},
+  "cw",
   [
     {
       "playerName": "CONNOR",
@@ -17974,7 +17974,7 @@ exports[`getAnalysisFromBlocks Analysis of from t0i1wrO9JLw/cw_11 resolved: t0i1
 
 exports[`getAnalysisFromBlocks Analysis of from t0i1wrO9JLw/cw_12 resolved: t0i1wrO9JLw/cw_12 1`] = `
 [
-  CumulativeWinnings {},
+  "cw",
   [
     {
       "playerName": "CONNOR",
@@ -18014,7 +18014,7 @@ exports[`getAnalysisFromBlocks Analysis of from t0i1wrO9JLw/cw_12 resolved: t0i1
 
 exports[`getAnalysisFromBlocks Analysis of from t0i1wrO9JLw/cw_13 resolved: t0i1wrO9JLw/cw_13 1`] = `
 [
-  CumulativeWinnings {},
+  "cw",
   [
     {
       "playerName": "CONNOR",
@@ -18054,7 +18054,7 @@ exports[`getAnalysisFromBlocks Analysis of from t0i1wrO9JLw/cw_13 resolved: t0i1
 
 exports[`getAnalysisFromBlocks Analysis of from t0i1wrO9JLw/pfr_1 resolved: t0i1wrO9JLw/pfr_1 1`] = `
 [
-  PreflopRaise {},
+  "pfr",
   [
     {
       "playerName": "DGAF",
@@ -18102,7 +18102,7 @@ exports[`getAnalysisFromBlocks Analysis of from t0i1wrO9JLw/pfr_1 resolved: t0i1
 
 exports[`getAnalysisFromBlocks Analysis of from t0i1wrO9JLw/pfr_2 resolved: t0i1wrO9JLw/pfr_2 1`] = `
 [
-  PreflopRaise {},
+  "pfr",
   [
     {
       "playerName": "DGAF",
@@ -18150,7 +18150,7 @@ exports[`getAnalysisFromBlocks Analysis of from t0i1wrO9JLw/pfr_2 resolved: t0i1
 
 exports[`getAnalysisFromBlocks Analysis of from t0i1wrO9JLw/vpip_1 resolved: t0i1wrO9JLw/vpip_1 1`] = `
 [
-  VPIP {},
+  "vpip",
   [
     {
       "playerName": "DGAF",
@@ -18198,7 +18198,7 @@ exports[`getAnalysisFromBlocks Analysis of from t0i1wrO9JLw/vpip_1 resolved: t0i
 
 exports[`getAnalysisFromBlocks Analysis of from t0i1wrO9JLw/vpip_2 resolved: t0i1wrO9JLw/vpip_2 1`] = `
 [
-  VPIP {},
+  "vpip",
   [
     {
       "playerName": "DGAF",
@@ -18246,7 +18246,7 @@ exports[`getAnalysisFromBlocks Analysis of from t0i1wrO9JLw/vpip_2 resolved: t0i
 
 exports[`getAnalysisFromBlocks Analysis of from uBX-UK1Z5UQ/cc_1 resolved: uBX-UK1Z5UQ/cc_1 1`] = `
 [
-  ChipCount {},
+  "cc",
   [
     {
       "playerName": "ANDY",
@@ -18286,7 +18286,7 @@ exports[`getAnalysisFromBlocks Analysis of from uBX-UK1Z5UQ/cc_1 resolved: uBX-U
 
 exports[`getAnalysisFromBlocks Analysis of from uBX-UK1Z5UQ/cc_2 resolved: uBX-UK1Z5UQ/cc_2 1`] = `
 [
-  ChipCount {},
+  "cc",
   [
     {
       "playerName": "ANDY",
@@ -18326,7 +18326,7 @@ exports[`getAnalysisFromBlocks Analysis of from uBX-UK1Z5UQ/cc_2 resolved: uBX-U
 
 exports[`getAnalysisFromBlocks Analysis of from uBX-UK1Z5UQ/cw_1 resolved: uBX-UK1Z5UQ/cw_1 1`] = `
 [
-  CumulativeWinnings {},
+  "cw",
   [
     {
       "playerName": "ANDY",
@@ -18366,7 +18366,7 @@ exports[`getAnalysisFromBlocks Analysis of from uBX-UK1Z5UQ/cw_1 resolved: uBX-U
 
 exports[`getAnalysisFromBlocks Analysis of from uBX-UK1Z5UQ/cw_2 resolved: uBX-UK1Z5UQ/cw_2 1`] = `
 [
-  CumulativeWinnings {},
+  "cw",
   [
     {
       "playerName": "ANDY",
@@ -18406,7 +18406,7 @@ exports[`getAnalysisFromBlocks Analysis of from uBX-UK1Z5UQ/cw_2 resolved: uBX-U
 
 exports[`getAnalysisFromBlocks Analysis of from uBX-UK1Z5UQ/cw_3 resolved: uBX-UK1Z5UQ/cw_3 1`] = `
 [
-  CumulativeWinnings {},
+  "cw",
   [
     {
       "playerName": "ANDY",
@@ -18446,7 +18446,7 @@ exports[`getAnalysisFromBlocks Analysis of from uBX-UK1Z5UQ/cw_3 resolved: uBX-U
 
 exports[`getAnalysisFromBlocks Analysis of from uBX-UK1Z5UQ/cw_4 resolved: uBX-UK1Z5UQ/cw_4 1`] = `
 [
-  CumulativeWinnings {},
+  "cw",
   [
     {
       "playerName": "ANDY",
@@ -18486,7 +18486,7 @@ exports[`getAnalysisFromBlocks Analysis of from uBX-UK1Z5UQ/cw_4 resolved: uBX-U
 
 exports[`getAnalysisFromBlocks Analysis of from uBX-UK1Z5UQ/cw_5 resolved: uBX-UK1Z5UQ/cw_5 1`] = `
 [
-  CumulativeWinnings {},
+  "cw",
   [
     {
       "playerName": "ANDY",
@@ -18526,7 +18526,7 @@ exports[`getAnalysisFromBlocks Analysis of from uBX-UK1Z5UQ/cw_5 resolved: uBX-U
 
 exports[`getAnalysisFromBlocks Analysis of from uBX-UK1Z5UQ/pfr_1 resolved: uBX-UK1Z5UQ/pfr_1 1`] = `
 [
-  PreflopRaise {},
+  "pfr",
   [
     {
       "playerName": "PETER",
@@ -18566,7 +18566,7 @@ exports[`getAnalysisFromBlocks Analysis of from uBX-UK1Z5UQ/pfr_1 resolved: uBX-
 
 exports[`getAnalysisFromBlocks Analysis of from uBX-UK1Z5UQ/pfr_2 resolved: uBX-UK1Z5UQ/pfr_2 1`] = `
 [
-  PreflopRaise {},
+  "pfr",
   [
     {
       "playerName": "PETER",
@@ -18606,7 +18606,7 @@ exports[`getAnalysisFromBlocks Analysis of from uBX-UK1Z5UQ/pfr_2 resolved: uBX-
 
 exports[`getAnalysisFromBlocks Analysis of from uBX-UK1Z5UQ/vpip_1 resolved: uBX-UK1Z5UQ/vpip_1 1`] = `
 [
-  VPIP {},
+  "vpip",
   [
     {
       "playerName": "PETER",
@@ -18646,7 +18646,7 @@ exports[`getAnalysisFromBlocks Analysis of from uBX-UK1Z5UQ/vpip_1 resolved: uBX
 
 exports[`getAnalysisFromBlocks Analysis of from uBX-UK1Z5UQ/vpip_2 resolved: uBX-UK1Z5UQ/vpip_2 1`] = `
 [
-  VPIP {},
+  "vpip",
   [
     {
       "playerName": "PETER",

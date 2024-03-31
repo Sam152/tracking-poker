@@ -2,7 +2,7 @@ import {AnalyzeDocumentCommand, FeatureType, TextractClient} from "@aws-sdk/clie
 import {Block} from "@aws-sdk/client-textract/dist-types/models/models_0";
 import {cropMiddle} from "../preprocess/cropMiddle";
 
-export async function extractBlocksFromFrame(data: Buffer): Promise<Block[]> {
+export async function getBlocksFromFrame(data: Buffer): Promise<Block[]> {
     const client = new TextractClient();
     const result = await client.send(new AnalyzeDocumentCommand({
         Document: {

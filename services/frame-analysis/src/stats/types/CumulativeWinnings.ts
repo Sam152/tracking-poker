@@ -1,24 +1,24 @@
-import {FrameAnalysisType} from "./FrameAnalysisType";
+import {PlayerStatCollection, StatMetadata, StatType} from "./StatType";
 import {Geometry, Page, TextractDocument} from "amazon-textract-response-parser";
-import {PlayerStatCollection} from "./typeCollection";
-import {buildStatsFromLookBackAndAhead} from "../util/buildStatsFromLookBack";
-import {looksLikeMoneyStat, parseMoney} from "../util/looksLikeMoneyStat";
+import {buildStatsFromLookBackAndAhead} from "../buildStatsFromLookBack";
+import {looksLikeMoney, parseMoney} from "../looksLikeMoney";
 import {ApiLineBlock} from "amazon-textract-response-parser/dist/types/api-models/content";
 import {LineGeneric} from "amazon-textract-response-parser/dist/types/content";
-import {cropUpDownSection} from "../preprocess/cropUpDownSection";
-import {extractUpDownFromImage} from "../extract/extractUpDownFromImage";
+import {cropUpDownSection} from "../up-down/cropUpDownSection";
+import {classifyUpDown} from "../up-down/classifyUpDown";
 
-export class CumulativeWinnings implements FrameAnalysisType<number> {
-    getTriggerWords(): string[] {
-        return [
-            "CUMULATIVE",
-            "WINNINGS",
-        ];
-    }
+export const CumulativeWinnings: StatMetadata = {
+
+    type: StatType.CumulativeWinnings,
+
+    triggerWords: [
+        "CUMULATIVE",
+        "WINNINGS",
+    ],
 
     async getStatsFromDocument(extract: TextractDocument, frame: Buffer): Promise<PlayerStatCollection<number>> {
         const geometry: Geometry<ApiLineBlock, LineGeneric<Page>>[] = [];
-        const stats = buildStatsFromLookBackAndAhead(extract, looksLikeMoneyStat, (line) => {
+        const stats = buildStatsFromLookBackAndAhead(extract, looksLikeMoney, (line) => {
             geometry.push(line.geometry);
             return parseMoney(line.text);
         });
@@ -27,7 +27,7 @@ export class CumulativeWinnings implements FrameAnalysisType<number> {
         // direction of the arrow next to their name.
         for (let i = 0; i < stats.length; i++) {
             const upDownArrow = await cropUpDownSection(frame, geometry[i].boundingBox);
-            const multiplier = await extractUpDownFromImage(upDownArrow);
+            const multiplier = await classifyUpDown(upDownArrow);
             stats[i].stat *= multiplier;
         }
 

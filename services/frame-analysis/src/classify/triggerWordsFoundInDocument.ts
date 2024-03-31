@@ -1,12 +1,12 @@
 import levenshtein from "js-levenshtein";
-import {typeCollection} from "../types/typeCollection";
+import {typeList} from "../stats/types/typeList";
 
 /**
  * For all the type of analysis that takes place, see if there are any matches.
  */
 export function documentContainsAnyTypeTriggerWord(document: string): boolean {
-    const classifiedType = typeCollection.find(type => {
-        return triggerWordsFoundInDocument(document, type.getTriggerWords());
+    const classifiedType = typeList.find(type => {
+        return triggerWordsFoundInDocument(document, type.triggerWords);
     });
     return classifiedType !== undefined;
 }
