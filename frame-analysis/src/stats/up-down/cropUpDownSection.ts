@@ -2,10 +2,7 @@ import { BoundingBox } from "amazon-textract-response-parser";
 import sharp from "sharp";
 import { cropMiddle } from "../../preprocess/cropMiddle";
 
-export async function cropUpDownSection(
-    frame: Buffer,
-    boundingBox: BoundingBox<any, any>,
-) {
+export async function cropUpDownSection(frame: Buffer, boundingBox: BoundingBox<any, any>) {
     const middle = await cropMiddle(frame);
     const image = sharp(middle);
 
@@ -21,5 +18,5 @@ export async function cropUpDownSection(
         width: 30,
     });
 
-    return statsImage.threshold(100).toBuffer();
+    return statsImage.threshold(100).png().toBuffer();
 }

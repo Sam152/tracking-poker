@@ -2,6 +2,7 @@ import { toMatchImageSnapshot } from "jest-image-snapshot";
 import { fixturePath } from "../__fixtures__/fixturePath";
 import { cropMiddle } from "./cropMiddle";
 import fs from "fs";
+import sharp from "sharp";
 
 expect.extend({ toMatchImageSnapshot });
 
@@ -11,7 +12,11 @@ describe("cropMiddle", () => {
     for (const testCase of testCases) {
         test(`crop middle of ${testCase}`, async () => {
             const frame = fixturePath(["frames", testCase]);
-            expect(await cropMiddle(fs.readFileSync(frame))).toBeDefined();
+            expect(
+                await sharp(await cropMiddle(fs.readFileSync(frame)))
+                    .png()
+                    .toBuffer(),
+            ).toMatchImageSnapshot();
         });
     }
 });

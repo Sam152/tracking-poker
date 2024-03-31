@@ -18,7 +18,7 @@ describe("cropUpDownSection", () => {
     testFrames()
         .filter((frame) => frame.labelledType === StatType.CumulativeWinnings)
         .map((frame) => {
-            test(`frame ${frame.videoId}/${frame.frameId} arrows classified`, async () => {
+            test(`frame ${frame.videoId}/${frame.frameId} arrows cropped`, async () => {
                 const extract = new trp.TextractDocument({
                     Blocks: (await resolveBlocks(frame)) as any as ApiBlock[],
                     DocumentMetadata: { Pages: 1 },
@@ -26,28 +26,17 @@ describe("cropUpDownSection", () => {
                 });
                 const frameImage = fs.readFileSync(frame.framePath);
 
-                const geometry: Geometry<ApiLineBlock, LineGeneric<Page>>[] =
-                    [];
-                buildStatsFromLookBackAndAhead(
-                    extract,
-                    looksLikeMoney,
-                    (line) => {
-                        geometry.push(line.geometry);
-                        return 1;
-                    },
-                );
+                const geometry: Geometry<ApiLineBlock, LineGeneric<Page>>[] = [];
+                buildStatsFromLookBackAndAhead(extract, looksLikeMoney, (line) => {
+                    geometry.push(line.geometry);
+                    return 1;
+                });
 
                 let index = 0;
                 for (const geometryItem of geometry) {
-                    expect(
-                        await cropUpDownSection(
-                            frameImage,
-                            geometryItem.boundingBox,
-                        ),
-                    ).toBeDefined();
-                    // expect(await cropUpDownSection(frameImage, geometryItem.boundingBox)).toMatchImageSnapshot({
-                    //     customSnapshotIdentifier: `frame-${frame.videoId}-${frame.frameId}-${index}`,
-                    // });
+                    expect(await cropUpDownSection(frameImage, geometryItem.boundingBox)).toMatchImageSnapshot({
+                        customSnapshotIdentifier: `frame-${frame.videoId}-${frame.frameId}-${index}`,
+                    });
                     index++;
                 }
             });
