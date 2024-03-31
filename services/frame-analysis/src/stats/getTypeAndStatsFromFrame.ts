@@ -16,7 +16,8 @@ export async function getTypeAndStatsFromFrame(frame: Buffer): Promise<[StatType
 
         return [type, stats];
     }
-    catch {
+    catch (e) {
+        console.error(e);
         return undefined;
     }
 }

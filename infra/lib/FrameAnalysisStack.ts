@@ -9,6 +9,7 @@ import * as lambdaNodejs from "aws-cdk-lib/aws-lambda-nodejs";
 import * as lambda from 'aws-cdk-lib/aws-lambda';
 import {Architecture} from 'aws-cdk-lib/aws-lambda';
 import * as path from "path";
+import * as iam from "aws-cdk-lib/aws-iam";
 
 type FrameAnalysisStackProps = StackProps & DeploymentEnvironmentAware & CommandBusAware;
 
@@ -64,6 +65,10 @@ export class FrameAnalysisStack extends Stack {
         // Allow the lambda to write to S3.
         frameAnalysis.role?.attachInlinePolicy(
             s3ReadObjectsFromWholeBucketPolicy(this, `frame-analysis-lambda-read-bucket`, this.getBucketName())
+        );
+
+        frameAnalysis.role?.addManagedPolicy(
+            iam.ManagedPolicy.fromAwsManagedPolicyName('AmazonTextractFullAccess')
         );
 
         // Invoke the lambda from the command bus.
