@@ -34,5 +34,5 @@ export type StatMetadata = {
     /**
      * Get the stats from a given document.
      */
-    getStatsFromDocument: (extract: TextractDocument, frame: Buffer) => Promise<PlayerStatCollection<number>>;
+    getStatsFromDocument: (extract: TextractDocument, frame: Buffer) => Promise<PlayerStatCollection<number> | undefined>;
 }

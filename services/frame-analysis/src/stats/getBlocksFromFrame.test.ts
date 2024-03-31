@@ -1,5 +1,4 @@
-import {testFrames} from "../__fixtures__/fixturePath";
-import {resolveBlocks} from "./resolveBlocks";
+import {resolveBlocks, testFrames} from "../__fixtures__/fixturePath";
 
 jest.setTimeout(60 * 60 * 1000);
 

@@ -1,8 +1,7 @@
 import {toMatchImageSnapshot} from "jest-image-snapshot";
-import {testFrames} from "../../__fixtures__/fixturePath";
+import {resolveBlocks, testFrames} from "../../__fixtures__/fixturePath";
 import * as trp from "amazon-textract-response-parser";
 import {Geometry, Page} from "amazon-textract-response-parser";
-import {resolveBlocks} from "../resolveBlocks";
 import {ApiBlock} from "amazon-textract-response-parser/dist/types/api-models/document";
 import {buildStatsFromLookBackAndAhead} from "../buildStatsFromLookBack";
 import {looksLikeMoney} from "../looksLikeMoney";
