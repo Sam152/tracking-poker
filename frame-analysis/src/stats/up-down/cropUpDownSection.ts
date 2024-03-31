@@ -1,14 +1,17 @@
-import {BoundingBox} from "amazon-textract-response-parser";
+import { BoundingBox } from "amazon-textract-response-parser";
 import sharp from "sharp";
-import {cropMiddle} from "../../preprocess/cropMiddle";
+import { cropMiddle } from "../../preprocess/cropMiddle";
 
-export async function cropUpDownSection(frame: Buffer, boundingBox: BoundingBox<any, any>) {
+export async function cropUpDownSection(
+    frame: Buffer,
+    boundingBox: BoundingBox<any, any>,
+) {
     const middle = await cropMiddle(frame);
     const image = sharp(middle);
 
     const metadata = await image.metadata();
     if (!metadata.width || !metadata.height) {
-        throw new Error('Metadata from CW analysis could not be loaded.');
+        throw new Error("Metadata from CW analysis could not be loaded.");
     }
 
     const statsImage = image.extract({

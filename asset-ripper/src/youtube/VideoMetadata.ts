@@ -1,6 +1,5 @@
-
 type RawMetadata = Record<string, any> & {
-  duration: number;
+    duration: number;
 };
 
 export class VideoMetadata {
@@ -12,13 +11,15 @@ export class VideoMetadata {
 
     public static fromApiResponse(raw: Record<any, any>): VideoMetadata {
         if (!raw.duration) {
-            throw new Error('Video metadata was invalid, missing duration property.');
+            throw new Error(
+                "Video metadata was invalid, missing duration property.",
+            );
         }
         return new VideoMetadata(raw as RawMetadata);
     }
 
     duration(): VideoDuration {
-        return VideoDuration.fromSeconds(this.rawMetadata.duration)
+        return VideoDuration.fromSeconds(this.rawMetadata.duration);
     }
 }
 

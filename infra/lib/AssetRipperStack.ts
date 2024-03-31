@@ -1,15 +1,20 @@
-import {Stack, StackProps, Tags} from 'aws-cdk-lib';
-import {Construct} from 'constructs';
-import {DockerImageCode, DockerImageFunction} from "aws-cdk-lib/aws-lambda";
-import {Platform} from "aws-cdk-lib/aws-ecr-assets";
+import { Stack, StackProps, Tags } from "aws-cdk-lib";
+import { Construct } from "constructs";
+import { DockerImageCode, DockerImageFunction } from "aws-cdk-lib/aws-lambda";
+import { Platform } from "aws-cdk-lib/aws-ecr-assets";
 import * as path from "path";
-import {Duration, Size} from "aws-cdk-lib/core";
-import {s3CreateSimpleBucket, s3WriteObjectsToWholeBucketPolicy} from "./utility/s3";
-import {DeploymentEnvironmentAware} from "./utility/deployment-environment";
-import {CommandBusAware} from "./CommandBusStack";
-import {invokeLambdaOnEventDetail} from "./utility/eventBridge";
+import { Duration, Size } from "aws-cdk-lib/core";
+import {
+    s3CreateSimpleBucket,
+    s3WriteObjectsToWholeBucketPolicy,
+} from "./utility/s3";
+import { DeploymentEnvironmentAware } from "./utility/deployment-environment";
+import { CommandBusAware } from "./CommandBusStack";
+import { invokeLambdaOnEventDetail } from "./utility/eventBridge";
 
-type AssetRipperStackProps = StackProps & DeploymentEnvironmentAware & CommandBusAware;
+type AssetRipperStackProps = StackProps &
+    DeploymentEnvironmentAware &
+    CommandBusAware;
 
 export class AssetRipperStack extends Stack {
     private props: AssetRipperStackProps;
@@ -21,7 +26,7 @@ export class AssetRipperStack extends Stack {
         this.createLambda();
         s3CreateSimpleBucket(this, this.getBucketName());
 
-        Tags.of(this).add('ServiceName', 'AssetRipper');
+        Tags.of(this).add("ServiceName", "AssetRipper");
     }
 
     createLambda() {
@@ -34,27 +39,36 @@ export class AssetRipperStack extends Stack {
             environment: {
                 BUCKET_NAME: this.getBucketName(),
             },
-            code: DockerImageCode.fromImageAsset(path.join(__dirname, "../../asset-ripper/"), {
-                cmd: ["index.handler"],
-                entrypoint: ["/lambda-entrypoint.sh"],
-                platform: Platform.LINUX_AMD64,
-            }),
+            code: DockerImageCode.fromImageAsset(
+                path.join(__dirname, "../../asset-ripper/"),
+                {
+                    cmd: ["index.handler"],
+                    entrypoint: ["/lambda-entrypoint.sh"],
+                    platform: Platform.LINUX_AMD64,
+                },
+            ),
         });
 
         // Allow the lambda to write to S3.
         lambda.role?.attachInlinePolicy(
-            s3WriteObjectsToWholeBucketPolicy(this, `asset-ripper-lambda-write-bucket`, this.getBucketName())
+            s3WriteObjectsToWholeBucketPolicy(
+                this,
+                `asset-ripper-lambda-write-bucket`,
+                this.getBucketName(),
+            ),
         );
 
         // Invoke the lambda from the command bus.
-        invokeLambdaOnEventDetail(this, `asset-ripper-command-rule`, this.props.commandBusStack.bus, lambda, [
-            'StartAssetRipByVideoId',
-            'StartAssetRipByVideoUrl',
-        ]);
+        invokeLambdaOnEventDetail(
+            this,
+            `asset-ripper-command-rule`,
+            this.props.commandBusStack.bus,
+            lambda,
+            ["StartAssetRipByVideoId", "StartAssetRipByVideoUrl"],
+        );
     }
 
     getBucketName(): string {
         return `tracking-poker-asset-ripper-assets-${this.props.deploymentEnvironment}`;
     }
-
 }

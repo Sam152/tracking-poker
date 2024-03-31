@@ -1,8 +1,10 @@
-import {PlayerStatCollection, StatType} from "./types/StatType";
-import {getBlocksFromFrame} from "./getBlocksFromFrame";
-import {getStatsFromBlocks} from "./getStatsFromBlocks";
+import { PlayerStatCollection, StatType } from "./types/StatType";
+import { getBlocksFromFrame } from "./getBlocksFromFrame";
+import { getStatsFromBlocks } from "./getStatsFromBlocks";
 
-export async function getTypeAndStatsFromFrame(frame: Buffer): Promise<[StatType, PlayerStatCollection<number>] | undefined> {
+export async function getTypeAndStatsFromFrame(
+    frame: Buffer,
+): Promise<[StatType, PlayerStatCollection<number>] | undefined> {
     try {
         // Ensure failures from either the extraction process or identifying stats associated with the blocks, result
         // in reporting undefined stats for the whole frame.
@@ -15,8 +17,7 @@ export async function getTypeAndStatsFromFrame(frame: Buffer): Promise<[StatType
         }
 
         return [type, stats];
-    }
-    catch (e) {
+    } catch (e) {
         console.error(e);
         return undefined;
     }

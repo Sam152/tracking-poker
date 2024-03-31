@@ -7,7 +7,6 @@ type UpOrDown = 1 | -1;
  * classified as pointing up, otherwise down.
  */
 export async function classifyUpDown(image: Buffer): Promise<UpOrDown> {
-
     const frame = sharp(image);
     const metadata = await frame.metadata();
 
@@ -21,17 +20,19 @@ export async function classifyUpDown(image: Buffer): Promise<UpOrDown> {
             left: 0,
             width: metadata.width!,
         });
-        const totalWhitePixels = [...await row.raw().toBuffer()].map(value => value > 100 ? 1 : 0)
+        const totalWhitePixels = [...(await row.raw().toBuffer())]
+            .map((value) => (value > 100 ? 1 : 0))
             .reduce((count: number, value: number) => count + value, 0);
 
         if (totalWhitePixels === previousRowWhitePixels) {
-            trend.push(0)
-        }
-        else {
+            trend.push(0);
+        } else {
             trend.push(totalWhitePixels > previousRowWhitePixels ? 1 : -1);
         }
         previousRowWhitePixels = totalWhitePixels;
     }
 
-    return trend.reduce((count: number, value: number) => count + value, 0) > 0 ? 1 : -1;
+    return trend.reduce((count: number, value: number) => count + value, 0) > 0
+        ? 1
+        : -1;
 }

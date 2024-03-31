@@ -1,5 +1,5 @@
-import {documentContainsAnyTypeTriggerWord} from "./triggerWordsFoundInDocument";
-import {ocrFrame} from "./ocrFrame";
+import { documentContainsAnyTypeTriggerWord } from "./triggerWordsFoundInDocument";
+import { ocrFrame } from "./ocrFrame";
 
 /**
  * Attempt to classify the type of frame.

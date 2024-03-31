@@ -1,8 +1,8 @@
-import {ChipCount} from "./ChipCount";
-import {CumulativeWinnings} from "./CumulativeWinnings";
-import {PreflopRaise} from "./PreflopRaise";
-import {VPIP} from "./VPIP";
-import {StatMetadata, StatType} from "./StatType";
+import { ChipCount } from "./ChipCount";
+import { CumulativeWinnings } from "./CumulativeWinnings";
+import { PreflopRaise } from "./PreflopRaise";
+import { VPIP } from "./VPIP";
+import { StatMetadata, StatType } from "./StatType";
 
 export const typeCollection: Record<StatType, StatMetadata> = {
     [StatType.ChipCount]: ChipCount,
@@ -11,9 +11,4 @@ export const typeCollection: Record<StatType, StatMetadata> = {
     [StatType.VPIP]: VPIP,
 };
 
-export const typeList = [
-    ChipCount,
-    CumulativeWinnings,
-    PreflopRaise,
-    VPIP,
-];
+export const typeList = [ChipCount, CumulativeWinnings, PreflopRaise, VPIP];

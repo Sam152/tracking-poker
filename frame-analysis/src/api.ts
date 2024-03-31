@@ -1,4 +1,4 @@
-import {z} from "zod";
+import { z } from "zod";
 
 export const serviceInvocationEventsSchema = z.object({
     "detail-type": z.literal("StartAnalysisOfFrame"),
@@ -10,4 +10,6 @@ export const serviceInvocationEventsSchema = z.object({
     }),
 });
 
-export type ServiceInvocationEvents = z.infer<typeof serviceInvocationEventsSchema>;
+export type ServiceInvocationEvents = z.infer<
+    typeof serviceInvocationEventsSchema
+>;

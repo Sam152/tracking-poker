@@ -1,6 +1,6 @@
 import * as event from "aws-cdk-lib/aws-events";
 import * as eventTargets from "aws-cdk-lib/aws-events-targets";
-import {Stack} from "aws-cdk-lib";
+import { Stack } from "aws-cdk-lib";
 import * as lambda from "aws-cdk-lib/aws-lambda";
 
 export function invokeLambdaOnEventDetail(
@@ -14,10 +14,8 @@ export function invokeLambdaOnEventDetail(
         ruleName: ruleName,
         eventBus: bus,
         eventPattern: {
-            detailType: detailType
+            detailType: detailType,
         },
-        targets: [
-            new eventTargets.LambdaFunction(lambda),
-        ],
+        targets: [new eventTargets.LambdaFunction(lambda)],
     });
 }

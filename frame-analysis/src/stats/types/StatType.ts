@@ -1,21 +1,22 @@
-import {TextractDocument} from "amazon-textract-response-parser";
+import { TextractDocument } from "amazon-textract-response-parser";
 
 export enum StatType {
-    ChipCount = 'cc',
-    CumulativeWinnings = 'cw',
-    PreflopRaise = 'pfr',
-    VPIP = 'vpip',
+    ChipCount = "cc",
+    CumulativeWinnings = "cw",
+    PreflopRaise = "pfr",
+    VPIP = "vpip",
 }
 
-export type PlayerStatCollection<TStat extends string | number> = Array<PlayerStat<TStat>>;
+export type PlayerStatCollection<TStat extends string | number> = Array<
+    PlayerStat<TStat>
+>;
 
 export type PlayerStat<TStat extends string | number> = {
-    playerName: string,
-    stat: TStat,
-}
+    playerName: string;
+    stat: TStat;
+};
 
 export type StatMetadata = {
-
     type: StatType;
 
     /**
@@ -34,5 +35,8 @@ export type StatMetadata = {
     /**
      * Get the stats from a given document.
      */
-    getStatsFromDocument: (extract: TextractDocument, frame: Buffer) => Promise<PlayerStatCollection<number> | undefined>;
-}
+    getStatsFromDocument: (
+        extract: TextractDocument,
+        frame: Buffer,
+    ) => Promise<PlayerStatCollection<number> | undefined>;
+};

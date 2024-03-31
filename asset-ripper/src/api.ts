@@ -1,4 +1,4 @@
-import {z} from "zod";
+import { z } from "zod";
 
 export const serviceInvocationEventsSchema = z.union([
     z.object({
@@ -12,7 +12,9 @@ export const serviceInvocationEventsSchema = z.union([
         detail: z.object({
             videoUrl: z.string(),
         }),
-    })
+    }),
 ]);
 
-export type ServiceInvocationEvents = z.infer<typeof serviceInvocationEventsSchema>;
+export type ServiceInvocationEvents = z.infer<
+    typeof serviceInvocationEventsSchema
+>;

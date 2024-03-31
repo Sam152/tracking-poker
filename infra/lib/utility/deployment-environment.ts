@@ -1,9 +1,8 @@
-
 export enum DeploymentEnvironment {
     Production = "production",
     Staging = "staging",
 }
 
-export type DeploymentEnvironmentAware ={
+export type DeploymentEnvironmentAware = {
     deploymentEnvironment: DeploymentEnvironment;
-}
+};

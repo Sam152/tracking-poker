@@ -1,8 +1,8 @@
 import * as Tesseract from "tesseract.js";
-import {OEM, PSM} from "tesseract.js";
+import { OEM, PSM } from "tesseract.js";
 import path from "path";
-import {cropMiddle} from "../preprocess/cropMiddle";
-import {threshold} from "../preprocess/threshold";
+import { cropMiddle } from "../preprocess/cropMiddle";
+import { threshold } from "../preprocess/threshold";
 
 /**
  * Take a frame and use tesseract to do OCR.
@@ -11,7 +11,7 @@ import {threshold} from "../preprocess/threshold";
  * not enough to extract meaningful statistics from more accurate (but more expensive) models.
  */
 export async function ocrFrame(file: Buffer, mode: PSM = PSM.SPARSE_TEXT) {
-    const worker = await Tesseract.createWorker('eng', OEM.LSTM_ONLY, {
+    const worker = await Tesseract.createWorker("eng", OEM.LSTM_ONLY, {
         cachePath: path.join(__dirname, "../../bin"),
         logger: () => null,
     });

@@ -1,4 +1,4 @@
-import {exec, ExecOutput} from "../util/exec";
+import { exec, ExecOutput } from "../util/exec";
 
 export class Slicer {
     private readonly videoFile: string;
@@ -11,12 +11,14 @@ export class Slicer {
         return new Slicer(videoFile);
     }
 
-    public async sliceFrames(framerate: number, destination: string): Promise<ExecOutput> {
-        return exec('ffmpeg', [
+    public async sliceFrames(
+        framerate: number,
+        destination: string,
+    ): Promise<ExecOutput> {
+        return exec("ffmpeg", [
             `-i ${this.videoFile}`,
             `-vf fps=${framerate}`,
             `${destination}/frame_%04d.jpg`,
         ]);
     }
-
 }
