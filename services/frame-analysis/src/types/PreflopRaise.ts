@@ -1,0 +1,21 @@
+import {FrameAnalysisType} from "./FrameAnalysisType";
+import {TextractDocument} from "amazon-textract-response-parser";
+import {PlayerStatCollection} from "./typeCollection";
+import {buildStatsFromLookBack} from "../util/buildStatsFromLookBack";
+
+export class PreflopRaise implements FrameAnalysisType<number> {
+    getTriggerWords(): string[] {
+        return [
+            "PRE FLOP RAISE",
+            "PRE-FLOP RAISE",
+        ];
+    }
+
+    getStatsFromDocument(extract: TextractDocument, frame: Buffer): Promise<PlayerStatCollection<number>> {
+        const stats = buildStatsFromLookBack(
+            extract, (text) => !!text.match(/^\d{1,2}%$/),
+            (line) => parseInt(line.text.replace('%', ''))
+        );
+        return Promise.resolve(stats);
+    }
+}
