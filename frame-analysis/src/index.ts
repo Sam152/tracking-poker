@@ -30,5 +30,5 @@ export async function handler(incomingEvent: ServiceInvocationEvents, context: P
 
     const [type, stats] = typeAndStats;
     console.log('Frame type', type);
-    console.log('Frame stats', stats);
+    console.log('Frame stats resolved', stats);
 }

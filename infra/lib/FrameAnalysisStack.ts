@@ -21,7 +21,7 @@ export class FrameAnalysisStack extends Stack {
         super(scope, id, props);
         this.props = props;
 
-        this.resolveService = (input:string) => path.resolve(__dirname, '../../services/frame-analysis', input);
+        this.resolveService = (input:string) => path.resolve(__dirname, '../../frame-analysis', input);
 
         this.createLambda();
         Tags.of(this).add('ServiceName', 'FrameAnalysis');
@@ -42,7 +42,7 @@ export class FrameAnalysisStack extends Stack {
                 volumes: [
                     {
                         // The common directory must be mounted, to be discoverable by npm inside the container.
-                        hostPath: path.resolve(__dirname, "../../services/common"),
+                        hostPath: path.resolve(__dirname, "../../common"),
                         containerPath: "/common"
                     }
                 ],
