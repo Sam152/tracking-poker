@@ -15,7 +15,8 @@ export async function handler(
 
     // Do a first pass with the cheap classifier to see if a frame is junk.
     if (!(await isFrameOfInterest(frame))) {
-        recordThat("FrameClassifiedAsJunk", {
+        await recordThat({
+            name: "FrameClassifiedAsJunk",
             videoId: event.detail.videoId,
             frameId: event.detail.frameId,
         });
@@ -25,7 +26,8 @@ export async function handler(
     // Do the expensive textract analysis, and also allow this analysis to classify the frame as junk.
     const typeAndStats = await getTypeAndStatsFromFrame(frame);
     if (!typeAndStats) {
-        recordThat("FrameClassifiedAsJunk", {
+        await recordThat({
+            name: "FrameClassifiedAsJunk",
             videoId: event.detail.videoId,
             frameId: event.detail.frameId,
         });
@@ -33,8 +35,11 @@ export async function handler(
     }
 
     const [type, stats] = typeAndStats;
-    recordThat("FrameStatsWereResolved", {
-        type,
-        stats,
+    await recordThat({
+        name: "StatsExtractedFromFrame",
+        videoId: event.detail.videoId,
+        frameId: event.detail.frameId,
+        type: type,
+        stats: stats,
     });
 }

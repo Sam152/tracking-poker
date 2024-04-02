@@ -34,7 +34,8 @@ export class AssetRipperStack extends Stack {
             environment: {
                 BUCKET_NAME: this.getBucketName(),
             },
-            code: DockerImageCode.fromImageAsset(path.join(__dirname, "../../asset-ripper/"), {
+            code: DockerImageCode.fromImageAsset(path.join(__dirname, "../../"), {
+                file: "asset-ripper/Dockerfile",
                 cmd: ["index.handler"],
                 entrypoint: ["/lambda-entrypoint.sh"],
                 platform: Platform.LINUX_AMD64,

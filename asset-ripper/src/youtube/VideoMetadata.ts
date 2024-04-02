@@ -1,5 +1,6 @@
 type RawMetadata = Record<string, any> & {
     duration: number;
+    title: string;
 };
 
 export class VideoMetadata {
@@ -18,6 +19,10 @@ export class VideoMetadata {
 
     duration(): VideoDuration {
         return VideoDuration.fromSeconds(this.rawMetadata.duration);
+    }
+
+    title(): string {
+        return this.rawMetadata.title;
     }
 }
 

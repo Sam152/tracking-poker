@@ -9,9 +9,10 @@ RUN tar -xf ffmpeg.tar.xz && mv ffmpeg*/* .
 RUN chmod +x bin/*
 
 # Build and bundle the service.
+ADD common /usr/common/
 WORKDIR /usr/app
-ADD src /usr/app/src/
-COPY *.ts *.json ./
+ADD asset-ripper/src src/
+COPY asset-ripper/*.ts asset-ripper/*.json ./
 RUN npm install
 RUN npm run build
 
