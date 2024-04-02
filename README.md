@@ -15,7 +15,7 @@ some insight into the on-stream performance of players over time.
 
 This project deploys a number of microservices to coordinate the collection of these statistics:
 
-[diagram]
+![diagram](./docs/00-09%20System/01%20Images/arch-diagram.png)
 
 -   _[Asset Ripper](./asset-ripper/src/)_ - Downloads and slices streams into individual frames for analysis.
 -   _[Frame Analysis](./frame-analysis/src)_ - Detects frames of interest and extracts statistics.
