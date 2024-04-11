@@ -25,11 +25,11 @@ This project deploys a number of microservices to coordinate the collection of t
 ### Asset ripper
 
 This service is responsible for downloading a segment of the target show and slicing out a number of individual frames
-for further analysis.
+for further analysis. Commands dispatched to this service can either be a [video ID or URL](./asset-ripper/src/api.ts).
+Once assets are stored, their location and metadata are recorded.
 
-Commands dispatched to this service can either be a video URL or ID and it will subsequently
-dispatch details on the success of failure of the download and the individual frames extracted from the video. This
-service is powered by:
+This service is deployed with a custom [Dockerfile](./asset-ripper/Dockerfile) that brings in some additional
+dependencies:
 
 -   `yt-dlp` - A python package written to download YouTube videos and metadata.
 -   `ffmpeg` - The swiss army knife of video, used to extract individual frames.
