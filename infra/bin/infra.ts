@@ -4,14 +4,14 @@ import { DeploymentEnvironment } from "../lib/utility/deployment-environment";
 import { AssetRipperStack } from "../lib/AssetRipperStack";
 import { CommandBusStack } from "../lib/CommandBusStack";
 import { FrameAnalysisStack } from "../lib/FrameAnalysisStack";
+import { InventoryStack } from "../lib/InventoryStack";
 
 const app = new cdk.App();
 
 // Identify the environment for each stack, for services that cannot have duplicate names across
 // accounts (ie, s3 buckets).
 const defaultStackProps = {
-    deploymentEnvironment:
-        app.node.tryGetContext("deploymentEnvironment") ?? DeploymentEnvironment.Staging,
+    deploymentEnvironment: app.node.tryGetContext("deploymentEnvironment") ?? DeploymentEnvironment.Staging,
     env: { account: "390772177583", region: "us-east-2" },
 };
 
@@ -22,6 +22,10 @@ new AssetRipperStack(app, "AssetRipperStack", {
     commandBusStack,
 });
 new FrameAnalysisStack(app, "FrameAnalysisStack", {
+    ...defaultStackProps,
+    commandBusStack,
+});
+new InventoryStack(app, "InventoryStack", {
     ...defaultStackProps,
     commandBusStack,
 });

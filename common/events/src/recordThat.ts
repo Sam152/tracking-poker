@@ -1,5 +1,9 @@
 type Event =
     | {
+          name: "VideoAssetRipStarted";
+          videoId: string;
+      }
+    | {
           name: "VideoAssetStored";
           videoId: string;
           location: string;

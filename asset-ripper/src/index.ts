@@ -8,20 +8,18 @@ import { listFiles } from "./files/listFiles";
 import { recordThat } from "tp-events";
 import path from "path";
 
-export async function handler(
-    incomingEvent: ServiceInvocationEvents,
-    context: Pick<Context, "awsRequestId">,
-    callback: Callback,
-) {
+export async function handler(incomingEvent: ServiceInvocationEvents, context: Pick<Context, "awsRequestId">, callback: Callback) {
     const event = serviceInvocationEventsSchema.parse(incomingEvent);
+    const video =
+        event["detail-type"] === "StartAssetRipByVideoUrl"
+            ? YouTubeVideo.fromUrl(event.detail.videoUrl)
+            : YouTubeVideo.fromId(event.detail.videoId);
 
-    if (event["detail-type"] === "StartAssetRipByVideoUrl") {
-        await ripAssetsToS3(YouTubeVideo.fromUrl(event.detail.videoUrl));
-    }
-
-    if (event["detail-type"] === "StartAssetRipByVideoId") {
-        await ripAssetsToS3(YouTubeVideo.fromId(event.detail.videoId));
-    }
+    await recordThat({
+        name: "VideoAssetRipStarted",
+        videoId: video.id,
+    });
+    await ripAssetsToS3(video);
 }
 
 export async function ripAssetsToS3(video: YouTubeVideo) {
