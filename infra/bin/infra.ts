@@ -5,6 +5,8 @@ import { AssetRipperStack } from "../lib/AssetRipperStack";
 import { CommandBusStack } from "../lib/CommandBusStack";
 import { FrameAnalysisStack } from "../lib/FrameAnalysisStack";
 import { InventoryStack } from "../lib/InventoryStack";
+import { EventBusStack } from "../lib/EventBusStack";
+import { PipelineStack } from "../lib/PipelineStack";
 
 const app = new cdk.App();
 
@@ -17,13 +19,21 @@ const defaultStackProps = {
 
 // Create stacks for each service.
 const commandBusStack = new CommandBusStack(app, "CommandBusStack", defaultStackProps);
+const eventBusStack = new EventBusStack(app, "EventBusStack", defaultStackProps);
+
+new PipelineStack(app, "PipelineStack", {
+    ...defaultStackProps,
+    commandBusStack,
+});
 new AssetRipperStack(app, "AssetRipperStack", {
     ...defaultStackProps,
     commandBusStack,
+    eventBusStack,
 });
 new FrameAnalysisStack(app, "FrameAnalysisStack", {
     ...defaultStackProps,
     commandBusStack,
+    eventBusStack,
 });
 new InventoryStack(app, "InventoryStack", {
     ...defaultStackProps,

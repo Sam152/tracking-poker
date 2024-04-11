@@ -7,9 +7,10 @@ import { Duration, Size } from "aws-cdk-lib/core";
 import { s3CreateSimpleBucket, s3WriteObjectsToWholeBucketPolicy } from "./utility/s3";
 import { DeploymentEnvironmentAware } from "./utility/deployment-environment";
 import { CommandBusAware } from "./CommandBusStack";
-import { invokeLambdaOnEventDetail } from "./utility/eventBridge";
+import { addPutEventsPolicies, invokeLambdaOnEventDetail } from "./utility/eventBridge";
+import { EventBusAware } from "./EventBusStack";
 
-type AssetRipperStackProps = StackProps & DeploymentEnvironmentAware & CommandBusAware;
+type AssetRipperStackProps = StackProps & DeploymentEnvironmentAware & CommandBusAware & EventBusAware;
 
 export class AssetRipperStack extends Stack {
     private props: AssetRipperStackProps;
@@ -33,6 +34,8 @@ export class AssetRipperStack extends Stack {
             memorySize: 3008,
             environment: {
                 BUCKET_NAME: this.getBucketName(),
+                COMMAND_BUS_ARN: this.props.commandBusStack.bus.eventBusArn,
+                EVENT_BUS_BUS_ARN: this.props.eventBusStack.bus.eventBusArn,
             },
             code: DockerImageCode.fromImageAsset(path.join(__dirname, "../../"), {
                 file: "asset-ripper/Dockerfile",
@@ -42,23 +45,21 @@ export class AssetRipperStack extends Stack {
             }),
         });
 
+        const lambdaRole = lambda.role!;
+
         // Allow the lambda to write to S3.
-        lambda.role?.attachInlinePolicy(
-            s3WriteObjectsToWholeBucketPolicy(
-                this,
-                `asset-ripper-lambda-write-bucket`,
-                this.getBucketName(),
-            ),
+        lambdaRole.attachInlinePolicy(
+            s3WriteObjectsToWholeBucketPolicy(this, `asset-ripper-lambda-write-bucket`, this.getBucketName()),
         );
 
+        // Allow the lambda to push events to the buses.
+        addPutEventsPolicies(this, "asset-ripper", lambdaRole, this.props.eventBusStack.bus, this.props.commandBusStack.bus);
+
         // Invoke the lambda from the command bus.
-        invokeLambdaOnEventDetail(
-            this,
-            `asset-ripper-command-rule`,
-            this.props.commandBusStack.bus,
-            lambda,
-            ["StartAssetRipByVideoId", "StartAssetRipByVideoUrl"],
-        );
+        invokeLambdaOnEventDetail(this, `asset-ripper-command-rule`, this.props.commandBusStack.bus, lambda, [
+            "StartAssetRipByVideoId",
+            "StartAssetRipByVideoUrl",
+        ]);
     }
 
     getBucketName(): string {

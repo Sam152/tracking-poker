@@ -4,14 +4,15 @@ import { Duration, Size } from "aws-cdk-lib/core";
 import { s3ReadObjectsFromWholeBucketPolicy } from "./utility/s3";
 import { DeploymentEnvironmentAware } from "./utility/deployment-environment";
 import { CommandBusAware } from "./CommandBusStack";
-import { invokeLambdaOnEventDetail } from "./utility/eventBridge";
+import { addPutEventsPolicies, invokeLambdaOnEventDetail } from "./utility/eventBridge";
 import * as lambdaNodejs from "aws-cdk-lib/aws-lambda-nodejs";
 import * as lambda from "aws-cdk-lib/aws-lambda";
 import { Architecture } from "aws-cdk-lib/aws-lambda";
 import * as path from "path";
 import * as iam from "aws-cdk-lib/aws-iam";
+import { EventBusAware } from "./EventBusStack";
 
-type FrameAnalysisStackProps = StackProps & DeploymentEnvironmentAware & CommandBusAware;
+type FrameAnalysisStackProps = StackProps & DeploymentEnvironmentAware & CommandBusAware & EventBusAware;
 
 export class FrameAnalysisStack extends Stack {
     private props: FrameAnalysisStackProps;
@@ -21,8 +22,7 @@ export class FrameAnalysisStack extends Stack {
         super(scope, id, props);
         this.props = props;
 
-        this.resolveService = (input: string) =>
-            path.resolve(__dirname, "../../frame-analysis", input);
+        this.resolveService = (input: string) => path.resolve(__dirname, "../../frame-analysis", input);
 
         this.createLambda();
         Tags.of(this).add("ServiceName", "FrameAnalysis");
@@ -33,9 +33,12 @@ export class FrameAnalysisStack extends Stack {
             runtime: lambda.Runtime.NODEJS_20_X,
             architecture: Architecture.ARM_64,
             ephemeralStorageSize: Size.mebibytes(512),
-            timeout: Duration.minutes(15),
+            timeout: Duration.minutes(2),
             memorySize: 3008,
-            environment: {},
+            environment: {
+                COMMAND_BUS_ARN: this.props.commandBusStack.bus.eventBusArn,
+                EVENT_BUS_BUS_ARN: this.props.eventBusStack.bus.eventBusArn,
+            },
             entry: this.resolveService("src/index.ts"),
             depsLockFilePath: this.resolveService("package-lock.json"),
             projectRoot: this.resolveService(""),
@@ -63,27 +66,19 @@ export class FrameAnalysisStack extends Stack {
             },
         });
 
-        // Allow the lambda to write to S3.
-        frameAnalysis.role?.attachInlinePolicy(
-            s3ReadObjectsFromWholeBucketPolicy(
-                this,
-                `frame-analysis-lambda-read-bucket`,
-                this.getBucketName(),
-            ),
+        const lambdaRole = frameAnalysis.role!;
+
+        lambdaRole.attachInlinePolicy(
+            s3ReadObjectsFromWholeBucketPolicy(this, `frame-analysis-lambda-read-bucket`, this.getBucketName()),
         );
 
-        frameAnalysis.role?.addManagedPolicy(
-            iam.ManagedPolicy.fromAwsManagedPolicyName("AmazonTextractFullAccess"),
-        );
+        lambdaRole.addManagedPolicy(iam.ManagedPolicy.fromAwsManagedPolicyName("AmazonTextractFullAccess"));
+        addPutEventsPolicies(this, "frame-analysis", lambdaRole, this.props.eventBusStack.bus, this.props.commandBusStack.bus);
 
         // Invoke the lambda from the command bus.
-        invokeLambdaOnEventDetail(
-            this,
-            `frame-analysis-command-rule`,
-            this.props.commandBusStack.bus,
-            frameAnalysis,
-            ["StartAnalysisOfFrame"],
-        );
+        invokeLambdaOnEventDetail(this, `frame-analysis-command-rule`, this.props.commandBusStack.bus, frameAnalysis, [
+            "StartAnalysisOfFrame",
+        ]);
     }
 
     getBucketName(): string {

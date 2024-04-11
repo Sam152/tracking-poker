@@ -1,6 +1,7 @@
 type RawMetadata = Record<string, any> & {
     duration: number;
     title: string;
+    release_date: string;
 };
 
 export class VideoMetadata {
@@ -23,6 +24,10 @@ export class VideoMetadata {
 
     title(): string {
         return this.rawMetadata.title;
+    }
+
+    releaseDate(): string {
+        return this.rawMetadata.release_date;
     }
 }
 

@@ -2,11 +2,7 @@ import * as iam from "aws-cdk-lib/aws-iam";
 import { RemovalPolicy, Stack } from "aws-cdk-lib";
 import { BlockPublicAccess, Bucket, BucketEncryption } from "aws-cdk-lib/aws-s3";
 
-export function s3WriteObjectsToWholeBucketPolicy(
-    stack: Stack,
-    name: string,
-    bucketName: string,
-): iam.Policy {
+export function s3WriteObjectsToWholeBucketPolicy(stack: Stack, name: string, bucketName: string): iam.Policy {
     return new iam.Policy(stack, name, {
         policyName: name,
         document: new iam.PolicyDocument({
@@ -21,11 +17,7 @@ export function s3WriteObjectsToWholeBucketPolicy(
     });
 }
 
-export function s3ReadObjectsFromWholeBucketPolicy(
-    stack: Stack,
-    name: string,
-    bucketName: string,
-): iam.Policy {
+export function s3ReadObjectsFromWholeBucketPolicy(stack: Stack, name: string, bucketName: string): iam.Policy {
     return new iam.Policy(stack, name, {
         policyName: name,
         document: new iam.PolicyDocument({

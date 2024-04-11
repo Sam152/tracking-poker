@@ -17,8 +17,10 @@ This project deploys a number of microservices to coordinate the collection of t
 
 ![diagram](./docs/img/arch-diagram.png)
 
+-   _[Pipeline](./pipeline/src/index.ts)_ - Routes events between services.
 -   _[Asset Ripper](./asset-ripper/src/)_ - Downloads and slices streams into individual frames for analysis.
 -   _[Frame Analysis](./frame-analysis/src)_ - Detects frames of interest and extracts statistics.
+-   _[Inventory](./inventory/src)_ - Creates a useful read model for the statistics.
 
 ### Asset ripper
 
@@ -89,23 +91,23 @@ The key schema to build these partitions is documented below:
     "pk": "operator#hcl",
     "sk": "show#date#2024/01/23#slug#FiARsQSlzDc#",
     "gsi1pk": "slug#FiARsQSlzDc",
-    "gsi1sk": "show#",
+    "gsi1sk": "show#"
 }
 {
-    "type": "player_appearance",
+    "entity_type": "player_appearance",
     "pk": "player#nikairball",
     "sk": "appearance#slug#FiARsQSlzDc#",
     "gsi1pk": "slug#FiARsQSlzDc",
     "gsi1sk": "appearance#player#nikairball#"
 }
 {
-    "type": "player_stat",
-    "pk": "slug#FiARsQSlzDc",
-    "sk": "stat#stat_type#cw#player#nikairball#",
-    "gsi1pk": "player#nikairball",
-    "gsi1sk": "stat#stat_type#cw#show#FiARsQSlzDc#",
+    "entity_type": "player_stat",
+    "pk": "player#nikairball",
+    "sk": "stat#stat_type#cw#show#FiARsQSlzDc#",
+    "gsi1pk": "slug#FiARsQSlzDc",
+    "gsi1sk": "stat#stat_type#cw#player#nikairball#",
     "gsi2pk": "stat_type#cw",
-    "gsi2sk": "stat#player#nikairball#slug#FiARsQSlzDc#",
+    "gsi2sk": "stat#player#nikairball#slug#FiARsQSlzDc#"
 }
 ```
 

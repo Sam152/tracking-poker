@@ -3,10 +3,9 @@ import { Construct } from "constructs";
 import { CommandBusAware } from "./CommandBusStack";
 import * as dynamo from "aws-cdk-lib/aws-dynamodb";
 import { AttributeType, BillingMode, ProjectionType } from "aws-cdk-lib/aws-dynamodb";
-import { DeploymentEnvironmentAware } from "./utility/deployment-environment";
 import { Attribute } from "aws-cdk-lib/aws-dynamodb/lib/shared";
 
-type InventoryStackProps = StackProps & DeploymentEnvironmentAware & CommandBusAware;
+type InventoryStackProps = StackProps & CommandBusAware;
 
 export class InventoryStack extends Stack {
     private props: InventoryStackProps;
@@ -21,8 +20,8 @@ export class InventoryStack extends Stack {
     }
 
     createDynamoTable() {
-        const table = new dynamo.Table(this, `tracking-poker-inventory-${this.props.deploymentEnvironment}`, {
-            tableName: this.tableName(),
+        const table = new dynamo.Table(this, `inventory`, {
+            tableName: "inventory",
             partitionKey: this.stringAttribute("pk"),
             sortKey: this.stringAttribute("sk"),
             billingMode: BillingMode.PAY_PER_REQUEST,
@@ -48,9 +47,5 @@ export class InventoryStack extends Stack {
             type: AttributeType.STRING,
             name: value,
         };
-    }
-
-    tableName(): string {
-        return `tracking-poker-inventory-${this.props.deploymentEnvironment}`;
     }
 }

@@ -15,8 +15,7 @@ export async function handler(incomingEvent: ServiceInvocationEvents, context: P
             ? YouTubeVideo.fromUrl(event.detail.videoUrl)
             : YouTubeVideo.fromId(event.detail.videoId);
 
-    await recordThat({
-        name: "VideoAssetRipStarted",
+    await recordThat("VideoAssetRipStarted", {
         videoId: video.id,
     });
     await ripAssetsToS3(video);
@@ -30,13 +29,13 @@ export async function ripAssetsToS3(video: YouTubeVideo) {
     const metadata = await video.resolveMetadata();
     await createObject(`${video.id}/video.webm`, videoFilename);
 
-    await recordThat({
-        name: "VideoAssetStored",
+    await recordThat("VideoAssetStored", {
         videoId: video.id,
         location: `s3://${process.env.BUCKET_NAME}/${video.id}/video.webm`,
         metadata: {
             videoName: metadata.title(),
             videoDuration: metadata.duration().inSeconds(),
+            releaseDate: metadata.releaseDate(),
         },
     });
 
@@ -47,8 +46,7 @@ export async function ripAssetsToS3(video: YouTubeVideo) {
 
     for (const frame of frames) {
         await createObject(`${video.id}/frames/${frame}`, `${framesDirectory}/${frame}`);
-        await recordThat({
-            name: "VideoFrameStored",
+        await recordThat("VideoFrameStored", {
             videoId: video.id,
             frameId: path.basename(frame, ".jpg"),
             location: `s3://${process.env.BUCKET_NAME}/${video.id}/frames/${frame}`,

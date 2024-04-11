@@ -1,0 +1,4903 @@
+[
+  {
+    "version": "0",
+    "id": "2e820604-910d-3e59-02e5-3876ef073d26",
+    "detail-type": "VideoAssetRipStarted",
+    "source": "tracking-poker",
+    "account": "390772177583",
+    "time": "2024-04-11T07:46:00Z",
+    "region": "us-east-2",
+    "resources": [],
+    "detail": {
+      "videoId": "dVs7ORBHsF0"
+    }
+  },
+  {
+    "version": "0",
+    "id": "6c2b5e5d-fc37-0385-2b3c-e5b4c21d3857",
+    "detail-type": "VideoAssetStored",
+    "source": "tracking-poker",
+    "account": "390772177583",
+    "time": "2024-04-11T07:51:12Z",
+    "region": "us-east-2",
+    "resources": [],
+    "detail": {
+      "videoId": "dVs7ORBHsF0",
+      "location": "s3://tracking-poker-asset-ripper-assets-staging/dVs7ORBHsF0/video.webm",
+      "metadata": {
+        "videoName": "Sashimi, Kiran C2B, Israeli Ron & Mike X Play $10/20/40 - Commentary by Christian Soto",
+        "videoDuration": 20165,
+        "releaseDate": "20230615"
+      }
+    }
+  },
+  {
+    "version": "0",
+    "id": "27c0264a-10f8-7f94-b667-a4e82147e178",
+    "detail-type": "VideoFrameStored",
+    "source": "tracking-poker",
+    "account": "390772177583",
+    "time": "2024-04-11T07:52:22Z",
+    "region": "us-east-2",
+    "resources": [],
+    "detail": {
+      "videoId": "dVs7ORBHsF0",
+      "frameId": "frame_0001",
+      "location": "s3://tracking-poker-asset-ripper-assets-staging/dVs7ORBHsF0/frames/frame_0001.jpg"
+    }
+  },
+  {
+    "version": "0",
+    "id": "79bf2d96-d401-7646-ba37-3d85f5f02439",
+    "detail-type": "VideoFrameStored",
+    "source": "tracking-poker",
+    "account": "390772177583",
+    "time": "2024-04-11T07:52:22Z",
+    "region": "us-east-2",
+    "resources": [],
+    "detail": {
+      "videoId": "dVs7ORBHsF0",
+      "frameId": "frame_0002",
+      "location": "s3://tracking-poker-asset-ripper-assets-staging/dVs7ORBHsF0/frames/frame_0002.jpg"
+    }
+  },
+  {
+    "version": "0",
+    "id": "f04f13a5-6d2a-a0fe-8992-e1d2a3568b49",
+    "detail-type": "VideoFrameStored",
+    "source": "tracking-poker",
+    "account": "390772177583",
+    "time": "2024-04-11T07:52:23Z",
+    "region": "us-east-2",
+    "resources": [],
+    "detail": {
+      "videoId": "dVs7ORBHsF0",
+      "frameId": "frame_0003",
+      "location": "s3://tracking-poker-asset-ripper-assets-staging/dVs7ORBHsF0/frames/frame_0003.jpg"
+    }
+  },
+  {
+    "version": "0",
+    "id": "e36ad5de-e7b8-107b-bef9-78ce1a27db93",
+    "detail-type": "VideoFrameStored",
+    "source": "tracking-poker",
+    "account": "390772177583",
+    "time": "2024-04-11T07:52:23Z",
+    "region": "us-east-2",
+    "resources": [],
+    "detail": {
+      "videoId": "dVs7ORBHsF0",
+      "frameId": "frame_0004",
+      "location": "s3://tracking-poker-asset-ripper-assets-staging/dVs7ORBHsF0/frames/frame_0004.jpg"
+    }
+  },
+  {
+    "version": "0",
+    "id": "58843ae2-c8f9-a5ac-1181-28fbe194bbdd",
+    "detail-type": "VideoFrameStored",
+    "source": "tracking-poker",
+    "account": "390772177583",
+    "time": "2024-04-11T07:52:23Z",
+    "region": "us-east-2",
+    "resources": [],
+    "detail": {
+      "videoId": "dVs7ORBHsF0",
+      "frameId": "frame_0005",
+      "location": "s3://tracking-poker-asset-ripper-assets-staging/dVs7ORBHsF0/frames/frame_0005.jpg"
+    }
+  },
+  {
+    "version": "0",
+    "id": "7b2d8456-3a6c-92d9-f633-a8bf1c98ac58",
+    "detail-type": "VideoFrameStored",
+    "source": "tracking-poker",
+    "account": "390772177583",
+    "time": "2024-04-11T07:52:23Z",
+    "region": "us-east-2",
+    "resources": [],
+    "detail": {
+      "videoId": "dVs7ORBHsF0",
+      "frameId": "frame_0006",
+      "location": "s3://tracking-poker-asset-ripper-assets-staging/dVs7ORBHsF0/frames/frame_0006.jpg"
+    }
+  },
+  {
+    "version": "0",
+    "id": "fb39e59b-099a-db9b-4566-12ce1fe57246",
+    "detail-type": "VideoFrameStored",
+    "source": "tracking-poker",
+    "account": "390772177583",
+    "time": "2024-04-11T07:52:23Z",
+    "region": "us-east-2",
+    "resources": [],
+    "detail": {
+      "videoId": "dVs7ORBHsF0",
+      "frameId": "frame_0007",
+      "location": "s3://tracking-poker-asset-ripper-assets-staging/dVs7ORBHsF0/frames/frame_0007.jpg"
+    }
+  },
+  {
+    "version": "0",
+    "id": "86369c5e-958b-4c25-9038-31d2ccde7804",
+    "detail-type": "VideoFrameStored",
+    "source": "tracking-poker",
+    "account": "390772177583",
+    "time": "2024-04-11T07:52:23Z",
+    "region": "us-east-2",
+    "resources": [],
+    "detail": {
+      "videoId": "dVs7ORBHsF0",
+      "frameId": "frame_0008",
+      "location": "s3://tracking-poker-asset-ripper-assets-staging/dVs7ORBHsF0/frames/frame_0008.jpg"
+    }
+  },
+  {
+    "version": "0",
+    "id": "5e3e92f1-6fa4-3ea3-686c-16207cfe9eb9",
+    "detail-type": "VideoFrameStored",
+    "source": "tracking-poker",
+    "account": "390772177583",
+    "time": "2024-04-11T07:52:24Z",
+    "region": "us-east-2",
+    "resources": [],
+    "detail": {
+      "videoId": "dVs7ORBHsF0",
+      "frameId": "frame_0009",
+      "location": "s3://tracking-poker-asset-ripper-assets-staging/dVs7ORBHsF0/frames/frame_0009.jpg"
+    }
+  },
+  {
+    "version": "0",
+    "id": "4b4ad7b6-4998-f2d1-ec2a-b95ab3aad183",
+    "detail-type": "VideoFrameStored",
+    "source": "tracking-poker",
+    "account": "390772177583",
+    "time": "2024-04-11T07:52:24Z",
+    "region": "us-east-2",
+    "resources": [],
+    "detail": {
+      "videoId": "dVs7ORBHsF0",
+      "frameId": "frame_0010",
+      "location": "s3://tracking-poker-asset-ripper-assets-staging/dVs7ORBHsF0/frames/frame_0010.jpg"
+    }
+  },
+  {
+    "version": "0",
+    "id": "a7273229-b9e5-c887-93b7-53ad80a50836",
+    "detail-type": "VideoFrameStored",
+    "source": "tracking-poker",
+    "account": "390772177583",
+    "time": "2024-04-11T07:52:24Z",
+    "region": "us-east-2",
+    "resources": [],
+    "detail": {
+      "videoId": "dVs7ORBHsF0",
+      "frameId": "frame_0011",
+      "location": "s3://tracking-poker-asset-ripper-assets-staging/dVs7ORBHsF0/frames/frame_0011.jpg"
+    }
+  },
+  {
+    "version": "0",
+    "id": "3b0b8289-9f30-c302-e94e-539f2249a72b",
+    "detail-type": "VideoFrameStored",
+    "source": "tracking-poker",
+    "account": "390772177583",
+    "time": "2024-04-11T07:52:24Z",
+    "region": "us-east-2",
+    "resources": [],
+    "detail": {
+      "videoId": "dVs7ORBHsF0",
+      "frameId": "frame_0012",
+      "location": "s3://tracking-poker-asset-ripper-assets-staging/dVs7ORBHsF0/frames/frame_0012.jpg"
+    }
+  },
+  {
+    "version": "0",
+    "id": "5a0f020a-207e-cbf6-0a52-19074ae726d1",
+    "detail-type": "VideoFrameStored",
+    "source": "tracking-poker",
+    "account": "390772177583",
+    "time": "2024-04-11T07:52:24Z",
+    "region": "us-east-2",
+    "resources": [],
+    "detail": {
+      "videoId": "dVs7ORBHsF0",
+      "frameId": "frame_0013",
+      "location": "s3://tracking-poker-asset-ripper-assets-staging/dVs7ORBHsF0/frames/frame_0013.jpg"
+    }
+  },
+  {
+    "version": "0",
+    "id": "33d7d2ca-26a5-3789-7c9f-ebf9eac2bd35",
+    "detail-type": "VideoFrameStored",
+    "source": "tracking-poker",
+    "account": "390772177583",
+    "time": "2024-04-11T07:52:24Z",
+    "region": "us-east-2",
+    "resources": [],
+    "detail": {
+      "videoId": "dVs7ORBHsF0",
+      "frameId": "frame_0014",
+      "location": "s3://tracking-poker-asset-ripper-assets-staging/dVs7ORBHsF0/frames/frame_0014.jpg"
+    }
+  },
+  {
+    "version": "0",
+    "id": "96e1507f-c7a9-9c87-fe0d-cf1c07cbd9bc",
+    "detail-type": "VideoFrameStored",
+    "source": "tracking-poker",
+    "account": "390772177583",
+    "time": "2024-04-11T07:52:24Z",
+    "region": "us-east-2",
+    "resources": [],
+    "detail": {
+      "videoId": "dVs7ORBHsF0",
+      "frameId": "frame_0015",
+      "location": "s3://tracking-poker-asset-ripper-assets-staging/dVs7ORBHsF0/frames/frame_0015.jpg"
+    }
+  },
+  {
+    "version": "0",
+    "id": "4d1fd6cd-5e0e-5ae3-8612-904038f43df7",
+    "detail-type": "VideoFrameStored",
+    "source": "tracking-poker",
+    "account": "390772177583",
+    "time": "2024-04-11T07:52:24Z",
+    "region": "us-east-2",
+    "resources": [],
+    "detail": {
+      "videoId": "dVs7ORBHsF0",
+      "frameId": "frame_0016",
+      "location": "s3://tracking-poker-asset-ripper-assets-staging/dVs7ORBHsF0/frames/frame_0016.jpg"
+    }
+  },
+  {
+    "version": "0",
+    "id": "fb1fa666-3628-423b-b16d-7c23e6207637",
+    "detail-type": "VideoFrameStored",
+    "source": "tracking-poker",
+    "account": "390772177583",
+    "time": "2024-04-11T07:52:25Z",
+    "region": "us-east-2",
+    "resources": [],
+    "detail": {
+      "videoId": "dVs7ORBHsF0",
+      "frameId": "frame_0017",
+      "location": "s3://tracking-poker-asset-ripper-assets-staging/dVs7ORBHsF0/frames/frame_0017.jpg"
+    }
+  },
+  {
+    "version": "0",
+    "id": "45613fcf-ebc5-c6ab-117d-637ee03f4e14",
+    "detail-type": "VideoFrameStored",
+    "source": "tracking-poker",
+    "account": "390772177583",
+    "time": "2024-04-11T07:52:25Z",
+    "region": "us-east-2",
+    "resources": [],
+    "detail": {
+      "videoId": "dVs7ORBHsF0",
+      "frameId": "frame_0018",
+      "location": "s3://tracking-poker-asset-ripper-assets-staging/dVs7ORBHsF0/frames/frame_0018.jpg"
+    }
+  },
+  {
+    "version": "0",
+    "id": "a6dc8da2-cad5-f3ab-7b51-14e0f047a812",
+    "detail-type": "VideoFrameStored",
+    "source": "tracking-poker",
+    "account": "390772177583",
+    "time": "2024-04-11T07:52:25Z",
+    "region": "us-east-2",
+    "resources": [],
+    "detail": {
+      "videoId": "dVs7ORBHsF0",
+      "frameId": "frame_0019",
+      "location": "s3://tracking-poker-asset-ripper-assets-staging/dVs7ORBHsF0/frames/frame_0019.jpg"
+    }
+  },
+  {
+    "version": "0",
+    "id": "847b6dce-e615-e851-e87f-b6ae787f7b3a",
+    "detail-type": "VideoFrameStored",
+    "source": "tracking-poker",
+    "account": "390772177583",
+    "time": "2024-04-11T07:52:25Z",
+    "region": "us-east-2",
+    "resources": [],
+    "detail": {
+      "videoId": "dVs7ORBHsF0",
+      "frameId": "frame_0020",
+      "location": "s3://tracking-poker-asset-ripper-assets-staging/dVs7ORBHsF0/frames/frame_0020.jpg"
+    }
+  },
+  {
+    "version": "0",
+    "id": "5761074b-69cf-ee74-22f0-9db762dd5fce",
+    "detail-type": "VideoFrameStored",
+    "source": "tracking-poker",
+    "account": "390772177583",
+    "time": "2024-04-11T07:52:25Z",
+    "region": "us-east-2",
+    "resources": [],
+    "detail": {
+      "videoId": "dVs7ORBHsF0",
+      "frameId": "frame_0021",
+      "location": "s3://tracking-poker-asset-ripper-assets-staging/dVs7ORBHsF0/frames/frame_0021.jpg"
+    }
+  },
+  {
+    "version": "0",
+    "id": "1e93afc5-d3ef-e8d9-879d-ea9769af0e73",
+    "detail-type": "VideoFrameStored",
+    "source": "tracking-poker",
+    "account": "390772177583",
+    "time": "2024-04-11T07:52:25Z",
+    "region": "us-east-2",
+    "resources": [],
+    "detail": {
+      "videoId": "dVs7ORBHsF0",
+      "frameId": "frame_0022",
+      "location": "s3://tracking-poker-asset-ripper-assets-staging/dVs7ORBHsF0/frames/frame_0022.jpg"
+    }
+  },
+  {
+    "version": "0",
+    "id": "e1b5ee48-e069-b1d8-cb4e-f504e86973ba",
+    "detail-type": "VideoFrameStored",
+    "source": "tracking-poker",
+    "account": "390772177583",
+    "time": "2024-04-11T07:52:25Z",
+    "region": "us-east-2",
+    "resources": [],
+    "detail": {
+      "videoId": "dVs7ORBHsF0",
+      "frameId": "frame_0023",
+      "location": "s3://tracking-poker-asset-ripper-assets-staging/dVs7ORBHsF0/frames/frame_0023.jpg"
+    }
+  },
+  {
+    "version": "0",
+    "id": "a6758ac0-ee6b-c67b-d59c-bbf3bf434646",
+    "detail-type": "VideoFrameStored",
+    "source": "tracking-poker",
+    "account": "390772177583",
+    "time": "2024-04-11T07:52:25Z",
+    "region": "us-east-2",
+    "resources": [],
+    "detail": {
+      "videoId": "dVs7ORBHsF0",
+      "frameId": "frame_0024",
+      "location": "s3://tracking-poker-asset-ripper-assets-staging/dVs7ORBHsF0/frames/frame_0024.jpg"
+    }
+  },
+  {
+    "version": "0",
+    "id": "d3ec9cb4-a49c-a982-c6b8-0751a2c8c449",
+    "detail-type": "VideoFrameStored",
+    "source": "tracking-poker",
+    "account": "390772177583",
+    "time": "2024-04-11T07:52:26Z",
+    "region": "us-east-2",
+    "resources": [],
+    "detail": {
+      "videoId": "dVs7ORBHsF0",
+      "frameId": "frame_0025",
+      "location": "s3://tracking-poker-asset-ripper-assets-staging/dVs7ORBHsF0/frames/frame_0025.jpg"
+    }
+  },
+  {
+    "version": "0",
+    "id": "93938687-0261-c3b6-ebed-60f5d3bcf09e",
+    "detail-type": "VideoFrameStored",
+    "source": "tracking-poker",
+    "account": "390772177583",
+    "time": "2024-04-11T07:52:26Z",
+    "region": "us-east-2",
+    "resources": [],
+    "detail": {
+      "videoId": "dVs7ORBHsF0",
+      "frameId": "frame_0026",
+      "location": "s3://tracking-poker-asset-ripper-assets-staging/dVs7ORBHsF0/frames/frame_0026.jpg"
+    }
+  },
+  {
+    "version": "0",
+    "id": "606aa134-2893-65cd-befc-81a32cede8ef",
+    "detail-type": "VideoFrameStored",
+    "source": "tracking-poker",
+    "account": "390772177583",
+    "time": "2024-04-11T07:52:26Z",
+    "region": "us-east-2",
+    "resources": [],
+    "detail": {
+      "videoId": "dVs7ORBHsF0",
+      "frameId": "frame_0027",
+      "location": "s3://tracking-poker-asset-ripper-assets-staging/dVs7ORBHsF0/frames/frame_0027.jpg"
+    }
+  },
+  {
+    "version": "0",
+    "id": "941a06f0-536f-1de7-f016-b40b070918a3",
+    "detail-type": "VideoFrameStored",
+    "source": "tracking-poker",
+    "account": "390772177583",
+    "time": "2024-04-11T07:52:26Z",
+    "region": "us-east-2",
+    "resources": [],
+    "detail": {
+      "videoId": "dVs7ORBHsF0",
+      "frameId": "frame_0028",
+      "location": "s3://tracking-poker-asset-ripper-assets-staging/dVs7ORBHsF0/frames/frame_0028.jpg"
+    }
+  },
+  {
+    "version": "0",
+    "id": "c38c6a1b-3e32-3be8-8b51-90d7c52d29d4",
+    "detail-type": "VideoFrameStored",
+    "source": "tracking-poker",
+    "account": "390772177583",
+    "time": "2024-04-11T07:52:26Z",
+    "region": "us-east-2",
+    "resources": [],
+    "detail": {
+      "videoId": "dVs7ORBHsF0",
+      "frameId": "frame_0029",
+      "location": "s3://tracking-poker-asset-ripper-assets-staging/dVs7ORBHsF0/frames/frame_0029.jpg"
+    }
+  },
+  {
+    "version": "0",
+    "id": "2ab4a181-6ca4-c0ae-19c2-c34d48cc173b",
+    "detail-type": "VideoFrameStored",
+    "source": "tracking-poker",
+    "account": "390772177583",
+    "time": "2024-04-11T07:52:26Z",
+    "region": "us-east-2",
+    "resources": [],
+    "detail": {
+      "videoId": "dVs7ORBHsF0",
+      "frameId": "frame_0030",
+      "location": "s3://tracking-poker-asset-ripper-assets-staging/dVs7ORBHsF0/frames/frame_0030.jpg"
+    }
+  },
+  {
+    "version": "0",
+    "id": "5f798fe7-784a-c31a-f9a6-15f5670099c8",
+    "detail-type": "VideoFrameStored",
+    "source": "tracking-poker",
+    "account": "390772177583",
+    "time": "2024-04-11T07:52:26Z",
+    "region": "us-east-2",
+    "resources": [],
+    "detail": {
+      "videoId": "dVs7ORBHsF0",
+      "frameId": "frame_0031",
+      "location": "s3://tracking-poker-asset-ripper-assets-staging/dVs7ORBHsF0/frames/frame_0031.jpg"
+    }
+  },
+  {
+    "version": "0",
+    "id": "d469351f-53fe-1faa-3813-24df14e60aef",
+    "detail-type": "VideoFrameStored",
+    "source": "tracking-poker",
+    "account": "390772177583",
+    "time": "2024-04-11T07:52:26Z",
+    "region": "us-east-2",
+    "resources": [],
+    "detail": {
+      "videoId": "dVs7ORBHsF0",
+      "frameId": "frame_0032",
+      "location": "s3://tracking-poker-asset-ripper-assets-staging/dVs7ORBHsF0/frames/frame_0032.jpg"
+    }
+  },
+  {
+    "version": "0",
+    "id": "ba10e921-5bcb-5e69-e7bd-e21ea8cc29c4",
+    "detail-type": "VideoFrameStored",
+    "source": "tracking-poker",
+    "account": "390772177583",
+    "time": "2024-04-11T07:52:27Z",
+    "region": "us-east-2",
+    "resources": [],
+    "detail": {
+      "videoId": "dVs7ORBHsF0",
+      "frameId": "frame_0033",
+      "location": "s3://tracking-poker-asset-ripper-assets-staging/dVs7ORBHsF0/frames/frame_0033.jpg"
+    }
+  },
+  {
+    "version": "0",
+    "id": "2091d6ca-a5f0-50bd-07d5-2c534ab1493c",
+    "detail-type": "VideoFrameStored",
+    "source": "tracking-poker",
+    "account": "390772177583",
+    "time": "2024-04-11T07:52:27Z",
+    "region": "us-east-2",
+    "resources": [],
+    "detail": {
+      "videoId": "dVs7ORBHsF0",
+      "frameId": "frame_0034",
+      "location": "s3://tracking-poker-asset-ripper-assets-staging/dVs7ORBHsF0/frames/frame_0034.jpg"
+    }
+  },
+  {
+    "version": "0",
+    "id": "f67520f8-a113-e757-e0f9-fce26c9eb6b4",
+    "detail-type": "VideoFrameStored",
+    "source": "tracking-poker",
+    "account": "390772177583",
+    "time": "2024-04-11T07:52:27Z",
+    "region": "us-east-2",
+    "resources": [],
+    "detail": {
+      "videoId": "dVs7ORBHsF0",
+      "frameId": "frame_0035",
+      "location": "s3://tracking-poker-asset-ripper-assets-staging/dVs7ORBHsF0/frames/frame_0035.jpg"
+    }
+  },
+  {
+    "version": "0",
+    "id": "a1676ace-ae22-b4e8-6d9c-b53d24b70b72",
+    "detail-type": "VideoFrameStored",
+    "source": "tracking-poker",
+    "account": "390772177583",
+    "time": "2024-04-11T07:52:27Z",
+    "region": "us-east-2",
+    "resources": [],
+    "detail": {
+      "videoId": "dVs7ORBHsF0",
+      "frameId": "frame_0036",
+      "location": "s3://tracking-poker-asset-ripper-assets-staging/dVs7ORBHsF0/frames/frame_0036.jpg"
+    }
+  },
+  {
+    "version": "0",
+    "id": "5949d227-9b22-9e62-8bed-6e4aaa4f43da",
+    "detail-type": "VideoFrameStored",
+    "source": "tracking-poker",
+    "account": "390772177583",
+    "time": "2024-04-11T07:52:27Z",
+    "region": "us-east-2",
+    "resources": [],
+    "detail": {
+      "videoId": "dVs7ORBHsF0",
+      "frameId": "frame_0037",
+      "location": "s3://tracking-poker-asset-ripper-assets-staging/dVs7ORBHsF0/frames/frame_0037.jpg"
+    }
+  },
+  {
+    "version": "0",
+    "id": "01025b89-e780-f702-3b75-8afd52c85faf",
+    "detail-type": "VideoFrameStored",
+    "source": "tracking-poker",
+    "account": "390772177583",
+    "time": "2024-04-11T07:52:27Z",
+    "region": "us-east-2",
+    "resources": [],
+    "detail": {
+      "videoId": "dVs7ORBHsF0",
+      "frameId": "frame_0038",
+      "location": "s3://tracking-poker-asset-ripper-assets-staging/dVs7ORBHsF0/frames/frame_0038.jpg"
+    }
+  },
+  {
+    "version": "0",
+    "id": "93e639f7-fe23-ca36-b99c-1d235d4c8da0",
+    "detail-type": "FrameClassifiedAsJunk",
+    "source": "tracking-poker",
+    "account": "390772177583",
+    "time": "2024-04-11T07:52:27Z",
+    "region": "us-east-2",
+    "resources": [],
+    "detail": {
+      "videoId": "dVs7ORBHsF0",
+      "frameId": "frame_0001"
+    }
+  },
+  {
+    "version": "0",
+    "id": "c26eefea-c4ec-f2d4-da5f-9398ba25a9a0",
+    "detail-type": "VideoFrameStored",
+    "source": "tracking-poker",
+    "account": "390772177583",
+    "time": "2024-04-11T07:52:27Z",
+    "region": "us-east-2",
+    "resources": [],
+    "detail": {
+      "videoId": "dVs7ORBHsF0",
+      "frameId": "frame_0039",
+      "location": "s3://tracking-poker-asset-ripper-assets-staging/dVs7ORBHsF0/frames/frame_0039.jpg"
+    }
+  },
+  {
+    "version": "0",
+    "id": "e6244deb-5da2-3164-9889-3da0b8a8219e",
+    "detail-type": "VideoFrameStored",
+    "source": "tracking-poker",
+    "account": "390772177583",
+    "time": "2024-04-11T07:52:27Z",
+    "region": "us-east-2",
+    "resources": [],
+    "detail": {
+      "videoId": "dVs7ORBHsF0",
+      "frameId": "frame_0040",
+      "location": "s3://tracking-poker-asset-ripper-assets-staging/dVs7ORBHsF0/frames/frame_0040.jpg"
+    }
+  },
+  {
+    "version": "0",
+    "id": "41a2eb4d-7af7-eb2d-8f9e-62949390e3b3",
+    "detail-type": "FrameClassifiedAsJunk",
+    "source": "tracking-poker",
+    "account": "390772177583",
+    "time": "2024-04-11T07:52:27Z",
+    "region": "us-east-2",
+    "resources": [],
+    "detail": {
+      "videoId": "dVs7ORBHsF0",
+      "frameId": "frame_0010"
+    }
+  },
+  {
+    "version": "0",
+    "id": "08da892f-6602-7690-aa2a-7ebb2d2782bf",
+    "detail-type": "VideoFrameStored",
+    "source": "tracking-poker",
+    "account": "390772177583",
+    "time": "2024-04-11T07:52:28Z",
+    "region": "us-east-2",
+    "resources": [],
+    "detail": {
+      "videoId": "dVs7ORBHsF0",
+      "frameId": "frame_0041",
+      "location": "s3://tracking-poker-asset-ripper-assets-staging/dVs7ORBHsF0/frames/frame_0041.jpg"
+    }
+  },
+  {
+    "version": "0",
+    "id": "4d5d3d02-8b49-c407-c20e-b0ff9e3d281d",
+    "detail-type": "FrameClassifiedAsJunk",
+    "source": "tracking-poker",
+    "account": "390772177583",
+    "time": "2024-04-11T07:52:28Z",
+    "region": "us-east-2",
+    "resources": [],
+    "detail": {
+      "videoId": "dVs7ORBHsF0",
+      "frameId": "frame_0002"
+    }
+  },
+  {
+    "version": "0",
+    "id": "baca8c0c-74e4-9471-42ba-89bf573cd49c",
+    "detail-type": "FrameClassifiedAsJunk",
+    "source": "tracking-poker",
+    "account": "390772177583",
+    "time": "2024-04-11T07:52:28Z",
+    "region": "us-east-2",
+    "resources": [],
+    "detail": {
+      "videoId": "dVs7ORBHsF0",
+      "frameId": "frame_0011"
+    }
+  },
+  {
+    "version": "0",
+    "id": "98ddb551-e36d-e1a9-2933-5d00a6767456",
+    "detail-type": "VideoFrameStored",
+    "source": "tracking-poker",
+    "account": "390772177583",
+    "time": "2024-04-11T07:52:28Z",
+    "region": "us-east-2",
+    "resources": [],
+    "detail": {
+      "videoId": "dVs7ORBHsF0",
+      "frameId": "frame_0042",
+      "location": "s3://tracking-poker-asset-ripper-assets-staging/dVs7ORBHsF0/frames/frame_0042.jpg"
+    }
+  },
+  {
+    "version": "0",
+    "id": "02b00d83-c006-35da-e589-95b7cc7a3dd6",
+    "detail-type": "VideoFrameStored",
+    "source": "tracking-poker",
+    "account": "390772177583",
+    "time": "2024-04-11T07:52:28Z",
+    "region": "us-east-2",
+    "resources": [],
+    "detail": {
+      "videoId": "dVs7ORBHsF0",
+      "frameId": "frame_0043",
+      "location": "s3://tracking-poker-asset-ripper-assets-staging/dVs7ORBHsF0/frames/frame_0043.jpg"
+    }
+  },
+  {
+    "version": "0",
+    "id": "e3d76cf1-f2a8-85aa-3701-c4b0ebb0cb7c",
+    "detail-type": "FrameClassifiedAsJunk",
+    "source": "tracking-poker",
+    "account": "390772177583",
+    "time": "2024-04-11T07:52:28Z",
+    "region": "us-east-2",
+    "resources": [],
+    "detail": {
+      "videoId": "dVs7ORBHsF0",
+      "frameId": "frame_0013"
+    }
+  },
+  {
+    "version": "0",
+    "id": "1d4f0236-e774-82db-19ff-e0e71685e966",
+    "detail-type": "FrameClassifiedAsJunk",
+    "source": "tracking-poker",
+    "account": "390772177583",
+    "time": "2024-04-11T07:52:28Z",
+    "region": "us-east-2",
+    "resources": [],
+    "detail": {
+      "videoId": "dVs7ORBHsF0",
+      "frameId": "frame_0003"
+    }
+  },
+  {
+    "version": "0",
+    "id": "3ecb3d11-b92f-1819-78b9-e45ab67e9276",
+    "detail-type": "VideoFrameStored",
+    "source": "tracking-poker",
+    "account": "390772177583",
+    "time": "2024-04-11T07:52:28Z",
+    "region": "us-east-2",
+    "resources": [],
+    "detail": {
+      "videoId": "dVs7ORBHsF0",
+      "frameId": "frame_0044",
+      "location": "s3://tracking-poker-asset-ripper-assets-staging/dVs7ORBHsF0/frames/frame_0044.jpg"
+    }
+  },
+  {
+    "version": "0",
+    "id": "7ffe1dca-e698-417f-1612-3200b097fd4c",
+    "detail-type": "FrameClassifiedAsJunk",
+    "source": "tracking-poker",
+    "account": "390772177583",
+    "time": "2024-04-11T07:52:28Z",
+    "region": "us-east-2",
+    "resources": [],
+    "detail": {
+      "videoId": "dVs7ORBHsF0",
+      "frameId": "frame_0014"
+    }
+  },
+  {
+    "version": "0",
+    "id": "7f6b1557-b3fa-e098-06ae-49498997f2e2",
+    "detail-type": "FrameClassifiedAsJunk",
+    "source": "tracking-poker",
+    "account": "390772177583",
+    "time": "2024-04-11T07:52:28Z",
+    "region": "us-east-2",
+    "resources": [],
+    "detail": {
+      "videoId": "dVs7ORBHsF0",
+      "frameId": "frame_0016"
+    }
+  },
+  {
+    "version": "0",
+    "id": "a9464352-b87d-300f-ddcc-5af8eca74687",
+    "detail-type": "FrameClassifiedAsJunk",
+    "source": "tracking-poker",
+    "account": "390772177583",
+    "time": "2024-04-11T07:52:28Z",
+    "region": "us-east-2",
+    "resources": [],
+    "detail": {
+      "videoId": "dVs7ORBHsF0",
+      "frameId": "frame_0005"
+    }
+  },
+  {
+    "version": "0",
+    "id": "4e1bc4ae-6b51-2bc0-1376-8fa10e0fbb54",
+    "detail-type": "FrameClassifiedAsJunk",
+    "source": "tracking-poker",
+    "account": "390772177583",
+    "time": "2024-04-11T07:52:28Z",
+    "region": "us-east-2",
+    "resources": [],
+    "detail": {
+      "videoId": "dVs7ORBHsF0",
+      "frameId": "frame_0006"
+    }
+  },
+  {
+    "version": "0",
+    "id": "65a62bcf-f7dc-c346-5b46-dcedff26fa4d",
+    "detail-type": "VideoFrameStored",
+    "source": "tracking-poker",
+    "account": "390772177583",
+    "time": "2024-04-11T07:52:28Z",
+    "region": "us-east-2",
+    "resources": [],
+    "detail": {
+      "videoId": "dVs7ORBHsF0",
+      "frameId": "frame_0045",
+      "location": "s3://tracking-poker-asset-ripper-assets-staging/dVs7ORBHsF0/frames/frame_0045.jpg"
+    }
+  },
+  {
+    "version": "0",
+    "id": "753aaeff-6a97-5482-d4ef-637bb811ccb5",
+    "detail-type": "FrameClassifiedAsJunk",
+    "source": "tracking-poker",
+    "account": "390772177583",
+    "time": "2024-04-11T07:52:28Z",
+    "region": "us-east-2",
+    "resources": [],
+    "detail": {
+      "videoId": "dVs7ORBHsF0",
+      "frameId": "frame_0015"
+    }
+  },
+  {
+    "version": "0",
+    "id": "a8c1b449-7b7c-9095-80f6-56605e8abaa3",
+    "detail-type": "FrameClassifiedAsJunk",
+    "source": "tracking-poker",
+    "account": "390772177583",
+    "time": "2024-04-11T07:52:28Z",
+    "region": "us-east-2",
+    "resources": [],
+    "detail": {
+      "videoId": "dVs7ORBHsF0",
+      "frameId": "frame_0004"
+    }
+  },
+  {
+    "version": "0",
+    "id": "9a3480a4-839a-1454-096b-ad096e3d640c",
+    "detail-type": "VideoFrameStored",
+    "source": "tracking-poker",
+    "account": "390772177583",
+    "time": "2024-04-11T07:52:28Z",
+    "region": "us-east-2",
+    "resources": [],
+    "detail": {
+      "videoId": "dVs7ORBHsF0",
+      "frameId": "frame_0046",
+      "location": "s3://tracking-poker-asset-ripper-assets-staging/dVs7ORBHsF0/frames/frame_0046.jpg"
+    }
+  },
+  {
+    "version": "0",
+    "id": "31553c36-20a3-de9e-c57a-ca0d27839249",
+    "detail-type": "FrameClassifiedAsJunk",
+    "source": "tracking-poker",
+    "account": "390772177583",
+    "time": "2024-04-11T07:52:28Z",
+    "region": "us-east-2",
+    "resources": [],
+    "detail": {
+      "videoId": "dVs7ORBHsF0",
+      "frameId": "frame_0008"
+    }
+  },
+  {
+    "version": "0",
+    "id": "d79cb8fa-238d-770f-a78b-64901c51235e",
+    "detail-type": "FrameClassifiedAsJunk",
+    "source": "tracking-poker",
+    "account": "390772177583",
+    "time": "2024-04-11T07:52:28Z",
+    "region": "us-east-2",
+    "resources": [],
+    "detail": {
+      "videoId": "dVs7ORBHsF0",
+      "frameId": "frame_0007"
+    }
+  },
+  {
+    "version": "0",
+    "id": "c0aae111-87f3-a61d-3453-4afee0755c32",
+    "detail-type": "VideoFrameStored",
+    "source": "tracking-poker",
+    "account": "390772177583",
+    "time": "2024-04-11T07:52:28Z",
+    "region": "us-east-2",
+    "resources": [],
+    "detail": {
+      "videoId": "dVs7ORBHsF0",
+      "frameId": "frame_0047",
+      "location": "s3://tracking-poker-asset-ripper-assets-staging/dVs7ORBHsF0/frames/frame_0047.jpg"
+    }
+  },
+  {
+    "version": "0",
+    "id": "9f285f4b-6b06-7bdd-af56-4e03f1b79f40",
+    "detail-type": "VideoFrameStored",
+    "source": "tracking-poker",
+    "account": "390772177583",
+    "time": "2024-04-11T07:52:28Z",
+    "region": "us-east-2",
+    "resources": [],
+    "detail": {
+      "videoId": "dVs7ORBHsF0",
+      "frameId": "frame_0048",
+      "location": "s3://tracking-poker-asset-ripper-assets-staging/dVs7ORBHsF0/frames/frame_0048.jpg"
+    }
+  },
+  {
+    "version": "0",
+    "id": "31f6f5c2-98c5-7302-baa1-b6079086385d",
+    "detail-type": "FrameClassifiedAsJunk",
+    "source": "tracking-poker",
+    "account": "390772177583",
+    "time": "2024-04-11T07:52:28Z",
+    "region": "us-east-2",
+    "resources": [],
+    "detail": {
+      "videoId": "dVs7ORBHsF0",
+      "frameId": "frame_0018"
+    }
+  },
+  {
+    "version": "0",
+    "id": "e8eefdb4-3974-d29b-120d-d8f0c0390a0c",
+    "detail-type": "FrameClassifiedAsJunk",
+    "source": "tracking-poker",
+    "account": "390772177583",
+    "time": "2024-04-11T07:52:29Z",
+    "region": "us-east-2",
+    "resources": [],
+    "detail": {
+      "videoId": "dVs7ORBHsF0",
+      "frameId": "frame_0020"
+    }
+  },
+  {
+    "version": "0",
+    "id": "1753c3b7-c2e1-cb75-dfb2-994aea3a2721",
+    "detail-type": "FrameClassifiedAsJunk",
+    "source": "tracking-poker",
+    "account": "390772177583",
+    "time": "2024-04-11T07:52:29Z",
+    "region": "us-east-2",
+    "resources": [],
+    "detail": {
+      "videoId": "dVs7ORBHsF0",
+      "frameId": "frame_0017"
+    }
+  },
+  {
+    "version": "0",
+    "id": "fed61b5f-1f3e-b1bc-6983-5509d87f9934",
+    "detail-type": "VideoFrameStored",
+    "source": "tracking-poker",
+    "account": "390772177583",
+    "time": "2024-04-11T07:52:29Z",
+    "region": "us-east-2",
+    "resources": [],
+    "detail": {
+      "videoId": "dVs7ORBHsF0",
+      "frameId": "frame_0049",
+      "location": "s3://tracking-poker-asset-ripper-assets-staging/dVs7ORBHsF0/frames/frame_0049.jpg"
+    }
+  },
+  {
+    "version": "0",
+    "id": "063d45aa-b12a-f77d-05df-8b2d8237eb1d",
+    "detail-type": "FrameClassifiedAsJunk",
+    "source": "tracking-poker",
+    "account": "390772177583",
+    "time": "2024-04-11T07:52:29Z",
+    "region": "us-east-2",
+    "resources": [],
+    "detail": {
+      "videoId": "dVs7ORBHsF0",
+      "frameId": "frame_0019"
+    }
+  },
+  {
+    "version": "0",
+    "id": "86b06453-0292-73df-7629-df0f791a10aa",
+    "detail-type": "FrameClassifiedAsJunk",
+    "source": "tracking-poker",
+    "account": "390772177583",
+    "time": "2024-04-11T07:52:29Z",
+    "region": "us-east-2",
+    "resources": [],
+    "detail": {
+      "videoId": "dVs7ORBHsF0",
+      "frameId": "frame_0012"
+    }
+  },
+  {
+    "version": "0",
+    "id": "9972c0fb-4ffb-83b9-957c-5c424922ae2a",
+    "detail-type": "VideoFrameStored",
+    "source": "tracking-poker",
+    "account": "390772177583",
+    "time": "2024-04-11T07:52:29Z",
+    "region": "us-east-2",
+    "resources": [],
+    "detail": {
+      "videoId": "dVs7ORBHsF0",
+      "frameId": "frame_0050",
+      "location": "s3://tracking-poker-asset-ripper-assets-staging/dVs7ORBHsF0/frames/frame_0050.jpg"
+    }
+  },
+  {
+    "version": "0",
+    "id": "1869bdec-2952-102e-3f66-caddfaf62b21",
+    "detail-type": "VideoFrameStored",
+    "source": "tracking-poker",
+    "account": "390772177583",
+    "time": "2024-04-11T07:52:29Z",
+    "region": "us-east-2",
+    "resources": [],
+    "detail": {
+      "videoId": "dVs7ORBHsF0",
+      "frameId": "frame_0051",
+      "location": "s3://tracking-poker-asset-ripper-assets-staging/dVs7ORBHsF0/frames/frame_0051.jpg"
+    }
+  },
+  {
+    "version": "0",
+    "id": "29c02f03-09df-a5e5-2025-4b705f0f43fd",
+    "detail-type": "FrameClassifiedAsJunk",
+    "source": "tracking-poker",
+    "account": "390772177583",
+    "time": "2024-04-11T07:52:29Z",
+    "region": "us-east-2",
+    "resources": [],
+    "detail": {
+      "videoId": "dVs7ORBHsF0",
+      "frameId": "frame_0009"
+    }
+  },
+  {
+    "version": "0",
+    "id": "a5fd5e72-e14a-d1ff-15a9-5867805da1bf",
+    "detail-type": "FrameClassifiedAsJunk",
+    "source": "tracking-poker",
+    "account": "390772177583",
+    "time": "2024-04-11T07:52:29Z",
+    "region": "us-east-2",
+    "resources": [],
+    "detail": {
+      "videoId": "dVs7ORBHsF0",
+      "frameId": "frame_0021"
+    }
+  },
+  {
+    "version": "0",
+    "id": "021b43cc-907d-8916-29da-ec2fc9632697",
+    "detail-type": "VideoFrameStored",
+    "source": "tracking-poker",
+    "account": "390772177583",
+    "time": "2024-04-11T07:52:29Z",
+    "region": "us-east-2",
+    "resources": [],
+    "detail": {
+      "videoId": "dVs7ORBHsF0",
+      "frameId": "frame_0052",
+      "location": "s3://tracking-poker-asset-ripper-assets-staging/dVs7ORBHsF0/frames/frame_0052.jpg"
+    }
+  },
+  {
+    "version": "0",
+    "id": "b55589b3-a4b8-2380-dd1a-e5812502e1f7",
+    "detail-type": "FrameClassifiedAsJunk",
+    "source": "tracking-poker",
+    "account": "390772177583",
+    "time": "2024-04-11T07:52:29Z",
+    "region": "us-east-2",
+    "resources": [],
+    "detail": {
+      "videoId": "dVs7ORBHsF0",
+      "frameId": "frame_0037"
+    }
+  },
+  {
+    "version": "0",
+    "id": "ee7e5716-c5f6-2f1a-6f6a-d50d3a3c2096",
+    "detail-type": "VideoFrameStored",
+    "source": "tracking-poker",
+    "account": "390772177583",
+    "time": "2024-04-11T07:52:29Z",
+    "region": "us-east-2",
+    "resources": [],
+    "detail": {
+      "videoId": "dVs7ORBHsF0",
+      "frameId": "frame_0053",
+      "location": "s3://tracking-poker-asset-ripper-assets-staging/dVs7ORBHsF0/frames/frame_0053.jpg"
+    }
+  },
+  {
+    "version": "0",
+    "id": "27eb9447-b65b-e51d-c0e2-10794891c444",
+    "detail-type": "FrameClassifiedAsJunk",
+    "source": "tracking-poker",
+    "account": "390772177583",
+    "time": "2024-04-11T07:52:29Z",
+    "region": "us-east-2",
+    "resources": [],
+    "detail": {
+      "videoId": "dVs7ORBHsF0",
+      "frameId": "frame_0034"
+    }
+  },
+  {
+    "version": "0",
+    "id": "39dd607e-7883-fed7-7778-d44c596c810f",
+    "detail-type": "VideoFrameStored",
+    "source": "tracking-poker",
+    "account": "390772177583",
+    "time": "2024-04-11T07:52:29Z",
+    "region": "us-east-2",
+    "resources": [],
+    "detail": {
+      "videoId": "dVs7ORBHsF0",
+      "frameId": "frame_0054",
+      "location": "s3://tracking-poker-asset-ripper-assets-staging/dVs7ORBHsF0/frames/frame_0054.jpg"
+    }
+  },
+  {
+    "version": "0",
+    "id": "59d11f1f-a1a2-59bf-b51a-c4e36d3f0180",
+    "detail-type": "FrameClassifiedAsJunk",
+    "source": "tracking-poker",
+    "account": "390772177583",
+    "time": "2024-04-11T07:52:29Z",
+    "region": "us-east-2",
+    "resources": [],
+    "detail": {
+      "videoId": "dVs7ORBHsF0",
+      "frameId": "frame_0024"
+    }
+  },
+  {
+    "version": "0",
+    "id": "ede60b88-34c6-eba7-66e0-39df1573881d",
+    "detail-type": "VideoFrameStored",
+    "source": "tracking-poker",
+    "account": "390772177583",
+    "time": "2024-04-11T07:52:29Z",
+    "region": "us-east-2",
+    "resources": [],
+    "detail": {
+      "videoId": "dVs7ORBHsF0",
+      "frameId": "frame_0055",
+      "location": "s3://tracking-poker-asset-ripper-assets-staging/dVs7ORBHsF0/frames/frame_0055.jpg"
+    }
+  },
+  {
+    "version": "0",
+    "id": "d3948efa-5efd-4369-df55-c9f754400898",
+    "detail-type": "VideoFrameStored",
+    "source": "tracking-poker",
+    "account": "390772177583",
+    "time": "2024-04-11T07:52:30Z",
+    "region": "us-east-2",
+    "resources": [],
+    "detail": {
+      "videoId": "dVs7ORBHsF0",
+      "frameId": "frame_0058",
+      "location": "s3://tracking-poker-asset-ripper-assets-staging/dVs7ORBHsF0/frames/frame_0058.jpg"
+    }
+  },
+  {
+    "version": "0",
+    "id": "d4679ed0-3cca-880e-5898-f52bb57d6c23",
+    "detail-type": "VideoFrameStored",
+    "source": "tracking-poker",
+    "account": "390772177583",
+    "time": "2024-04-11T07:52:30Z",
+    "region": "us-east-2",
+    "resources": [],
+    "detail": {
+      "videoId": "dVs7ORBHsF0",
+      "frameId": "frame_0056",
+      "location": "s3://tracking-poker-asset-ripper-assets-staging/dVs7ORBHsF0/frames/frame_0056.jpg"
+    }
+  },
+  {
+    "version": "0",
+    "id": "f29be8c9-10c4-4edc-da65-77ddd16c2817",
+    "detail-type": "FrameClassifiedAsJunk",
+    "source": "tracking-poker",
+    "account": "390772177583",
+    "time": "2024-04-11T07:52:30Z",
+    "region": "us-east-2",
+    "resources": [],
+    "detail": {
+      "videoId": "dVs7ORBHsF0",
+      "frameId": "frame_0038"
+    }
+  },
+  {
+    "version": "0",
+    "id": "b11c9e6a-d826-d348-76f2-280e2f067d74",
+    "detail-type": "FrameClassifiedAsJunk",
+    "source": "tracking-poker",
+    "account": "390772177583",
+    "time": "2024-04-11T07:52:30Z",
+    "region": "us-east-2",
+    "resources": [],
+    "detail": {
+      "videoId": "dVs7ORBHsF0",
+      "frameId": "frame_0023"
+    }
+  },
+  {
+    "version": "0",
+    "id": "8095a203-25d3-3c41-66b4-1fc853f314e7",
+    "detail-type": "VideoFrameStored",
+    "source": "tracking-poker",
+    "account": "390772177583",
+    "time": "2024-04-11T07:52:30Z",
+    "region": "us-east-2",
+    "resources": [],
+    "detail": {
+      "videoId": "dVs7ORBHsF0",
+      "frameId": "frame_0057",
+      "location": "s3://tracking-poker-asset-ripper-assets-staging/dVs7ORBHsF0/frames/frame_0057.jpg"
+    }
+  },
+  {
+    "version": "0",
+    "id": "f448a5f1-75c8-9a2b-673a-fae28111710c",
+    "detail-type": "FrameClassifiedAsJunk",
+    "source": "tracking-poker",
+    "account": "390772177583",
+    "time": "2024-04-11T07:52:30Z",
+    "region": "us-east-2",
+    "resources": [],
+    "detail": {
+      "videoId": "dVs7ORBHsF0",
+      "frameId": "frame_0026"
+    }
+  },
+  {
+    "version": "0",
+    "id": "6c0fd994-0e5f-7dc7-9782-155c5a12754e",
+    "detail-type": "FrameClassifiedAsJunk",
+    "source": "tracking-poker",
+    "account": "390772177583",
+    "time": "2024-04-11T07:52:30Z",
+    "region": "us-east-2",
+    "resources": [],
+    "detail": {
+      "videoId": "dVs7ORBHsF0",
+      "frameId": "frame_0022"
+    }
+  },
+  {
+    "version": "0",
+    "id": "91d6e7af-35e7-017d-794e-30a1a2bff1dc",
+    "detail-type": "FrameClassifiedAsJunk",
+    "source": "tracking-poker",
+    "account": "390772177583",
+    "time": "2024-04-11T07:52:30Z",
+    "region": "us-east-2",
+    "resources": [],
+    "detail": {
+      "videoId": "dVs7ORBHsF0",
+      "frameId": "frame_0028"
+    }
+  },
+  {
+    "version": "0",
+    "id": "f0f0b29b-acaf-aed6-94c1-b2327832f024",
+    "detail-type": "FrameClassifiedAsJunk",
+    "source": "tracking-poker",
+    "account": "390772177583",
+    "time": "2024-04-11T07:52:30Z",
+    "region": "us-east-2",
+    "resources": [],
+    "detail": {
+      "videoId": "dVs7ORBHsF0",
+      "frameId": "frame_0027"
+    }
+  },
+  {
+    "version": "0",
+    "id": "ef18c3b7-161d-ba7e-e9e1-13f5e9bbd9ed",
+    "detail-type": "FrameClassifiedAsJunk",
+    "source": "tracking-poker",
+    "account": "390772177583",
+    "time": "2024-04-11T07:52:30Z",
+    "region": "us-east-2",
+    "resources": [],
+    "detail": {
+      "videoId": "dVs7ORBHsF0",
+      "frameId": "frame_0029"
+    }
+  },
+  {
+    "version": "0",
+    "id": "bb196e9e-b11b-777d-157f-d369109f54ee",
+    "detail-type": "VideoFrameStored",
+    "source": "tracking-poker",
+    "account": "390772177583",
+    "time": "2024-04-11T07:52:30Z",
+    "region": "us-east-2",
+    "resources": [],
+    "detail": {
+      "videoId": "dVs7ORBHsF0",
+      "frameId": "frame_0059",
+      "location": "s3://tracking-poker-asset-ripper-assets-staging/dVs7ORBHsF0/frames/frame_0059.jpg"
+    }
+  },
+  {
+    "version": "0",
+    "id": "a028ac68-c8bb-dbf9-322a-cb263a73e2f3",
+    "detail-type": "FrameClassifiedAsJunk",
+    "source": "tracking-poker",
+    "account": "390772177583",
+    "time": "2024-04-11T07:52:30Z",
+    "region": "us-east-2",
+    "resources": [],
+    "detail": {
+      "videoId": "dVs7ORBHsF0",
+      "frameId": "frame_0025"
+    }
+  },
+  {
+    "version": "0",
+    "id": "0500b1c5-09c3-c41a-e27f-6e63d89313f4",
+    "detail-type": "VideoFrameStored",
+    "source": "tracking-poker",
+    "account": "390772177583",
+    "time": "2024-04-11T07:52:30Z",
+    "region": "us-east-2",
+    "resources": [],
+    "detail": {
+      "videoId": "dVs7ORBHsF0",
+      "frameId": "frame_0060",
+      "location": "s3://tracking-poker-asset-ripper-assets-staging/dVs7ORBHsF0/frames/frame_0060.jpg"
+    }
+  },
+  {
+    "version": "0",
+    "id": "f219e487-8c6c-a86f-849c-efe8dcdec688",
+    "detail-type": "FrameClassifiedAsJunk",
+    "source": "tracking-poker",
+    "account": "390772177583",
+    "time": "2024-04-11T07:52:30Z",
+    "region": "us-east-2",
+    "resources": [],
+    "detail": {
+      "videoId": "dVs7ORBHsF0",
+      "frameId": "frame_0030"
+    }
+  },
+  {
+    "version": "0",
+    "id": "19514846-e537-781a-889f-714e07a5afab",
+    "detail-type": "FrameClassifiedAsJunk",
+    "source": "tracking-poker",
+    "account": "390772177583",
+    "time": "2024-04-11T07:52:30Z",
+    "region": "us-east-2",
+    "resources": [],
+    "detail": {
+      "videoId": "dVs7ORBHsF0",
+      "frameId": "frame_0043"
+    }
+  },
+  {
+    "version": "0",
+    "id": "2a509e3a-e71b-28f6-a261-363a266740d5",
+    "detail-type": "VideoFrameStored",
+    "source": "tracking-poker",
+    "account": "390772177583",
+    "time": "2024-04-11T07:52:30Z",
+    "region": "us-east-2",
+    "resources": [],
+    "detail": {
+      "videoId": "dVs7ORBHsF0",
+      "frameId": "frame_0061",
+      "location": "s3://tracking-poker-asset-ripper-assets-staging/dVs7ORBHsF0/frames/frame_0061.jpg"
+    }
+  },
+  {
+    "version": "0",
+    "id": "1f152dac-ef4b-a0b4-79ec-ace16865f7fb",
+    "detail-type": "FrameClassifiedAsJunk",
+    "source": "tracking-poker",
+    "account": "390772177583",
+    "time": "2024-04-11T07:52:30Z",
+    "region": "us-east-2",
+    "resources": [],
+    "detail": {
+      "videoId": "dVs7ORBHsF0",
+      "frameId": "frame_0032"
+    }
+  },
+  {
+    "version": "0",
+    "id": "f5672948-097e-c071-0dd8-576bf416a1b2",
+    "detail-type": "VideoFrameStored",
+    "source": "tracking-poker",
+    "account": "390772177583",
+    "time": "2024-04-11T07:52:30Z",
+    "region": "us-east-2",
+    "resources": [],
+    "detail": {
+      "videoId": "dVs7ORBHsF0",
+      "frameId": "frame_0062",
+      "location": "s3://tracking-poker-asset-ripper-assets-staging/dVs7ORBHsF0/frames/frame_0062.jpg"
+    }
+  },
+  {
+    "version": "0",
+    "id": "e0748040-804a-5133-5d7f-402e42c3d37f",
+    "detail-type": "FrameClassifiedAsJunk",
+    "source": "tracking-poker",
+    "account": "390772177583",
+    "time": "2024-04-11T07:52:30Z",
+    "region": "us-east-2",
+    "resources": [],
+    "detail": {
+      "videoId": "dVs7ORBHsF0",
+      "frameId": "frame_0039"
+    }
+  },
+  {
+    "version": "0",
+    "id": "bb0b7533-58df-ad57-6ac0-a056f80da0ec",
+    "detail-type": "FrameClassifiedAsJunk",
+    "source": "tracking-poker",
+    "account": "390772177583",
+    "time": "2024-04-11T07:52:30Z",
+    "region": "us-east-2",
+    "resources": [],
+    "detail": {
+      "videoId": "dVs7ORBHsF0",
+      "frameId": "frame_0031"
+    }
+  },
+  {
+    "version": "0",
+    "id": "a2f58e07-f236-12c1-e29e-735c953eb7ea",
+    "detail-type": "VideoFrameStored",
+    "source": "tracking-poker",
+    "account": "390772177583",
+    "time": "2024-04-11T07:52:30Z",
+    "region": "us-east-2",
+    "resources": [],
+    "detail": {
+      "videoId": "dVs7ORBHsF0",
+      "frameId": "frame_0063",
+      "location": "s3://tracking-poker-asset-ripper-assets-staging/dVs7ORBHsF0/frames/frame_0063.jpg"
+    }
+  },
+  {
+    "version": "0",
+    "id": "c39a353e-ad58-580e-609e-442228a0f6f7",
+    "detail-type": "FrameClassifiedAsJunk",
+    "source": "tracking-poker",
+    "account": "390772177583",
+    "time": "2024-04-11T07:52:30Z",
+    "region": "us-east-2",
+    "resources": [],
+    "detail": {
+      "videoId": "dVs7ORBHsF0",
+      "frameId": "frame_0046"
+    }
+  },
+  {
+    "version": "0",
+    "id": "a0684090-b658-72a2-87f7-26839cc0ee76",
+    "detail-type": "VideoFrameStored",
+    "source": "tracking-poker",
+    "account": "390772177583",
+    "time": "2024-04-11T07:52:31Z",
+    "region": "us-east-2",
+    "resources": [],
+    "detail": {
+      "videoId": "dVs7ORBHsF0",
+      "frameId": "frame_0064",
+      "location": "s3://tracking-poker-asset-ripper-assets-staging/dVs7ORBHsF0/frames/frame_0064.jpg"
+    }
+  },
+  {
+    "version": "0",
+    "id": "74f299a9-9cbc-9f14-b4fb-cc1c0b936c35",
+    "detail-type": "FrameClassifiedAsJunk",
+    "source": "tracking-poker",
+    "account": "390772177583",
+    "time": "2024-04-11T07:52:31Z",
+    "region": "us-east-2",
+    "resources": [],
+    "detail": {
+      "videoId": "dVs7ORBHsF0",
+      "frameId": "frame_0045"
+    }
+  },
+  {
+    "version": "0",
+    "id": "a7717f06-13bf-4d35-b964-fb714d10085e",
+    "detail-type": "FrameClassifiedAsJunk",
+    "source": "tracking-poker",
+    "account": "390772177583",
+    "time": "2024-04-11T07:52:31Z",
+    "region": "us-east-2",
+    "resources": [],
+    "detail": {
+      "videoId": "dVs7ORBHsF0",
+      "frameId": "frame_0033"
+    }
+  },
+  {
+    "version": "0",
+    "id": "ed371377-56ea-dd63-0593-e088eca04cfd",
+    "detail-type": "FrameClassifiedAsJunk",
+    "source": "tracking-poker",
+    "account": "390772177583",
+    "time": "2024-04-11T07:52:31Z",
+    "region": "us-east-2",
+    "resources": [],
+    "detail": {
+      "videoId": "dVs7ORBHsF0",
+      "frameId": "frame_0042"
+    }
+  },
+  {
+    "version": "0",
+    "id": "e5e4fdd4-33ba-c43f-c259-d1401df0b3b6",
+    "detail-type": "FrameClassifiedAsJunk",
+    "source": "tracking-poker",
+    "account": "390772177583",
+    "time": "2024-04-11T07:52:31Z",
+    "region": "us-east-2",
+    "resources": [],
+    "detail": {
+      "videoId": "dVs7ORBHsF0",
+      "frameId": "frame_0036"
+    }
+  },
+  {
+    "version": "0",
+    "id": "bda8018d-cc37-49b7-d574-6fb5ae8b32df",
+    "detail-type": "VideoFrameStored",
+    "source": "tracking-poker",
+    "account": "390772177583",
+    "time": "2024-04-11T07:52:31Z",
+    "region": "us-east-2",
+    "resources": [],
+    "detail": {
+      "videoId": "dVs7ORBHsF0",
+      "frameId": "frame_0065",
+      "location": "s3://tracking-poker-asset-ripper-assets-staging/dVs7ORBHsF0/frames/frame_0065.jpg"
+    }
+  },
+  {
+    "version": "0",
+    "id": "2a8a5601-8f17-bece-b10e-4f18ccfe0cc4",
+    "detail-type": "FrameClassifiedAsJunk",
+    "source": "tracking-poker",
+    "account": "390772177583",
+    "time": "2024-04-11T07:52:31Z",
+    "region": "us-east-2",
+    "resources": [],
+    "detail": {
+      "videoId": "dVs7ORBHsF0",
+      "frameId": "frame_0048"
+    }
+  },
+  {
+    "version": "0",
+    "id": "4f497a78-213f-0049-8631-dc87527fa969",
+    "detail-type": "VideoFrameStored",
+    "source": "tracking-poker",
+    "account": "390772177583",
+    "time": "2024-04-11T07:52:31Z",
+    "region": "us-east-2",
+    "resources": [],
+    "detail": {
+      "videoId": "dVs7ORBHsF0",
+      "frameId": "frame_0066",
+      "location": "s3://tracking-poker-asset-ripper-assets-staging/dVs7ORBHsF0/frames/frame_0066.jpg"
+    }
+  },
+  {
+    "version": "0",
+    "id": "0180b678-a1fe-6699-8ba7-aa6cdf9f424a",
+    "detail-type": "FrameClassifiedAsJunk",
+    "source": "tracking-poker",
+    "account": "390772177583",
+    "time": "2024-04-11T07:52:31Z",
+    "region": "us-east-2",
+    "resources": [],
+    "detail": {
+      "videoId": "dVs7ORBHsF0",
+      "frameId": "frame_0053"
+    }
+  },
+  {
+    "version": "0",
+    "id": "f34241f6-909c-eddb-75a9-dd13b26b2988",
+    "detail-type": "FrameClassifiedAsJunk",
+    "source": "tracking-poker",
+    "account": "390772177583",
+    "time": "2024-04-11T07:52:31Z",
+    "region": "us-east-2",
+    "resources": [],
+    "detail": {
+      "videoId": "dVs7ORBHsF0",
+      "frameId": "frame_0044"
+    }
+  },
+  {
+    "version": "0",
+    "id": "133f0d34-2ab6-a75d-ecec-a4543f2de563",
+    "detail-type": "VideoFrameStored",
+    "source": "tracking-poker",
+    "account": "390772177583",
+    "time": "2024-04-11T07:52:31Z",
+    "region": "us-east-2",
+    "resources": [],
+    "detail": {
+      "videoId": "dVs7ORBHsF0",
+      "frameId": "frame_0067",
+      "location": "s3://tracking-poker-asset-ripper-assets-staging/dVs7ORBHsF0/frames/frame_0067.jpg"
+    }
+  },
+  {
+    "version": "0",
+    "id": "0eb9876f-e61a-7264-19eb-29eeda8fe2b8",
+    "detail-type": "FrameClassifiedAsJunk",
+    "source": "tracking-poker",
+    "account": "390772177583",
+    "time": "2024-04-11T07:52:31Z",
+    "region": "us-east-2",
+    "resources": [],
+    "detail": {
+      "videoId": "dVs7ORBHsF0",
+      "frameId": "frame_0041"
+    }
+  },
+  {
+    "version": "0",
+    "id": "e25d4b3d-9841-2e77-28be-535ca5f20bc4",
+    "detail-type": "FrameClassifiedAsJunk",
+    "source": "tracking-poker",
+    "account": "390772177583",
+    "time": "2024-04-11T07:52:31Z",
+    "region": "us-east-2",
+    "resources": [],
+    "detail": {
+      "videoId": "dVs7ORBHsF0",
+      "frameId": "frame_0035"
+    }
+  },
+  {
+    "version": "0",
+    "id": "f81e184f-04a8-2a02-3016-7c2a1e6be8d3",
+    "detail-type": "VideoFrameStored",
+    "source": "tracking-poker",
+    "account": "390772177583",
+    "time": "2024-04-11T07:52:31Z",
+    "region": "us-east-2",
+    "resources": [],
+    "detail": {
+      "videoId": "dVs7ORBHsF0",
+      "frameId": "frame_0068",
+      "location": "s3://tracking-poker-asset-ripper-assets-staging/dVs7ORBHsF0/frames/frame_0068.jpg"
+    }
+  },
+  {
+    "version": "0",
+    "id": "12a82aa5-965e-4595-064f-35c022bcbe1c",
+    "detail-type": "VideoFrameStored",
+    "source": "tracking-poker",
+    "account": "390772177583",
+    "time": "2024-04-11T07:52:31Z",
+    "region": "us-east-2",
+    "resources": [],
+    "detail": {
+      "videoId": "dVs7ORBHsF0",
+      "frameId": "frame_0069",
+      "location": "s3://tracking-poker-asset-ripper-assets-staging/dVs7ORBHsF0/frames/frame_0069.jpg"
+    }
+  },
+  {
+    "version": "0",
+    "id": "eb692060-ada5-dbcd-7fc5-e16bdeb26e02",
+    "detail-type": "FrameClassifiedAsJunk",
+    "source": "tracking-poker",
+    "account": "390772177583",
+    "time": "2024-04-11T07:52:31Z",
+    "region": "us-east-2",
+    "resources": [],
+    "detail": {
+      "videoId": "dVs7ORBHsF0",
+      "frameId": "frame_0049"
+    }
+  },
+  {
+    "version": "0",
+    "id": "59476296-a441-4988-1c59-f423e27979f3",
+    "detail-type": "VideoFrameStored",
+    "source": "tracking-poker",
+    "account": "390772177583",
+    "time": "2024-04-11T07:52:31Z",
+    "region": "us-east-2",
+    "resources": [],
+    "detail": {
+      "videoId": "dVs7ORBHsF0",
+      "frameId": "frame_0070",
+      "location": "s3://tracking-poker-asset-ripper-assets-staging/dVs7ORBHsF0/frames/frame_0070.jpg"
+    }
+  },
+  {
+    "version": "0",
+    "id": "92ef9b7e-aeeb-6b0b-101a-23558ebd5e1a",
+    "detail-type": "FrameClassifiedAsJunk",
+    "source": "tracking-poker",
+    "account": "390772177583",
+    "time": "2024-04-11T07:52:31Z",
+    "region": "us-east-2",
+    "resources": [],
+    "detail": {
+      "videoId": "dVs7ORBHsF0",
+      "frameId": "frame_0047"
+    }
+  },
+  {
+    "version": "0",
+    "id": "3a0ace93-ba2f-6c2c-c915-4a9554ea5521",
+    "detail-type": "FrameClassifiedAsJunk",
+    "source": "tracking-poker",
+    "account": "390772177583",
+    "time": "2024-04-11T07:52:31Z",
+    "region": "us-east-2",
+    "resources": [],
+    "detail": {
+      "videoId": "dVs7ORBHsF0",
+      "frameId": "frame_0051"
+    }
+  },
+  {
+    "version": "0",
+    "id": "897173f8-f921-3961-e1b1-1b76b26fcc28",
+    "detail-type": "VideoFrameStored",
+    "source": "tracking-poker",
+    "account": "390772177583",
+    "time": "2024-04-11T07:52:31Z",
+    "region": "us-east-2",
+    "resources": [],
+    "detail": {
+      "videoId": "dVs7ORBHsF0",
+      "frameId": "frame_0071",
+      "location": "s3://tracking-poker-asset-ripper-assets-staging/dVs7ORBHsF0/frames/frame_0071.jpg"
+    }
+  },
+  {
+    "version": "0",
+    "id": "52797068-dee0-e881-1257-292758582bf0",
+    "detail-type": "FrameClassifiedAsJunk",
+    "source": "tracking-poker",
+    "account": "390772177583",
+    "time": "2024-04-11T07:52:31Z",
+    "region": "us-east-2",
+    "resources": [],
+    "detail": {
+      "videoId": "dVs7ORBHsF0",
+      "frameId": "frame_0050"
+    }
+  },
+  {
+    "version": "0",
+    "id": "23d9f763-5e5f-e5bc-5344-e4e43e3d3c29",
+    "detail-type": "FrameClassifiedAsJunk",
+    "source": "tracking-poker",
+    "account": "390772177583",
+    "time": "2024-04-11T07:52:31Z",
+    "region": "us-east-2",
+    "resources": [],
+    "detail": {
+      "videoId": "dVs7ORBHsF0",
+      "frameId": "frame_0040"
+    }
+  },
+  {
+    "version": "0",
+    "id": "b412f178-c5ea-4ba9-c392-d66559ddd41c",
+    "detail-type": "VideoFrameStored",
+    "source": "tracking-poker",
+    "account": "390772177583",
+    "time": "2024-04-11T07:52:31Z",
+    "region": "us-east-2",
+    "resources": [],
+    "detail": {
+      "videoId": "dVs7ORBHsF0",
+      "frameId": "frame_0072",
+      "location": "s3://tracking-poker-asset-ripper-assets-staging/dVs7ORBHsF0/frames/frame_0072.jpg"
+    }
+  },
+  {
+    "version": "0",
+    "id": "ce65c28f-ad99-1809-14d3-ec507437582a",
+    "detail-type": "FrameClassifiedAsJunk",
+    "source": "tracking-poker",
+    "account": "390772177583",
+    "time": "2024-04-11T07:52:32Z",
+    "region": "us-east-2",
+    "resources": [],
+    "detail": {
+      "videoId": "dVs7ORBHsF0",
+      "frameId": "frame_0056"
+    }
+  },
+  {
+    "version": "0",
+    "id": "431b9b8f-04cc-b2bb-530c-9bc693b0604d",
+    "detail-type": "VideoFrameStored",
+    "source": "tracking-poker",
+    "account": "390772177583",
+    "time": "2024-04-11T07:52:32Z",
+    "region": "us-east-2",
+    "resources": [],
+    "detail": {
+      "videoId": "dVs7ORBHsF0",
+      "frameId": "frame_0073",
+      "location": "s3://tracking-poker-asset-ripper-assets-staging/dVs7ORBHsF0/frames/frame_0073.jpg"
+    }
+  },
+  {
+    "version": "0",
+    "id": "f03bfbc6-7ba5-363c-9f56-37969fe75913",
+    "detail-type": "VideoFrameStored",
+    "source": "tracking-poker",
+    "account": "390772177583",
+    "time": "2024-04-11T07:52:32Z",
+    "region": "us-east-2",
+    "resources": [],
+    "detail": {
+      "videoId": "dVs7ORBHsF0",
+      "frameId": "frame_0074",
+      "location": "s3://tracking-poker-asset-ripper-assets-staging/dVs7ORBHsF0/frames/frame_0074.jpg"
+    }
+  },
+  {
+    "version": "0",
+    "id": "eee8aba8-9740-c32f-902f-856f57d09a0f",
+    "detail-type": "VideoFrameStored",
+    "source": "tracking-poker",
+    "account": "390772177583",
+    "time": "2024-04-11T07:52:32Z",
+    "region": "us-east-2",
+    "resources": [],
+    "detail": {
+      "videoId": "dVs7ORBHsF0",
+      "frameId": "frame_0076",
+      "location": "s3://tracking-poker-asset-ripper-assets-staging/dVs7ORBHsF0/frames/frame_0076.jpg"
+    }
+  },
+  {
+    "version": "0",
+    "id": "09286036-eb6d-8979-e905-fb5b9f0ed629",
+    "detail-type": "FrameClassifiedAsJunk",
+    "source": "tracking-poker",
+    "account": "390772177583",
+    "time": "2024-04-11T07:52:32Z",
+    "region": "us-east-2",
+    "resources": [],
+    "detail": {
+      "videoId": "dVs7ORBHsF0",
+      "frameId": "frame_0052"
+    }
+  },
+  {
+    "version": "0",
+    "id": "4f6a64a7-4d7d-5652-4d01-ddae46b9fd12",
+    "detail-type": "FrameClassifiedAsJunk",
+    "source": "tracking-poker",
+    "account": "390772177583",
+    "time": "2024-04-11T07:52:32Z",
+    "region": "us-east-2",
+    "resources": [],
+    "detail": {
+      "videoId": "dVs7ORBHsF0",
+      "frameId": "frame_0054"
+    }
+  },
+  {
+    "version": "0",
+    "id": "07d66164-6494-0568-399a-c4791cc1c1fa",
+    "detail-type": "VideoFrameStored",
+    "source": "tracking-poker",
+    "account": "390772177583",
+    "time": "2024-04-11T07:52:32Z",
+    "region": "us-east-2",
+    "resources": [],
+    "detail": {
+      "videoId": "dVs7ORBHsF0",
+      "frameId": "frame_0075",
+      "location": "s3://tracking-poker-asset-ripper-assets-staging/dVs7ORBHsF0/frames/frame_0075.jpg"
+    }
+  },
+  {
+    "version": "0",
+    "id": "f74ba1ad-cbe4-9005-5cee-ec9f3869ce6e",
+    "detail-type": "VideoFrameStored",
+    "source": "tracking-poker",
+    "account": "390772177583",
+    "time": "2024-04-11T07:52:32Z",
+    "region": "us-east-2",
+    "resources": [],
+    "detail": {
+      "videoId": "dVs7ORBHsF0",
+      "frameId": "frame_0077",
+      "location": "s3://tracking-poker-asset-ripper-assets-staging/dVs7ORBHsF0/frames/frame_0077.jpg"
+    }
+  },
+  {
+    "version": "0",
+    "id": "bd0b31d7-32c4-9bc9-0bd2-aeec8d2adadb",
+    "detail-type": "FrameClassifiedAsJunk",
+    "source": "tracking-poker",
+    "account": "390772177583",
+    "time": "2024-04-11T07:52:32Z",
+    "region": "us-east-2",
+    "resources": [],
+    "detail": {
+      "videoId": "dVs7ORBHsF0",
+      "frameId": "frame_0055"
+    }
+  },
+  {
+    "version": "0",
+    "id": "10750e81-d224-9a02-5fda-8f0a08e1481b",
+    "detail-type": "VideoFrameStored",
+    "source": "tracking-poker",
+    "account": "390772177583",
+    "time": "2024-04-11T07:52:32Z",
+    "region": "us-east-2",
+    "resources": [],
+    "detail": {
+      "videoId": "dVs7ORBHsF0",
+      "frameId": "frame_0078",
+      "location": "s3://tracking-poker-asset-ripper-assets-staging/dVs7ORBHsF0/frames/frame_0078.jpg"
+    }
+  },
+  {
+    "version": "0",
+    "id": "04f0a1e9-6a39-ae26-3a6a-b364121ed0bc",
+    "detail-type": "VideoFrameStored",
+    "source": "tracking-poker",
+    "account": "390772177583",
+    "time": "2024-04-11T07:52:32Z",
+    "region": "us-east-2",
+    "resources": [],
+    "detail": {
+      "videoId": "dVs7ORBHsF0",
+      "frameId": "frame_0079",
+      "location": "s3://tracking-poker-asset-ripper-assets-staging/dVs7ORBHsF0/frames/frame_0079.jpg"
+    }
+  },
+  {
+    "version": "0",
+    "id": "d958f777-1198-4f58-9382-0485541c9017",
+    "detail-type": "VideoFrameStored",
+    "source": "tracking-poker",
+    "account": "390772177583",
+    "time": "2024-04-11T07:52:32Z",
+    "region": "us-east-2",
+    "resources": [],
+    "detail": {
+      "videoId": "dVs7ORBHsF0",
+      "frameId": "frame_0080",
+      "location": "s3://tracking-poker-asset-ripper-assets-staging/dVs7ORBHsF0/frames/frame_0080.jpg"
+    }
+  },
+  {
+    "version": "0",
+    "id": "4123f20f-ec79-9758-5e9e-a109273f8967",
+    "detail-type": "VideoFrameStored",
+    "source": "tracking-poker",
+    "account": "390772177583",
+    "time": "2024-04-11T07:52:33Z",
+    "region": "us-east-2",
+    "resources": [],
+    "detail": {
+      "videoId": "dVs7ORBHsF0",
+      "frameId": "frame_0081",
+      "location": "s3://tracking-poker-asset-ripper-assets-staging/dVs7ORBHsF0/frames/frame_0081.jpg"
+    }
+  },
+  {
+    "version": "0",
+    "id": "2f6bec98-f6a0-de3b-7987-527bc2f8d375",
+    "detail-type": "FrameClassifiedAsJunk",
+    "source": "tracking-poker",
+    "account": "390772177583",
+    "time": "2024-04-11T07:52:33Z",
+    "region": "us-east-2",
+    "resources": [],
+    "detail": {
+      "videoId": "dVs7ORBHsF0",
+      "frameId": "frame_0058"
+    }
+  },
+  {
+    "version": "0",
+    "id": "347ac91b-bc9b-bf25-c0d3-f559d5d2a498",
+    "detail-type": "FrameClassifiedAsJunk",
+    "source": "tracking-poker",
+    "account": "390772177583",
+    "time": "2024-04-11T07:52:33Z",
+    "region": "us-east-2",
+    "resources": [],
+    "detail": {
+      "videoId": "dVs7ORBHsF0",
+      "frameId": "frame_0057"
+    }
+  },
+  {
+    "version": "0",
+    "id": "6b9c990c-fced-289f-75bb-e07e84cba952",
+    "detail-type": "VideoFrameStored",
+    "source": "tracking-poker",
+    "account": "390772177583",
+    "time": "2024-04-11T07:52:33Z",
+    "region": "us-east-2",
+    "resources": [],
+    "detail": {
+      "videoId": "dVs7ORBHsF0",
+      "frameId": "frame_0082",
+      "location": "s3://tracking-poker-asset-ripper-assets-staging/dVs7ORBHsF0/frames/frame_0082.jpg"
+    }
+  },
+  {
+    "version": "0",
+    "id": "60aae421-0395-b38b-1744-26d952cb3851",
+    "detail-type": "VideoFrameStored",
+    "source": "tracking-poker",
+    "account": "390772177583",
+    "time": "2024-04-11T07:52:33Z",
+    "region": "us-east-2",
+    "resources": [],
+    "detail": {
+      "videoId": "dVs7ORBHsF0",
+      "frameId": "frame_0083",
+      "location": "s3://tracking-poker-asset-ripper-assets-staging/dVs7ORBHsF0/frames/frame_0083.jpg"
+    }
+  },
+  {
+    "version": "0",
+    "id": "78e080bd-6195-01b3-2ae4-cfd015f16291",
+    "detail-type": "FrameClassifiedAsJunk",
+    "source": "tracking-poker",
+    "account": "390772177583",
+    "time": "2024-04-11T07:52:33Z",
+    "region": "us-east-2",
+    "resources": [],
+    "detail": {
+      "videoId": "dVs7ORBHsF0",
+      "frameId": "frame_0060"
+    }
+  },
+  {
+    "version": "0",
+    "id": "065272fb-57c9-caac-2e81-63f3ff88fff3",
+    "detail-type": "VideoFrameStored",
+    "source": "tracking-poker",
+    "account": "390772177583",
+    "time": "2024-04-11T07:52:33Z",
+    "region": "us-east-2",
+    "resources": [],
+    "detail": {
+      "videoId": "dVs7ORBHsF0",
+      "frameId": "frame_0084",
+      "location": "s3://tracking-poker-asset-ripper-assets-staging/dVs7ORBHsF0/frames/frame_0084.jpg"
+    }
+  },
+  {
+    "version": "0",
+    "id": "94c54f07-f91b-cbeb-583e-f906c52a0d2c",
+    "detail-type": "FrameClassifiedAsJunk",
+    "source": "tracking-poker",
+    "account": "390772177583",
+    "time": "2024-04-11T07:52:33Z",
+    "region": "us-east-2",
+    "resources": [],
+    "detail": {
+      "videoId": "dVs7ORBHsF0",
+      "frameId": "frame_0059"
+    }
+  },
+  {
+    "version": "0",
+    "id": "74f544f3-9f10-fa9c-2c0d-b6437ada637b",
+    "detail-type": "VideoFrameStored",
+    "source": "tracking-poker",
+    "account": "390772177583",
+    "time": "2024-04-11T07:52:33Z",
+    "region": "us-east-2",
+    "resources": [],
+    "detail": {
+      "videoId": "dVs7ORBHsF0",
+      "frameId": "frame_0085",
+      "location": "s3://tracking-poker-asset-ripper-assets-staging/dVs7ORBHsF0/frames/frame_0085.jpg"
+    }
+  },
+  {
+    "version": "0",
+    "id": "4129ccc0-53f1-3477-b7f3-b2e914466ab8",
+    "detail-type": "FrameClassifiedAsJunk",
+    "source": "tracking-poker",
+    "account": "390772177583",
+    "time": "2024-04-11T07:52:33Z",
+    "region": "us-east-2",
+    "resources": [],
+    "detail": {
+      "videoId": "dVs7ORBHsF0",
+      "frameId": "frame_0061"
+    }
+  },
+  {
+    "version": "0",
+    "id": "98588851-14bc-73b1-d1fe-15521a3fae2c",
+    "detail-type": "VideoFrameStored",
+    "source": "tracking-poker",
+    "account": "390772177583",
+    "time": "2024-04-11T07:52:33Z",
+    "region": "us-east-2",
+    "resources": [],
+    "detail": {
+      "videoId": "dVs7ORBHsF0",
+      "frameId": "frame_0086",
+      "location": "s3://tracking-poker-asset-ripper-assets-staging/dVs7ORBHsF0/frames/frame_0086.jpg"
+    }
+  },
+  {
+    "version": "0",
+    "id": "5f5a5462-0805-ad8b-18ac-800c3785b4ba",
+    "detail-type": "VideoFrameStored",
+    "source": "tracking-poker",
+    "account": "390772177583",
+    "time": "2024-04-11T07:52:33Z",
+    "region": "us-east-2",
+    "resources": [],
+    "detail": {
+      "videoId": "dVs7ORBHsF0",
+      "frameId": "frame_0087",
+      "location": "s3://tracking-poker-asset-ripper-assets-staging/dVs7ORBHsF0/frames/frame_0087.jpg"
+    }
+  },
+  {
+    "version": "0",
+    "id": "b03a76ca-bebf-b0f6-60dd-080557ffc0f3",
+    "detail-type": "FrameClassifiedAsJunk",
+    "source": "tracking-poker",
+    "account": "390772177583",
+    "time": "2024-04-11T07:52:33Z",
+    "region": "us-east-2",
+    "resources": [],
+    "detail": {
+      "videoId": "dVs7ORBHsF0",
+      "frameId": "frame_0062"
+    }
+  },
+  {
+    "version": "0",
+    "id": "7f834746-0576-b8f8-28de-232e4b16a2a8",
+    "detail-type": "FrameClassifiedAsJunk",
+    "source": "tracking-poker",
+    "account": "390772177583",
+    "time": "2024-04-11T07:52:33Z",
+    "region": "us-east-2",
+    "resources": [],
+    "detail": {
+      "videoId": "dVs7ORBHsF0",
+      "frameId": "frame_0070"
+    }
+  },
+  {
+    "version": "0",
+    "id": "b22f6000-c44c-3721-adcb-656c3d0c2012",
+    "detail-type": "VideoFrameStored",
+    "source": "tracking-poker",
+    "account": "390772177583",
+    "time": "2024-04-11T07:52:33Z",
+    "region": "us-east-2",
+    "resources": [],
+    "detail": {
+      "videoId": "dVs7ORBHsF0",
+      "frameId": "frame_0088",
+      "location": "s3://tracking-poker-asset-ripper-assets-staging/dVs7ORBHsF0/frames/frame_0088.jpg"
+    }
+  },
+  {
+    "version": "0",
+    "id": "d798a15f-ddc8-94f4-56c2-c00095750ec2",
+    "detail-type": "FrameClassifiedAsJunk",
+    "source": "tracking-poker",
+    "account": "390772177583",
+    "time": "2024-04-11T07:52:34Z",
+    "region": "us-east-2",
+    "resources": [],
+    "detail": {
+      "videoId": "dVs7ORBHsF0",
+      "frameId": "frame_0074"
+    }
+  },
+  {
+    "version": "0",
+    "id": "033cf52d-0a6d-e004-f8d2-caeb400518d2",
+    "detail-type": "VideoFrameStored",
+    "source": "tracking-poker",
+    "account": "390772177583",
+    "time": "2024-04-11T07:52:34Z",
+    "region": "us-east-2",
+    "resources": [],
+    "detail": {
+      "videoId": "dVs7ORBHsF0",
+      "frameId": "frame_0089",
+      "location": "s3://tracking-poker-asset-ripper-assets-staging/dVs7ORBHsF0/frames/frame_0089.jpg"
+    }
+  },
+  {
+    "version": "0",
+    "id": "ab9e5b32-064d-5a2a-682b-f1356c694e36",
+    "detail-type": "VideoFrameStored",
+    "source": "tracking-poker",
+    "account": "390772177583",
+    "time": "2024-04-11T07:52:34Z",
+    "region": "us-east-2",
+    "resources": [],
+    "detail": {
+      "videoId": "dVs7ORBHsF0",
+      "frameId": "frame_0090",
+      "location": "s3://tracking-poker-asset-ripper-assets-staging/dVs7ORBHsF0/frames/frame_0090.jpg"
+    }
+  },
+  {
+    "version": "0",
+    "id": "2bbe65ac-2857-a816-2c88-c40ef9d26b20",
+    "detail-type": "VideoFrameStored",
+    "source": "tracking-poker",
+    "account": "390772177583",
+    "time": "2024-04-11T07:52:34Z",
+    "region": "us-east-2",
+    "resources": [],
+    "detail": {
+      "videoId": "dVs7ORBHsF0",
+      "frameId": "frame_0091",
+      "location": "s3://tracking-poker-asset-ripper-assets-staging/dVs7ORBHsF0/frames/frame_0091.jpg"
+    }
+  },
+  {
+    "version": "0",
+    "id": "bf7faeeb-1f27-9d3f-5460-1937505031c5",
+    "detail-type": "VideoFrameStored",
+    "source": "tracking-poker",
+    "account": "390772177583",
+    "time": "2024-04-11T07:52:34Z",
+    "region": "us-east-2",
+    "resources": [],
+    "detail": {
+      "videoId": "dVs7ORBHsF0",
+      "frameId": "frame_0092",
+      "location": "s3://tracking-poker-asset-ripper-assets-staging/dVs7ORBHsF0/frames/frame_0092.jpg"
+    }
+  },
+  {
+    "version": "0",
+    "id": "e55b517a-72d9-747e-2ab2-b93858d21383",
+    "detail-type": "VideoFrameStored",
+    "source": "tracking-poker",
+    "account": "390772177583",
+    "time": "2024-04-11T07:52:34Z",
+    "region": "us-east-2",
+    "resources": [],
+    "detail": {
+      "videoId": "dVs7ORBHsF0",
+      "frameId": "frame_0093",
+      "location": "s3://tracking-poker-asset-ripper-assets-staging/dVs7ORBHsF0/frames/frame_0093.jpg"
+    }
+  },
+  {
+    "version": "0",
+    "id": "585b952f-52ce-956b-c627-46885e0bc20d",
+    "detail-type": "VideoFrameStored",
+    "source": "tracking-poker",
+    "account": "390772177583",
+    "time": "2024-04-11T07:52:34Z",
+    "region": "us-east-2",
+    "resources": [],
+    "detail": {
+      "videoId": "dVs7ORBHsF0",
+      "frameId": "frame_0096",
+      "location": "s3://tracking-poker-asset-ripper-assets-staging/dVs7ORBHsF0/frames/frame_0096.jpg"
+    }
+  },
+  {
+    "version": "0",
+    "id": "03142c56-6c98-088f-a55f-bbf5df699bb0",
+    "detail-type": "FrameClassifiedAsJunk",
+    "source": "tracking-poker",
+    "account": "390772177583",
+    "time": "2024-04-11T07:52:34Z",
+    "region": "us-east-2",
+    "resources": [],
+    "detail": {
+      "videoId": "dVs7ORBHsF0",
+      "frameId": "frame_0069"
+    }
+  },
+  {
+    "version": "0",
+    "id": "f39c2f83-f3b7-e430-8063-ff3b5fc10515",
+    "detail-type": "FrameClassifiedAsJunk",
+    "source": "tracking-poker",
+    "account": "390772177583",
+    "time": "2024-04-11T07:52:34Z",
+    "region": "us-east-2",
+    "resources": [],
+    "detail": {
+      "videoId": "dVs7ORBHsF0",
+      "frameId": "frame_0071"
+    }
+  },
+  {
+    "version": "0",
+    "id": "c0ff48fb-b7fc-ade0-1d21-29c604442c1d",
+    "detail-type": "VideoFrameStored",
+    "source": "tracking-poker",
+    "account": "390772177583",
+    "time": "2024-04-11T07:52:34Z",
+    "region": "us-east-2",
+    "resources": [],
+    "detail": {
+      "videoId": "dVs7ORBHsF0",
+      "frameId": "frame_0094",
+      "location": "s3://tracking-poker-asset-ripper-assets-staging/dVs7ORBHsF0/frames/frame_0094.jpg"
+    }
+  },
+  {
+    "version": "0",
+    "id": "65788f02-6a6b-fae6-052e-f98b9f87c745",
+    "detail-type": "FrameClassifiedAsJunk",
+    "source": "tracking-poker",
+    "account": "390772177583",
+    "time": "2024-04-11T07:52:34Z",
+    "region": "us-east-2",
+    "resources": [],
+    "detail": {
+      "videoId": "dVs7ORBHsF0",
+      "frameId": "frame_0063"
+    }
+  },
+  {
+    "version": "0",
+    "id": "1bd08b91-9c35-ffac-80c2-c7b0c0a9d0e9",
+    "detail-type": "FrameClassifiedAsJunk",
+    "source": "tracking-poker",
+    "account": "390772177583",
+    "time": "2024-04-11T07:52:34Z",
+    "region": "us-east-2",
+    "resources": [],
+    "detail": {
+      "videoId": "dVs7ORBHsF0",
+      "frameId": "frame_0075"
+    }
+  },
+  {
+    "version": "0",
+    "id": "2b59c050-547b-5fbe-b7a7-01929dd0a0b6",
+    "detail-type": "VideoFrameStored",
+    "source": "tracking-poker",
+    "account": "390772177583",
+    "time": "2024-04-11T07:52:34Z",
+    "region": "us-east-2",
+    "resources": [],
+    "detail": {
+      "videoId": "dVs7ORBHsF0",
+      "frameId": "frame_0095",
+      "location": "s3://tracking-poker-asset-ripper-assets-staging/dVs7ORBHsF0/frames/frame_0095.jpg"
+    }
+  },
+  {
+    "version": "0",
+    "id": "fe7a69c4-7a8d-e696-862d-b6c6a91dfe8f",
+    "detail-type": "FrameClassifiedAsJunk",
+    "source": "tracking-poker",
+    "account": "390772177583",
+    "time": "2024-04-11T07:52:34Z",
+    "region": "us-east-2",
+    "resources": [],
+    "detail": {
+      "videoId": "dVs7ORBHsF0",
+      "frameId": "frame_0064"
+    }
+  },
+  {
+    "version": "0",
+    "id": "a3c983b3-b17a-c777-6441-a32fc8107e53",
+    "detail-type": "FrameClassifiedAsJunk",
+    "source": "tracking-poker",
+    "account": "390772177583",
+    "time": "2024-04-11T07:52:34Z",
+    "region": "us-east-2",
+    "resources": [],
+    "detail": {
+      "videoId": "dVs7ORBHsF0",
+      "frameId": "frame_0072"
+    }
+  },
+  {
+    "version": "0",
+    "id": "e862c69b-f99a-54d6-6be0-366d09e47dcf",
+    "detail-type": "FrameClassifiedAsJunk",
+    "source": "tracking-poker",
+    "account": "390772177583",
+    "time": "2024-04-11T07:52:34Z",
+    "region": "us-east-2",
+    "resources": [],
+    "detail": {
+      "videoId": "dVs7ORBHsF0",
+      "frameId": "frame_0078"
+    }
+  },
+  {
+    "version": "0",
+    "id": "d8422ec5-d670-4d60-ae0f-3f0a50f2d0b8",
+    "detail-type": "FrameClassifiedAsJunk",
+    "source": "tracking-poker",
+    "account": "390772177583",
+    "time": "2024-04-11T07:52:34Z",
+    "region": "us-east-2",
+    "resources": [],
+    "detail": {
+      "videoId": "dVs7ORBHsF0",
+      "frameId": "frame_0073"
+    }
+  },
+  {
+    "version": "0",
+    "id": "79fbbf51-bcf2-71a6-3596-32d0f49c291e",
+    "detail-type": "VideoFrameStored",
+    "source": "tracking-poker",
+    "account": "390772177583",
+    "time": "2024-04-11T07:52:34Z",
+    "region": "us-east-2",
+    "resources": [],
+    "detail": {
+      "videoId": "dVs7ORBHsF0",
+      "frameId": "frame_0097",
+      "location": "s3://tracking-poker-asset-ripper-assets-staging/dVs7ORBHsF0/frames/frame_0097.jpg"
+    }
+  },
+  {
+    "version": "0",
+    "id": "d9507d6c-b56b-d53d-65a4-a2006f702092",
+    "detail-type": "FrameClassifiedAsJunk",
+    "source": "tracking-poker",
+    "account": "390772177583",
+    "time": "2024-04-11T07:52:35Z",
+    "region": "us-east-2",
+    "resources": [],
+    "detail": {
+      "videoId": "dVs7ORBHsF0",
+      "frameId": "frame_0065"
+    }
+  },
+  {
+    "version": "0",
+    "id": "0eb7c391-bffd-9a85-49ca-c7205acf1b81",
+    "detail-type": "FrameClassifiedAsJunk",
+    "source": "tracking-poker",
+    "account": "390772177583",
+    "time": "2024-04-11T07:52:35Z",
+    "region": "us-east-2",
+    "resources": [],
+    "detail": {
+      "videoId": "dVs7ORBHsF0",
+      "frameId": "frame_0079"
+    }
+  },
+  {
+    "version": "0",
+    "id": "04024e28-9e7f-e91a-a9d4-cd670abb309e",
+    "detail-type": "VideoFrameStored",
+    "source": "tracking-poker",
+    "account": "390772177583",
+    "time": "2024-04-11T07:52:35Z",
+    "region": "us-east-2",
+    "resources": [],
+    "detail": {
+      "videoId": "dVs7ORBHsF0",
+      "frameId": "frame_0098",
+      "location": "s3://tracking-poker-asset-ripper-assets-staging/dVs7ORBHsF0/frames/frame_0098.jpg"
+    }
+  },
+  {
+    "version": "0",
+    "id": "a4cb3f54-0259-19b5-f4ce-f2a9b1141cce",
+    "detail-type": "VideoFrameStored",
+    "source": "tracking-poker",
+    "account": "390772177583",
+    "time": "2024-04-11T07:52:35Z",
+    "region": "us-east-2",
+    "resources": [],
+    "detail": {
+      "videoId": "dVs7ORBHsF0",
+      "frameId": "frame_0099",
+      "location": "s3://tracking-poker-asset-ripper-assets-staging/dVs7ORBHsF0/frames/frame_0099.jpg"
+    }
+  },
+  {
+    "version": "0",
+    "id": "f5d43898-ab74-cb16-d9ff-50114aa57808",
+    "detail-type": "FrameClassifiedAsJunk",
+    "source": "tracking-poker",
+    "account": "390772177583",
+    "time": "2024-04-11T07:52:35Z",
+    "region": "us-east-2",
+    "resources": [],
+    "detail": {
+      "videoId": "dVs7ORBHsF0",
+      "frameId": "frame_0081"
+    }
+  },
+  {
+    "version": "0",
+    "id": "c0a309a6-9cec-654b-4c3d-675c62377b3c",
+    "detail-type": "VideoFrameStored",
+    "source": "tracking-poker",
+    "account": "390772177583",
+    "time": "2024-04-11T07:52:35Z",
+    "region": "us-east-2",
+    "resources": [],
+    "detail": {
+      "videoId": "dVs7ORBHsF0",
+      "frameId": "frame_0100",
+      "location": "s3://tracking-poker-asset-ripper-assets-staging/dVs7ORBHsF0/frames/frame_0100.jpg"
+    }
+  },
+  {
+    "version": "0",
+    "id": "f3c0b158-4e13-34c3-fbfe-86efc73f95e2",
+    "detail-type": "FrameClassifiedAsJunk",
+    "source": "tracking-poker",
+    "account": "390772177583",
+    "time": "2024-04-11T07:52:35Z",
+    "region": "us-east-2",
+    "resources": [],
+    "detail": {
+      "videoId": "dVs7ORBHsF0",
+      "frameId": "frame_0066"
+    }
+  },
+  {
+    "version": "0",
+    "id": "a309fdaa-f09d-9389-f295-eaa858670402",
+    "detail-type": "VideoFrameStored",
+    "source": "tracking-poker",
+    "account": "390772177583",
+    "time": "2024-04-11T07:52:35Z",
+    "region": "us-east-2",
+    "resources": [],
+    "detail": {
+      "videoId": "dVs7ORBHsF0",
+      "frameId": "frame_0101",
+      "location": "s3://tracking-poker-asset-ripper-assets-staging/dVs7ORBHsF0/frames/frame_0101.jpg"
+    }
+  },
+  {
+    "version": "0",
+    "id": "20a80f58-170e-083a-3319-c1a21d63dc33",
+    "detail-type": "FrameClassifiedAsJunk",
+    "source": "tracking-poker",
+    "account": "390772177583",
+    "time": "2024-04-11T07:52:35Z",
+    "region": "us-east-2",
+    "resources": [],
+    "detail": {
+      "videoId": "dVs7ORBHsF0",
+      "frameId": "frame_0067"
+    }
+  },
+  {
+    "version": "0",
+    "id": "5462c748-ef81-9e15-0c15-e441c90eaf2d",
+    "detail-type": "FrameClassifiedAsJunk",
+    "source": "tracking-poker",
+    "account": "390772177583",
+    "time": "2024-04-11T07:52:35Z",
+    "region": "us-east-2",
+    "resources": [],
+    "detail": {
+      "videoId": "dVs7ORBHsF0",
+      "frameId": "frame_0076"
+    }
+  },
+  {
+    "version": "0",
+    "id": "ba04b92a-a3c7-3230-38d2-efda07741b02",
+    "detail-type": "VideoFrameStored",
+    "source": "tracking-poker",
+    "account": "390772177583",
+    "time": "2024-04-11T07:52:35Z",
+    "region": "us-east-2",
+    "resources": [],
+    "detail": {
+      "videoId": "dVs7ORBHsF0",
+      "frameId": "frame_0102",
+      "location": "s3://tracking-poker-asset-ripper-assets-staging/dVs7ORBHsF0/frames/frame_0102.jpg"
+    }
+  },
+  {
+    "version": "0",
+    "id": "36ec6954-fe3d-370f-6eab-977717d8f790",
+    "detail-type": "FrameClassifiedAsJunk",
+    "source": "tracking-poker",
+    "account": "390772177583",
+    "time": "2024-04-11T07:52:35Z",
+    "region": "us-east-2",
+    "resources": [],
+    "detail": {
+      "videoId": "dVs7ORBHsF0",
+      "frameId": "frame_0080"
+    }
+  },
+  {
+    "version": "0",
+    "id": "34182d0a-3628-2665-1530-84d6c1ae4286",
+    "detail-type": "FrameClassifiedAsJunk",
+    "source": "tracking-poker",
+    "account": "390772177583",
+    "time": "2024-04-11T07:52:35Z",
+    "region": "us-east-2",
+    "resources": [],
+    "detail": {
+      "videoId": "dVs7ORBHsF0",
+      "frameId": "frame_0077"
+    }
+  },
+  {
+    "version": "0",
+    "id": "df4c2014-83ad-19f9-525c-c5a918dbb835",
+    "detail-type": "FrameClassifiedAsJunk",
+    "source": "tracking-poker",
+    "account": "390772177583",
+    "time": "2024-04-11T07:52:35Z",
+    "region": "us-east-2",
+    "resources": [],
+    "detail": {
+      "videoId": "dVs7ORBHsF0",
+      "frameId": "frame_0068"
+    }
+  },
+  {
+    "version": "0",
+    "id": "1be7ae4b-9f64-f5b0-aee2-e8b7d61fe0c0",
+    "detail-type": "VideoFrameStored",
+    "source": "tracking-poker",
+    "account": "390772177583",
+    "time": "2024-04-11T07:52:35Z",
+    "region": "us-east-2",
+    "resources": [],
+    "detail": {
+      "videoId": "dVs7ORBHsF0",
+      "frameId": "frame_0103",
+      "location": "s3://tracking-poker-asset-ripper-assets-staging/dVs7ORBHsF0/frames/frame_0103.jpg"
+    }
+  },
+  {
+    "version": "0",
+    "id": "a4fe0b77-cf7b-8176-f291-65ac2c849938",
+    "detail-type": "FrameClassifiedAsJunk",
+    "source": "tracking-poker",
+    "account": "390772177583",
+    "time": "2024-04-11T07:52:35Z",
+    "region": "us-east-2",
+    "resources": [],
+    "detail": {
+      "videoId": "dVs7ORBHsF0",
+      "frameId": "frame_0082"
+    }
+  },
+  {
+    "version": "0",
+    "id": "d8e9f3d3-d48c-4247-2ef5-f9d4c2726834",
+    "detail-type": "VideoFrameStored",
+    "source": "tracking-poker",
+    "account": "390772177583",
+    "time": "2024-04-11T07:52:35Z",
+    "region": "us-east-2",
+    "resources": [],
+    "detail": {
+      "videoId": "dVs7ORBHsF0",
+      "frameId": "frame_0104",
+      "location": "s3://tracking-poker-asset-ripper-assets-staging/dVs7ORBHsF0/frames/frame_0104.jpg"
+    }
+  },
+  {
+    "version": "0",
+    "id": "0381bad0-f018-5137-5a63-d78c74393391",
+    "detail-type": "VideoFrameStored",
+    "source": "tracking-poker",
+    "account": "390772177583",
+    "time": "2024-04-11T07:52:35Z",
+    "region": "us-east-2",
+    "resources": [],
+    "detail": {
+      "videoId": "dVs7ORBHsF0",
+      "frameId": "frame_0105",
+      "location": "s3://tracking-poker-asset-ripper-assets-staging/dVs7ORBHsF0/frames/frame_0105.jpg"
+    }
+  },
+  {
+    "version": "0",
+    "id": "b1e913ea-5cf3-d8f6-f8e6-20df59ce9191",
+    "detail-type": "FrameClassifiedAsJunk",
+    "source": "tracking-poker",
+    "account": "390772177583",
+    "time": "2024-04-11T07:52:35Z",
+    "region": "us-east-2",
+    "resources": [],
+    "detail": {
+      "videoId": "dVs7ORBHsF0",
+      "frameId": "frame_0083"
+    }
+  },
+  {
+    "version": "0",
+    "id": "09c51e57-44b6-64cc-1651-c0f709c84739",
+    "detail-type": "VideoFrameStored",
+    "source": "tracking-poker",
+    "account": "390772177583",
+    "time": "2024-04-11T07:52:35Z",
+    "region": "us-east-2",
+    "resources": [],
+    "detail": {
+      "videoId": "dVs7ORBHsF0",
+      "frameId": "frame_0106",
+      "location": "s3://tracking-poker-asset-ripper-assets-staging/dVs7ORBHsF0/frames/frame_0106.jpg"
+    }
+  },
+  {
+    "version": "0",
+    "id": "348b762e-96bf-61f9-3f87-72d29bcb70a0",
+    "detail-type": "FrameClassifiedAsJunk",
+    "source": "tracking-poker",
+    "account": "390772177583",
+    "time": "2024-04-11T07:52:36Z",
+    "region": "us-east-2",
+    "resources": [],
+    "detail": {
+      "videoId": "dVs7ORBHsF0",
+      "frameId": "frame_0084"
+    }
+  },
+  {
+    "version": "0",
+    "id": "5cdf1920-05b3-4ad4-a0d4-c2ca643d5919",
+    "detail-type": "VideoFrameStored",
+    "source": "tracking-poker",
+    "account": "390772177583",
+    "time": "2024-04-11T07:52:36Z",
+    "region": "us-east-2",
+    "resources": [],
+    "detail": {
+      "videoId": "dVs7ORBHsF0",
+      "frameId": "frame_0107",
+      "location": "s3://tracking-poker-asset-ripper-assets-staging/dVs7ORBHsF0/frames/frame_0107.jpg"
+    }
+  },
+  {
+    "version": "0",
+    "id": "054f5261-5ade-43c2-3ea6-d3cdf3de2787",
+    "detail-type": "FrameClassifiedAsJunk",
+    "source": "tracking-poker",
+    "account": "390772177583",
+    "time": "2024-04-11T07:52:36Z",
+    "region": "us-east-2",
+    "resources": [],
+    "detail": {
+      "videoId": "dVs7ORBHsF0",
+      "frameId": "frame_0085"
+    }
+  },
+  {
+    "version": "0",
+    "id": "6cce0563-ce08-e0bb-0712-4e6fc9f65332",
+    "detail-type": "VideoFrameStored",
+    "source": "tracking-poker",
+    "account": "390772177583",
+    "time": "2024-04-11T07:52:36Z",
+    "region": "us-east-2",
+    "resources": [],
+    "detail": {
+      "videoId": "dVs7ORBHsF0",
+      "frameId": "frame_0108",
+      "location": "s3://tracking-poker-asset-ripper-assets-staging/dVs7ORBHsF0/frames/frame_0108.jpg"
+    }
+  },
+  {
+    "version": "0",
+    "id": "a5c56e01-a060-d08f-2e96-d9e6d448411a",
+    "detail-type": "VideoFrameStored",
+    "source": "tracking-poker",
+    "account": "390772177583",
+    "time": "2024-04-11T07:52:36Z",
+    "region": "us-east-2",
+    "resources": [],
+    "detail": {
+      "videoId": "dVs7ORBHsF0",
+      "frameId": "frame_0109",
+      "location": "s3://tracking-poker-asset-ripper-assets-staging/dVs7ORBHsF0/frames/frame_0109.jpg"
+    }
+  },
+  {
+    "version": "0",
+    "id": "1433ce11-7428-1eed-17b9-699d12d75c2b",
+    "detail-type": "FrameClassifiedAsJunk",
+    "source": "tracking-poker",
+    "account": "390772177583",
+    "time": "2024-04-11T07:52:36Z",
+    "region": "us-east-2",
+    "resources": [],
+    "detail": {
+      "videoId": "dVs7ORBHsF0",
+      "frameId": "frame_0086"
+    }
+  },
+  {
+    "version": "0",
+    "id": "4d3c2445-bc96-58a5-c87f-5956e64b3416",
+    "detail-type": "VideoFrameStored",
+    "source": "tracking-poker",
+    "account": "390772177583",
+    "time": "2024-04-11T07:52:36Z",
+    "region": "us-east-2",
+    "resources": [],
+    "detail": {
+      "videoId": "dVs7ORBHsF0",
+      "frameId": "frame_0110",
+      "location": "s3://tracking-poker-asset-ripper-assets-staging/dVs7ORBHsF0/frames/frame_0110.jpg"
+    }
+  },
+  {
+    "version": "0",
+    "id": "4399a38b-a3fd-5938-29a6-1cff026c293a",
+    "detail-type": "FrameClassifiedAsJunk",
+    "source": "tracking-poker",
+    "account": "390772177583",
+    "time": "2024-04-11T07:52:36Z",
+    "region": "us-east-2",
+    "resources": [],
+    "detail": {
+      "videoId": "dVs7ORBHsF0",
+      "frameId": "frame_0091"
+    }
+  },
+  {
+    "version": "0",
+    "id": "0df83786-b969-f7c7-4d06-8a6fd9002f8f",
+    "detail-type": "VideoFrameStored",
+    "source": "tracking-poker",
+    "account": "390772177583",
+    "time": "2024-04-11T07:52:36Z",
+    "region": "us-east-2",
+    "resources": [],
+    "detail": {
+      "videoId": "dVs7ORBHsF0",
+      "frameId": "frame_0111",
+      "location": "s3://tracking-poker-asset-ripper-assets-staging/dVs7ORBHsF0/frames/frame_0111.jpg"
+    }
+  },
+  {
+    "version": "0",
+    "id": "b6cf3637-f738-ff96-3980-837d032e67d8",
+    "detail-type": "FrameClassifiedAsJunk",
+    "source": "tracking-poker",
+    "account": "390772177583",
+    "time": "2024-04-11T07:52:36Z",
+    "region": "us-east-2",
+    "resources": [],
+    "detail": {
+      "videoId": "dVs7ORBHsF0",
+      "frameId": "frame_0088"
+    }
+  },
+  {
+    "version": "0",
+    "id": "c999f0e5-f563-e3e9-da9d-51e961720b30",
+    "detail-type": "FrameClassifiedAsJunk",
+    "source": "tracking-poker",
+    "account": "390772177583",
+    "time": "2024-04-11T07:52:36Z",
+    "region": "us-east-2",
+    "resources": [],
+    "detail": {
+      "videoId": "dVs7ORBHsF0",
+      "frameId": "frame_0092"
+    }
+  },
+  {
+    "version": "0",
+    "id": "f9d6f8c6-7297-a104-e341-6f3d9cb32f2d",
+    "detail-type": "FrameClassifiedAsJunk",
+    "source": "tracking-poker",
+    "account": "390772177583",
+    "time": "2024-04-11T07:52:36Z",
+    "region": "us-east-2",
+    "resources": [],
+    "detail": {
+      "videoId": "dVs7ORBHsF0",
+      "frameId": "frame_0087"
+    }
+  },
+  {
+    "version": "0",
+    "id": "378e17e6-83f5-952a-5b65-d1439401003e",
+    "detail-type": "FrameClassifiedAsJunk",
+    "source": "tracking-poker",
+    "account": "390772177583",
+    "time": "2024-04-11T07:52:36Z",
+    "region": "us-east-2",
+    "resources": [],
+    "detail": {
+      "videoId": "dVs7ORBHsF0",
+      "frameId": "frame_0089"
+    }
+  },
+  {
+    "version": "0",
+    "id": "0197d194-1f3e-5d2b-5058-a59a793a8c5c",
+    "detail-type": "VideoFrameStored",
+    "source": "tracking-poker",
+    "account": "390772177583",
+    "time": "2024-04-11T07:52:36Z",
+    "region": "us-east-2",
+    "resources": [],
+    "detail": {
+      "videoId": "dVs7ORBHsF0",
+      "frameId": "frame_0112",
+      "location": "s3://tracking-poker-asset-ripper-assets-staging/dVs7ORBHsF0/frames/frame_0112.jpg"
+    }
+  },
+  {
+    "version": "0",
+    "id": "79a21872-19c1-9b38-ad6e-16c94a6051fb",
+    "detail-type": "VideoFrameStored",
+    "source": "tracking-poker",
+    "account": "390772177583",
+    "time": "2024-04-11T07:52:36Z",
+    "region": "us-east-2",
+    "resources": [],
+    "detail": {
+      "videoId": "dVs7ORBHsF0",
+      "frameId": "frame_0113",
+      "location": "s3://tracking-poker-asset-ripper-assets-staging/dVs7ORBHsF0/frames/frame_0113.jpg"
+    }
+  },
+  {
+    "version": "0",
+    "id": "d8ed32e2-7bd7-3ccb-c875-de1e95767d5e",
+    "detail-type": "VideoFrameStored",
+    "source": "tracking-poker",
+    "account": "390772177583",
+    "time": "2024-04-11T07:52:36Z",
+    "region": "us-east-2",
+    "resources": [],
+    "detail": {
+      "videoId": "dVs7ORBHsF0",
+      "frameId": "frame_0114",
+      "location": "s3://tracking-poker-asset-ripper-assets-staging/dVs7ORBHsF0/frames/frame_0114.jpg"
+    }
+  },
+  {
+    "version": "0",
+    "id": "b161a3fb-f344-92a1-bd50-6757ac4daa57",
+    "detail-type": "VideoFrameStored",
+    "source": "tracking-poker",
+    "account": "390772177583",
+    "time": "2024-04-11T07:52:36Z",
+    "region": "us-east-2",
+    "resources": [],
+    "detail": {
+      "videoId": "dVs7ORBHsF0",
+      "frameId": "frame_0115",
+      "location": "s3://tracking-poker-asset-ripper-assets-staging/dVs7ORBHsF0/frames/frame_0115.jpg"
+    }
+  },
+  {
+    "version": "0",
+    "id": "a7c1e424-dab8-16e8-a7dc-e6767133fd07",
+    "detail-type": "FrameClassifiedAsJunk",
+    "source": "tracking-poker",
+    "account": "390772177583",
+    "time": "2024-04-11T07:52:36Z",
+    "region": "us-east-2",
+    "resources": [],
+    "detail": {
+      "videoId": "dVs7ORBHsF0",
+      "frameId": "frame_0094"
+    }
+  },
+  {
+    "version": "0",
+    "id": "dcae7ac5-4ec4-67bf-927e-62776f4c634f",
+    "detail-type": "VideoFrameStored",
+    "source": "tracking-poker",
+    "account": "390772177583",
+    "time": "2024-04-11T07:52:37Z",
+    "region": "us-east-2",
+    "resources": [],
+    "detail": {
+      "videoId": "dVs7ORBHsF0",
+      "frameId": "frame_0116",
+      "location": "s3://tracking-poker-asset-ripper-assets-staging/dVs7ORBHsF0/frames/frame_0116.jpg"
+    }
+  },
+  {
+    "version": "0",
+    "id": "e62dd5fb-246f-a399-7214-a27488633a02",
+    "detail-type": "FrameClassifiedAsJunk",
+    "source": "tracking-poker",
+    "account": "390772177583",
+    "time": "2024-04-11T07:52:37Z",
+    "region": "us-east-2",
+    "resources": [],
+    "detail": {
+      "videoId": "dVs7ORBHsF0",
+      "frameId": "frame_0093"
+    }
+  },
+  {
+    "version": "0",
+    "id": "88160379-9e4d-8655-9347-960a6e79be2b",
+    "detail-type": "FrameClassifiedAsJunk",
+    "source": "tracking-poker",
+    "account": "390772177583",
+    "time": "2024-04-11T07:52:37Z",
+    "region": "us-east-2",
+    "resources": [],
+    "detail": {
+      "videoId": "dVs7ORBHsF0",
+      "frameId": "frame_0090"
+    }
+  },
+  {
+    "version": "0",
+    "id": "ae42221c-cd09-d7fc-1ff0-7b8a7fd59797",
+    "detail-type": "FrameClassifiedAsJunk",
+    "source": "tracking-poker",
+    "account": "390772177583",
+    "time": "2024-04-11T07:52:37Z",
+    "region": "us-east-2",
+    "resources": [],
+    "detail": {
+      "videoId": "dVs7ORBHsF0",
+      "frameId": "frame_0095"
+    }
+  },
+  {
+    "version": "0",
+    "id": "7f7c54dd-a64c-5b64-d366-da9ccbe36fce",
+    "detail-type": "VideoFrameStored",
+    "source": "tracking-poker",
+    "account": "390772177583",
+    "time": "2024-04-11T07:52:37Z",
+    "region": "us-east-2",
+    "resources": [],
+    "detail": {
+      "videoId": "dVs7ORBHsF0",
+      "frameId": "frame_0117",
+      "location": "s3://tracking-poker-asset-ripper-assets-staging/dVs7ORBHsF0/frames/frame_0117.jpg"
+    }
+  },
+  {
+    "version": "0",
+    "id": "79b5920d-f417-e6f4-93f5-60f743a26a79",
+    "detail-type": "FrameClassifiedAsJunk",
+    "source": "tracking-poker",
+    "account": "390772177583",
+    "time": "2024-04-11T07:52:37Z",
+    "region": "us-east-2",
+    "resources": [],
+    "detail": {
+      "videoId": "dVs7ORBHsF0",
+      "frameId": "frame_0097"
+    }
+  },
+  {
+    "version": "0",
+    "id": "28702db9-db33-b21b-f0b9-30d4fcc2147b",
+    "detail-type": "VideoFrameStored",
+    "source": "tracking-poker",
+    "account": "390772177583",
+    "time": "2024-04-11T07:52:37Z",
+    "region": "us-east-2",
+    "resources": [],
+    "detail": {
+      "videoId": "dVs7ORBHsF0",
+      "frameId": "frame_0118",
+      "location": "s3://tracking-poker-asset-ripper-assets-staging/dVs7ORBHsF0/frames/frame_0118.jpg"
+    }
+  },
+  {
+    "version": "0",
+    "id": "0f06eaa3-2b06-4cf1-2617-0a7b79012980",
+    "detail-type": "FrameClassifiedAsJunk",
+    "source": "tracking-poker",
+    "account": "390772177583",
+    "time": "2024-04-11T07:52:37Z",
+    "region": "us-east-2",
+    "resources": [],
+    "detail": {
+      "videoId": "dVs7ORBHsF0",
+      "frameId": "frame_0096"
+    }
+  },
+  {
+    "version": "0",
+    "id": "cf379a83-64a1-f188-bc28-91261f5f2090",
+    "detail-type": "VideoFrameStored",
+    "source": "tracking-poker",
+    "account": "390772177583",
+    "time": "2024-04-11T07:52:37Z",
+    "region": "us-east-2",
+    "resources": [],
+    "detail": {
+      "videoId": "dVs7ORBHsF0",
+      "frameId": "frame_0119",
+      "location": "s3://tracking-poker-asset-ripper-assets-staging/dVs7ORBHsF0/frames/frame_0119.jpg"
+    }
+  },
+  {
+    "version": "0",
+    "id": "1a1d0b9c-89f0-b5d0-df5f-487263a0370c",
+    "detail-type": "VideoFrameStored",
+    "source": "tracking-poker",
+    "account": "390772177583",
+    "time": "2024-04-11T07:52:37Z",
+    "region": "us-east-2",
+    "resources": [],
+    "detail": {
+      "videoId": "dVs7ORBHsF0",
+      "frameId": "frame_0121",
+      "location": "s3://tracking-poker-asset-ripper-assets-staging/dVs7ORBHsF0/frames/frame_0121.jpg"
+    }
+  },
+  {
+    "version": "0",
+    "id": "3165ce04-7427-0af4-023b-3a91f1165b78",
+    "detail-type": "VideoFrameStored",
+    "source": "tracking-poker",
+    "account": "390772177583",
+    "time": "2024-04-11T07:52:37Z",
+    "region": "us-east-2",
+    "resources": [],
+    "detail": {
+      "videoId": "dVs7ORBHsF0",
+      "frameId": "frame_0120",
+      "location": "s3://tracking-poker-asset-ripper-assets-staging/dVs7ORBHsF0/frames/frame_0120.jpg"
+    }
+  },
+  {
+    "version": "0",
+    "id": "54651777-6cb9-15c8-fa81-d4efdf02a3fa",
+    "detail-type": "FrameClassifiedAsJunk",
+    "source": "tracking-poker",
+    "account": "390772177583",
+    "time": "2024-04-11T07:52:37Z",
+    "region": "us-east-2",
+    "resources": [],
+    "detail": {
+      "videoId": "dVs7ORBHsF0",
+      "frameId": "frame_0098"
+    }
+  },
+  {
+    "version": "0",
+    "id": "9f933268-655f-e1f6-ae35-b8263aff7d72",
+    "detail-type": "FrameClassifiedAsJunk",
+    "source": "tracking-poker",
+    "account": "390772177583",
+    "time": "2024-04-11T07:52:37Z",
+    "region": "us-east-2",
+    "resources": [],
+    "detail": {
+      "videoId": "dVs7ORBHsF0",
+      "frameId": "frame_0099"
+    }
+  },
+  {
+    "version": "0",
+    "id": "5eba148b-f1b6-1ba0-640f-4c798e31e414",
+    "detail-type": "FrameClassifiedAsJunk",
+    "source": "tracking-poker",
+    "account": "390772177583",
+    "time": "2024-04-11T07:52:37Z",
+    "region": "us-east-2",
+    "resources": [],
+    "detail": {
+      "videoId": "dVs7ORBHsF0",
+      "frameId": "frame_0101"
+    }
+  },
+  {
+    "version": "0",
+    "id": "38093d17-124b-7ac5-e54e-1dcaf8c91ddb",
+    "detail-type": "VideoFrameStored",
+    "source": "tracking-poker",
+    "account": "390772177583",
+    "time": "2024-04-11T07:52:37Z",
+    "region": "us-east-2",
+    "resources": [],
+    "detail": {
+      "videoId": "dVs7ORBHsF0",
+      "frameId": "frame_0122",
+      "location": "s3://tracking-poker-asset-ripper-assets-staging/dVs7ORBHsF0/frames/frame_0122.jpg"
+    }
+  },
+  {
+    "version": "0",
+    "id": "695bf345-6918-db8b-632b-134d01cf74c6",
+    "detail-type": "VideoFrameStored",
+    "source": "tracking-poker",
+    "account": "390772177583",
+    "time": "2024-04-11T07:52:38Z",
+    "region": "us-east-2",
+    "resources": [],
+    "detail": {
+      "videoId": "dVs7ORBHsF0",
+      "frameId": "frame_0123",
+      "location": "s3://tracking-poker-asset-ripper-assets-staging/dVs7ORBHsF0/frames/frame_0123.jpg"
+    }
+  },
+  {
+    "version": "0",
+    "id": "d5742a12-87b1-20c9-5a85-eed06b2eddc5",
+    "detail-type": "FrameClassifiedAsJunk",
+    "source": "tracking-poker",
+    "account": "390772177583",
+    "time": "2024-04-11T07:52:38Z",
+    "region": "us-east-2",
+    "resources": [],
+    "detail": {
+      "videoId": "dVs7ORBHsF0",
+      "frameId": "frame_0100"
+    }
+  },
+  {
+    "version": "0",
+    "id": "a4c55051-4c55-d6d5-c01f-cb25f138ce91",
+    "detail-type": "VideoFrameStored",
+    "source": "tracking-poker",
+    "account": "390772177583",
+    "time": "2024-04-11T07:52:38Z",
+    "region": "us-east-2",
+    "resources": [],
+    "detail": {
+      "videoId": "dVs7ORBHsF0",
+      "frameId": "frame_0124",
+      "location": "s3://tracking-poker-asset-ripper-assets-staging/dVs7ORBHsF0/frames/frame_0124.jpg"
+    }
+  },
+  {
+    "version": "0",
+    "id": "3910c86f-218c-48f3-d9ca-526f3b23538d",
+    "detail-type": "VideoFrameStored",
+    "source": "tracking-poker",
+    "account": "390772177583",
+    "time": "2024-04-11T07:52:38Z",
+    "region": "us-east-2",
+    "resources": [],
+    "detail": {
+      "videoId": "dVs7ORBHsF0",
+      "frameId": "frame_0125",
+      "location": "s3://tracking-poker-asset-ripper-assets-staging/dVs7ORBHsF0/frames/frame_0125.jpg"
+    }
+  },
+  {
+    "version": "0",
+    "id": "4daaf958-097e-c208-2a9c-12cdb12d6c46",
+    "detail-type": "VideoFrameStored",
+    "source": "tracking-poker",
+    "account": "390772177583",
+    "time": "2024-04-11T07:52:38Z",
+    "region": "us-east-2",
+    "resources": [],
+    "detail": {
+      "videoId": "dVs7ORBHsF0",
+      "frameId": "frame_0126",
+      "location": "s3://tracking-poker-asset-ripper-assets-staging/dVs7ORBHsF0/frames/frame_0126.jpg"
+    }
+  },
+  {
+    "version": "0",
+    "id": "bd6a40db-5598-91a8-446e-2c2e208a9ff4",
+    "detail-type": "VideoFrameStored",
+    "source": "tracking-poker",
+    "account": "390772177583",
+    "time": "2024-04-11T07:52:38Z",
+    "region": "us-east-2",
+    "resources": [],
+    "detail": {
+      "videoId": "dVs7ORBHsF0",
+      "frameId": "frame_0127",
+      "location": "s3://tracking-poker-asset-ripper-assets-staging/dVs7ORBHsF0/frames/frame_0127.jpg"
+    }
+  },
+  {
+    "version": "0",
+    "id": "a6efd955-57b4-c388-690a-a9a71640b230",
+    "detail-type": "VideoFrameStored",
+    "source": "tracking-poker",
+    "account": "390772177583",
+    "time": "2024-04-11T07:52:38Z",
+    "region": "us-east-2",
+    "resources": [],
+    "detail": {
+      "videoId": "dVs7ORBHsF0",
+      "frameId": "frame_0128",
+      "location": "s3://tracking-poker-asset-ripper-assets-staging/dVs7ORBHsF0/frames/frame_0128.jpg"
+    }
+  },
+  {
+    "version": "0",
+    "id": "06ef7037-b141-db66-ab1f-095a9219b682",
+    "detail-type": "VideoFrameStored",
+    "source": "tracking-poker",
+    "account": "390772177583",
+    "time": "2024-04-11T07:52:38Z",
+    "region": "us-east-2",
+    "resources": [],
+    "detail": {
+      "videoId": "dVs7ORBHsF0",
+      "frameId": "frame_0131",
+      "location": "s3://tracking-poker-asset-ripper-assets-staging/dVs7ORBHsF0/frames/frame_0131.jpg"
+    }
+  },
+  {
+    "version": "0",
+    "id": "568e8e42-8bd7-3020-418a-6f735f22a4b1",
+    "detail-type": "VideoFrameStored",
+    "source": "tracking-poker",
+    "account": "390772177583",
+    "time": "2024-04-11T07:52:38Z",
+    "region": "us-east-2",
+    "resources": [],
+    "detail": {
+      "videoId": "dVs7ORBHsF0",
+      "frameId": "frame_0129",
+      "location": "s3://tracking-poker-asset-ripper-assets-staging/dVs7ORBHsF0/frames/frame_0129.jpg"
+    }
+  },
+  {
+    "version": "0",
+    "id": "1b6dc194-30bd-4628-7f3a-984ff73176d4",
+    "detail-type": "FrameClassifiedAsJunk",
+    "source": "tracking-poker",
+    "account": "390772177583",
+    "time": "2024-04-11T07:52:38Z",
+    "region": "us-east-2",
+    "resources": [],
+    "detail": {
+      "videoId": "dVs7ORBHsF0",
+      "frameId": "frame_0108"
+    }
+  },
+  {
+    "version": "0",
+    "id": "78bff3d6-437d-98f4-c86b-d034bf211fec",
+    "detail-type": "VideoFrameStored",
+    "source": "tracking-poker",
+    "account": "390772177583",
+    "time": "2024-04-11T07:52:38Z",
+    "region": "us-east-2",
+    "resources": [],
+    "detail": {
+      "videoId": "dVs7ORBHsF0",
+      "frameId": "frame_0130",
+      "location": "s3://tracking-poker-asset-ripper-assets-staging/dVs7ORBHsF0/frames/frame_0130.jpg"
+    }
+  },
+  {
+    "version": "0",
+    "id": "27197efe-d5ab-3dee-4526-0f1a9806737c",
+    "detail-type": "VideoFrameStored",
+    "source": "tracking-poker",
+    "account": "390772177583",
+    "time": "2024-04-11T07:52:39Z",
+    "region": "us-east-2",
+    "resources": [],
+    "detail": {
+      "videoId": "dVs7ORBHsF0",
+      "frameId": "frame_0132",
+      "location": "s3://tracking-poker-asset-ripper-assets-staging/dVs7ORBHsF0/frames/frame_0132.jpg"
+    }
+  },
+  {
+    "version": "0",
+    "id": "13bc8069-5bd1-09d6-7725-6f97adef6821",
+    "detail-type": "VideoFrameStored",
+    "source": "tracking-poker",
+    "account": "390772177583",
+    "time": "2024-04-11T07:52:39Z",
+    "region": "us-east-2",
+    "resources": [],
+    "detail": {
+      "videoId": "dVs7ORBHsF0",
+      "frameId": "frame_0133",
+      "location": "s3://tracking-poker-asset-ripper-assets-staging/dVs7ORBHsF0/frames/frame_0133.jpg"
+    }
+  },
+  {
+    "version": "0",
+    "id": "5895584b-7d28-d7eb-3104-accbb835a2c1",
+    "detail-type": "VideoFrameStored",
+    "source": "tracking-poker",
+    "account": "390772177583",
+    "time": "2024-04-11T07:52:39Z",
+    "region": "us-east-2",
+    "resources": [],
+    "detail": {
+      "videoId": "dVs7ORBHsF0",
+      "frameId": "frame_0134",
+      "location": "s3://tracking-poker-asset-ripper-assets-staging/dVs7ORBHsF0/frames/frame_0134.jpg"
+    }
+  },
+  {
+    "version": "0",
+    "id": "119c32e9-97f6-67c3-b60e-9fb27f12d41c",
+    "detail-type": "VideoFrameStored",
+    "source": "tracking-poker",
+    "account": "390772177583",
+    "time": "2024-04-11T07:52:39Z",
+    "region": "us-east-2",
+    "resources": [],
+    "detail": {
+      "videoId": "dVs7ORBHsF0",
+      "frameId": "frame_0135",
+      "location": "s3://tracking-poker-asset-ripper-assets-staging/dVs7ORBHsF0/frames/frame_0135.jpg"
+    }
+  },
+  {
+    "version": "0",
+    "id": "37643263-99b4-04dd-ebe9-f38af223f1b0",
+    "detail-type": "VideoFrameStored",
+    "source": "tracking-poker",
+    "account": "390772177583",
+    "time": "2024-04-11T07:52:39Z",
+    "region": "us-east-2",
+    "resources": [],
+    "detail": {
+      "videoId": "dVs7ORBHsF0",
+      "frameId": "frame_0136",
+      "location": "s3://tracking-poker-asset-ripper-assets-staging/dVs7ORBHsF0/frames/frame_0136.jpg"
+    }
+  },
+  {
+    "version": "0",
+    "id": "05a766aa-beb1-5836-0762-a8965af50311",
+    "detail-type": "FrameClassifiedAsJunk",
+    "source": "tracking-poker",
+    "account": "390772177583",
+    "time": "2024-04-11T07:52:39Z",
+    "region": "us-east-2",
+    "resources": [],
+    "detail": {
+      "videoId": "dVs7ORBHsF0",
+      "frameId": "frame_0116"
+    }
+  },
+  {
+    "version": "0",
+    "id": "ed98c5ba-0b93-004b-49de-c3e9c061567f",
+    "detail-type": "VideoFrameStored",
+    "source": "tracking-poker",
+    "account": "390772177583",
+    "time": "2024-04-11T07:52:39Z",
+    "region": "us-east-2",
+    "resources": [],
+    "detail": {
+      "videoId": "dVs7ORBHsF0",
+      "frameId": "frame_0137",
+      "location": "s3://tracking-poker-asset-ripper-assets-staging/dVs7ORBHsF0/frames/frame_0137.jpg"
+    }
+  },
+  {
+    "version": "0",
+    "id": "e77b689a-0226-f19d-9958-cbcc0dd0c280",
+    "detail-type": "FrameClassifiedAsJunk",
+    "source": "tracking-poker",
+    "account": "390772177583",
+    "time": "2024-04-11T07:52:39Z",
+    "region": "us-east-2",
+    "resources": [],
+    "detail": {
+      "videoId": "dVs7ORBHsF0",
+      "frameId": "frame_0117"
+    }
+  },
+  {
+    "version": "0",
+    "id": "f07a59f5-e26e-f67a-06fb-21e06c77ce3b",
+    "detail-type": "VideoFrameStored",
+    "source": "tracking-poker",
+    "account": "390772177583",
+    "time": "2024-04-11T07:52:39Z",
+    "region": "us-east-2",
+    "resources": [],
+    "detail": {
+      "videoId": "dVs7ORBHsF0",
+      "frameId": "frame_0138",
+      "location": "s3://tracking-poker-asset-ripper-assets-staging/dVs7ORBHsF0/frames/frame_0138.jpg"
+    }
+  },
+  {
+    "version": "0",
+    "id": "9f50b6d3-0672-91d2-8939-ee29ef8674f9",
+    "detail-type": "FrameClassifiedAsJunk",
+    "source": "tracking-poker",
+    "account": "390772177583",
+    "time": "2024-04-11T07:52:39Z",
+    "region": "us-east-2",
+    "resources": [],
+    "detail": {
+      "videoId": "dVs7ORBHsF0",
+      "frameId": "frame_0120"
+    }
+  },
+  {
+    "version": "0",
+    "id": "d461ce3d-ee8c-3a23-3324-17a6998d2bb9",
+    "detail-type": "VideoFrameStored",
+    "source": "tracking-poker",
+    "account": "390772177583",
+    "time": "2024-04-11T07:52:39Z",
+    "region": "us-east-2",
+    "resources": [],
+    "detail": {
+      "videoId": "dVs7ORBHsF0",
+      "frameId": "frame_0139",
+      "location": "s3://tracking-poker-asset-ripper-assets-staging/dVs7ORBHsF0/frames/frame_0139.jpg"
+    }
+  },
+  {
+    "version": "0",
+    "id": "c9b652f5-424b-e32a-1f4b-98c3a5d22d69",
+    "detail-type": "FrameClassifiedAsJunk",
+    "source": "tracking-poker",
+    "account": "390772177583",
+    "time": "2024-04-11T07:52:40Z",
+    "region": "us-east-2",
+    "resources": [],
+    "detail": {
+      "videoId": "dVs7ORBHsF0",
+      "frameId": "frame_0119"
+    }
+  },
+  {
+    "version": "0",
+    "id": "f623dfff-add7-2f04-2251-db8563f01fe8",
+    "detail-type": "VideoFrameStored",
+    "source": "tracking-poker",
+    "account": "390772177583",
+    "time": "2024-04-11T07:52:40Z",
+    "region": "us-east-2",
+    "resources": [],
+    "detail": {
+      "videoId": "dVs7ORBHsF0",
+      "frameId": "frame_0140",
+      "location": "s3://tracking-poker-asset-ripper-assets-staging/dVs7ORBHsF0/frames/frame_0140.jpg"
+    }
+  },
+  {
+    "version": "0",
+    "id": "a4cf196b-b710-fff5-094f-b5cd71c59ff5",
+    "detail-type": "FrameClassifiedAsJunk",
+    "source": "tracking-poker",
+    "account": "390772177583",
+    "time": "2024-04-11T07:52:40Z",
+    "region": "us-east-2",
+    "resources": [],
+    "detail": {
+      "videoId": "dVs7ORBHsF0",
+      "frameId": "frame_0122"
+    }
+  },
+  {
+    "version": "0",
+    "id": "1e816327-8eff-6ca3-3bf0-c52244daba3a",
+    "detail-type": "VideoFrameStored",
+    "source": "tracking-poker",
+    "account": "390772177583",
+    "time": "2024-04-11T07:52:40Z",
+    "region": "us-east-2",
+    "resources": [],
+    "detail": {
+      "videoId": "dVs7ORBHsF0",
+      "frameId": "frame_0141",
+      "location": "s3://tracking-poker-asset-ripper-assets-staging/dVs7ORBHsF0/frames/frame_0141.jpg"
+    }
+  },
+  {
+    "version": "0",
+    "id": "104a7f5b-8bb3-b506-43e9-e3e69e08b516",
+    "detail-type": "FrameClassifiedAsJunk",
+    "source": "tracking-poker",
+    "account": "390772177583",
+    "time": "2024-04-11T07:52:40Z",
+    "region": "us-east-2",
+    "resources": [],
+    "detail": {
+      "videoId": "dVs7ORBHsF0",
+      "frameId": "frame_0121"
+    }
+  },
+  {
+    "version": "0",
+    "id": "b7c5824c-d80b-cf5f-a784-89bac4a56916",
+    "detail-type": "FrameClassifiedAsJunk",
+    "source": "tracking-poker",
+    "account": "390772177583",
+    "time": "2024-04-11T07:52:40Z",
+    "region": "us-east-2",
+    "resources": [],
+    "detail": {
+      "videoId": "dVs7ORBHsF0",
+      "frameId": "frame_0125"
+    }
+  },
+  {
+    "version": "0",
+    "id": "2c354cde-7fa6-543e-fb9b-2c17f01410e4",
+    "detail-type": "FrameClassifiedAsJunk",
+    "source": "tracking-poker",
+    "account": "390772177583",
+    "time": "2024-04-11T07:52:40Z",
+    "region": "us-east-2",
+    "resources": [],
+    "detail": {
+      "videoId": "dVs7ORBHsF0",
+      "frameId": "frame_0118"
+    }
+  },
+  {
+    "version": "0",
+    "id": "26ffc6f6-33ff-1566-fde6-958f30ac510b",
+    "detail-type": "VideoFrameStored",
+    "source": "tracking-poker",
+    "account": "390772177583",
+    "time": "2024-04-11T07:52:40Z",
+    "region": "us-east-2",
+    "resources": [],
+    "detail": {
+      "videoId": "dVs7ORBHsF0",
+      "frameId": "frame_0142",
+      "location": "s3://tracking-poker-asset-ripper-assets-staging/dVs7ORBHsF0/frames/frame_0142.jpg"
+    }
+  },
+  {
+    "version": "0",
+    "id": "27433aad-25f2-504d-b19a-84a67d565aa4",
+    "detail-type": "StatsExtractedFromFrame",
+    "source": "tracking-poker",
+    "account": "390772177583",
+    "time": "2024-04-11T07:52:40Z",
+    "region": "us-east-2",
+    "resources": [],
+    "detail": {
+      "videoId": "dVs7ORBHsF0",
+      "frameId": "frame_0106",
+      "type": "vpip",
+      "stats": [
+        {
+          "stat": 59,
+          "playerName": "FAIZAL"
+        },
+        {
+          "stat": 45,
+          "playerName": "ISRAELI RON"
+        },
+        {
+          "stat": 44,
+          "playerName": "MIKE X"
+        },
+        {
+          "stat": 43,
+          "playerName": "JOHNNY"
+        },
+        {
+          "stat": 36,
+          "playerName": "SASHIMI"
+        },
+        {
+          "stat": 35,
+          "playerName": "TAL"
+        },
+        {
+          "stat": 35,
+          "playerName": "ALEX"
+        },
+        {
+          "stat": 31,
+          "playerName": "C2B"
+        },
+        {
+          "stat": 27,
+          "playerName": "WEI"
+        },
+        {
+          "stat": 23,
+          "playerName": "NICK"
+        }
+      ]
+    }
+  },
+  {
+    "version": "0",
+    "id": "7751fd4a-33ec-9eeb-7106-18d338342ee0",
+    "detail-type": "VideoFrameStored",
+    "source": "tracking-poker",
+    "account": "390772177583",
+    "time": "2024-04-11T07:52:40Z",
+    "region": "us-east-2",
+    "resources": [],
+    "detail": {
+      "videoId": "dVs7ORBHsF0",
+      "frameId": "frame_0143",
+      "location": "s3://tracking-poker-asset-ripper-assets-staging/dVs7ORBHsF0/frames/frame_0143.jpg"
+    }
+  },
+  {
+    "version": "0",
+    "id": "1364bc93-f154-9aa0-4cfc-1b2f4a5db06d",
+    "detail-type": "FrameClassifiedAsJunk",
+    "source": "tracking-poker",
+    "account": "390772177583",
+    "time": "2024-04-11T07:52:40Z",
+    "region": "us-east-2",
+    "resources": [],
+    "detail": {
+      "videoId": "dVs7ORBHsF0",
+      "frameId": "frame_0123"
+    }
+  },
+  {
+    "version": "0",
+    "id": "284dd49e-1c34-5387-fd34-affc0b28c2cf",
+    "detail-type": "StatsExtractedFromFrame",
+    "source": "tracking-poker",
+    "account": "390772177583",
+    "time": "2024-04-11T07:52:40Z",
+    "region": "us-east-2",
+    "resources": [],
+    "detail": {
+      "videoId": "dVs7ORBHsF0",
+      "frameId": "frame_0102",
+      "type": "cc",
+      "stats": [
+        {
+          "stat": 42480,
+          "playerName": "JOHNNY"
+        },
+        {
+          "stat": 37360,
+          "playerName": "ALEX"
+        },
+        {
+          "stat": 34840,
+          "playerName": "SASHIMI"
+        },
+        {
+          "stat": 26410,
+          "playerName": "TAL"
+        },
+        {
+          "stat": 24680,
+          "playerName": "NICK"
+        },
+        {
+          "stat": 21390,
+          "playerName": "C2B"
+        },
+        {
+          "stat": 17160,
+          "playerName": "MIKE X"
+        },
+        {
+          "stat": 17120,
+          "playerName": "FAIZAL"
+        },
+        {
+          "stat": 8070,
+          "playerName": "WEI"
+        }
+      ]
+    }
+  },
+  {
+    "version": "0",
+    "id": "90078e45-73e0-8b79-ee69-d90f3af2b054",
+    "detail-type": "VideoFrameStored",
+    "source": "tracking-poker",
+    "account": "390772177583",
+    "time": "2024-04-11T07:52:40Z",
+    "region": "us-east-2",
+    "resources": [],
+    "detail": {
+      "videoId": "dVs7ORBHsF0",
+      "frameId": "frame_0144",
+      "location": "s3://tracking-poker-asset-ripper-assets-staging/dVs7ORBHsF0/frames/frame_0144.jpg"
+    }
+  },
+  {
+    "version": "0",
+    "id": "34c7ae37-37e3-c017-04f3-39d6fd385b19",
+    "detail-type": "VideoFrameStored",
+    "source": "tracking-poker",
+    "account": "390772177583",
+    "time": "2024-04-11T07:52:40Z",
+    "region": "us-east-2",
+    "resources": [],
+    "detail": {
+      "videoId": "dVs7ORBHsF0",
+      "frameId": "frame_0147",
+      "location": "s3://tracking-poker-asset-ripper-assets-staging/dVs7ORBHsF0/frames/frame_0147.jpg"
+    }
+  },
+  {
+    "version": "0",
+    "id": "78b8ef9c-0697-1092-95d5-ff62456117b1",
+    "detail-type": "VideoFrameStored",
+    "source": "tracking-poker",
+    "account": "390772177583",
+    "time": "2024-04-11T07:52:40Z",
+    "region": "us-east-2",
+    "resources": [],
+    "detail": {
+      "videoId": "dVs7ORBHsF0",
+      "frameId": "frame_0145",
+      "location": "s3://tracking-poker-asset-ripper-assets-staging/dVs7ORBHsF0/frames/frame_0145.jpg"
+    }
+  },
+  {
+    "version": "0",
+    "id": "e9303005-07bb-b4b8-cab4-5eca2d5d7f7c",
+    "detail-type": "StatsExtractedFromFrame",
+    "source": "tracking-poker",
+    "account": "390772177583",
+    "time": "2024-04-11T07:52:40Z",
+    "region": "us-east-2",
+    "resources": [],
+    "detail": {
+      "videoId": "dVs7ORBHsF0",
+      "frameId": "frame_0107",
+      "type": "vpip",
+      "stats": [
+        {
+          "stat": 59,
+          "playerName": "FAIZAL"
+        },
+        {
+          "stat": 45,
+          "playerName": "ISRAELI RON"
+        },
+        {
+          "stat": 44,
+          "playerName": "MIKE X"
+        },
+        {
+          "stat": 43,
+          "playerName": "JOHNNY"
+        },
+        {
+          "stat": 36,
+          "playerName": "SASHIMI"
+        },
+        {
+          "stat": 35,
+          "playerName": "TAL"
+        },
+        {
+          "stat": 35,
+          "playerName": "ALEX"
+        },
+        {
+          "stat": 31,
+          "playerName": "C2B"
+        },
+        {
+          "stat": 27,
+          "playerName": "WEI"
+        },
+        {
+          "stat": 23,
+          "playerName": "NICK"
+        }
+      ]
+    }
+  },
+  {
+    "version": "0",
+    "id": "0df6d114-a19a-1732-fbc7-c9f6e44e5b1d",
+    "detail-type": "VideoFrameStored",
+    "source": "tracking-poker",
+    "account": "390772177583",
+    "time": "2024-04-11T07:52:40Z",
+    "region": "us-east-2",
+    "resources": [],
+    "detail": {
+      "videoId": "dVs7ORBHsF0",
+      "frameId": "frame_0146",
+      "location": "s3://tracking-poker-asset-ripper-assets-staging/dVs7ORBHsF0/frames/frame_0146.jpg"
+    }
+  },
+  {
+    "version": "0",
+    "id": "4af58c33-02be-d1d0-7a6d-605f66a84537",
+    "detail-type": "FrameClassifiedAsJunk",
+    "source": "tracking-poker",
+    "account": "390772177583",
+    "time": "2024-04-11T07:52:40Z",
+    "region": "us-east-2",
+    "resources": [],
+    "detail": {
+      "videoId": "dVs7ORBHsF0",
+      "frameId": "frame_0126"
+    }
+  },
+  {
+    "version": "0",
+    "id": "72821fbe-f443-fbcc-1c7d-dd9efc3e8c05",
+    "detail-type": "StatsExtractedFromFrame",
+    "source": "tracking-poker",
+    "account": "390772177583",
+    "time": "2024-04-11T07:52:40Z",
+    "region": "us-east-2",
+    "resources": [],
+    "detail": {
+      "videoId": "dVs7ORBHsF0",
+      "frameId": "frame_0104",
+      "type": "cc",
+      "stats": [
+        {
+          "stat": 42480,
+          "playerName": "JOHNNY"
+        },
+        {
+          "stat": 37360,
+          "playerName": "ALEX"
+        },
+        {
+          "stat": 34840,
+          "playerName": "SASHIMI"
+        },
+        {
+          "stat": 26410,
+          "playerName": "TAL"
+        },
+        {
+          "stat": 24680,
+          "playerName": "NICK"
+        },
+        {
+          "stat": 21390,
+          "playerName": "C2B"
+        },
+        {
+          "stat": 17160,
+          "playerName": "MIKE X"
+        },
+        {
+          "stat": 17120,
+          "playerName": "FAIZAL"
+        },
+        {
+          "stat": 8070,
+          "playerName": "WEI"
+        }
+      ]
+    }
+  },
+  {
+    "version": "0",
+    "id": "b5ae7e8d-bfb7-0017-fe03-02885a66a85e",
+    "detail-type": "StatsExtractedFromFrame",
+    "source": "tracking-poker",
+    "account": "390772177583",
+    "time": "2024-04-11T07:52:40Z",
+    "region": "us-east-2",
+    "resources": [],
+    "detail": {
+      "videoId": "dVs7ORBHsF0",
+      "frameId": "frame_0105",
+      "type": "cc",
+      "stats": [
+        {
+          "stat": 42480,
+          "playerName": "JOHNNY"
+        },
+        {
+          "stat": 37360,
+          "playerName": "ALEX"
+        },
+        {
+          "stat": 34840,
+          "playerName": "SASHIMI"
+        },
+        {
+          "stat": 26410,
+          "playerName": "TAL"
+        },
+        {
+          "stat": 24680,
+          "playerName": "NICK"
+        },
+        {
+          "stat": 21390,
+          "playerName": "C2B"
+        },
+        {
+          "stat": 17160,
+          "playerName": "MIKE X"
+        },
+        {
+          "stat": 17120,
+          "playerName": "FAIZAL"
+        },
+        {
+          "stat": 8070,
+          "playerName": "WEI"
+        }
+      ]
+    }
+  },
+  {
+    "version": "0",
+    "id": "f1966312-3912-406c-e111-842faaa32b48",
+    "detail-type": "VideoFrameStored",
+    "source": "tracking-poker",
+    "account": "390772177583",
+    "time": "2024-04-11T07:52:40Z",
+    "region": "us-east-2",
+    "resources": [],
+    "detail": {
+      "videoId": "dVs7ORBHsF0",
+      "frameId": "frame_0148",
+      "location": "s3://tracking-poker-asset-ripper-assets-staging/dVs7ORBHsF0/frames/frame_0148.jpg"
+    }
+  },
+  {
+    "version": "0",
+    "id": "35a4c83d-8665-e3d3-b6ed-507b71a382ac",
+    "detail-type": "StatsExtractedFromFrame",
+    "source": "tracking-poker",
+    "account": "390772177583",
+    "time": "2024-04-11T07:52:41Z",
+    "region": "us-east-2",
+    "resources": [],
+    "detail": {
+      "videoId": "dVs7ORBHsF0",
+      "frameId": "frame_0109",
+      "type": "pfr",
+      "stats": [
+        {
+          "stat": 25,
+          "playerName": "MIKE X"
+        },
+        {
+          "stat": 21,
+          "playerName": "TAL"
+        },
+        {
+          "stat": 21,
+          "playerName": "C2B"
+        },
+        {
+          "stat": 20,
+          "playerName": "SASHIMI"
+        },
+        {
+          "stat": 18,
+          "playerName": "WEI"
+        },
+        {
+          "stat": 15,
+          "playerName": "ISRAELI RON"
+        },
+        {
+          "stat": 14,
+          "playerName": "FAIZAL"
+        },
+        {
+          "stat": 12,
+          "playerName": "ALEX"
+        },
+        {
+          "stat": 12,
+          "playerName": "JOHNNY"
+        },
+        {
+          "stat": 11,
+          "playerName": "NICK"
+        }
+      ]
+    }
+  },
+  {
+    "version": "0",
+    "id": "511fb67d-6359-7aa1-9ec4-f52336814e9b",
+    "detail-type": "FrameClassifiedAsJunk",
+    "source": "tracking-poker",
+    "account": "390772177583",
+    "time": "2024-04-11T07:52:41Z",
+    "region": "us-east-2",
+    "resources": [],
+    "detail": {
+      "videoId": "dVs7ORBHsF0",
+      "frameId": "frame_0128"
+    }
+  },
+  {
+    "version": "0",
+    "id": "4a278167-0387-2f3c-3f16-16303a43b090",
+    "detail-type": "FrameClassifiedAsJunk",
+    "source": "tracking-poker",
+    "account": "390772177583",
+    "time": "2024-04-11T07:52:41Z",
+    "region": "us-east-2",
+    "resources": [],
+    "detail": {
+      "videoId": "dVs7ORBHsF0",
+      "frameId": "frame_0124"
+    }
+  },
+  {
+    "version": "0",
+    "id": "22079d1d-3c54-519a-f903-69e84a8dfe78",
+    "detail-type": "VideoFrameStored",
+    "source": "tracking-poker",
+    "account": "390772177583",
+    "time": "2024-04-11T07:52:41Z",
+    "region": "us-east-2",
+    "resources": [],
+    "detail": {
+      "videoId": "dVs7ORBHsF0",
+      "frameId": "frame_0149",
+      "location": "s3://tracking-poker-asset-ripper-assets-staging/dVs7ORBHsF0/frames/frame_0149.jpg"
+    }
+  },
+  {
+    "version": "0",
+    "id": "0f444080-81f4-0879-5c91-4dc810a32c84",
+    "detail-type": "StatsExtractedFromFrame",
+    "source": "tracking-poker",
+    "account": "390772177583",
+    "time": "2024-04-11T07:52:41Z",
+    "region": "us-east-2",
+    "resources": [],
+    "detail": {
+      "videoId": "dVs7ORBHsF0",
+      "frameId": "frame_0103",
+      "type": "cc",
+      "stats": [
+        {
+          "stat": 42480,
+          "playerName": "JOHNNY"
+        },
+        {
+          "stat": 37360,
+          "playerName": "ALEX"
+        },
+        {
+          "stat": 34840,
+          "playerName": "SASHIMI"
+        },
+        {
+          "stat": 26410,
+          "playerName": "TAL"
+        },
+        {
+          "stat": 24680,
+          "playerName": "NICK"
+        },
+        {
+          "stat": 21390,
+          "playerName": "C2B"
+        },
+        {
+          "stat": 17160,
+          "playerName": "MIKE X"
+        },
+        {
+          "stat": 17120,
+          "playerName": "FAIZAL"
+        },
+        {
+          "stat": 8070,
+          "playerName": "WEI"
+        }
+      ]
+    }
+  },
+  {
+    "version": "0",
+    "id": "912a23ed-08fb-41b5-ccfc-94a9eaf7103e",
+    "detail-type": "VideoFrameStored",
+    "source": "tracking-poker",
+    "account": "390772177583",
+    "time": "2024-04-11T07:52:41Z",
+    "region": "us-east-2",
+    "resources": [],
+    "detail": {
+      "videoId": "dVs7ORBHsF0",
+      "frameId": "frame_0150",
+      "location": "s3://tracking-poker-asset-ripper-assets-staging/dVs7ORBHsF0/frames/frame_0150.jpg"
+    }
+  },
+  {
+    "version": "0",
+    "id": "a82da03e-9a13-da5c-dfe7-e0236592af13",
+    "detail-type": "FrameClassifiedAsJunk",
+    "source": "tracking-poker",
+    "account": "390772177583",
+    "time": "2024-04-11T07:52:41Z",
+    "region": "us-east-2",
+    "resources": [],
+    "detail": {
+      "videoId": "dVs7ORBHsF0",
+      "frameId": "frame_0129"
+    }
+  },
+  {
+    "version": "0",
+    "id": "9cb42b41-b072-89ea-2c60-b8fe378b3b6e",
+    "detail-type": "FrameClassifiedAsJunk",
+    "source": "tracking-poker",
+    "account": "390772177583",
+    "time": "2024-04-11T07:52:41Z",
+    "region": "us-east-2",
+    "resources": [],
+    "detail": {
+      "videoId": "dVs7ORBHsF0",
+      "frameId": "frame_0130"
+    }
+  },
+  {
+    "version": "0",
+    "id": "95e3ee03-2629-c8fc-d896-5378ee054153",
+    "detail-type": "FrameClassifiedAsJunk",
+    "source": "tracking-poker",
+    "account": "390772177583",
+    "time": "2024-04-11T07:52:41Z",
+    "region": "us-east-2",
+    "resources": [],
+    "detail": {
+      "videoId": "dVs7ORBHsF0",
+      "frameId": "frame_0127"
+    }
+  },
+  {
+    "version": "0",
+    "id": "a25f11cc-691f-53de-534c-df655912a593",
+    "detail-type": "FrameClassifiedAsJunk",
+    "source": "tracking-poker",
+    "account": "390772177583",
+    "time": "2024-04-11T07:52:41Z",
+    "region": "us-east-2",
+    "resources": [],
+    "detail": {
+      "videoId": "dVs7ORBHsF0",
+      "frameId": "frame_0132"
+    }
+  },
+  {
+    "version": "0",
+    "id": "a69ad249-5ba8-dc30-a3de-a8eba289838e",
+    "detail-type": "FrameClassifiedAsJunk",
+    "source": "tracking-poker",
+    "account": "390772177583",
+    "time": "2024-04-11T07:52:41Z",
+    "region": "us-east-2",
+    "resources": [],
+    "detail": {
+      "videoId": "dVs7ORBHsF0",
+      "frameId": "frame_0144"
+    }
+  },
+  {
+    "version": "0",
+    "id": "3036e2df-b274-5dad-4cfa-547e11ce50ab",
+    "detail-type": "FrameClassifiedAsJunk",
+    "source": "tracking-poker",
+    "account": "390772177583",
+    "time": "2024-04-11T07:52:41Z",
+    "region": "us-east-2",
+    "resources": [],
+    "detail": {
+      "videoId": "dVs7ORBHsF0",
+      "frameId": "frame_0133"
+    }
+  },
+  {
+    "version": "0",
+    "id": "522d6537-8d9b-bf5e-dcf8-5126eb67a45f",
+    "detail-type": "FrameClassifiedAsJunk",
+    "source": "tracking-poker",
+    "account": "390772177583",
+    "time": "2024-04-11T07:52:41Z",
+    "region": "us-east-2",
+    "resources": [],
+    "detail": {
+      "videoId": "dVs7ORBHsF0",
+      "frameId": "frame_0140"
+    }
+  },
+  {
+    "version": "0",
+    "id": "0d1ca47d-d0b3-997e-2721-d9d467d3a089",
+    "detail-type": "FrameClassifiedAsJunk",
+    "source": "tracking-poker",
+    "account": "390772177583",
+    "time": "2024-04-11T07:52:41Z",
+    "region": "us-east-2",
+    "resources": [],
+    "detail": {
+      "videoId": "dVs7ORBHsF0",
+      "frameId": "frame_0134"
+    }
+  },
+  {
+    "version": "0",
+    "id": "6e80b946-a8f2-8a5d-0c24-a90cf8d4c4b7",
+    "detail-type": "FrameClassifiedAsJunk",
+    "source": "tracking-poker",
+    "account": "390772177583",
+    "time": "2024-04-11T07:52:41Z",
+    "region": "us-east-2",
+    "resources": [],
+    "detail": {
+      "videoId": "dVs7ORBHsF0",
+      "frameId": "frame_0135"
+    }
+  },
+  {
+    "version": "0",
+    "id": "69d64158-00df-8c9a-70f4-e161c3bddefb",
+    "detail-type": "FrameClassifiedAsJunk",
+    "source": "tracking-poker",
+    "account": "390772177583",
+    "time": "2024-04-11T07:52:42Z",
+    "region": "us-east-2",
+    "resources": [],
+    "detail": {
+      "videoId": "dVs7ORBHsF0",
+      "frameId": "frame_0136"
+    }
+  },
+  {
+    "version": "0",
+    "id": "df8b5615-1548-d437-2a5c-2e2cf24e457d",
+    "detail-type": "FrameClassifiedAsJunk",
+    "source": "tracking-poker",
+    "account": "390772177583",
+    "time": "2024-04-11T07:52:42Z",
+    "region": "us-east-2",
+    "resources": [],
+    "detail": {
+      "videoId": "dVs7ORBHsF0",
+      "frameId": "frame_0147"
+    }
+  },
+  {
+    "version": "0",
+    "id": "040c9a1d-c888-eb80-3b70-1af1813c9332",
+    "detail-type": "FrameClassifiedAsJunk",
+    "source": "tracking-poker",
+    "account": "390772177583",
+    "time": "2024-04-11T07:52:42Z",
+    "region": "us-east-2",
+    "resources": [],
+    "detail": {
+      "videoId": "dVs7ORBHsF0",
+      "frameId": "frame_0145"
+    }
+  },
+  {
+    "version": "0",
+    "id": "283ecd57-f4f1-3272-34f0-e7a5b873962c",
+    "detail-type": "FrameClassifiedAsJunk",
+    "source": "tracking-poker",
+    "account": "390772177583",
+    "time": "2024-04-11T07:52:42Z",
+    "region": "us-east-2",
+    "resources": [],
+    "detail": {
+      "videoId": "dVs7ORBHsF0",
+      "frameId": "frame_0146"
+    }
+  },
+  {
+    "version": "0",
+    "id": "ce214e10-9e22-5c1a-07f7-03c4cf8c3a79",
+    "detail-type": "FrameClassifiedAsJunk",
+    "source": "tracking-poker",
+    "account": "390772177583",
+    "time": "2024-04-11T07:52:42Z",
+    "region": "us-east-2",
+    "resources": [],
+    "detail": {
+      "videoId": "dVs7ORBHsF0",
+      "frameId": "frame_0137"
+    }
+  },
+  {
+    "version": "0",
+    "id": "c0a3836e-dc03-017d-bf75-7117bce77002",
+    "detail-type": "FrameClassifiedAsJunk",
+    "source": "tracking-poker",
+    "account": "390772177583",
+    "time": "2024-04-11T07:52:42Z",
+    "region": "us-east-2",
+    "resources": [],
+    "detail": {
+      "videoId": "dVs7ORBHsF0",
+      "frameId": "frame_0148"
+    }
+  },
+  {
+    "version": "0",
+    "id": "4bd5a113-21af-cfb7-30db-a95e06ef6e88",
+    "detail-type": "FrameClassifiedAsJunk",
+    "source": "tracking-poker",
+    "account": "390772177583",
+    "time": "2024-04-11T07:52:42Z",
+    "region": "us-east-2",
+    "resources": [],
+    "detail": {
+      "videoId": "dVs7ORBHsF0",
+      "frameId": "frame_0138"
+    }
+  },
+  {
+    "version": "0",
+    "id": "fe4784c0-7ef5-c946-7093-0defee2f2aa7",
+    "detail-type": "FrameClassifiedAsJunk",
+    "source": "tracking-poker",
+    "account": "390772177583",
+    "time": "2024-04-11T07:52:42Z",
+    "region": "us-east-2",
+    "resources": [],
+    "detail": {
+      "videoId": "dVs7ORBHsF0",
+      "frameId": "frame_0131"
+    }
+  },
+  {
+    "version": "0",
+    "id": "c5bc860d-f808-6208-6226-6cadce779b69",
+    "detail-type": "FrameClassifiedAsJunk",
+    "source": "tracking-poker",
+    "account": "390772177583",
+    "time": "2024-04-11T07:52:42Z",
+    "region": "us-east-2",
+    "resources": [],
+    "detail": {
+      "videoId": "dVs7ORBHsF0",
+      "frameId": "frame_0149"
+    }
+  },
+  {
+    "version": "0",
+    "id": "34b2e5b0-ee52-7f88-44a7-d75e03597b79",
+    "detail-type": "FrameClassifiedAsJunk",
+    "source": "tracking-poker",
+    "account": "390772177583",
+    "time": "2024-04-11T07:52:42Z",
+    "region": "us-east-2",
+    "resources": [],
+    "detail": {
+      "videoId": "dVs7ORBHsF0",
+      "frameId": "frame_0150"
+    }
+  },
+  {
+    "version": "0",
+    "id": "dc9589fa-d3fa-ec20-7811-314129673b20",
+    "detail-type": "StatsExtractedFromFrame",
+    "source": "tracking-poker",
+    "account": "390772177583",
+    "time": "2024-04-11T07:52:42Z",
+    "region": "us-east-2",
+    "resources": [],
+    "detail": {
+      "videoId": "dVs7ORBHsF0",
+      "frameId": "frame_0110",
+      "type": "cw",
+      "stats": [
+        {
+          "stat": 27530,
+          "playerName": "ALEX"
+        },
+        {
+          "stat": 12480,
+          "playerName": "JOHNNY"
+        },
+        {
+          "stat": 11760,
+          "playerName": "C2B"
+        },
+        {
+          "stat": 5840,
+          "playerName": "SASHIMI"
+        },
+        {
+          "stat": 5540,
+          "playerName": "NICK"
+        },
+        {
+          "stat": 2290,
+          "playerName": "WEI"
+        },
+        {
+          "stat": -5180,
+          "playerName": "FAIZAL"
+        },
+        {
+          "stat": -13560,
+          "playerName": "TAL"
+        },
+        {
+          "stat": -21840,
+          "playerName": "MIKE X"
+        }
+      ]
+    }
+  },
+  {
+    "version": "0",
+    "id": "34716195-8ec3-8a4d-6915-4cece7714558",
+    "detail-type": "FrameClassifiedAsJunk",
+    "source": "tracking-poker",
+    "account": "390772177583",
+    "time": "2024-04-11T07:52:42Z",
+    "region": "us-east-2",
+    "resources": [],
+    "detail": {
+      "videoId": "dVs7ORBHsF0",
+      "frameId": "frame_0139"
+    }
+  },
+  {
+    "version": "0",
+    "id": "a9c06093-c6dc-acee-8484-1ed8eb61a2c7",
+    "detail-type": "FrameClassifiedAsJunk",
+    "source": "tracking-poker",
+    "account": "390772177583",
+    "time": "2024-04-11T07:52:42Z",
+    "region": "us-east-2",
+    "resources": [],
+    "detail": {
+      "videoId": "dVs7ORBHsF0",
+      "frameId": "frame_0143"
+    }
+  },
+  {
+    "version": "0",
+    "id": "680c5d30-7fe7-8201-ebae-6bd2cf2a5305",
+    "detail-type": "FrameClassifiedAsJunk",
+    "source": "tracking-poker",
+    "account": "390772177583",
+    "time": "2024-04-11T07:52:42Z",
+    "region": "us-east-2",
+    "resources": [],
+    "detail": {
+      "videoId": "dVs7ORBHsF0",
+      "frameId": "frame_0141"
+    }
+  },
+  {
+    "version": "0",
+    "id": "69adea40-2803-1206-6de7-087dbaf43f77",
+    "detail-type": "StatsExtractedFromFrame",
+    "source": "tracking-poker",
+    "account": "390772177583",
+    "time": "2024-04-11T07:52:42Z",
+    "region": "us-east-2",
+    "resources": [],
+    "detail": {
+      "videoId": "dVs7ORBHsF0",
+      "frameId": "frame_0112",
+      "type": "cw",
+      "stats": [
+        {
+          "stat": 27530,
+          "playerName": "ALEX"
+        },
+        {
+          "stat": 12480,
+          "playerName": "JOHNNY"
+        },
+        {
+          "stat": 11760,
+          "playerName": "C2B"
+        },
+        {
+          "stat": 5840,
+          "playerName": "SASHIMI"
+        },
+        {
+          "stat": 5540,
+          "playerName": "NICK"
+        },
+        {
+          "stat": 2290,
+          "playerName": "WEI"
+        },
+        {
+          "stat": -5180,
+          "playerName": "FAIZAL"
+        },
+        {
+          "stat": -13560,
+          "playerName": "TAL"
+        },
+        {
+          "stat": -21840,
+          "playerName": "MIKE X"
+        }
+      ]
+    }
+  },
+  {
+    "version": "0",
+    "id": "0c23ef2f-2623-66ac-06c0-450a9ab25241",
+    "detail-type": "StatsExtractedFromFrame",
+    "source": "tracking-poker",
+    "account": "390772177583",
+    "time": "2024-04-11T07:52:42Z",
+    "region": "us-east-2",
+    "resources": [],
+    "detail": {
+      "videoId": "dVs7ORBHsF0",
+      "frameId": "frame_0111",
+      "type": "cw",
+      "stats": [
+        {
+          "stat": 27530,
+          "playerName": "ALEX"
+        },
+        {
+          "stat": 12480,
+          "playerName": "JOHNNY"
+        },
+        {
+          "stat": 11760,
+          "playerName": "C2B"
+        },
+        {
+          "stat": 5840,
+          "playerName": "SASHIMI"
+        },
+        {
+          "stat": 5540,
+          "playerName": "NICK"
+        },
+        {
+          "stat": 2290,
+          "playerName": "WEI"
+        },
+        {
+          "stat": -5180,
+          "playerName": "FAIZAL"
+        },
+        {
+          "stat": -13560,
+          "playerName": "TAL"
+        },
+        {
+          "stat": -21840,
+          "playerName": "MIKE X"
+        }
+      ]
+    }
+  },
+  {
+    "version": "0",
+    "id": "3390bf2a-0279-62cc-7328-d2f2b7b32733",
+    "detail-type": "StatsExtractedFromFrame",
+    "source": "tracking-poker",
+    "account": "390772177583",
+    "time": "2024-04-11T07:52:42Z",
+    "region": "us-east-2",
+    "resources": [],
+    "detail": {
+      "videoId": "dVs7ORBHsF0",
+      "frameId": "frame_0114",
+      "type": "cw",
+      "stats": [
+        {
+          "stat": 27530,
+          "playerName": "ALEX"
+        },
+        {
+          "stat": 12480,
+          "playerName": "JOHNNY"
+        },
+        {
+          "stat": 11760,
+          "playerName": "C2B"
+        },
+        {
+          "stat": 5840,
+          "playerName": "SASHIMI"
+        },
+        {
+          "stat": 5540,
+          "playerName": "NICK"
+        },
+        {
+          "stat": 2290,
+          "playerName": "WEI"
+        },
+        {
+          "stat": -5180,
+          "playerName": "FAIZAL"
+        },
+        {
+          "stat": -13560,
+          "playerName": "TAL"
+        },
+        {
+          "stat": -21840,
+          "playerName": "MIKE X"
+        }
+      ]
+    }
+  },
+  {
+    "version": "0",
+    "id": "318ecda4-c6c5-8faf-c155-62d6fe9a57e8",
+    "detail-type": "StatsExtractedFromFrame",
+    "source": "tracking-poker",
+    "account": "390772177583",
+    "time": "2024-04-11T07:52:42Z",
+    "region": "us-east-2",
+    "resources": [],
+    "detail": {
+      "videoId": "dVs7ORBHsF0",
+      "frameId": "frame_0113",
+      "type": "cw",
+      "stats": [
+        {
+          "stat": 27530,
+          "playerName": "ALEX"
+        },
+        {
+          "stat": 12480,
+          "playerName": "JOHNNY"
+        },
+        {
+          "stat": 11760,
+          "playerName": "C2B"
+        },
+        {
+          "stat": 5840,
+          "playerName": "SASHIMI"
+        },
+        {
+          "stat": 5540,
+          "playerName": "NICK"
+        },
+        {
+          "stat": 2290,
+          "playerName": "WEI"
+        },
+        {
+          "stat": -5180,
+          "playerName": "FAIZAL"
+        },
+        {
+          "stat": -13560,
+          "playerName": "TAL"
+        },
+        {
+          "stat": -21840,
+          "playerName": "MIKE X"
+        }
+      ]
+    }
+  },
+  {
+    "version": "0",
+    "id": "0f236dc7-5e85-49e0-3956-56c291b624f4",
+    "detail-type": "StatsExtractedFromFrame",
+    "source": "tracking-poker",
+    "account": "390772177583",
+    "time": "2024-04-11T07:52:43Z",
+    "region": "us-east-2",
+    "resources": [],
+    "detail": {
+      "videoId": "dVs7ORBHsF0",
+      "frameId": "frame_0115",
+      "type": "cw",
+      "stats": [
+        {
+          "stat": 27530,
+          "playerName": "ALEX"
+        },
+        {
+          "stat": 12480,
+          "playerName": "JOHNNY"
+        },
+        {
+          "stat": 11760,
+          "playerName": "C2B"
+        },
+        {
+          "stat": 5840,
+          "playerName": "SASHIMI"
+        },
+        {
+          "stat": 5540,
+          "playerName": "NICK"
+        },
+        {
+          "stat": 2290,
+          "playerName": "WEI"
+        },
+        {
+          "stat": -5180,
+          "playerName": "FAIZAL"
+        },
+        {
+          "stat": -13560,
+          "playerName": "TAL"
+        },
+        {
+          "stat": -21840,
+          "playerName": "MIKE X"
+        }
+      ]
+    }
+  },
+  {
+    "version": "0",
+    "id": "be3743ef-30f2-be04-167a-541c66ca5360",
+    "detail-type": "FrameClassifiedAsJunk",
+    "source": "tracking-poker",
+    "account": "390772177583",
+    "time": "2024-04-11T07:52:43Z",
+    "region": "us-east-2",
+    "resources": [],
+    "detail": {
+      "videoId": "dVs7ORBHsF0",
+      "frameId": "frame_0142"
+    }
+  }
+]
