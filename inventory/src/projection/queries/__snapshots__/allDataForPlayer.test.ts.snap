@@ -1,0 +1,53 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`allDataFroPlayer parser 1`] = `
+{
+  "appearances": [
+    {
+      "date": "2023/06/15",
+      "player": "sashimi",
+      "player_name": "SASHIMI",
+      "show": "dVs7ORBHsF0",
+      "show_name": "Sashimi, Kiran C2B, Israeli Ron & Mike X Play $10/20/40 - Commentary by Christian Soto",
+    },
+  ],
+  "stats": {
+    "cc": [
+      {
+        "player": "sashimi",
+        "player_name": "SASHIMI",
+        "show": "dVs7ORBHsF0",
+        "type": "cc",
+        "value": 34840,
+      },
+    ],
+    "cw": [
+      {
+        "player": "sashimi",
+        "player_name": "SASHIMI",
+        "show": "dVs7ORBHsF0",
+        "type": "cw",
+        "value": 5840,
+      },
+    ],
+    "pfr": [
+      {
+        "player": "sashimi",
+        "player_name": "SASHIMI",
+        "show": "dVs7ORBHsF0",
+        "type": "pfr",
+        "value": 20,
+      },
+    ],
+    "vpip": [
+      {
+        "player": "sashimi",
+        "player_name": "SASHIMI",
+        "show": "dVs7ORBHsF0",
+        "type": "vpip",
+        "value": 36,
+      },
+    ],
+  },
+}
+`;

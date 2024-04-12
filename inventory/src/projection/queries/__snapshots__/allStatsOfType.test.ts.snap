@@ -1,0 +1,69 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`allStatsOfType parser 1`] = `
+[
+  {
+    "player": "alex",
+    "player_name": "ALEX",
+    "show": "dVs7ORBHsF0",
+    "type": "cw",
+    "value": 27530,
+  },
+  {
+    "player": "c2b",
+    "player_name": "C2B",
+    "show": "dVs7ORBHsF0",
+    "type": "cw",
+    "value": 11760,
+  },
+  {
+    "player": "faizal",
+    "player_name": "FAIZAL",
+    "show": "dVs7ORBHsF0",
+    "type": "cw",
+    "value": -5180,
+  },
+  {
+    "player": "johnny",
+    "player_name": "JOHNNY",
+    "show": "dVs7ORBHsF0",
+    "type": "cw",
+    "value": 12480,
+  },
+  {
+    "player": "mikex",
+    "player_name": "MIKE X",
+    "show": "dVs7ORBHsF0",
+    "type": "cw",
+    "value": -21840,
+  },
+  {
+    "player": "nick",
+    "player_name": "NICK",
+    "show": "dVs7ORBHsF0",
+    "type": "cw",
+    "value": 5540,
+  },
+  {
+    "player": "sashimi",
+    "player_name": "SASHIMI",
+    "show": "dVs7ORBHsF0",
+    "type": "cw",
+    "value": 5840,
+  },
+  {
+    "player": "tal",
+    "player_name": "TAL",
+    "show": "dVs7ORBHsF0",
+    "type": "cw",
+    "value": -13560,
+  },
+  {
+    "player": "wei",
+    "player_name": "WEI",
+    "show": "dVs7ORBHsF0",
+    "type": "cw",
+    "value": 2290,
+  },
+]
+`;

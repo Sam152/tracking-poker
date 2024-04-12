@@ -3,7 +3,7 @@ import { BusEvents, putEvents } from "tp-events";
 import { s3UriToParts } from "./util/s3UriToParts";
 
 /**
- * The purpose of the pipeline is to have a single router for events that happen in a sequence.
+ * The purpose of the pipeline is to have a single router for events with side effects.
  *
  * Each service responds to commands listed in their respective api.ts file, and could technically be configured
  * to respond to the events dispatched by other services. This model would look something like:

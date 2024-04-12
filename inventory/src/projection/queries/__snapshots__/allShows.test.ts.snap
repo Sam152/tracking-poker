@@ -1,0 +1,13 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`allShows parser 1`] = `
+[
+  {
+    "date": "2023/06/15",
+    "duration": 20165,
+    "id": "dVs7ORBHsF0",
+    "operator": "hcl",
+    "show_name": "Sashimi, Kiran C2B, Israeli Ron & Mike X Play $10/20/40 - Commentary by Christian Soto",
+  },
+]
+`;

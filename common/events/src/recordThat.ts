@@ -10,6 +10,7 @@ export type BusEvents = {
         metadata: {
             videoName: string;
             videoDuration: number;
+            releaseDate: string;
         };
     };
     VideoFrameStored: {
@@ -31,6 +32,9 @@ export type BusEvents = {
         }>;
     };
 };
+
+export type BusEventName = keyof BusEvents;
+export type BusEvent = BusEvents[BusEventName];
 
 export async function recordThat<T extends keyof BusEvents>(eventName: T, payload: BusEvents[T]): Promise<any> {
     console.log("Recording event", eventName, payload);

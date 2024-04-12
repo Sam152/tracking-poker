@@ -68,8 +68,8 @@ The data model fits into the following hierarchy and relationships:
 
 ![schema](./docs/img/schema.png)
 
-The inventory builds a read model using a DynamoDB table. On-demand pricing keeps costs minimal, because of the low
-volume of writes, while CDNs with a high TTL can protect the read-workload.
+The inventory builds a [read model](./inventory/src/projection/entity) using a DynamoDB table. On-demand pricing keeps
+costs minimal, because of the low volume of writes, while CDNs with a high TTL can protect the read-workload.
 
 The schema uses a single-table design, to support one-shot fetching of related entities. Partitions are designed along
 the axis of operator, show, player and stat type to support the following queries:
@@ -85,30 +85,30 @@ Visually each partition organises according the these access patterns in the fol
 
 The key schema to build these partitions is documented below:
 
-```
-{
-    "entity_type": "show",
-    "pk": "operator#hcl",
-    "sk": "show#date#2024/01/23#slug#FiARsQSlzDc#",
-    "gsi1pk": "slug#FiARsQSlzDc",
-    "gsi1sk": "show#"
-}
-{
-    "entity_type": "player_appearance",
-    "pk": "player#nikairball",
-    "sk": "appearance#slug#FiARsQSlzDc#",
-    "gsi1pk": "slug#FiARsQSlzDc",
-    "gsi1sk": "appearance#player#nikairball#"
-}
-{
-    "entity_type": "player_stat",
-    "pk": "player#nikairball",
-    "sk": "stat#stat_type#cw#show#FiARsQSlzDc#",
-    "gsi1pk": "slug#FiARsQSlzDc",
-    "gsi1sk": "stat#stat_type#cw#player#nikairball#",
-    "gsi2pk": "stat_type#cw",
-    "gsi2sk": "stat#player#nikairball#slug#FiARsQSlzDc#"
-}
+```typescript
+export type ShowStorage = Show & {
+    entity_type: "show";
+    pk: `operator#${OperatorId}`;
+    sk: `show#date#${Date}#slug#${ShowId}#`;
+    gsi1pk: `slug#${ShowId}`;
+    gsi1sk: "show#";
+};
+type PlayerAppearanceStorage = PlayerAppearance & {
+    entity_type: "player_appearance";
+    pk: `player#${PlayerId}`;
+    sk: `appearance#slug#${ShowId}#`;
+    gsi1pk: `slug#${ShowId}`;
+    gsi1sk: `appearance#player#${PlayerId}#`;
+};
+export type StatStorage = Stat & {
+    entity_type: "player_stat";
+    pk: `player#${PlayerId}`;
+    sk: `stat#stat_type#${StatType}#show#${PlayerId}#`;
+    gsi1pk: `slug#${ShowId}`;
+    gsi1sk: `stat#stat_type#${StatType}#player#${PlayerId}#`;
+    gsi2pk: `stat_type#${StatType}`;
+    gsi2sk: `stat#player#${PlayerId}#slug#${ShowId}#`;
+};
 ```
 
 For the volume of data produced by a single operator, each partition could grow by some order of magnitude before
