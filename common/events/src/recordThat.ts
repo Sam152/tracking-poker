@@ -1,6 +1,10 @@
 import { putEvents } from "./putEvents";
 
 export type BusEvents = {
+    NewCompletedBroadcastDiscovered: {
+        operator: string;
+        videoId: string;
+    };
     VideoAssetRipStarted: {
         videoId: string;
     };

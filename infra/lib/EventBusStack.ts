@@ -24,7 +24,7 @@ export class EventBusStack extends Stack {
         this.logAllCommands();
         this.createEventArchive();
 
-        Tags.of(this).add("ServiceName", "CommandBus");
+        Tags.of(this).add("ServiceName", "EventBus");
     }
 
     createEventArchive() {

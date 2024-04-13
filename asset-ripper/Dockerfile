@@ -3,7 +3,7 @@ FROM public.ecr.aws/lambda/nodejs:20 as builder
 # Download the ffmpeg binaries, and move binaries from the release into /usr/ffmpeg/(ffmpeg|ffprobe).
 RUN dnf install tar xz -y
 WORKDIR /usr/ffmpeg
-RUN curl -L https://github.com/yt-dlp/FFmpeg-Builds/releases/download/latest/ffmpeg-n6.1-latest-linux64-gpl-6.1.tar.xz -o ffmpeg.tar.xz
+RUN curl -L https://github.com/yt-dlp/FFmpeg-Builds/releases/download/autobuild-2024-03-31-14-06/ffmpeg-n6.1.1-31-gaa5e6017a5-linux64-gpl-6.1.tar.xz -o ffmpeg.tar.xz
 RUN tar -xf ffmpeg.tar.xz
 RUN tar -xf ffmpeg.tar.xz && mv ffmpeg*/* .
 RUN chmod +x bin/*

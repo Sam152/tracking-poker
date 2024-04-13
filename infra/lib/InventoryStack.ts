@@ -1,22 +1,39 @@
 import { Stack, StackProps, Tags } from "aws-cdk-lib";
 import { Construct } from "constructs";
-import { CommandBusAware } from "./CommandBusStack";
 import * as dynamo from "aws-cdk-lib/aws-dynamodb";
 import { AttributeType, BillingMode, ProjectionType } from "aws-cdk-lib/aws-dynamodb";
 import { Attribute } from "aws-cdk-lib/aws-dynamodb/lib/shared";
+import * as path from "path";
+import { EventBusAware } from "./EventBusStack";
+import { createProjectionHandlerLambda } from "./utility/projection";
 
-type InventoryStackProps = StackProps & CommandBusAware;
+type InventoryStackProps = StackProps & EventBusAware;
 
 export class InventoryStack extends Stack {
     private props: InventoryStackProps;
+    private readonly resolveService: (input: string) => string;
 
     constructor(scope: Construct, id: string, props: InventoryStackProps) {
         super(scope, id, props);
         this.props = props;
 
+        this.resolveService = (input: string) => path.resolve(__dirname, "../../inventory", input);
+
         this.createDynamoTable();
+        this.createProjectionHandlerLambda();
 
         Tags.of(this).add("ServiceName", "Inventory");
+    }
+
+    createProjectionHandlerLambda() {
+        createProjectionHandlerLambda(
+            this,
+            "inventory",
+            this.resolveService("src/projection/index.ts"),
+            this.resolveService("package-lock.json"),
+            this.resolveService(""),
+            this.props.eventBusStack.bus,
+        );
     }
 
     createDynamoTable() {

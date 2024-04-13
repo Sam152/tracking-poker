@@ -74,10 +74,10 @@ costs minimal, because of the low volume of writes, while CDNs with a high TTL c
 The schema uses a single-table design, to support one-shot fetching of related entities. Partitions are designed along
 the axis of operator, show, player and stat type to support the following queries:
 
-1. All shows for a given operator.
-2. All data for a given show.
-3. All data given player.
-4. All stats of a given type.
+1. [All shows for a given operator](./inventory/src/projection/queries/allShows.ts).
+2. [All data for a given show](./inventory/src/projection/queries/allDataForShow.ts).
+3. [All data given player](./inventory/src/projection/queries/allDataForPlayer.ts).
+4. [All stats of a given type](./inventory/src/projection/queries/allStatsOfType.ts).
 
 Visually each partition organises according the these access patterns in the following way:
 

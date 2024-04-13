@@ -7,6 +7,7 @@ import { FrameAnalysisStack } from "../lib/FrameAnalysisStack";
 import { InventoryStack } from "../lib/InventoryStack";
 import { EventBusStack } from "../lib/EventBusStack";
 import { PipelineStack } from "../lib/PipelineStack";
+import { IngestStack } from "../lib/IngestStack";
 
 const app = new cdk.App();
 
@@ -17,13 +18,17 @@ const defaultStackProps = {
     env: { account: "390772177583", region: "us-east-2" },
 };
 
-// Create stacks for each service.
 const commandBusStack = new CommandBusStack(app, "CommandBusStack", defaultStackProps);
 const eventBusStack = new EventBusStack(app, "EventBusStack", defaultStackProps);
 
 new PipelineStack(app, "PipelineStack", {
     ...defaultStackProps,
     commandBusStack,
+});
+new IngestStack(app, "IngestStack", {
+    ...defaultStackProps,
+    commandBusStack,
+    eventBusStack,
 });
 new AssetRipperStack(app, "AssetRipperStack", {
     ...defaultStackProps,
@@ -37,5 +42,5 @@ new FrameAnalysisStack(app, "FrameAnalysisStack", {
 });
 new InventoryStack(app, "InventoryStack", {
     ...defaultStackProps,
-    commandBusStack,
+    eventBusStack,
 });

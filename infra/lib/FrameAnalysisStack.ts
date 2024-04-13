@@ -11,6 +11,7 @@ import { Architecture } from "aws-cdk-lib/aws-lambda";
 import * as path from "path";
 import * as iam from "aws-cdk-lib/aws-iam";
 import { EventBusAware } from "./EventBusStack";
+import { bundlingVolumesWithCommon } from "./utility/bundling";
 
 type FrameAnalysisStackProps = StackProps & DeploymentEnvironmentAware & CommandBusAware & EventBusAware;
 
@@ -43,13 +44,7 @@ export class FrameAnalysisStack extends Stack {
             depsLockFilePath: this.resolveService("package-lock.json"),
             projectRoot: this.resolveService(""),
             bundling: {
-                volumes: [
-                    {
-                        // The common directory must be mounted, to be discoverable by npm inside the container.
-                        hostPath: path.resolve(__dirname, "../../common"),
-                        containerPath: "/common",
-                    },
-                ],
+                volumes: bundlingVolumesWithCommon.volumes,
                 forceDockerBundling: true,
                 // Install these dependencies because:
                 //  - tesseract requires a worker script in the package.

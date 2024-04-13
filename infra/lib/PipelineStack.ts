@@ -9,6 +9,7 @@ import { Architecture } from "aws-cdk-lib/aws-lambda";
 import * as path from "path";
 import * as event from "aws-cdk-lib/aws-events";
 import * as eventTargets from "aws-cdk-lib/aws-events-targets";
+import { bundlingVolumesWithCommon } from "./utility/bundling";
 
 type PipelineStackProps = StackProps & CommandBusAware;
 
@@ -38,15 +39,7 @@ export class PipelineStack extends Stack {
             entry: this.resolveService("src/index.ts"),
             depsLockFilePath: this.resolveService("package-lock.json"),
             projectRoot: this.resolveService(""),
-            bundling: {
-                volumes: [
-                    {
-                        // The common directory must be mounted, to be discoverable by npm inside the container.
-                        hostPath: path.resolve(__dirname, "../../common"),
-                        containerPath: "/common",
-                    },
-                ],
-            },
+            bundling: bundlingVolumesWithCommon,
         });
 
         const lambdaRole = pipeline.role!;
