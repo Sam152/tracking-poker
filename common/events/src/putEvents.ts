@@ -1,8 +1,10 @@
 import { EventBridgeClient, PutEventsCommand } from "@aws-sdk/client-eventbridge";
+import { captureAWSv3Client } from "aws-xray-sdk";
 
 export function putEvents(busName: string, eventName: string, payload: any) {
     console.log(`Dispatching event to bus ${busName}`, eventName, payload);
-    const client = new EventBridgeClient();
+    const client = captureAWSv3Client(new EventBridgeClient());
+
     return client.send(
         new PutEventsCommand({
             Entries: [

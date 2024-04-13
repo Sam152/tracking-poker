@@ -1,6 +1,6 @@
 import { Stack, StackProps, Tags } from "aws-cdk-lib";
 import { Construct } from "constructs";
-import { DockerImageCode, DockerImageFunction } from "aws-cdk-lib/aws-lambda";
+import { DockerImageCode, DockerImageFunction, Tracing } from "aws-cdk-lib/aws-lambda";
 import { Platform } from "aws-cdk-lib/aws-ecr-assets";
 import * as path from "path";
 import { Duration, Size } from "aws-cdk-lib/core";
@@ -9,6 +9,7 @@ import { DeploymentEnvironmentAware } from "./utility/deployment-environment";
 import { CommandBusAware } from "./CommandBusStack";
 import { addPutEventsPolicies, invokeLambdaOnEventDetail } from "./utility/eventBridge";
 import { EventBusAware } from "./EventBusStack";
+import { allowTraces } from "./utility/xray";
 
 type AssetRipperStackProps = StackProps & DeploymentEnvironmentAware & CommandBusAware & EventBusAware;
 
@@ -32,6 +33,7 @@ export class AssetRipperStack extends Stack {
             ephemeralStorageSize: Size.mebibytes(10240),
             timeout: Duration.minutes(15),
             memorySize: 3008,
+            tracing: Tracing.ACTIVE,
             environment: {
                 BUCKET_NAME: this.getBucketName(),
                 COMMAND_BUS_ARN: this.props.commandBusStack.bus.eventBusArn,
@@ -44,6 +46,7 @@ export class AssetRipperStack extends Stack {
                 platform: Platform.LINUX_AMD64,
             }),
         });
+        allowTraces(lambda);
 
         const lambdaRole = lambda.role!;
 

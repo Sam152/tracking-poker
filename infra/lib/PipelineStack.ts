@@ -5,11 +5,12 @@ import { CommandBusAware } from "./CommandBusStack";
 import { putEventsPolicy } from "./utility/eventBridge";
 import * as lambdaNodejs from "aws-cdk-lib/aws-lambda-nodejs";
 import * as lambda from "aws-cdk-lib/aws-lambda";
-import { Architecture } from "aws-cdk-lib/aws-lambda";
+import { Architecture, Tracing } from "aws-cdk-lib/aws-lambda";
 import * as path from "path";
 import * as event from "aws-cdk-lib/aws-events";
 import * as eventTargets from "aws-cdk-lib/aws-events-targets";
 import { bundlingVolumesWithCommon } from "./utility/bundling";
+import { allowTraces } from "./utility/xray";
 
 type PipelineStackProps = StackProps & CommandBusAware;
 
@@ -33,6 +34,7 @@ export class PipelineStack extends Stack {
             architecture: Architecture.ARM_64,
             timeout: Duration.seconds(20),
             memorySize: 128,
+            tracing: Tracing.ACTIVE,
             environment: {
                 COMMAND_BUS_ARN: this.props.commandBusStack.bus.eventBusArn,
             },
@@ -41,6 +43,7 @@ export class PipelineStack extends Stack {
             projectRoot: this.resolveService(""),
             bundling: bundlingVolumesWithCommon,
         });
+        allowTraces(pipeline);
 
         const lambdaRole = pipeline.role!;
 

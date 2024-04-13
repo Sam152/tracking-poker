@@ -1,11 +1,10 @@
 import fs from "fs";
 import { S3 } from "@aws-sdk/client-s3";
+import { captureAWSv3Client } from "aws-xray-sdk";
 
 export function createObject(key: string, localFilePath: string) {
-    console.log(
-        `Creating object "s3://${process.env.BUCKET_NAME}/${key}" from "${localFilePath}".`,
-    );
-    const client = new S3();
+    console.log(`Creating object "s3://${process.env.BUCKET_NAME}/${key}" from "${localFilePath}".`);
+    const client = captureAWSv3Client(new S3());
     return client.putObject({
         Bucket: process.env.BUCKET_NAME,
         Key: key,

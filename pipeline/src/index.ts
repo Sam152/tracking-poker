@@ -1,5 +1,5 @@
 import { Callback, Context, EventBridgeEvent } from "aws-lambda";
-import { BusEvents, putEvents } from "tp-events";
+import { BusEvents, eventIs, putEvents } from "tp-events";
 import { s3UriToParts } from "./util/s3UriToParts";
 
 /**
@@ -35,13 +35,19 @@ export async function handler<T extends keyof BusEvents>(
     context: Pick<Context, "awsRequestId">,
     callback: Callback,
 ) {
-    // When a frame is stored as the result of a rip, start an analysis.
-    if (event["detail-type"] === "VideoFrameStored") {
-        const detail = event["detail"] as BusEvents["VideoFrameStored"];
+    // When a new broadcast is discovered, start the process of ripping the asset.
+    if (eventIs("NewCompletedBroadcastDiscovered", event["detail-type"], event["detail"])) {
+        await putEvents(process.env.COMMAND_BUS_ARN, "StartAssetRipByVideoId", {
+            videoId: event["detail"].videoId,
+        });
+    }
+
+    // When a video frame is stored, start the analysis process.
+    if (eventIs("VideoFrameStored", event["detail-type"], event["detail"])) {
         await putEvents(process.env.COMMAND_BUS_ARN, "StartAnalysisOfFrame", {
-            frameId: detail.frameId,
-            videoId: detail.videoId,
-            ...s3UriToParts(detail.location),
+            frameId: event["detail"].frameId,
+            videoId: event["detail"].videoId,
+            ...s3UriToParts(event["detail"].location),
         });
     }
 }

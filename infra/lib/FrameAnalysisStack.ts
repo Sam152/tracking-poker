@@ -7,11 +7,12 @@ import { CommandBusAware } from "./CommandBusStack";
 import { addPutEventsPolicies, invokeLambdaOnEventDetail } from "./utility/eventBridge";
 import * as lambdaNodejs from "aws-cdk-lib/aws-lambda-nodejs";
 import * as lambda from "aws-cdk-lib/aws-lambda";
-import { Architecture } from "aws-cdk-lib/aws-lambda";
+import { Architecture, Tracing } from "aws-cdk-lib/aws-lambda";
 import * as path from "path";
 import * as iam from "aws-cdk-lib/aws-iam";
 import { EventBusAware } from "./EventBusStack";
 import { bundlingVolumesWithCommon } from "./utility/bundling";
+import { allowTraces } from "./utility/xray";
 
 type FrameAnalysisStackProps = StackProps & DeploymentEnvironmentAware & CommandBusAware & EventBusAware;
 
@@ -36,6 +37,7 @@ export class FrameAnalysisStack extends Stack {
             ephemeralStorageSize: Size.mebibytes(512),
             timeout: Duration.minutes(2),
             memorySize: 3008,
+            tracing: Tracing.ACTIVE,
             environment: {
                 COMMAND_BUS_ARN: this.props.commandBusStack.bus.eventBusArn,
                 EVENT_BUS_BUS_ARN: this.props.eventBusStack.bus.eventBusArn,
@@ -60,6 +62,7 @@ export class FrameAnalysisStack extends Stack {
                 },
             },
         });
+        allowTraces(frameAnalysis);
 
         const lambdaRole = frameAnalysis.role!;
 
