@@ -3,6 +3,9 @@ import { fetchRecentVideoIds } from "./youtube/fetchRecentVideoIds";
 import { EventBridgeEvent } from "aws-lambda";
 import { recordThat } from "tp-events";
 import { hasDiscoveredBroadcast } from "./projection/util/hasDiscoveredBroadcast";
+import { captureFetchGlobal } from "aws-xray-sdk-fetch";
+
+captureFetchGlobal();
 
 export async function handler(incomingEvent: EventBridgeEvent<any, any>) {
     const event = serviceInvocationEventsSchema.parse(incomingEvent);
