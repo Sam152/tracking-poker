@@ -5,7 +5,7 @@ export type StatType = "cc" | "cw" | "vpip" | "pfr";
 
 export type Stat = {
     type: StatType;
-    value: number | string;
+    value: number;
     player: PlayerId;
     player_name: string;
     show: ShowId;

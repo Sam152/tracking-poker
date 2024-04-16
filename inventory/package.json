@@ -6,7 +6,8 @@
   "scripts": {
     "build": "esbuild --platform=node --target=node20 src/index.ts --bundle --outfile=build/index.js",
     "test": "jest",
-    "dev": "nodemon --exec 'node --inspect=localhost:9229 --require ts-node/register src/index.ts'"
+    "dev": "API_SERVER_PORT=3001 nodemon",
+    "debug": "API_SERVER_PORT=3001 nodemon --exec 'node --inspect=localhost:9229 --require ts-node/register src/index.ts'"
   },
   "author": "",
   "license": "ISC",

@@ -18,6 +18,6 @@ app.use("/shows", shows);
 app.use("/players", players);
 app.use("/leaderboards", leaderboards);
 
-app.listen(80, () => {
+app.listen(process.env.API_SERVER_PORT, () => {
     console.log(`App started.`);
 });
