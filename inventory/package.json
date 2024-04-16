@@ -4,10 +4,11 @@
   "description": "",
   "main": "src/index.ts",
   "scripts": {
-    "build": "esbuild --platform=node --target=node20 src/index.ts --bundle --outfile=build/index.js",
     "test": "jest",
-    "dev": "API_SERVER_PORT=3001 nodemon",
-    "debug": "API_SERVER_PORT=3001 nodemon --exec 'node --inspect=localhost:9229 --require ts-node/register src/index.ts'"
+    "dev": "PORT=3001 nodemon",
+    "debug": "PORT=3001 nodemon --exec 'node --inspect=localhost:9229 --require ts-node/register src/index.ts'",
+    "build": "rm -rf build && esbuild --platform=node --target=node20 src/index.ts --bundle --outfile=build/index.js && cp package-remote.json ./build/package.json && zip -j build/build.zip ./build/index.js ./build/package.json",
+    "start": "node index.js"
   },
   "author": "",
   "license": "ISC",

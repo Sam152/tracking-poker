@@ -18,9 +18,21 @@ This project deploys a number of microservices to coordinate the collection of t
 ![diagram](./docs/img/arch-diagram.png)
 
 -   _[Pipeline](./pipeline/src/index.ts)_ - Routes events between services.
+-   _[Ingest](./ingest/src/)_ - Queries for new video assets.
 -   _[Asset Ripper](./asset-ripper/src/)_ - Downloads and slices streams into individual frames for analysis.
 -   _[Frame Analysis](./frame-analysis/src)_ - Detects frames of interest and extracts statistics.
 -   _[Inventory](./inventory/src)_ - Creates a useful read model for the statistics.
+
+### Ingest
+
+The ingest API is responsible for querying and dispatching new video assets into the pipeline. The service maintains
+a [minimal read model](./ingest/src/projection/handler.ts) to keep track of videos that have already been discovered.
+
+![ingest](./docs/img/ingest-buffer.png)
+
+To ensure downstream services have access to the full range of metadata and encoded versions of the asset
+a [fixed duration of time](./ingest/src/youtube/fetchRecentVideoIds.ts) after publishing must pass, before the asset is
+considered discoverable.
 
 ### Asset ripper
 
@@ -115,3 +127,20 @@ For the volume of data produced by a single operator, each partition could grow 
 impacting performance. Some of the most interesting insights come from data points spanning the whole dataset,
 partitioning and querying aggregated statistics is not an infinitely scalable solution, but could be replaced with
 running counts and averages.
+
+## Infrastructure
+
+This project has been written to be deployed and integrate with AWS services. Outside the AWS services consumed by
+individual services, the whole package utilises and depends on a number of features in the AWS ecosystem.
+
+### Infrastructure-as-code
+
+### Observability
+
+CloudWatch and X-Ray provide the foundation for logging and traces respectively. The "Trace Map" feature provides
+a useful visualisation for tracking down the root cause of errors as commands and events propagate through the services.
+
+In the following example, a high error rate from a single service was identified as the source of a bug for processing
+new inbound video assets:
+
+![xray trace](./docs/img/xray.png)

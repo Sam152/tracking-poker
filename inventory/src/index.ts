@@ -18,6 +18,10 @@ app.use("/shows", shows);
 app.use("/players", players);
 app.use("/leaderboards", leaderboards);
 
-app.listen(process.env.API_SERVER_PORT, () => {
+app.use("/healthz", (req, res, next) => {
+    res.send({ status: "healthy" });
+});
+
+app.listen(process.env.PORT || 80, () => {
     console.log(`App started.`);
 });
