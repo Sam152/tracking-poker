@@ -11,7 +11,19 @@ const apiSchema = z.object({
 });
 
 export async function fetchRecentVideoIds(channelId: string): Promise<string[]> {
-    const params = [`channelId=${channelId}`, "type=video", "eventType=completed", "order=date", `key=${process.env.YOUTUBE_API_KEY}`];
+    // The amount of time we should wait, until after a video has been published, before starting the processing.
+    // This is required because for a certain duration of time after a video has been published, it does not have
+    // processable video formats or metadata.
+    const bufferDurationMilliseconds = 1000 * 60 * 60 * 2;
+
+    const params = [
+        `channelId=${channelId}`,
+        "type=video",
+        "eventType=completed",
+        "order=date",
+        `key=${process.env.YOUTUBE_API_KEY}`,
+        `publishedBefore=${new Date(Date.now() - bufferDurationMilliseconds).toISOString()}`,
+    ];
 
     const videos = apiSchema.parse(
         await fetch(`https://www.googleapis.com/youtube/v3/search?${params.join("&")}`).then((response) => response.json()),
