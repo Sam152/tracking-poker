@@ -9,7 +9,7 @@ import { EventBusAware } from "./EventBusStack";
 import { createProjectionHandlerLambda } from "./utility/projection";
 import { DeploymentEnvironmentAware } from "./utility/deployment-environment";
 import * as iam from "aws-cdk-lib/aws-iam";
-import { AnyPrincipal } from "aws-cdk-lib/aws-iam";
+import { ServicePrincipal } from "aws-cdk-lib/aws-iam";
 import { Asset } from "aws-cdk-lib/aws-s3-assets";
 
 type InventoryStackProps = StackProps & EventBusAware & DeploymentEnvironmentAware;
@@ -66,13 +66,12 @@ export class InventoryStack extends Stack {
     }
 
     createApiEndpoint() {
-        const appName = "InventoryAppApi";
+        const appName = "InventoryApi";
 
-        const api = new bs.CfnApplication(this, "inventory-app", {
-            applicationName: appName,
-        });
-
-        const sourceCode = new Asset(this, "inventory-src", {
+        const api = new bs.CfnApplication(this, "inventory-api", { applicationName: appName });
+        const sourceCode = new Asset(this, "inventory-api-src", {
+            // This depends on running "npm run build-cdk" in advance of a deployment. This construct does support
+            // bundling, which could be switched to for a more automatic solution.
             path: this.resolveService("build/build.zip"),
         });
 
@@ -85,17 +84,7 @@ export class InventoryStack extends Stack {
         });
         version.addDependency(api);
 
-        const role = new iam.Role(this, `inventory-app-instance-profile-role`, {
-            assumedBy: new AnyPrincipal(),
-        });
-        role.addManagedPolicy(iam.ManagedPolicy.fromAwsManagedPolicyName("AWSElasticBeanstalkWebTier"));
-        role.addManagedPolicy(iam.ManagedPolicy.fromAwsManagedPolicyName("AmazonS3FullAccess"));
-
-        const instanceProfile = new iam.CfnInstanceProfile(this, `inventory-app-cfn-instance-profile`, {
-            instanceProfileName: `inventory-app-cfn-instance-profile`,
-            roles: [role.roleName],
-        });
-
+        const instanceProfile = this.createEc2InstanceProfile();
         const environment = new bs.CfnEnvironment(this, "inventory-app-environment", {
             applicationName: api.applicationName || appName,
             cnamePrefix: `tracking-poker-api-${this.props.deploymentEnvironment}`,
@@ -112,6 +101,11 @@ export class InventoryStack extends Stack {
                     namespace: "aws:autoscaling:launchconfiguration",
                     optionName: "DisableIMDSv1",
                     value: "false",
+                },
+                {
+                    namespace: "aws:elasticbeanstalk:application:environment",
+                    optionName: "DYNAMO_TABLE_REGION",
+                    value: this.region,
                 },
                 {
                     namespace: "aws:autoscaling:asg",
@@ -136,6 +130,19 @@ export class InventoryStack extends Stack {
             ],
         });
         environment.addDependency(instanceProfile);
+    }
+
+    createEc2InstanceProfile() {
+        const role = new iam.Role(this, `inventory-app-instance-profile-role`, {
+            assumedBy: new ServicePrincipal("ec2.amazonaws.com"),
+        });
+        role.addManagedPolicy(iam.ManagedPolicy.fromAwsManagedPolicyName("AWSElasticBeanstalkWebTier"));
+        role.addManagedPolicy(iam.ManagedPolicy.fromAwsManagedPolicyName("AmazonDynamoDBFullAccess"));
+
+        return new iam.CfnInstanceProfile(this, `inventory-app-cfn-instance-profile`, {
+            instanceProfileName: `inventory-app-cfn-instance-profile`,
+            roles: [role.roleName],
+        });
     }
 
     stringAttribute(value: string): Attribute {

@@ -21,7 +21,8 @@ This project deploys a number of microservices to coordinate the collection of t
 -   _[Ingest](./ingest/src/)_ - Queries for new video assets.
 -   _[Asset Ripper](./asset-ripper/src/)_ - Downloads and slices streams into individual frames for analysis.
 -   _[Frame Analysis](./frame-analysis/src)_ - Detects frames of interest and extracts statistics.
--   _[Inventory](./inventory/src)_ - Creates a useful read model for the statistics.
+-   _[Inventory](./inventory/src)_ - Creates an API and useful read model for the statistics.
+-   _[Client](./client/)_ - A front-end for consuming the statistics.
 
 ### Ingest
 
@@ -138,9 +139,6 @@ individual services, the whole package utilises and depends on a number of featu
 ### Observability
 
 CloudWatch and X-Ray provide the foundation for logging and traces respectively. The "Trace Map" feature provides
-a useful visualisation for tracking down the root cause of errors as commands and events propagate through the services.
-
-In the following example, a high error rate from a single service was identified as the source of a bug for processing
-new inbound video assets:
+a useful visualisation for tracking down the root cause of errors as commands and events propagate through services:
 
 ![xray trace](./docs/img/xray.png)
