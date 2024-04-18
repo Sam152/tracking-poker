@@ -1,3 +1,3 @@
 export function normalizeKey(input: string): string {
-    return input.toLowerCase().replace(/[^a-z0-9]/g, "");
+    return input.toLowerCase().replace(/[^0-9a-z]/g, "");
 }

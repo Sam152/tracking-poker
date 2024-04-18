@@ -7,7 +7,7 @@
     "test": "jest",
     "dev": "PORT=3001 nodemon",
     "debug": "PORT=3001 nodemon --exec 'node --inspect=localhost:9229 --require ts-node/register src/index.ts'",
-    "build-cdk": "rm -rf build && esbuild --platform=node --target=node20 src/index.ts --bundle --outfile=build/index.js && cp package-remote.json ./build/package.json && zip -j build/build.zip ./build/index.js ./build/package.json",
+    "build-cdk": "esbuild --platform=node --target=node20 src/index.ts --bundle --outfile=build/index.js && cp package-remote.json ./build/package.json && zip -j build/build.zip ./build/index.js ./build/package.json",
     "start": "node index.js"
   },
   "author": "",

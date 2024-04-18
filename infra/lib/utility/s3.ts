@@ -40,7 +40,7 @@ export function s3CreateSimpleBucket(stack: Stack, name: string): Bucket {
         publicReadAccess: false,
         blockPublicAccess: BlockPublicAccess.BLOCK_ALL,
         removalPolicy: RemovalPolicy.DESTROY,
-        eventBridgeEnabled: true,
+        eventBridgeEnabled: false,
         cors: [],
     });
 }

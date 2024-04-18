@@ -8,6 +8,7 @@ import { InventoryStack } from "../lib/InventoryStack";
 import { EventBusStack } from "../lib/EventBusStack";
 import { PipelineStack } from "../lib/PipelineStack";
 import { IngestStack } from "../lib/IngestStack";
+import { ClientStack } from "../lib/ClientStack";
 
 const app = new cdk.App();
 
@@ -43,4 +44,7 @@ new FrameAnalysisStack(app, "FrameAnalysisStack", {
 new InventoryStack(app, "InventoryStack", {
     ...defaultStackProps,
     eventBusStack,
+});
+new ClientStack(app, "ClientStack", {
+    ...defaultStackProps,
 });

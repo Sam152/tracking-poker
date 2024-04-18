@@ -1,4 +1,5 @@
-import { Stack, StackProps, Tags } from "aws-cdk-lib";
+import * as cdk from "aws-cdk-lib";
+import { aws_s3_deployment, BundlingOptions, DockerImage, Stack, StackProps, Tags } from "aws-cdk-lib";
 import { Construct } from "constructs";
 import * as dynamo from "aws-cdk-lib/aws-dynamodb";
 import { AttributeType, BillingMode, ProjectionType } from "aws-cdk-lib/aws-dynamodb";
@@ -10,7 +11,9 @@ import { createProjectionHandlerLambda } from "./utility/projection";
 import { DeploymentEnvironmentAware } from "./utility/deployment-environment";
 import * as iam from "aws-cdk-lib/aws-iam";
 import { ServicePrincipal } from "aws-cdk-lib/aws-iam";
-import { Asset } from "aws-cdk-lib/aws-s3-assets";
+import { s3CreateSimpleBucket } from "./utility/s3";
+import { spawnSync } from "child_process";
+import * as fs from "fs";
 
 type InventoryStackProps = StackProps & EventBusAware & DeploymentEnvironmentAware;
 
@@ -69,17 +72,36 @@ export class InventoryStack extends Stack {
         const appName = "InventoryApi";
 
         const api = new bs.CfnApplication(this, "inventory-api", { applicationName: appName });
-        const sourceCode = new Asset(this, "inventory-api-src", {
-            // This depends on running "npm run build-cdk" in advance of a deployment. This construct does support
-            // bundling, which could be switched to for a more automatic solution.
-            path: this.resolveService("build/build.zip"),
+
+        const deploymentBucket = s3CreateSimpleBucket(
+            this,
+            `elasticbeanstalk-inventoryapi-assets-${this.props.deploymentEnvironment}`,
+        );
+        const stack = this;
+        const source = new aws_s3_deployment.BucketDeployment(this, "inventory-api-bucket-deployment", {
+            destinationBucket: deploymentBucket,
+            extract: false,
+            sources: [
+                aws_s3_deployment.Source.asset(this.resolveService(""), {
+                    bundling: {
+                        image: DockerImage.fromRegistry("node:20"),
+                        local: {
+                            tryBundle(outputDir: string, options: BundlingOptions): boolean {
+                                spawnSync(`npm install && npm run build-cdk`, { shell: true, cwd: stack.resolveService("") });
+                                fs.copyFileSync(stack.resolveService("build/build.zip"), `${outputDir}/build.zip`);
+                                return true;
+                            },
+                        },
+                    },
+                }),
+            ],
         });
 
         const version = new bs.CfnApplicationVersion(this, "inventory-app-version", {
             applicationName: api.applicationName || appName,
             sourceBundle: {
-                s3Bucket: sourceCode.s3BucketName,
-                s3Key: sourceCode.s3ObjectKey,
+                s3Bucket: deploymentBucket.bucketName,
+                s3Key: cdk.Fn.select(0, source.objectKeys),
             },
         });
         version.addDependency(api);
@@ -101,6 +123,11 @@ export class InventoryStack extends Stack {
                     namespace: "aws:autoscaling:launchconfiguration",
                     optionName: "DisableIMDSv1",
                     value: "false",
+                },
+                {
+                    namespace: "aws:elasticbeanstalk:xray",
+                    optionName: "XRayEnabled",
+                    value: "true",
                 },
                 {
                     namespace: "aws:elasticbeanstalk:application:environment",

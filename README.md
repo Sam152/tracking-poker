@@ -124,10 +124,10 @@ export type StatStorage = Stat & {
 };
 ```
 
-For the volume of data produced by a single operator, each partition could grow by some order of magnitude before
-impacting performance. Some of the most interesting insights come from data points spanning the whole dataset,
-partitioning and querying aggregated statistics is not an infinitely scalable solution, but could be replaced with
-running counts and averages.
+Some of the most interesting insights come from the aggregate of data points spanning the whole dataset. For the
+volume of data produced by a single operator, each partition could grow by some order of magnitude before impacting
+query performance. Querying for all data points then aggregating on demand, may eventually prove to not scale, but works
+for the volume of data in the foreseeable future.
 
 ## Infrastructure
 

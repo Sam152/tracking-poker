@@ -22,6 +22,8 @@ app.use("/healthz", (req, res, next) => {
 });
 
 app.use(errorNotFoundHandler);
+
+app.use(AWSXRay.express.closeSegment());
 app.use(errorHandler);
 
 app.listen(process.env.PORT || 80, () => {
