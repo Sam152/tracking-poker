@@ -70,7 +70,6 @@ export class InventoryStack extends Stack {
 
     createApiEndpoint() {
         const appName = "InventoryApi";
-
         const api = new bs.CfnApplication(this, "inventory-api", { applicationName: appName });
 
         const deploymentBucket = s3CreateSimpleBucket(
@@ -147,7 +146,7 @@ export class InventoryStack extends Stack {
                 {
                     namespace: "aws:ec2:instances",
                     optionName: "InstanceTypes",
-                    value: "t2.micro",
+                    value: "t2.nano",
                 },
                 {
                     namespace: "aws:elasticbeanstalk:application",
