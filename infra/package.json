@@ -2,7 +2,9 @@
   "name": "infra",
   "version": "0.1.0",
   "bin": {
-    "infra": "bin/infra.js"
+    "infra": "bin/infra.js",
+    "deploy-prod": "cdk deploy --all -c env=prod --require-approval never",
+    "deploy-staging": "cdk deploy --all --require-approval never"
   },
   "scripts": {
     "build": "tsc",

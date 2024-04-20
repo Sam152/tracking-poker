@@ -12,11 +12,24 @@ import { ClientStack } from "../lib/ClientStack";
 
 const app = new cdk.App();
 
+const env: DeploymentEnvironment = app.node.tryGetContext("env") ?? DeploymentEnvironment.Staging;
+
+const accounts: { [key in DeploymentEnvironment]: Record<string, string> } = {
+    [DeploymentEnvironment.Staging]: {
+        account: "390772177583",
+        region: "us-east-2",
+    },
+    [DeploymentEnvironment.Prod]: {
+        account: "851725576490",
+        region: "ap-southeast-2",
+    },
+} as const;
+
 // Identify the environment for each stack, for services that cannot have duplicate names across
 // accounts (ie, s3 buckets).
 const defaultStackProps = {
-    deploymentEnvironment: app.node.tryGetContext("deploymentEnvironment") ?? DeploymentEnvironment.Staging,
-    env: { account: "390772177583", region: "us-east-2" },
+    deploymentEnvironment: env,
+    env: accounts[env],
 };
 
 const commandBusStack = new CommandBusStack(app, "CommandBusStack", defaultStackProps);

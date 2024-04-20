@@ -15,7 +15,7 @@ provides some insight into the on-stream performance of players over time.
 
 This project deploys a number of microservices to coordinate the collection of these statistics:
 
-![diagram](./docs/img/arch-diagram.png)
+![diagram](./docs/img/arch.png)
 
 -   _[Pipeline](./pipeline/src/index.ts)_ - Routes events between services.
 -   _[Ingest](./ingest/src/)_ - Queries for new video assets.

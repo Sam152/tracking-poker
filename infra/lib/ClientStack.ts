@@ -1,7 +1,7 @@
 import { aws_s3_deployment, BundlingOptions, DockerImage, RemovalPolicy, Stack, StackProps, Tags } from "aws-cdk-lib";
 import { Construct } from "constructs";
 import { DeploymentEnvironmentAware } from "./utility/deployment-environment";
-import { Bucket, BucketEncryption } from "aws-cdk-lib/aws-s3";
+import { Bucket, BucketEncryption, ObjectOwnership } from "aws-cdk-lib/aws-s3";
 import { spawnSync } from "child_process";
 import * as path from "path";
 import {
@@ -41,6 +41,13 @@ export class ClientStack extends Stack {
             // This can be switched off, in cases where we only want access via the CF distribution, by configuring
             // an additional access relationship between CF and S3, however this also works fine.
             publicReadAccess: true,
+            objectOwnership: ObjectOwnership.OBJECT_WRITER,
+            blockPublicAccess: {
+                blockPublicAcls: false,
+                blockPublicPolicy: false,
+                ignorePublicAcls: false,
+                restrictPublicBuckets: false,
+            },
             websiteIndexDocument: "index.html",
             websiteErrorDocument: "404.html",
             eventBridgeEnabled: false,
