@@ -131,10 +131,9 @@ for the volume of data in the foreseeable future.
 
 ## Infrastructure
 
-This project has been written to be deployed and integrate with AWS services. Outside the AWS services consumed by
-individual services, the whole package utilises and depends on a number of features in the AWS ecosystem.
-
 ### Infrastructure-as-code
+
+This project deploys to AWS using infrastructure-as-code via a number of [CDK Stacks](./infra/lib/). CDK provides constructs at varying degrees of abstraction for orchestrating the creation of AWS services, using CloudFormation templates as an intermediary.
 
 ### Observability
 
