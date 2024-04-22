@@ -12,7 +12,7 @@ import { ClientStack } from "../lib/ClientStack";
 
 const app = new cdk.App();
 
-const env: DeploymentEnvironment = app.node.tryGetContext("env") ?? DeploymentEnvironment.Staging;
+const env: DeploymentEnvironment = app.node.tryGetContext("env") ?? DeploymentEnvironment.Prod;
 
 const accounts: { [key in DeploymentEnvironment]: Record<string, string> } = {
     [DeploymentEnvironment.Staging]: {

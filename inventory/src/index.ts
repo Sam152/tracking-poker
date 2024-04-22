@@ -5,8 +5,11 @@ import { leaderboards } from "./routes/leaderboards";
 import AWSXRay from "aws-xray-sdk";
 import { errorHandler, errorNotFoundHandler } from "./middlewares/errorHandler";
 import { cacheMiddleware } from "./middlewares/cacheMiddleware";
+import cors from "cors";
 
 const app = express();
+
+app.use(cors());
 
 app.use(express.json());
 app.use(AWSXRay.express.openSegment("inventory-api"));
