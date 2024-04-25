@@ -3,6 +3,7 @@ import * as event from "aws-cdk-lib/aws-events";
 import * as eventTargets from "aws-cdk-lib/aws-events-targets";
 import * as logs from "aws-cdk-lib/aws-logs";
 import { Construct } from "constructs";
+import { DefaultStackProps } from "../bin/infra";
 
 export type EventBusAware = {
     eventBusStack: EventBusStack;
@@ -12,7 +13,7 @@ export class EventBusStack extends Stack {
     private props: StackProps;
     public readonly bus: event.EventBus;
 
-    constructor(scope: Construct, id: string, props: StackProps) {
+    constructor(scope: Construct, id: string, props: DefaultStackProps) {
         super(scope, id, props);
         this.props = props;
 

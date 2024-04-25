@@ -1,4 +1,4 @@
-import { Stack, StackProps, Tags } from "aws-cdk-lib";
+import { Stack, Tags } from "aws-cdk-lib";
 import { Construct } from "constructs";
 import * as dynamo from "aws-cdk-lib/aws-dynamodb";
 import { BillingMode } from "aws-cdk-lib/aws-dynamodb";
@@ -18,8 +18,9 @@ import { CommandBusAware } from "./CommandBusStack";
 import * as event from "aws-cdk-lib/aws-events";
 import * as eventTargets from "aws-cdk-lib/aws-events-targets";
 import { allowTraces } from "./utility/xray";
+import { DefaultStackProps } from "../bin/infra";
 
-type IngestStackProps = StackProps & EventBusAware & CommandBusAware;
+type IngestStackProps = DefaultStackProps & EventBusAware & CommandBusAware;
 
 export class IngestStack extends Stack {
     private props: IngestStackProps;

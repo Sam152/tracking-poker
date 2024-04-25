@@ -1,4 +1,4 @@
-import { Stack, StackProps, Tags } from "aws-cdk-lib";
+import { Stack, Tags } from "aws-cdk-lib";
 import { Construct } from "constructs";
 import { Duration } from "aws-cdk-lib/core";
 import { CommandBusAware } from "./CommandBusStack";
@@ -11,8 +11,9 @@ import * as event from "aws-cdk-lib/aws-events";
 import * as eventTargets from "aws-cdk-lib/aws-events-targets";
 import { bundlingVolumesWithCommon } from "./utility/bundling";
 import { allowTraces } from "./utility/xray";
+import { DefaultStackProps } from "../bin/infra";
 
-type PipelineStackProps = StackProps & CommandBusAware;
+type PipelineStackProps = DefaultStackProps & CommandBusAware;
 
 export class PipelineStack extends Stack {
     private props: PipelineStackProps;

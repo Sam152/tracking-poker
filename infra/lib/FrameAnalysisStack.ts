@@ -1,8 +1,7 @@
-import { Stack, StackProps, Tags } from "aws-cdk-lib";
+import { Stack, Tags } from "aws-cdk-lib";
 import { Construct } from "constructs";
 import { Duration, Size } from "aws-cdk-lib/core";
 import { s3ReadObjectsFromWholeBucketPolicy } from "./utility/s3";
-import { DeploymentEnvironmentAware } from "./utility/deployment-environment";
 import { CommandBusAware } from "./CommandBusStack";
 import { addPutEventsPolicies, invokeLambdaOnEventDetail } from "./utility/eventBridge";
 import * as lambdaNodejs from "aws-cdk-lib/aws-lambda-nodejs";
@@ -13,8 +12,9 @@ import * as iam from "aws-cdk-lib/aws-iam";
 import { EventBusAware } from "./EventBusStack";
 import { bundlingVolumesWithCommon } from "./utility/bundling";
 import { allowTraces } from "./utility/xray";
+import { DefaultStackProps } from "../bin/infra";
 
-type FrameAnalysisStackProps = StackProps & DeploymentEnvironmentAware & CommandBusAware & EventBusAware;
+type FrameAnalysisStackProps = DefaultStackProps & CommandBusAware & EventBusAware;
 
 export class FrameAnalysisStack extends Stack {
     private props: FrameAnalysisStackProps;

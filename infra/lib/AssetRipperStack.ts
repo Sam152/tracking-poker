@@ -1,17 +1,17 @@
-import { Stack, StackProps, Tags } from "aws-cdk-lib";
+import { Stack, Tags } from "aws-cdk-lib";
 import { Construct } from "constructs";
 import { DockerImageCode, DockerImageFunction, Tracing } from "aws-cdk-lib/aws-lambda";
 import { Platform } from "aws-cdk-lib/aws-ecr-assets";
 import * as path from "path";
 import { Duration, Size } from "aws-cdk-lib/core";
 import { s3CreateSimpleBucket, s3WriteObjectsToWholeBucketPolicy } from "./utility/s3";
-import { DeploymentEnvironmentAware } from "./utility/deployment-environment";
 import { CommandBusAware } from "./CommandBusStack";
 import { addPutEventsPolicies, invokeLambdaOnEventDetail } from "./utility/eventBridge";
 import { EventBusAware } from "./EventBusStack";
 import { allowTraces } from "./utility/xray";
+import { DefaultStackProps } from "../bin/infra";
 
-type AssetRipperStackProps = StackProps & DeploymentEnvironmentAware & CommandBusAware & EventBusAware;
+type AssetRipperStackProps = DefaultStackProps & CommandBusAware & EventBusAware;
 
 export class AssetRipperStack extends Stack {
     private props: AssetRipperStackProps;

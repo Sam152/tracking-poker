@@ -1,5 +1,6 @@
 #!/usr/bin/env node
 import * as cdk from "aws-cdk-lib";
+import { StackProps } from "aws-cdk-lib";
 import { DeploymentEnvironment } from "../lib/utility/deployment-environment";
 import { AssetRipperStack } from "../lib/AssetRipperStack";
 import { CommandBusStack } from "../lib/CommandBusStack";
@@ -14,50 +15,64 @@ const app = new cdk.App();
 
 const env: DeploymentEnvironment = app.node.tryGetContext("env") ?? DeploymentEnvironment.Prod;
 
-const accounts: { [key in DeploymentEnvironment]: Record<string, string> } = {
+export type DefaultStackProps = StackProps & {
+    deploymentEnvironment: DeploymentEnvironment;
+    clientDomain: string;
+    apiDomain: string;
+    domainZoneId: string;
+    domainZoneName: string;
+};
+const envStackProps: { [key in DeploymentEnvironment]: DefaultStackProps } = {
     [DeploymentEnvironment.Staging]: {
-        account: "390772177583",
-        region: "us-east-2",
+        deploymentEnvironment: DeploymentEnvironment.Staging,
+        clientDomain: "",
+        apiDomain: "",
+        domainZoneId: "",
+        domainZoneName: "",
+        env: {
+            account: "390772177583",
+            region: "us-east-2",
+        },
     },
     [DeploymentEnvironment.Prod]: {
-        account: "851725576490",
-        region: "ap-southeast-2",
+        deploymentEnvironment: DeploymentEnvironment.Prod,
+        clientDomain: "poker.sam152.com",
+        apiDomain: "poker-api.sam152.com",
+        domainZoneId: "Z057246516CAPUIS5POOU",
+        domainZoneName: "sam152.com",
+        env: {
+            account: "851725576490",
+            region: "ap-southeast-2",
+        },
     },
 } as const;
 
-// Identify the environment for each stack, for services that cannot have duplicate names across
-// accounts (ie, s3 buckets).
-const defaultStackProps = {
-    deploymentEnvironment: env,
-    env: accounts[env],
-};
-
-const commandBusStack = new CommandBusStack(app, "CommandBusStack", defaultStackProps);
-const eventBusStack = new EventBusStack(app, "EventBusStack", defaultStackProps);
+const commandBusStack = new CommandBusStack(app, "CommandBusStack", envStackProps[env]);
+const eventBusStack = new EventBusStack(app, "EventBusStack", envStackProps[env]);
 
 new PipelineStack(app, "PipelineStack", {
-    ...defaultStackProps,
+    ...envStackProps[env],
     commandBusStack,
 });
 new IngestStack(app, "IngestStack", {
-    ...defaultStackProps,
+    ...envStackProps[env],
     commandBusStack,
     eventBusStack,
 });
 new AssetRipperStack(app, "AssetRipperStack", {
-    ...defaultStackProps,
+    ...envStackProps[env],
     commandBusStack,
     eventBusStack,
 });
 new FrameAnalysisStack(app, "FrameAnalysisStack", {
-    ...defaultStackProps,
+    ...envStackProps[env],
     commandBusStack,
     eventBusStack,
 });
 new InventoryStack(app, "InventoryStack", {
-    ...defaultStackProps,
+    ...envStackProps[env],
     eventBusStack,
 });
 new ClientStack(app, "ClientStack", {
-    ...defaultStackProps,
+    ...envStackProps[env],
 });

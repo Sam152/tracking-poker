@@ -131,9 +131,14 @@ for the volume of data in the foreseeable future.
 
 ## Infrastructure
 
+Where possible, all components use on-demand pricing (DynamoDB, ECS, Fargate), to keep costs low when infrastructure is
+idle.
+
 ### Infrastructure-as-code
 
-This project deploys to AWS using infrastructure-as-code via a number of [CDK Stacks](./infra/lib/). CDK provides constructs at varying degrees of abstraction for orchestrating the creation of AWS services, using CloudFormation templates as an intermediary.
+This project deploys to AWS using infrastructure-as-code via a number of [CDK Stacks](./infra/lib/). CDK provides
+constructs at varying degrees of abstraction for orchestrating the creation of AWS services, using CloudFormation
+templates as an intermediary.
 
 ### Observability
 

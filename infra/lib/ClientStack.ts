@@ -1,6 +1,6 @@
-import { aws_s3_deployment, BundlingOptions, DockerImage, RemovalPolicy, Stack, StackProps, Tags } from "aws-cdk-lib";
+import { aws_s3_deployment, BundlingOptions, DockerImage, RemovalPolicy, Stack, Tags } from "aws-cdk-lib";
 import { Construct } from "constructs";
-import { DeploymentEnvironmentAware } from "./utility/deployment-environment";
+import { DeploymentEnvironment } from "./utility/deployment-environment";
 import { Bucket, BucketEncryption, ObjectOwnership } from "aws-cdk-lib/aws-s3";
 import { spawnSync } from "child_process";
 import * as path from "path";
@@ -13,15 +13,15 @@ import {
 } from "aws-cdk-lib/aws-cloudfront";
 import { S3Origin } from "aws-cdk-lib/aws-cloudfront-origins";
 import { Duration } from "aws-cdk-lib/core";
-
-type ClientStackProps = StackProps & DeploymentEnvironmentAware;
+import { Certificate } from "aws-cdk-lib/aws-certificatemanager";
+import { DefaultStackProps } from "../bin/infra";
 
 export class ClientStack extends Stack {
-    private props: ClientStackProps;
+    private props: DefaultStackProps;
     private readonly resolveService: (input: string) => string;
     private bucket: Bucket;
 
-    constructor(scope: Construct, id: string, props: ClientStackProps) {
+    constructor(scope: Construct, id: string, props: DefaultStackProps) {
         super(scope, id, props);
         this.props = props;
 
@@ -64,7 +64,10 @@ export class ClientStack extends Stack {
                         image: DockerImage.fromRegistry("node:20"),
                         local: {
                             tryBundle(outputDir: string, options: BundlingOptions): boolean {
-                                spawnSync(`npm install && npm run build`, { shell: true, cwd: stack.resolveService("") });
+                                spawnSync(`npm install && NEXT_PUBLIC_INVENTORY_API=https://${stack.props.apiDomain}/ npm run build`, {
+                                    shell: true,
+                                    cwd: stack.resolveService(""),
+                                });
                                 spawnSync(`mv out/* ${outputDir} && rm -rf out`, { shell: true, cwd: stack.resolveService("") });
                                 return true;
                             },
@@ -77,7 +80,18 @@ export class ClientStack extends Stack {
     }
 
     addCloudfrontDistribution() {
-        const distribution = new Distribution(this, `${this.getBucketName()}-distribution`, {
+        new Distribution(this, `${this.getBucketName()}-distribution`, {
+            domainNames: [this.props.clientDomain],
+            certificate:
+                this.props.deploymentEnvironment === DeploymentEnvironment.Prod
+                    ? // A pre-created certificate for prod, since CDK does not support creating one in the right
+                      // region: https://github.com/aws/aws-cdk/issues/9274
+                      Certificate.fromCertificateArn(
+                          this,
+                          "tp-prod-cert",
+                          "arn:aws:acm:us-east-1:851725576490:certificate/8ae21894-da44-4ad1-bd76-c992ea81422c",
+                      )
+                    : undefined,
             defaultBehavior: {
                 origin: new S3Origin(this.bucket),
                 viewerProtocolPolicy: ViewerProtocolPolicy.REDIRECT_TO_HTTPS,

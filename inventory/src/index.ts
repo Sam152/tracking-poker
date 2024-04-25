@@ -16,6 +16,9 @@ app.use(AWSXRay.express.openSegment("inventory-api"));
 
 app.use(cacheMiddleware);
 
+app.get("/", (req, res, next) => {
+    res.status(200).send({ status: 200 });
+});
 app.use("/shows", shows);
 app.use("/players", players);
 app.use("/leaderboards", leaderboards);
