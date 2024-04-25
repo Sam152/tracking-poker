@@ -89,7 +89,7 @@ export class IngestStack extends Stack {
 
         // Slowly ingest the full legacy corpus over time.
         new event.Rule(this, "legacy-ingest-trigger", {
-            schedule: event.Schedule.cron({ minute: "0/10" }),
+            schedule: event.Schedule.cron({ minute: "0/2" }),
             targets: [
                 new eventTargets.LambdaFunction(ingestLambda, {
                     event: event.RuleTargetInput.fromObject({
