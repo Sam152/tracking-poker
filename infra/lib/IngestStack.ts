@@ -75,12 +75,25 @@ export class IngestStack extends Stack {
         ingestLambda.role?.addManagedPolicy(ManagedPolicy.fromAwsManagedPolicyName("AmazonDynamoDBFullAccess"));
         addPutEventsPolicies(this, "ingest-lambda", ingestLambda.role!, this.props.eventBusStack.bus, this.props.commandBusStack.bus);
 
-        new event.Rule(this, "HourlyTrigger", {
-            schedule: event.Schedule.cron({ minute: "0/30" }),
+        // Check for new streams every hour.
+        new event.Rule(this, "hourly-trigger", {
+            schedule: event.Schedule.cron({ minute: "5" }),
             targets: [
                 new eventTargets.LambdaFunction(ingestLambda, {
                     event: event.RuleTargetInput.fromObject({
                         "detail-type": "CheckForNewStreams",
+                    }),
+                }),
+            ],
+        });
+
+        // Slowly ingest the full legacy corpus over time.
+        new event.Rule(this, "legacy-ingest-trigger", {
+            schedule: event.Schedule.cron({ minute: "0/10" }),
+            targets: [
+                new eventTargets.LambdaFunction(ingestLambda, {
+                    event: event.RuleTargetInput.fromObject({
+                        "detail-type": "IngestLegacyStream",
                     }),
                 }),
             ],
