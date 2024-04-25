@@ -1,6 +1,5 @@
 import { aws_s3_deployment, BundlingOptions, DockerImage, RemovalPolicy, Stack, Tags } from "aws-cdk-lib";
 import { Construct } from "constructs";
-import { DeploymentEnvironment } from "./utility/deployment-environment";
 import { Bucket, BucketEncryption, ObjectOwnership } from "aws-cdk-lib/aws-s3";
 import { spawnSync } from "child_process";
 import * as path from "path";
@@ -82,16 +81,7 @@ export class ClientStack extends Stack {
     addCloudfrontDistribution() {
         new Distribution(this, `${this.getBucketName()}-distribution`, {
             domainNames: [this.props.clientDomain],
-            certificate:
-                this.props.deploymentEnvironment === DeploymentEnvironment.Prod
-                    ? // A pre-created certificate for prod, since CDK does not support creating one in the right
-                      // region: https://github.com/aws/aws-cdk/issues/9274
-                      Certificate.fromCertificateArn(
-                          this,
-                          "tp-prod-cert",
-                          "arn:aws:acm:us-east-1:851725576490:certificate/8ae21894-da44-4ad1-bd76-c992ea81422c",
-                      )
-                    : undefined,
+            certificate: Certificate.fromCertificateArn(this, "tp-client-cert", this.props.clientDomainCertArn),
             defaultBehavior: {
                 origin: new S3Origin(this.bucket),
                 viewerProtocolPolicy: ViewerProtocolPolicy.REDIRECT_TO_HTTPS,

@@ -18,6 +18,7 @@ const env: DeploymentEnvironment = app.node.tryGetContext("env") ?? DeploymentEn
 export type DefaultStackProps = StackProps & {
     deploymentEnvironment: DeploymentEnvironment;
     clientDomain: string;
+    clientDomainCertArn: string;
     apiDomain: string;
     domainZoneId: string;
     domainZoneName: string;
@@ -26,6 +27,7 @@ const envStackProps: { [key in DeploymentEnvironment]: DefaultStackProps } = {
     [DeploymentEnvironment.Staging]: {
         deploymentEnvironment: DeploymentEnvironment.Staging,
         clientDomain: "",
+        clientDomainCertArn: "",
         apiDomain: "",
         domainZoneId: "",
         domainZoneName: "",
@@ -37,6 +39,8 @@ const envStackProps: { [key in DeploymentEnvironment]: DefaultStackProps } = {
     [DeploymentEnvironment.Prod]: {
         deploymentEnvironment: DeploymentEnvironment.Prod,
         clientDomain: "poker.sam152.com",
+        // Click-ops ARN, because this cert must be in us-east-1.
+        clientDomainCertArn: "arn:aws:acm:us-east-1:851725576490:certificate/8ae21894-da44-4ad1-bd76-c992ea81422c",
         apiDomain: "poker-api.sam152.com",
         domainZoneId: "Z057246516CAPUIS5POOU",
         domainZoneName: "sam152.com",
