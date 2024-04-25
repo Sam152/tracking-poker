@@ -13,8 +13,8 @@ export default function Home() {
             <Table>
                 <Tbody>
                     {items.data &&
-                        items.data.map((item) => (
-                            <Tr>
+                        items.data.map((item, i) => (
+                            <Tr key={i}>
                                 <Td>{item.playerName}</Td>
                                 <Td>
                                     <DataPoint value={item.statValue} />
