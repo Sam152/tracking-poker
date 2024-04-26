@@ -1,7 +1,7 @@
 import MainMenu from "@/components/MainMenu";
 import { useWinnersLeaderboard } from "@/api/useApi";
-import { Table, Tbody, Td, Tr } from "@chakra-ui/react";
 import { DataPoint } from "@/components/Stat";
+import { DataTable } from "@/components/DataTable";
 
 export default function Home() {
     const items = useWinnersLeaderboard();
@@ -9,20 +9,7 @@ export default function Home() {
     return (
         <>
             <MainMenu />
-
-            <Table>
-                <Tbody>
-                    {items.data &&
-                        items.data.map((item, i) => (
-                            <Tr key={i}>
-                                <Td>{item.playerName}</Td>
-                                <Td>
-                                    <DataPoint value={item.statValue} />
-                                </Td>
-                            </Tr>
-                        ))}
-                </Tbody>
-            </Table>
+            <DataTable rows={items.data?.map((item) => [item.playerName, <DataPoint value={item.statValue} />])} />
         </>
     );
 }
