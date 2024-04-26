@@ -116,7 +116,7 @@ type PlayerAppearanceStorage = PlayerAppearance & {
 export type StatStorage = Stat & {
     entity_type: "player_stat";
     pk: `player#${PlayerId}`;
-    sk: `stat#stat_type#${StatType}#show#${PlayerId}#`;
+    sk: `stat#stat_type#${StatType}#slug#${ShowId}#`;
     gsi1pk: `slug#${ShowId}`;
     gsi1sk: `stat#stat_type#${StatType}#player#${PlayerId}#`;
     gsi2pk: `stat_type#${StatType}`;

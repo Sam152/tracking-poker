@@ -14,7 +14,7 @@ export type Stat = {
 export type StatStorage = Stat & {
     entity_type: "player_stat";
     pk: `player#${PlayerId}`;
-    sk: `stat#stat_type#${StatType}#show#${PlayerId}#`;
+    sk: `stat#stat_type#${StatType}#slug#${ShowId}#`;
     gsi1pk: `slug#${ShowId}`;
     gsi1sk: `stat#stat_type#${StatType}#player#${PlayerId}#`;
     gsi2pk: `stat_type#${StatType}`;
@@ -26,7 +26,7 @@ export function toStorage(stat: Stat): StatStorage {
         ...stat,
         entity_type: "player_stat",
         pk: `player#${stat.player}`,
-        sk: `stat#stat_type#${stat.type}#show#${stat.player}#`,
+        sk: `stat#stat_type#${stat.type}#slug#${stat.show}#`,
         gsi1pk: `slug#${stat.show}`,
         gsi1sk: `stat#stat_type#${stat.type}#player#${stat.player}#`,
         gsi2pk: `stat_type#${stat.type}`,
