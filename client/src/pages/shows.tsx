@@ -5,12 +5,10 @@ import Link from "next/link";
 
 export default function Shows() {
     const items = useShows();
-    console.log(items.data);
-
     return (
         <>
             <MainMenu />
-            <DataTable rows={items.data?.map((item) => [<Link href={`/shows/${item.id}`}>{item.show_name}</Link>])} />
+            <DataTable rows={items.data?.map((item) => [<Link href={`/show/${item.id}`}>{item.show_name}</Link>])} />
         </>
     );
 }

@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { ReactElement, useState } from "react";
 import { Tab, TabList, Tabs } from "@chakra-ui/tabs";
 
 function TabMenu({
@@ -23,7 +23,7 @@ function TabMenu({
     );
 }
 
-export function useTabMenu(items: Record<string, string>) {
+export function useTabMenu<TItems extends Record<string, string>>(items: TItems): [keyof TItems, ReactElement] {
     const [activeItem, setActiveItem] = useState<string>(Object.keys(items)[0]);
     return [activeItem, <TabMenu setActiveItem={setActiveItem} activeItem={activeItem} items={items} />];
 }

@@ -11,23 +11,50 @@ export function useApi(endpoint: string | null) {
     return useSWR(endpoint, apiFetcher);
 }
 
-export function useShow(showId?: string) {
+export function useShow(showId?: string): SWRResponse<{
+    show: Show;
+    players: PlayerAppearance[];
+    stats: StatsList;
+}> {
     return useApi(showId ? `shows/${showId}` : null);
 }
 
-export function usePlayer(playerId: string) {
+type Stat = {
+    player: string;
+    player_name: string;
+    show: string;
+    type: string;
+    value: number;
+};
+
+type PlayerAppearance = {
+    date: string;
+    player: string;
+    player_name: string;
+    show: string;
+    show_name: string;
+};
+type StatsList = {
+    cc?: Stat[];
+    cw?: Stat[];
+    pfr?: Stat[];
+    vpip?: Stat[];
+};
+export function usePlayer(playerId?: string): SWRResponse<{
+    appearances: Array<PlayerAppearance>;
+    stats: StatsList;
+}> {
     return useApi(`players/${playerId}`);
 }
 
-export function useShows(): SWRResponse<
-    Array<{
-        date: string;
-        duration: number;
-        id: string;
-        operator: string;
-        show_name: string;
-    }>
-> {
+type Show = {
+    date: string;
+    duration: number;
+    id: string;
+    operator: string;
+    show_name: string;
+};
+export function useShows(): SWRResponse<Array<Show>> {
     return useApi(`shows`);
 }
 
@@ -46,4 +73,12 @@ export function useWinnersLeaderboard(): LeaderboardResponse {
 
 export function useNotSoWinningLeaderboard(): LeaderboardResponse {
     return useApi(`leaderboards/not-so-winning`);
+}
+
+export function useHighestVpipLeaderboard(): LeaderboardResponse {
+    return useApi(`leaderboards/highest-vpip`);
+}
+
+export function useLowestVpipLeaderboard(): LeaderboardResponse {
+    return useApi(`leaderboards/lowest-vpip`);
 }

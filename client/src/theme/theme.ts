@@ -7,7 +7,14 @@ export const theme = extendTheme({
     components: {
         Container: {
             baseStyle: {
-                maxW: "880px",
+                maxW: "700px",
+            },
+        },
+        Tabs: {
+            baseStyle: {
+                tab: {
+                    borderBottomWidth: "5px",
+                },
             },
         },
     },

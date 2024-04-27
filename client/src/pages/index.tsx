@@ -1,7 +1,8 @@
 import MainMenu from "@/components/MainMenu";
 import { useWinnersLeaderboard } from "@/api/useApi";
-import { DataPoint } from "@/components/Stat";
 import { DataTable } from "@/components/DataTable";
+import { PlayerLink } from "@/components/PlayerLink";
+import { CwStat } from "@/components/Stat";
 
 export default function Home() {
     const items = useWinnersLeaderboard();
@@ -9,7 +10,7 @@ export default function Home() {
     return (
         <>
             <MainMenu />
-            <DataTable rows={items.data?.map((item) => [item.playerName, <DataPoint value={item.statValue} />])} />
+            <DataTable rows={items.data?.map((item) => [<PlayerLink {...item} />, <CwStat value={item.statValue} />])} />
         </>
     );
 }
