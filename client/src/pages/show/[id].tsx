@@ -22,12 +22,12 @@ export default function ShowPage() {
             <DataTable
                 rows={show.data?.players
                     .sort((a, b) => {
-                        const statA = show.data?.stats[activeTab].find((stat) => stat.player === a.player)?.value || -99999999;
-                        const statB = show.data?.stats[activeTab].find((stat) => stat.player === b.player)?.value || -99999999;
+                        const statA = show.data?.stats[activeTab]?.find((stat) => stat.player === a.player)?.value || -99999999;
+                        const statB = show.data?.stats[activeTab]?.find((stat) => stat.player === b.player)?.value || -99999999;
                         return statB - statA;
                     })
                     .map((player) => {
-                        const stat = show.data?.stats[activeTab].find((stat) => stat.player === player.player);
+                        const stat = show.data?.stats[activeTab]?.find((stat) => stat.player === player.player);
                         return [
                             <PlayerLink playerName={player.player_name} playerId={player.player} />,
                             stat ? <StatFromType type={activeTab} value={stat.value} /> : <MissingStat />,
