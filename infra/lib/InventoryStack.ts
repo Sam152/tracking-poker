@@ -7,6 +7,7 @@ import * as path from "path";
 import { EventBusAware } from "./EventBusStack";
 import { createProjectionHandlerLambda } from "./utility/projection";
 import * as ec2 from "aws-cdk-lib/aws-ec2";
+import { InstanceClass, InstanceSize, InstanceType } from "aws-cdk-lib/aws-ec2";
 import * as ecs from "aws-cdk-lib/aws-ecs";
 import * as ecs_patterns from "aws-cdk-lib/aws-ecs-patterns";
 import { DockerImageAsset, Platform } from "aws-cdk-lib/aws-ecr-assets";
@@ -42,6 +43,10 @@ export class InventoryStack extends Stack {
         const cluster = new ecs.Cluster(this, "MyCluster", {
             vpc: vpc,
         });
+        cluster.addCapacity("cluster-capacity", {
+            instanceType: InstanceType.of(InstanceClass.T3, InstanceSize.MICRO),
+        });
+
         const image = new DockerImageAsset(this, "inventory-image", {
             directory: path.resolve(__dirname, "../../"),
             file: "inventory/Dockerfile",
@@ -51,7 +56,7 @@ export class InventoryStack extends Stack {
             hostedZoneId: this.props.domainZoneId,
             zoneName: this.props.domainZoneName,
         });
-        const service = new ecs_patterns.ApplicationLoadBalancedFargateService(this, "inventory-api-service", {
+        const service = new ecs_patterns.ApplicationLoadBalancedEc2Service(this, "inventory-api-service", {
             cluster: cluster,
             desiredCount: 1,
             protocol: ApplicationProtocol.HTTPS,
@@ -65,12 +70,14 @@ export class InventoryStack extends Stack {
             }),
             taskImageOptions: {
                 image: ecs.ContainerImage.fromDockerImageAsset(image),
+                environment: {
+                    AWS_REGION: this.props.env?.region || "ap-southeast-2",
+                },
             },
             cpu: 256,
-            memoryLimitMiB: 512,
+            memoryLimitMiB: 500,
             publicLoadBalancer: true,
         });
-
         service.taskDefinition.taskRole.addManagedPolicy(ManagedPolicy.fromAwsManagedPolicyName("AmazonDynamoDBFullAccess"));
     }
 
