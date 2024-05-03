@@ -1,4 +1,4 @@
-FROM --platform=linux/amd64 node:20
+FROM --platform=linux/amd64 node:20-slim
 
 ADD common /usr/common/
 

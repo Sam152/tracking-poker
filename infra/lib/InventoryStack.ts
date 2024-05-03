@@ -72,6 +72,7 @@ export class InventoryStack extends Stack {
                 image: ecs.ContainerImage.fromDockerImageAsset(image),
                 environment: {
                     AWS_REGION: this.props.env?.region || "ap-southeast-2",
+                    DYNAMO_TABLE_REGION: this.props.env?.region || "ap-southeast-2",
                 },
             },
             cpu: 256,
