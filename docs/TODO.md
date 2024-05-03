@@ -6,3 +6,4 @@ List of tasks to complete:
 -   [ ] Increase stat collection accuracy.
 -   [ ] Debug mode to link UI to pipeline assets.
 -   [ ] Create a list of players + search.
+-   [ ] Optimise inventory node container to use slim image.
