@@ -14,7 +14,7 @@ export async function fetchRecentVideoIds(channelId: string): Promise<string[]> 
     // The amount of time we should wait, until after a video has been published, before starting the processing.
     // This is required because for a certain duration of time after a video has been published, it does not have
     // processable video formats or metadata.
-    const bufferDurationMilliseconds = 1000 * 60 * 60 * 12;
+    const bufferDurationMilliseconds = 1000 * 60 * 60 * 24;
 
     const params = [
         `channelId=${channelId}`,
