@@ -78,6 +78,11 @@ export class InventoryStack extends Stack {
             cpu: 256,
             memoryLimitMiB: 500,
             publicLoadBalancer: true,
+
+            // Remove existing deployments before adding new ones, to allow keeping lowest resources possible
+            // on the EC2 instances.
+            minHealthyPercent: 0,
+            maxHealthyPercent: 100,
         });
         service.taskDefinition.taskRole.addManagedPolicy(ManagedPolicy.fromAwsManagedPolicyName("AmazonDynamoDBFullAccess"));
     }
