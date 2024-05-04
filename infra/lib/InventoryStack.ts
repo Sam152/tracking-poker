@@ -44,7 +44,7 @@ export class InventoryStack extends Stack {
             vpc: vpc,
         });
         cluster.addCapacity("cluster-capacity", {
-            instanceType: InstanceType.of(InstanceClass.T3, InstanceSize.MICRO),
+            instanceType: InstanceType.of(InstanceClass.T3, InstanceSize.NANO),
         });
 
         const image = new DockerImageAsset(this, "inventory-image", {
@@ -76,7 +76,7 @@ export class InventoryStack extends Stack {
                 },
             },
             cpu: 256,
-            memoryLimitMiB: 500,
+            memoryLimitMiB: 128,
             publicLoadBalancer: true,
 
             // Remove existing deployments before adding new ones, to allow keeping lowest resources possible
