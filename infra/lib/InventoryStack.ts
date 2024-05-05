@@ -75,10 +75,6 @@ export class InventoryStack extends Stack {
         instanceRole.addManagedPolicy(ManagedPolicy.fromAwsManagedPolicyName("AmazonDynamoDBFullAccess"));
         instanceRole.addManagedPolicy(ManagedPolicy.fromAwsManagedPolicyName("AmazonEC2ContainerRegistryReadOnly"));
 
-        const rootVolume: ec2.BlockDevice = {
-            deviceName: "/dev/xvda",
-            volume: ec2.BlockDeviceVolume.ebs(2), // Override the volume size in Gibibytes (GiB)
-        };
         const instance = new ec2.Instance(this, "inventory-instance", {
             keyPair: KeyPair.fromKeyPairName(this, "tp-prod-keypair", "tp-prod"),
             instanceType: InstanceType.of(InstanceClass.T3, InstanceSize.NANO),
@@ -90,7 +86,12 @@ export class InventoryStack extends Stack {
             },
             userData: this.buildInstanceUserData(),
             role: instanceRole,
-            blockDevices: [rootVolume],
+            blockDevices: [
+                {
+                    deviceName: "/dev/xvda",
+                    volume: ec2.BlockDeviceVolume.ebs(8),
+                },
+            ],
         });
 
         new Distribution(this, `inventory-api-distribution`, {
@@ -114,6 +115,7 @@ export class InventoryStack extends Stack {
             `yum install -y docker`,
             `systemctl start docker`,
             `aws ecr get-login-password --region ${this.props.env.region} | docker login --username AWS --password-stdin ${this.props.env.account}.dkr.ecr.${this.props.env.region}.amazonaws.com`,
+            `docker system prune -a`,
             `docker pull ${this.image.imageUri}`,
             `docker container run -d -e DYNAMO_TABLE_REGION='ap-southeast-2' --publish 80:80 ${this.image.imageUri}`,
         );
@@ -134,7 +136,7 @@ export class InventoryStack extends Stack {
             vpc: vpc,
         });
         cluster.addCapacity("cluster-capacity", {
-            instanceType: InstanceType.of(InstanceClass.T3, InstanceSize.NANO),
+            instanceType: InstanceType.of(InstanceClass.T4G, InstanceSize.SMALL),
         });
         const zone = HostedZone.fromHostedZoneAttributes(this, "tp-zone", {
             hostedZoneId: this.props.domainZoneId,
