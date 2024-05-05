@@ -7,21 +7,36 @@ import * as path from "path";
 import { EventBusAware } from "./EventBusStack";
 import { createProjectionHandlerLambda } from "./utility/projection";
 import * as ec2 from "aws-cdk-lib/aws-ec2";
-import { InstanceClass, InstanceSize, InstanceType } from "aws-cdk-lib/aws-ec2";
+import {
+    AmazonLinux2023ImageSsmParameter,
+    InstanceClass,
+    InstanceSize,
+    InstanceType,
+    KeyPair,
+    Peer,
+    Port,
+    SecurityGroup,
+    SubnetType,
+    UserData,
+    Vpc,
+} from "aws-cdk-lib/aws-ec2";
 import * as ecs from "aws-cdk-lib/aws-ecs";
 import * as ecs_patterns from "aws-cdk-lib/aws-ecs-patterns";
 import { DockerImageAsset, Platform } from "aws-cdk-lib/aws-ecr-assets";
 import { ApplicationProtocol } from "aws-cdk-lib/aws-elasticloadbalancingv2";
 import { HostedZone } from "aws-cdk-lib/aws-route53";
 import { Certificate, CertificateValidation } from "aws-cdk-lib/aws-certificatemanager";
-import { ManagedPolicy } from "aws-cdk-lib/aws-iam";
+import { ManagedPolicy, Role, ServicePrincipal } from "aws-cdk-lib/aws-iam";
 import { DefaultStackProps } from "../bin/infra";
+import { Distribution, OriginProtocolPolicy, ViewerProtocolPolicy } from "aws-cdk-lib/aws-cloudfront";
+import { HttpOrigin } from "aws-cdk-lib/aws-cloudfront-origins";
 
 type InventoryStackProps = DefaultStackProps & EventBusAware;
 
 export class InventoryStack extends Stack {
     private props: InventoryStackProps;
     private readonly resolveService: (input: string) => string;
+    private image: DockerImageAsset;
 
     constructor(scope: Construct, id: string, props: InventoryStackProps) {
         super(scope, id, props);
@@ -31,26 +46,95 @@ export class InventoryStack extends Stack {
 
         this.createDynamoTable();
         this.createProjectionHandlerLambda();
-        this.createApiEndpoint();
+        this.createInventoryAppImage();
+        // this.createInventoryApiOnEcs();
+        this.createInventoryApiOnEc2();
 
         Tags.of(this).add("ServiceName", "Inventory");
     }
 
-    createApiEndpoint() {
+    createInventoryAppImage() {
+        this.image = new DockerImageAsset(this, "inventory-image", {
+            directory: path.resolve(__dirname, "../../"),
+            file: "inventory/Dockerfile",
+            platform: Platform.LINUX_AMD64,
+        });
+    }
+
+    createInventoryApiOnEc2() {
+        const vpc = Vpc.fromLookup(this, "default-vpc", { isDefault: true });
+        const securityGroup = new SecurityGroup(this, "inventory-security-group", {
+            vpc: vpc,
+        });
+        securityGroup.addIngressRule(Peer.anyIpv4(), Port.allTraffic());
+        securityGroup.addEgressRule(Peer.anyIpv4(), Port.allTraffic());
+
+        const instanceRole = new Role(this, "inventory-instance-role", {
+            assumedBy: new ServicePrincipal("ec2.amazonaws.com"),
+        });
+        instanceRole.addManagedPolicy(ManagedPolicy.fromAwsManagedPolicyName("AmazonDynamoDBFullAccess"));
+        instanceRole.addManagedPolicy(ManagedPolicy.fromAwsManagedPolicyName("AmazonEC2ContainerRegistryReadOnly"));
+
+        const rootVolume: ec2.BlockDevice = {
+            deviceName: "/dev/xvda",
+            volume: ec2.BlockDeviceVolume.ebs(2), // Override the volume size in Gibibytes (GiB)
+        };
+        const instance = new ec2.Instance(this, "inventory-instance", {
+            keyPair: KeyPair.fromKeyPairName(this, "tp-prod-keypair", "tp-prod"),
+            instanceType: InstanceType.of(InstanceClass.T3, InstanceSize.NANO),
+            vpc: vpc,
+            machineImage: new AmazonLinux2023ImageSsmParameter(),
+            securityGroup: securityGroup,
+            vpcSubnets: {
+                subnetType: SubnetType.PUBLIC,
+            },
+            userData: this.buildInstanceUserData(),
+            role: instanceRole,
+            blockDevices: [rootVolume],
+        });
+
+        new Distribution(this, `inventory-api-distribution`, {
+            domainNames: [this.props.apiDomain],
+            certificate: Certificate.fromCertificateArn(this, "tp-api-cert", this.props.apiDomainCertArn),
+            defaultBehavior: {
+                origin: new HttpOrigin(instance.instancePublicDnsName, {
+                    protocolPolicy: OriginProtocolPolicy.HTTP_ONLY,
+                }),
+                viewerProtocolPolicy: ViewerProtocolPolicy.REDIRECT_TO_HTTPS,
+            },
+        });
+    }
+
+    /**
+     * Create a script to run on start-up to launch the service.
+     */
+    buildInstanceUserData(): UserData {
+        const data = ec2.UserData.forLinux();
+        data.addCommands(
+            `yum install -y docker`,
+            `systemctl start docker`,
+            `aws ecr get-login-password --region ${this.props.env.region} | docker login --username AWS --password-stdin ${this.props.env.account}.dkr.ecr.${this.props.env.region}.amazonaws.com`,
+            `docker pull ${this.image.imageUri}`,
+            `docker container run -d -e DYNAMO_TABLE_REGION='ap-southeast-2' --publish 80:80 ${this.image.imageUri}`,
+        );
+        return data;
+    }
+
+    /**
+     * ECS is useful, but creates a lot of costly resources (notably NAT gateways) in order
+     * to expose tasks to the public internet. Using this construct seems overkill when we'd
+     * like to stand up a single nano sized EC2 instance.
+     */
+    createInventoryApiOnEcs() {
         const vpc = new ec2.Vpc(this, "MyVpc", {
-            maxAzs: 3,
+            maxAzs: 2,
+            natGateways: 1,
         });
         const cluster = new ecs.Cluster(this, "MyCluster", {
             vpc: vpc,
         });
         cluster.addCapacity("cluster-capacity", {
             instanceType: InstanceType.of(InstanceClass.T3, InstanceSize.NANO),
-        });
-
-        const image = new DockerImageAsset(this, "inventory-image", {
-            directory: path.resolve(__dirname, "../../"),
-            file: "inventory/Dockerfile",
-            platform: Platform.LINUX_AMD64,
         });
         const zone = HostedZone.fromHostedZoneAttributes(this, "tp-zone", {
             hostedZoneId: this.props.domainZoneId,
@@ -69,10 +153,10 @@ export class InventoryStack extends Stack {
                 validation: CertificateValidation.fromDns(zone),
             }),
             taskImageOptions: {
-                image: ecs.ContainerImage.fromDockerImageAsset(image),
+                image: ecs.ContainerImage.fromDockerImageAsset(this.image),
                 environment: {
-                    AWS_REGION: this.props.env?.region || "ap-southeast-2",
-                    DYNAMO_TABLE_REGION: this.props.env?.region || "ap-southeast-2",
+                    AWS_REGION: this.props.env.region,
+                    DYNAMO_TABLE_REGION: this.props.env.region,
                 },
             },
             cpu: 256,

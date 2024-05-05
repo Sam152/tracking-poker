@@ -19,9 +19,14 @@ export type DefaultStackProps = StackProps & {
     deploymentEnvironment: DeploymentEnvironment;
     clientDomain: string;
     clientDomainCertArn: string;
+    apiDomainCertArn: string;
     apiDomain: string;
     domainZoneId: string;
     domainZoneName: string;
+    env: {
+        account: string;
+        region: string;
+    };
 };
 const envStackProps: { [key in DeploymentEnvironment]: DefaultStackProps } = {
     [DeploymentEnvironment.Staging]: {
@@ -29,6 +34,7 @@ const envStackProps: { [key in DeploymentEnvironment]: DefaultStackProps } = {
         clientDomain: "",
         clientDomainCertArn: "",
         apiDomain: "",
+        apiDomainCertArn: "",
         domainZoneId: "",
         domainZoneName: "",
         env: {
@@ -42,6 +48,7 @@ const envStackProps: { [key in DeploymentEnvironment]: DefaultStackProps } = {
         // Click-ops ARN, because this cert must be in us-east-1.
         clientDomainCertArn: "arn:aws:acm:us-east-1:851725576490:certificate/8ae21894-da44-4ad1-bd76-c992ea81422c",
         apiDomain: "poker-api.sam152.com",
+        apiDomainCertArn: "arn:aws:acm:us-east-1:851725576490:certificate/6eaca751-a39d-4be6-9cb6-fa5a953ab0c9",
         domainZoneId: "Z057246516CAPUIS5POOU",
         domainZoneName: "sam152.com",
         env: {

@@ -3,5 +3,42 @@
     "ap-southeast-2a",
     "ap-southeast-2b",
     "ap-southeast-2c"
-  ]
+  ],
+  "vpc-provider:account=851725576490:filter.isDefault=true:region=ap-southeast-2:returnAsymmetricSubnets=true": {
+    "vpcId": "vpc-0dc8cb3ff06d66a53",
+    "vpcCidrBlock": "172.31.0.0/16",
+    "ownerAccountId": "851725576490",
+    "availabilityZones": [],
+    "subnetGroups": [
+      {
+        "name": "Public",
+        "type": "Public",
+        "subnets": [
+          {
+            "subnetId": "subnet-0f552401374521f6f",
+            "cidr": "172.31.32.0/20",
+            "availabilityZone": "ap-southeast-2a",
+            "routeTableId": "rtb-0f2d0532fd5daaae8"
+          },
+          {
+            "subnetId": "subnet-05035e102b72b8670",
+            "cidr": "172.31.0.0/20",
+            "availabilityZone": "ap-southeast-2b",
+            "routeTableId": "rtb-0f2d0532fd5daaae8"
+          },
+          {
+            "subnetId": "subnet-0341f7286a50b6259",
+            "cidr": "172.31.16.0/20",
+            "availabilityZone": "ap-southeast-2c",
+            "routeTableId": "rtb-0f2d0532fd5daaae8"
+          }
+        ]
+      }
+    ]
+  },
+  "ssm:account=851725576490:parameterName=/aws/service/ami-amazon-linux-latest/al2023-ami-kernel-default-x86_64:region=ap-southeast-2": "ami-0ec0514235185af79",
+  "security-group:account=851725576490:region=ap-southeast-2:securityGroupName=default:vpcId=vpc-0dc8cb3ff06d66a53": {
+    "securityGroupId": "sg-0751c432f2274f554",
+    "allowAllOutbound": false
+  }
 }
