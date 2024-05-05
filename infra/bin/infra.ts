@@ -1,6 +1,5 @@
 #!/usr/bin/env node
 import * as cdk from "aws-cdk-lib";
-import { StackProps } from "aws-cdk-lib";
 import { DeploymentEnvironment } from "../lib/utility/deployment-environment";
 import { AssetRipperStack } from "../lib/AssetRipperStack";
 import { CommandBusStack } from "../lib/CommandBusStack";
@@ -15,12 +14,13 @@ const app = new cdk.App();
 
 const env: DeploymentEnvironment = app.node.tryGetContext("env") ?? DeploymentEnvironment.Prod;
 
-export type DefaultStackProps = StackProps & {
+export type DefaultStackProps = {
     deploymentEnvironment: DeploymentEnvironment;
     clientDomain: string;
     clientDomainCertArn: string;
     apiDomainCertArn: string;
     apiDomain: string;
+    apiKeypairName: string;
     domainZoneId: string;
     domainZoneName: string;
     env: {
@@ -33,8 +33,9 @@ const envStackProps: { [key in DeploymentEnvironment]: DefaultStackProps } = {
         deploymentEnvironment: DeploymentEnvironment.Staging,
         clientDomain: "",
         clientDomainCertArn: "",
-        apiDomain: "",
         apiDomainCertArn: "",
+        apiDomain: "",
+        apiKeypairName: "",
         domainZoneId: "",
         domainZoneName: "",
         env: {
@@ -47,8 +48,9 @@ const envStackProps: { [key in DeploymentEnvironment]: DefaultStackProps } = {
         clientDomain: "poker.sam152.com",
         // Click-ops ARN, because this cert must be in us-east-1.
         clientDomainCertArn: "arn:aws:acm:us-east-1:851725576490:certificate/8ae21894-da44-4ad1-bd76-c992ea81422c",
-        apiDomain: "poker-api.sam152.com",
         apiDomainCertArn: "arn:aws:acm:us-east-1:851725576490:certificate/6eaca751-a39d-4be6-9cb6-fa5a953ab0c9",
+        apiDomain: "poker-api.sam152.com",
+        apiKeypairName: "tp-prod",
         domainZoneId: "Z057246516CAPUIS5POOU",
         domainZoneName: "sam152.com",
         env: {

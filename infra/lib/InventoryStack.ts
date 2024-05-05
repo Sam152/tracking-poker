@@ -76,7 +76,7 @@ export class InventoryStack extends Stack {
         instanceRole.addManagedPolicy(ManagedPolicy.fromAwsManagedPolicyName("AmazonEC2ContainerRegistryReadOnly"));
 
         const instance = new ec2.Instance(this, "inventory-instance", {
-            keyPair: KeyPair.fromKeyPairName(this, "tp-prod-keypair", "tp-prod"),
+            keyPair: KeyPair.fromKeyPairName(this, "tp-prod-keypair", this.props.apiKeypairName),
             instanceType: InstanceType.of(InstanceClass.T3, InstanceSize.NANO),
             vpc: vpc,
             machineImage: new AmazonLinux2023ImageSsmParameter(),
@@ -128,11 +128,11 @@ export class InventoryStack extends Stack {
      * like to stand up a single nano sized EC2 instance.
      */
     createInventoryApiOnEcs() {
-        const vpc = new ec2.Vpc(this, "MyVpc", {
+        const vpc = new ec2.Vpc(this, "tp-ecs-vpc", {
             maxAzs: 2,
             natGateways: 1,
         });
-        const cluster = new ecs.Cluster(this, "MyCluster", {
+        const cluster = new ecs.Cluster(this, "tp-ecs-cluster", {
             vpc: vpc,
         });
         cluster.addCapacity("cluster-capacity", {
