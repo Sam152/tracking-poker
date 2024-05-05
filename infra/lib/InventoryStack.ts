@@ -1,4 +1,4 @@
-import { Stack, Tags } from "aws-cdk-lib";
+import { CfnOutput, Stack, Tags } from "aws-cdk-lib";
 import { Construct } from "constructs";
 import * as dynamo from "aws-cdk-lib/aws-dynamodb";
 import { AttributeType, BillingMode, ProjectionType } from "aws-cdk-lib/aws-dynamodb";
@@ -77,7 +77,7 @@ export class InventoryStack extends Stack {
 
         const instance = new ec2.Instance(this, "inventory-instance", {
             keyPair: KeyPair.fromKeyPairName(this, "tp-prod-keypair", this.props.apiKeypairName),
-            instanceType: InstanceType.of(InstanceClass.T4G, InstanceSize.SMALL),
+            instanceType: InstanceType.of(InstanceClass.T3, InstanceSize.NANO),
             vpc: vpc,
             machineImage: new AmazonLinux2023ImageSsmParameter(),
             securityGroup: securityGroup,
@@ -104,6 +104,10 @@ export class InventoryStack extends Stack {
                 viewerProtocolPolicy: ViewerProtocolPolicy.REDIRECT_TO_HTTPS,
             },
         });
+
+        new CfnOutput(this, "inventory-kick-script", {
+            value: `ssh -i ~/.ssh/tp-prod.pem ec2-user@${instance.instancePublicDnsName} /var/lib/cloud/instance/scripts/part-001`,
+        });
     }
 
     /**
@@ -115,7 +119,7 @@ export class InventoryStack extends Stack {
             `yum install -y docker`,
             `systemctl start docker`,
             `aws ecr get-login-password --region ${this.props.env.region} | docker login --username AWS --password-stdin ${this.props.env.account}.dkr.ecr.${this.props.env.region}.amazonaws.com`,
-            `docker system prune -a`,
+            `docker system prune -a -f`,
             `docker pull ${this.image.imageUri}`,
             `docker container run -d -e DYNAMO_TABLE_REGION='ap-southeast-2' --publish 80:80 ${this.image.imageUri}`,
         );
@@ -136,7 +140,7 @@ export class InventoryStack extends Stack {
             vpc: vpc,
         });
         cluster.addCapacity("cluster-capacity", {
-            instanceType: InstanceType.of(InstanceClass.T4G, InstanceSize.SMALL),
+            instanceType: InstanceType.of(InstanceClass.T3, InstanceSize.NANO),
         });
         const zone = HostedZone.fromHostedZoneAttributes(this, "tp-zone", {
             hostedZoneId: this.props.domainZoneId,
