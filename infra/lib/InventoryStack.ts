@@ -77,7 +77,7 @@ export class InventoryStack extends Stack {
 
         const instance = new ec2.Instance(this, "inventory-instance", {
             keyPair: KeyPair.fromKeyPairName(this, "tp-prod-keypair", this.props.apiKeypairName),
-            instanceType: InstanceType.of(InstanceClass.T3, InstanceSize.NANO),
+            instanceType: InstanceType.of(InstanceClass.T4G, InstanceSize.SMALL),
             vpc: vpc,
             machineImage: new AmazonLinux2023ImageSsmParameter(),
             securityGroup: securityGroup,
