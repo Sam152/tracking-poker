@@ -106,7 +106,7 @@ export class InventoryStack extends Stack {
         });
 
         new CfnOutput(this, "inventory-kick-script", {
-            value: `ssh -i ~/.ssh/tp-prod.pem ec2-user@${instance.instancePublicDnsName} /var/lib/cloud/instance/scripts/part-001`,
+            value: `ssh -i ~/.ssh/tp-prod.pem ec2-user@${instance.instancePublicDnsName} sudo /var/lib/cloud/instance/scripts/part-001`,
         });
     }
 
