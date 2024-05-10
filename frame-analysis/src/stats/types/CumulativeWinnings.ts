@@ -1,21 +1,18 @@
 import { PlayerStatCollection, StatMetadata, StatType } from "./StatType";
 import { Geometry, Page, TextractDocument } from "amazon-textract-response-parser";
-import { buildStatsFromLookBackAndAhead } from "../buildStatsFromLookBack";
-import { looksLikeMoney, parseMoney } from "../looksLikeMoney";
 import { ApiLineBlock } from "amazon-textract-response-parser/dist/types/api-models/content";
 import { LineGeneric } from "amazon-textract-response-parser/dist/types/content";
 import { cropUpDownSection } from "../up-down/cropUpDownSection";
 import { classifyUpDown } from "../up-down/classifyUpDown";
+import { buildStatsFromLookBackAndAhead } from "../block-parsing/buildStatsFromLookBack";
+import { looksLikeMoney, parseMoney } from "../util/looksLikeMoney";
 
 export const CumulativeWinnings: StatMetadata = {
     type: StatType.CumulativeWinnings,
 
     triggerWords: ["CUMULATIVE", "WINNINGS"],
 
-    async getStatsFromDocument(
-        extract: TextractDocument,
-        frame: Buffer,
-    ): Promise<PlayerStatCollection<number>> {
+    async getStatsFromDocument(extract: TextractDocument, frame: Buffer): Promise<PlayerStatCollection<number>> {
         const geometry: Geometry<ApiLineBlock, LineGeneric<Page>>[] = [];
         const stats = buildStatsFromLookBackAndAhead(extract, looksLikeMoney, (line) => {
             geometry.push(line.geometry);

@@ -4,24 +4,27 @@ import { DockerImageCode, DockerImageFunction, Tracing } from "aws-cdk-lib/aws-l
 import { Platform } from "aws-cdk-lib/aws-ecr-assets";
 import * as path from "path";
 import { Duration, Size } from "aws-cdk-lib/core";
-import { s3CreateSimpleBucket, s3WriteObjectsToWholeBucketPolicy } from "./utility/s3";
 import { CommandBusAware } from "./CommandBusStack";
 import { addPutEventsPolicies, invokeLambdaOnEventDetail } from "./utility/eventBridge";
 import { EventBusAware } from "./EventBusStack";
 import { allowTraces } from "./utility/xray";
 import { DefaultStackProps } from "../bin/infra";
+import { SimpleBucket } from "./construct/SimpleBucket";
 
 type AssetRipperStackProps = DefaultStackProps & CommandBusAware & EventBusAware;
 
 export class AssetRipperStack extends Stack {
     private props: AssetRipperStackProps;
+    private bucket: SimpleBucket;
 
     constructor(scope: Construct, id: string, props: AssetRipperStackProps) {
         super(scope, id, props);
         this.props = props;
 
+        this.bucket = new SimpleBucket(this, `tp-asset-ripper-bucket`, {
+            bucketName: `tracking-poker-asset-ripper-assets-${this.props.deploymentEnvironment}`,
+        });
         this.createLambda();
-        s3CreateSimpleBucket(this, this.getBucketName());
 
         Tags.of(this).add("ServiceName", "AssetRipper");
     }
@@ -35,7 +38,7 @@ export class AssetRipperStack extends Stack {
             memorySize: 3008,
             tracing: Tracing.ACTIVE,
             environment: {
-                BUCKET_NAME: this.getBucketName(),
+                BUCKET_NAME: this.bucket.bucket.bucketName,
                 COMMAND_BUS_ARN: this.props.commandBusStack.bus.eventBusArn,
                 EVENT_BUS_BUS_ARN: this.props.eventBusStack.bus.eventBusArn,
             },
@@ -51,9 +54,7 @@ export class AssetRipperStack extends Stack {
         const lambdaRole = lambda.role!;
 
         // Allow the lambda to write to S3.
-        lambdaRole.attachInlinePolicy(
-            s3WriteObjectsToWholeBucketPolicy(this, `asset-ripper-lambda-write-bucket`, this.getBucketName()),
-        );
+        lambdaRole.attachInlinePolicy(this.bucket.getWritePolicy());
 
         // Allow the lambda to push events to the buses.
         addPutEventsPolicies(this, "asset-ripper", lambdaRole, this.props.eventBusStack.bus, this.props.commandBusStack.bus);
@@ -63,9 +64,5 @@ export class AssetRipperStack extends Stack {
             "StartAssetRipByVideoId",
             "StartAssetRipByVideoUrl",
         ]);
-    }
-
-    getBucketName(): string {
-        return `tracking-poker-asset-ripper-assets-${this.props.deploymentEnvironment}`;
     }
 }

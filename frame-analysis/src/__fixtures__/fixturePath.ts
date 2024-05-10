@@ -2,7 +2,7 @@ import path from "path";
 import fs from "fs";
 import { StatType } from "../stats/types/StatType";
 import { Block } from "@aws-sdk/client-textract/dist-types/models/models_0";
-import { getBlocksFromFrame } from "../stats/getBlocksFromFrame";
+import { getBlocksFromFrame } from "../stats/textract/getBlocksFromFrame";
 
 export function fixturePath(asset: string | string[]): string {
     return path.join(__dirname, ...(Array.isArray(asset) ? asset : [asset]));
@@ -49,9 +49,7 @@ export function testFrames(): TestFrame[] {
             const ocrPath = fixturePath(["ocr", videoId, frameId + ".txt"]);
             const extractPath = fixturePath(["extract", videoId, frameId + ".json"]);
 
-            const fixtureType = fixtureFilenameTypeMap.find(
-                ([fileFragment, type]) => frameFilename.indexOf(fileFragment) !== -1,
-            );
+            const fixtureType = fixtureFilenameTypeMap.find(([fileFragment, type]) => frameFilename.indexOf(fileFragment) !== -1);
 
             frames.push({
                 videoId,

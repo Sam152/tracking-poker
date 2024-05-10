@@ -5,7 +5,6 @@ import { AttributeType, BillingMode, ProjectionType } from "aws-cdk-lib/aws-dyna
 import { Attribute } from "aws-cdk-lib/aws-dynamodb/lib/shared";
 import * as path from "path";
 import { EventBusAware } from "./EventBusStack";
-import { createProjectionHandlerLambda } from "./utility/projection";
 import * as ec2 from "aws-cdk-lib/aws-ec2";
 import {
     AmazonLinux2023ImageSsmParameter,
@@ -30,6 +29,7 @@ import { ManagedPolicy, Role, ServicePrincipal } from "aws-cdk-lib/aws-iam";
 import { DefaultStackProps } from "../bin/infra";
 import { Distribution, OriginProtocolPolicy, ViewerProtocolPolicy } from "aws-cdk-lib/aws-cloudfront";
 import { HttpOrigin } from "aws-cdk-lib/aws-cloudfront-origins";
+import { ProjectionHandler } from "./construct/ProjectionHandler";
 
 type InventoryStackProps = DefaultStackProps & EventBusAware;
 
@@ -178,14 +178,12 @@ export class InventoryStack extends Stack {
     }
 
     createProjectionHandlerLambda() {
-        createProjectionHandlerLambda(
-            this,
-            "inventory",
-            this.resolveService("src/projection/index.ts"),
-            this.resolveService("package-lock.json"),
-            this.resolveService(""),
-            this.props.eventBusStack.bus,
-        );
+        new ProjectionHandler(this, "inventory-projection-handler", {
+            projectRoot: this.resolveService(""),
+            entry: this.resolveService("src/projection/index.ts"),
+            depsLockFilePath: this.resolveService("package-lock.json"),
+            eventBus: this.props.eventBusStack.bus,
+        });
     }
 
     createDynamoTable() {

@@ -5,7 +5,6 @@ import { BillingMode } from "aws-cdk-lib/aws-dynamodb";
 import * as secrets from "aws-cdk-lib/aws-secretsmanager";
 import * as path from "path";
 import { EventBusAware } from "./EventBusStack";
-import { createProjectionHandlerLambda } from "./utility/projection";
 import { stringAttribute } from "./utility/dynamo";
 import * as lambdaNodejs from "aws-cdk-lib/aws-lambda-nodejs";
 import * as lambda from "aws-cdk-lib/aws-lambda";
@@ -19,6 +18,7 @@ import * as event from "aws-cdk-lib/aws-events";
 import * as eventTargets from "aws-cdk-lib/aws-events-targets";
 import { allowTraces } from "./utility/xray";
 import { DefaultStackProps } from "../bin/infra";
+import { ProjectionHandler } from "./construct/ProjectionHandler";
 
 type IngestStackProps = DefaultStackProps & EventBusAware & CommandBusAware;
 
@@ -40,14 +40,12 @@ export class IngestStack extends Stack {
     }
 
     createProjectionHandlerLambda() {
-        createProjectionHandlerLambda(
-            this,
-            "ingest",
-            this.resolveService("src/projection/handler.ts"),
-            this.resolveService("package-lock.json"),
-            this.resolveService(""),
-            this.props.eventBusStack.bus,
-        );
+        new ProjectionHandler(this, "ingest-log-handler", {
+            projectRoot: this.resolveService(""),
+            depsLockFilePath: this.resolveService("package-lock.json"),
+            entry: this.resolveService("src/projection/handler.ts"),
+            eventBus: this.props.eventBusStack.bus,
+        });
     }
 
     createScheduledIngestLambda() {

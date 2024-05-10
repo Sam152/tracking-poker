@@ -1,7 +1,6 @@
 import { Stack, Tags } from "aws-cdk-lib";
 import { Construct } from "constructs";
 import { Duration, Size } from "aws-cdk-lib/core";
-import { s3ReadObjectsFromWholeBucketPolicy } from "./utility/s3";
 import { CommandBusAware } from "./CommandBusStack";
 import { addPutEventsPolicies, invokeLambdaOnEventDetail } from "./utility/eventBridge";
 import * as lambdaNodejs from "aws-cdk-lib/aws-lambda-nodejs";
@@ -13,12 +12,14 @@ import { EventBusAware } from "./EventBusStack";
 import { bundlingVolumesWithCommon } from "./utility/bundling";
 import { allowTraces } from "./utility/xray";
 import { DefaultStackProps } from "../bin/infra";
+import { SimpleBucket } from "./construct/SimpleBucket";
 
 type FrameAnalysisStackProps = DefaultStackProps & CommandBusAware & EventBusAware;
 
 export class FrameAnalysisStack extends Stack {
     private props: FrameAnalysisStackProps;
     private readonly resolveService: (input: string) => string;
+    private bucket: SimpleBucket;
 
     constructor(scope: Construct, id: string, props: FrameAnalysisStackProps) {
         super(scope, id, props);
@@ -26,7 +27,11 @@ export class FrameAnalysisStack extends Stack {
 
         this.resolveService = (input: string) => path.resolve(__dirname, "../../frame-analysis", input);
 
+        this.bucket = new SimpleBucket(this, "frame-analysis-blocks-bucket", {
+            bucketName: `tracking-poker-frame-analysis-blocks-${this.props.deploymentEnvironment}`,
+        });
         this.createLambda();
+
         Tags.of(this).add("ServiceName", "FrameAnalysis");
     }
 
@@ -41,6 +46,7 @@ export class FrameAnalysisStack extends Stack {
             environment: {
                 COMMAND_BUS_ARN: this.props.commandBusStack.bus.eventBusArn,
                 EVENT_BUS_BUS_ARN: this.props.eventBusStack.bus.eventBusArn,
+                ANALYSIS_BLOCKS_BUCKET_NAME: this.bucket.bucket.bucketName,
             },
             entry: this.resolveService("src/index.ts"),
             depsLockFilePath: this.resolveService("package-lock.json"),
@@ -66,8 +72,23 @@ export class FrameAnalysisStack extends Stack {
 
         const lambdaRole = frameAnalysis.role!;
 
+        lambdaRole.attachInlinePolicy(this.bucket.getReadPolicy());
+        lambdaRole.attachInlinePolicy(this.bucket.getWritePolicy());
+
+        // Allowing reading frames from the bucket created by asset ripper.
         lambdaRole.attachInlinePolicy(
-            s3ReadObjectsFromWholeBucketPolicy(this, `frame-analysis-lambda-read-bucket`, this.getBucketName()),
+            new iam.Policy(this, "bucket-read-policy", {
+                policyName: `frame-analysis-asset-ripper-read-policy`,
+                document: new iam.PolicyDocument({
+                    statements: [
+                        new iam.PolicyStatement({
+                            effect: iam.Effect.ALLOW,
+                            actions: ["s3:GetObject"],
+                            resources: [`arn:aws:s3:::tracking-poker-asset-ripper-assets-${this.props.deploymentEnvironment}/*`],
+                        }),
+                    ],
+                }),
+            }),
         );
 
         lambdaRole.addManagedPolicy(iam.ManagedPolicy.fromAwsManagedPolicyName("AmazonTextractFullAccess"));
@@ -77,9 +98,5 @@ export class FrameAnalysisStack extends Stack {
         invokeLambdaOnEventDetail(this, `frame-analysis-command-rule`, this.props.commandBusStack.bus, frameAnalysis, [
             "StartAnalysisOfFrame",
         ]);
-    }
-
-    getBucketName(): string {
-        return `tracking-poker-asset-ripper-assets-${this.props.deploymentEnvironment}`;
     }
 }

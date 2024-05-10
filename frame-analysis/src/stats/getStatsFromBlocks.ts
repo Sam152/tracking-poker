@@ -2,14 +2,14 @@ import { Block } from "@aws-sdk/client-textract/dist-types/models/models_0";
 import { PlayerStatCollection, StatType } from "./types/StatType";
 import * as trp from "amazon-textract-response-parser";
 import { ApiBlock } from "amazon-textract-response-parser/dist/types/api-models/document";
-import { resolveTypeFromBlocks } from "./resolveTypeFromBlocks";
+import { resolveTypeFromBlocks } from "./block-parsing/resolveTypeFromBlocks";
 
 export async function getStatsFromBlocks(
     blocks: Block[],
     frame: Buffer,
 ): Promise<[type: StatType, analysis: PlayerStatCollection<number> | undefined]> {
-    const typeMetadata = resolveTypeFromBlocks(blocks);
-    if (!typeMetadata) {
+    const type = resolveTypeFromBlocks(blocks);
+    if (!type) {
         throw new Error("Unable to resolve type when getting analysis from blocks.");
     }
 
@@ -19,6 +19,6 @@ export async function getStatsFromBlocks(
         AnalyzeDocumentModelVersion: "",
     });
 
-    const stats = await typeMetadata.getStatsFromDocument(document, frame);
-    return [typeMetadata.type, stats];
+    const stats = await type.getStatsFromDocument(document, frame);
+    return [type.type, stats];
 }

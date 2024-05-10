@@ -1,7 +1,6 @@
 import { LineGeneric } from "amazon-textract-response-parser/dist/types/content";
 import { Line, Page, TextractDocument } from "amazon-textract-response-parser";
-
-import { PlayerStatCollection } from "./types/StatType";
+import { PlayerStatCollection } from "../types/StatType";
 
 /**
  * Find stats with lines organised as:
@@ -68,9 +67,7 @@ export function buildStatsFromLookBackAndAhead<T extends string | number>(
         // If the current line and the line before match the condition.
         if (matchCondition(line.text) && matchCondition(lines[index - 1].text)) {
             if (matchCondition(lines[index - 2].text)) {
-                throw new Error(
-                    "Something went wrong, there are three consecutive matching lines.",
-                );
+                throw new Error("Something went wrong, there are three consecutive matching lines.");
             }
 
             stats.push({

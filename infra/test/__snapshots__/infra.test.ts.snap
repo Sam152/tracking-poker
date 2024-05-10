@@ -1,0 +1,2938 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Stack 1`] = `
+{
+  "Parameters": {
+    "BootstrapVersion": {
+      "Default": "/cdk-bootstrap/hnb659fds/version",
+      "Description": "Version of the CDK Bootstrap resources in this environment, automatically retrieved from SSM Parameter Store. [cdk:skip]",
+      "Type": "AWS::SSM::Parameter::Value<String>",
+    },
+  },
+  "Resources": {
+    "CustomCDKBucketDeployment8693BB64968944B69AAFB0CC9EB8756C81C01536": {
+      "DependsOn": [
+        "CustomCDKBucketDeployment8693BB64968944B69AAFB0CC9EB8756CServiceRoleDefaultPolicy88902FDF",
+        "CustomCDKBucketDeployment8693BB64968944B69AAFB0CC9EB8756CServiceRole89A01265",
+      ],
+      "Properties": {
+        "Code": {
+          "S3Bucket": "cdk-hnb659fds-assets-851725576490-ap-southeast-2",
+          "S3Key": "2d56e153cac88d3e0c2f842e8e6f6783b8725bf91f95e0673b4725448a56e96d.zip",
+        },
+        "Environment": {
+          "Variables": {
+            "AWS_CA_BUNDLE": "/etc/pki/ca-trust/extracted/pem/tls-ca-bundle.pem",
+          },
+        },
+        "Handler": "index.handler",
+        "Layers": [
+          {
+            "Ref": "clientbucketdeploymentAwsCliLayerE8B5A2B1",
+          },
+        ],
+        "Role": {
+          "Fn::GetAtt": [
+            "CustomCDKBucketDeployment8693BB64968944B69AAFB0CC9EB8756CServiceRole89A01265",
+            "Arn",
+          ],
+        },
+        "Runtime": "python3.9",
+        "Tags": [
+          {
+            "Key": "ServiceName",
+            "Value": "Client",
+          },
+        ],
+        "Timeout": 900,
+      },
+      "Type": "AWS::Lambda::Function",
+    },
+    "CustomCDKBucketDeployment8693BB64968944B69AAFB0CC9EB8756CServiceRole89A01265": {
+      "Properties": {
+        "AssumeRolePolicyDocument": {
+          "Statement": [
+            {
+              "Action": "sts:AssumeRole",
+              "Effect": "Allow",
+              "Principal": {
+                "Service": "lambda.amazonaws.com",
+              },
+            },
+          ],
+          "Version": "2012-10-17",
+        },
+        "ManagedPolicyArns": [
+          {
+            "Fn::Join": [
+              "",
+              [
+                "arn:",
+                {
+                  "Ref": "AWS::Partition",
+                },
+                ":iam::aws:policy/service-role/AWSLambdaBasicExecutionRole",
+              ],
+            ],
+          },
+        ],
+        "Tags": [
+          {
+            "Key": "ServiceName",
+            "Value": "Client",
+          },
+        ],
+      },
+      "Type": "AWS::IAM::Role",
+    },
+    "CustomCDKBucketDeployment8693BB64968944B69AAFB0CC9EB8756CServiceRoleDefaultPolicy88902FDF": {
+      "Properties": {
+        "PolicyDocument": {
+          "Statement": [
+            {
+              "Action": [
+                "s3:GetObject*",
+                "s3:GetBucket*",
+                "s3:List*",
+              ],
+              "Effect": "Allow",
+              "Resource": [
+                {
+                  "Fn::Join": [
+                    "",
+                    [
+                      "arn:",
+                      {
+                        "Ref": "AWS::Partition",
+                      },
+                      ":s3:::cdk-hnb659fds-assets-851725576490-ap-southeast-2",
+                    ],
+                  ],
+                },
+                {
+                  "Fn::Join": [
+                    "",
+                    [
+                      "arn:",
+                      {
+                        "Ref": "AWS::Partition",
+                      },
+                      ":s3:::cdk-hnb659fds-assets-851725576490-ap-southeast-2/*",
+                    ],
+                  ],
+                },
+              ],
+            },
+            {
+              "Action": [
+                "s3:GetObject*",
+                "s3:GetBucket*",
+                "s3:List*",
+                "s3:DeleteObject*",
+                "s3:PutObject",
+                "s3:PutObjectLegalHold",
+                "s3:PutObjectRetention",
+                "s3:PutObjectTagging",
+                "s3:PutObjectVersionTagging",
+                "s3:Abort*",
+              ],
+              "Effect": "Allow",
+              "Resource": [
+                {
+                  "Fn::GetAtt": [
+                    "trackingpokerclientprod6D79DCFE",
+                    "Arn",
+                  ],
+                },
+                {
+                  "Fn::Join": [
+                    "",
+                    [
+                      {
+                        "Fn::GetAtt": [
+                          "trackingpokerclientprod6D79DCFE",
+                          "Arn",
+                        ],
+                      },
+                      "/*",
+                    ],
+                  ],
+                },
+              ],
+            },
+          ],
+          "Version": "2012-10-17",
+        },
+        "PolicyName": "CustomCDKBucketDeployment8693BB64968944B69AAFB0CC9EB8756CServiceRoleDefaultPolicy88902FDF",
+        "Roles": [
+          {
+            "Ref": "CustomCDKBucketDeployment8693BB64968944B69AAFB0CC9EB8756CServiceRole89A01265",
+          },
+        ],
+      },
+      "Type": "AWS::IAM::Policy",
+    },
+    "clientbucketdeploymentAwsCliLayerE8B5A2B1": {
+      "Properties": {
+        "Content": {
+          "S3Bucket": "cdk-hnb659fds-assets-851725576490-ap-southeast-2",
+          "S3Key": "3322b7049fb0ed2b7cbb644a2ada8d1116ff80c32dca89e6ada846b5de26f961.zip",
+        },
+        "Description": "/opt/awscli/aws",
+      },
+      "Type": "AWS::Lambda::LayerVersion",
+    },
+    "clientbucketdeploymentCustomResourceAC0650C4": {
+      "DeletionPolicy": "Delete",
+      "Properties": {
+        "DestinationBucketName": {
+          "Ref": "trackingpokerclientprod6D79DCFE",
+        },
+        "Extract": true,
+        "Prune": true,
+        "ServiceToken": {
+          "Fn::GetAtt": [
+            "CustomCDKBucketDeployment8693BB64968944B69AAFB0CC9EB8756C81C01536",
+            "Arn",
+          ],
+        },
+        "SourceBucketNames": [
+          "cdk-hnb659fds-assets-851725576490-ap-southeast-2",
+        ],
+        "SourceObjectKeys": [
+          "2f0ac95ed75987f16320fa5906b204f269faafb2ba0302589a903e0a8064da09.zip",
+        ],
+      },
+      "Type": "Custom::CDKBucketDeployment",
+      "UpdateReplacePolicy": "Delete",
+    },
+    "trackingpokerclientprod6D79DCFE": {
+      "DeletionPolicy": "Delete",
+      "Properties": {
+        "BucketEncryption": {
+          "ServerSideEncryptionConfiguration": [
+            {
+              "ServerSideEncryptionByDefault": {
+                "SSEAlgorithm": "AES256",
+              },
+            },
+          ],
+        },
+        "BucketName": "tracking-poker-client-prod",
+        "OwnershipControls": {
+          "Rules": [
+            {
+              "ObjectOwnership": "ObjectWriter",
+            },
+          ],
+        },
+        "PublicAccessBlockConfiguration": {
+          "BlockPublicAcls": false,
+          "BlockPublicPolicy": false,
+          "IgnorePublicAcls": false,
+          "RestrictPublicBuckets": false,
+        },
+        "Tags": [
+          {
+            "Key": "aws-cdk:cr-owned:ea3e704e",
+            "Value": "true",
+          },
+          {
+            "Key": "ServiceName",
+            "Value": "Client",
+          },
+        ],
+        "WebsiteConfiguration": {
+          "ErrorDocument": "404.html",
+          "IndexDocument": "index.html",
+        },
+      },
+      "Type": "AWS::S3::Bucket",
+      "UpdateReplacePolicy": "Delete",
+    },
+    "trackingpokerclientprodPolicy51AF3B8A": {
+      "Properties": {
+        "Bucket": {
+          "Ref": "trackingpokerclientprod6D79DCFE",
+        },
+        "PolicyDocument": {
+          "Statement": [
+            {
+              "Action": "s3:GetObject",
+              "Effect": "Allow",
+              "Principal": {
+                "AWS": "*",
+              },
+              "Resource": {
+                "Fn::Join": [
+                  "",
+                  [
+                    {
+                      "Fn::GetAtt": [
+                        "trackingpokerclientprod6D79DCFE",
+                        "Arn",
+                      ],
+                    },
+                    "/*",
+                  ],
+                ],
+              },
+            },
+          ],
+          "Version": "2012-10-17",
+        },
+      },
+      "Type": "AWS::S3::BucketPolicy",
+    },
+    "trackingpokerclientprodcachepolicyDAA81B04": {
+      "Properties": {
+        "CachePolicyConfig": {
+          "DefaultTTL": 60,
+          "MaxTTL": 60,
+          "MinTTL": 0,
+          "Name": "ClientStacktrackingpokerclientprodcachepolicy146F9B0B-ap-southeast-2",
+          "ParametersInCacheKeyAndForwardedToOrigin": {
+            "CookiesConfig": {
+              "CookieBehavior": "none",
+            },
+            "EnableAcceptEncodingBrotli": false,
+            "EnableAcceptEncodingGzip": false,
+            "HeadersConfig": {
+              "HeaderBehavior": "none",
+            },
+            "QueryStringsConfig": {
+              "QueryStringBehavior": "all",
+            },
+          },
+        },
+      },
+      "Type": "AWS::CloudFront::CachePolicy",
+    },
+    "trackingpokerclientproddistribution640C9437": {
+      "Properties": {
+        "DistributionConfig": {
+          "Aliases": [
+            "poker.sam152.com",
+          ],
+          "CustomErrorResponses": [
+            {
+              "ErrorCode": 404,
+              "ResponseCode": 200,
+              "ResponsePagePath": "/404.html",
+            },
+          ],
+          "DefaultCacheBehavior": {
+            "CachePolicyId": {
+              "Ref": "trackingpokerclientprodcachepolicyDAA81B04",
+            },
+            "Compress": true,
+            "ResponseHeadersPolicyId": {
+              "Ref": "trackingpokerclientprodresponseheaderpolicy93C62F28",
+            },
+            "TargetOriginId": "ClientStacktrackingpokerclientproddistributionOrigin1B7FE9BEB",
+            "ViewerProtocolPolicy": "redirect-to-https",
+          },
+          "Enabled": true,
+          "HttpVersion": "http2",
+          "IPV6Enabled": true,
+          "Origins": [
+            {
+              "CustomOriginConfig": {
+                "OriginProtocolPolicy": "http-only",
+                "OriginSSLProtocols": [
+                  "TLSv1.2",
+                ],
+              },
+              "DomainName": {
+                "Fn::Select": [
+                  2,
+                  {
+                    "Fn::Split": [
+                      "/",
+                      {
+                        "Fn::GetAtt": [
+                          "trackingpokerclientprod6D79DCFE",
+                          "WebsiteURL",
+                        ],
+                      },
+                    ],
+                  },
+                ],
+              },
+              "Id": "ClientStacktrackingpokerclientproddistributionOrigin1B7FE9BEB",
+            },
+          ],
+          "ViewerCertificate": {
+            "AcmCertificateArn": "arn:aws:acm:us-east-1:851725576490:certificate/8ae21894-da44-4ad1-bd76-c992ea81422c",
+            "MinimumProtocolVersion": "TLSv1.2_2021",
+            "SslSupportMethod": "sni-only",
+          },
+        },
+        "Tags": [
+          {
+            "Key": "ServiceName",
+            "Value": "Client",
+          },
+        ],
+      },
+      "Type": "AWS::CloudFront::Distribution",
+    },
+    "trackingpokerclientprodresponseheaderpolicy93C62F28": {
+      "Properties": {
+        "ResponseHeadersPolicyConfig": {
+          "CustomHeadersConfig": {
+            "Items": [
+              {
+                "Header": "Cache-Control",
+                "Override": false,
+                "Value": "max-age=60",
+              },
+            ],
+          },
+          "Name": "ClientStacktrackingpokerclientprodresponseheaderpolicyC387B356",
+        },
+      },
+      "Type": "AWS::CloudFront::ResponseHeadersPolicy",
+    },
+  },
+  "Rules": {
+    "CheckBootstrapVersion": {
+      "Assertions": [
+        {
+          "Assert": {
+            "Fn::Not": [
+              {
+                "Fn::Contains": [
+                  [
+                    "1",
+                    "2",
+                    "3",
+                    "4",
+                    "5",
+                  ],
+                  {
+                    "Ref": "BootstrapVersion",
+                  },
+                ],
+              },
+            ],
+          },
+          "AssertDescription": "CDK bootstrap stack version 6 required. Please run 'cdk bootstrap' with a recent version of the CDK CLI.",
+        },
+      ],
+    },
+  },
+}
+`;
+
+exports[`Stack 2`] = `
+{
+  "Outputs": {
+    "ExportsOutputFnGetAtttrackingpokercommandbusC06804CCArn4FB9E1AC": {
+      "Export": {
+        "Name": "CommandBusStack:ExportsOutputFnGetAtttrackingpokercommandbusC06804CCArn4FB9E1AC",
+      },
+      "Value": {
+        "Fn::GetAtt": [
+          "trackingpokercommandbusC06804CC",
+          "Arn",
+        ],
+      },
+    },
+    "ExportsOutputReftrackingpokercommandbusC06804CCA8340A95": {
+      "Export": {
+        "Name": "CommandBusStack:ExportsOutputReftrackingpokercommandbusC06804CCA8340A95",
+      },
+      "Value": {
+        "Ref": "trackingpokercommandbusC06804CC",
+      },
+    },
+  },
+  "Parameters": {
+    "BootstrapVersion": {
+      "Default": "/cdk-bootstrap/hnb659fds/version",
+      "Description": "Version of the CDK Bootstrap resources in this environment, automatically retrieved from SSM Parameter Store. [cdk:skip]",
+      "Type": "AWS::SSM::Parameter::Value<String>",
+    },
+  },
+  "Resources": {
+    "AWS679f53fac002430cb0da5b7982bd22872D164C4C": {
+      "DependsOn": [
+        "AWS679f53fac002430cb0da5b7982bd2287ServiceRoleC1EA0FF2",
+      ],
+      "Properties": {
+        "Code": {
+          "S3Bucket": "cdk-hnb659fds-assets-851725576490-ap-southeast-2",
+          "S3Key": "cb92a348b5b60bcbbe3888108f15e75877121eb402b4a74526927300fcc54975.zip",
+        },
+        "Handler": "index.handler",
+        "Role": {
+          "Fn::GetAtt": [
+            "AWS679f53fac002430cb0da5b7982bd2287ServiceRoleC1EA0FF2",
+            "Arn",
+          ],
+        },
+        "Runtime": "nodejs18.x",
+        "Tags": [
+          {
+            "Key": "ServiceName",
+            "Value": "CommandBus",
+          },
+        ],
+        "Timeout": 120,
+      },
+      "Type": "AWS::Lambda::Function",
+    },
+    "AWS679f53fac002430cb0da5b7982bd2287ServiceRoleC1EA0FF2": {
+      "Properties": {
+        "AssumeRolePolicyDocument": {
+          "Statement": [
+            {
+              "Action": "sts:AssumeRole",
+              "Effect": "Allow",
+              "Principal": {
+                "Service": "lambda.amazonaws.com",
+              },
+            },
+          ],
+          "Version": "2012-10-17",
+        },
+        "ManagedPolicyArns": [
+          {
+            "Fn::Join": [
+              "",
+              [
+                "arn:",
+                {
+                  "Ref": "AWS::Partition",
+                },
+                ":iam::aws:policy/service-role/AWSLambdaBasicExecutionRole",
+              ],
+            ],
+          },
+        ],
+        "Tags": [
+          {
+            "Key": "ServiceName",
+            "Value": "CommandBus",
+          },
+        ],
+      },
+      "Type": "AWS::IAM::Role",
+    },
+    "EventsLogGroupPolicyCommandBusStacktrackingpokercommandbuslogsruleC5DABD94CustomResourcePolicyDADAD9F1": {
+      "Properties": {
+        "PolicyDocument": {
+          "Statement": [
+            {
+              "Action": "logs:PutResourcePolicy",
+              "Effect": "Allow",
+              "Resource": "*",
+            },
+            {
+              "Action": "logs:DeleteResourcePolicy",
+              "Effect": "Allow",
+              "Resource": "*",
+            },
+          ],
+          "Version": "2012-10-17",
+        },
+        "PolicyName": "EventsLogGroupPolicyCommandBusStacktrackingpokercommandbuslogsruleC5DABD94CustomResourcePolicyDADAD9F1",
+        "Roles": [
+          {
+            "Ref": "AWS679f53fac002430cb0da5b7982bd2287ServiceRoleC1EA0FF2",
+          },
+        ],
+      },
+      "Type": "AWS::IAM::Policy",
+    },
+    "EventsLogGroupPolicyCommandBusStacktrackingpokercommandbuslogsruleC5DABD94D6BB5223": {
+      "DeletionPolicy": "Delete",
+      "DependsOn": [
+        "EventsLogGroupPolicyCommandBusStacktrackingpokercommandbuslogsruleC5DABD94CustomResourcePolicyDADAD9F1",
+      ],
+      "Properties": {
+        "Create": {
+          "Fn::Join": [
+            "",
+            [
+              "{"service":"CloudWatchLogs","action":"putResourcePolicy","parameters":{"policyName":"CommandBusStackEventsLogGroupPolicyCommandBusStacktrackingpokercommandbuslogsruleC5DABD94FA1A84F0","policyDocument":"{\\"Statement\\":[{\\"Action\\":[\\"logs:PutLogEvents\\",\\"logs:CreateLogStream\\"],\\"Effect\\":\\"Allow\\",\\"Principal\\":{\\"Service\\":\\"events.amazonaws.com\\"},\\"Resource\\":\\"",
+              {
+                "Fn::GetAtt": [
+                  "trackingpokercommandbuslogs2C65D190",
+                  "Arn",
+                ],
+              },
+              "\\"}],\\"Version\\":\\"2012-10-17\\"}"},"physicalResourceId":{"id":"EventsLogGroupPolicyCommandBusStacktrackingpokercommandbuslogsruleC5DABD94"}}",
+            ],
+          ],
+        },
+        "Delete": "{"service":"CloudWatchLogs","action":"deleteResourcePolicy","parameters":{"policyName":"CommandBusStackEventsLogGroupPolicyCommandBusStacktrackingpokercommandbuslogsruleC5DABD94FA1A84F0"},"ignoreErrorCodesMatching":"ResourceNotFoundException"}",
+        "InstallLatestAwsSdk": true,
+        "ServiceToken": {
+          "Fn::GetAtt": [
+            "AWS679f53fac002430cb0da5b7982bd22872D164C4C",
+            "Arn",
+          ],
+        },
+        "Update": {
+          "Fn::Join": [
+            "",
+            [
+              "{"service":"CloudWatchLogs","action":"putResourcePolicy","parameters":{"policyName":"CommandBusStackEventsLogGroupPolicyCommandBusStacktrackingpokercommandbuslogsruleC5DABD94FA1A84F0","policyDocument":"{\\"Statement\\":[{\\"Action\\":[\\"logs:PutLogEvents\\",\\"logs:CreateLogStream\\"],\\"Effect\\":\\"Allow\\",\\"Principal\\":{\\"Service\\":\\"events.amazonaws.com\\"},\\"Resource\\":\\"",
+              {
+                "Fn::GetAtt": [
+                  "trackingpokercommandbuslogs2C65D190",
+                  "Arn",
+                ],
+              },
+              "\\"}],\\"Version\\":\\"2012-10-17\\"}"},"physicalResourceId":{"id":"EventsLogGroupPolicyCommandBusStacktrackingpokercommandbuslogsruleC5DABD94"}}",
+            ],
+          ],
+        },
+      },
+      "Type": "Custom::CloudwatchLogResourcePolicy",
+      "UpdateReplacePolicy": "Delete",
+    },
+    "trackingpokercommandbusC06804CC": {
+      "Properties": {
+        "Name": "tracking-poker-command-bus",
+        "Tags": [
+          {
+            "Key": "ServiceName",
+            "Value": "CommandBus",
+          },
+        ],
+      },
+      "Type": "AWS::Events::EventBus",
+    },
+    "trackingpokercommandbuslogs2C65D190": {
+      "DeletionPolicy": "Retain",
+      "Properties": {
+        "LogGroupName": "tracking-poker-command-bus-logs",
+        "RetentionInDays": 731,
+        "Tags": [
+          {
+            "Key": "ServiceName",
+            "Value": "CommandBus",
+          },
+        ],
+      },
+      "Type": "AWS::Logs::LogGroup",
+      "UpdateReplacePolicy": "Retain",
+    },
+    "trackingpokercommandbuslogsrule08110267": {
+      "Properties": {
+        "EventBusName": {
+          "Ref": "trackingpokercommandbusC06804CC",
+        },
+        "EventPattern": {
+          "source": [
+            {
+              "prefix": "",
+            },
+          ],
+        },
+        "Name": "tracking-poker-command-bus-logs-rule",
+        "State": "ENABLED",
+        "Targets": [
+          {
+            "Arn": {
+              "Fn::Join": [
+                "",
+                [
+                  "arn:",
+                  {
+                    "Ref": "AWS::Partition",
+                  },
+                  ":logs:ap-southeast-2:851725576490:log-group:",
+                  {
+                    "Ref": "trackingpokercommandbuslogs2C65D190",
+                  },
+                ],
+              ],
+            },
+            "Id": "Target0",
+          },
+        ],
+      },
+      "Type": "AWS::Events::Rule",
+    },
+  },
+  "Rules": {
+    "CheckBootstrapVersion": {
+      "Assertions": [
+        {
+          "Assert": {
+            "Fn::Not": [
+              {
+                "Fn::Contains": [
+                  [
+                    "1",
+                    "2",
+                    "3",
+                    "4",
+                    "5",
+                  ],
+                  {
+                    "Ref": "BootstrapVersion",
+                  },
+                ],
+              },
+            ],
+          },
+          "AssertDescription": "CDK bootstrap stack version 6 required. Please run 'cdk bootstrap' with a recent version of the CDK CLI.",
+        },
+      ],
+    },
+  },
+}
+`;
+
+exports[`Stack 3`] = `
+{
+  "Outputs": {
+    "ExportsOutputFnGetAtttrackingpokereventbus48F73914Arn12BC4594": {
+      "Export": {
+        "Name": "EventBusStack:ExportsOutputFnGetAtttrackingpokereventbus48F73914Arn12BC4594",
+      },
+      "Value": {
+        "Fn::GetAtt": [
+          "trackingpokereventbus48F73914",
+          "Arn",
+        ],
+      },
+    },
+    "ExportsOutputReftrackingpokereventbus48F739144449EC9A": {
+      "Export": {
+        "Name": "EventBusStack:ExportsOutputReftrackingpokereventbus48F739144449EC9A",
+      },
+      "Value": {
+        "Ref": "trackingpokereventbus48F73914",
+      },
+    },
+  },
+  "Parameters": {
+    "BootstrapVersion": {
+      "Default": "/cdk-bootstrap/hnb659fds/version",
+      "Description": "Version of the CDK Bootstrap resources in this environment, automatically retrieved from SSM Parameter Store. [cdk:skip]",
+      "Type": "AWS::SSM::Parameter::Value<String>",
+    },
+  },
+  "Resources": {
+    "AWS679f53fac002430cb0da5b7982bd22872D164C4C": {
+      "DependsOn": [
+        "AWS679f53fac002430cb0da5b7982bd2287ServiceRoleC1EA0FF2",
+      ],
+      "Properties": {
+        "Code": {
+          "S3Bucket": "cdk-hnb659fds-assets-851725576490-ap-southeast-2",
+          "S3Key": "cb92a348b5b60bcbbe3888108f15e75877121eb402b4a74526927300fcc54975.zip",
+        },
+        "Handler": "index.handler",
+        "Role": {
+          "Fn::GetAtt": [
+            "AWS679f53fac002430cb0da5b7982bd2287ServiceRoleC1EA0FF2",
+            "Arn",
+          ],
+        },
+        "Runtime": "nodejs18.x",
+        "Tags": [
+          {
+            "Key": "ServiceName",
+            "Value": "EventBus",
+          },
+        ],
+        "Timeout": 120,
+      },
+      "Type": "AWS::Lambda::Function",
+    },
+    "AWS679f53fac002430cb0da5b7982bd2287ServiceRoleC1EA0FF2": {
+      "Properties": {
+        "AssumeRolePolicyDocument": {
+          "Statement": [
+            {
+              "Action": "sts:AssumeRole",
+              "Effect": "Allow",
+              "Principal": {
+                "Service": "lambda.amazonaws.com",
+              },
+            },
+          ],
+          "Version": "2012-10-17",
+        },
+        "ManagedPolicyArns": [
+          {
+            "Fn::Join": [
+              "",
+              [
+                "arn:",
+                {
+                  "Ref": "AWS::Partition",
+                },
+                ":iam::aws:policy/service-role/AWSLambdaBasicExecutionRole",
+              ],
+            ],
+          },
+        ],
+        "Tags": [
+          {
+            "Key": "ServiceName",
+            "Value": "EventBus",
+          },
+        ],
+      },
+      "Type": "AWS::IAM::Role",
+    },
+    "EventsLogGroupPolicyEventBusStacktrackingpokereventbuslogsrule1465BDC795672FF6": {
+      "DeletionPolicy": "Delete",
+      "DependsOn": [
+        "EventsLogGroupPolicyEventBusStacktrackingpokereventbuslogsrule1465BDC7CustomResourcePolicy26169DFE",
+      ],
+      "Properties": {
+        "Create": {
+          "Fn::Join": [
+            "",
+            [
+              "{"service":"CloudWatchLogs","action":"putResourcePolicy","parameters":{"policyName":"EventBusStackEventsLogGroupPolicyEventBusStacktrackingpokereventbuslogsrule1465BDC76160EDB2","policyDocument":"{\\"Statement\\":[{\\"Action\\":[\\"logs:PutLogEvents\\",\\"logs:CreateLogStream\\"],\\"Effect\\":\\"Allow\\",\\"Principal\\":{\\"Service\\":\\"events.amazonaws.com\\"},\\"Resource\\":\\"",
+              {
+                "Fn::GetAtt": [
+                  "trackingpokereventbuslogs6CBA2270",
+                  "Arn",
+                ],
+              },
+              "\\"}],\\"Version\\":\\"2012-10-17\\"}"},"physicalResourceId":{"id":"EventsLogGroupPolicyEventBusStacktrackingpokereventbuslogsrule1465BDC7"}}",
+            ],
+          ],
+        },
+        "Delete": "{"service":"CloudWatchLogs","action":"deleteResourcePolicy","parameters":{"policyName":"EventBusStackEventsLogGroupPolicyEventBusStacktrackingpokereventbuslogsrule1465BDC76160EDB2"},"ignoreErrorCodesMatching":"ResourceNotFoundException"}",
+        "InstallLatestAwsSdk": true,
+        "ServiceToken": {
+          "Fn::GetAtt": [
+            "AWS679f53fac002430cb0da5b7982bd22872D164C4C",
+            "Arn",
+          ],
+        },
+        "Update": {
+          "Fn::Join": [
+            "",
+            [
+              "{"service":"CloudWatchLogs","action":"putResourcePolicy","parameters":{"policyName":"EventBusStackEventsLogGroupPolicyEventBusStacktrackingpokereventbuslogsrule1465BDC76160EDB2","policyDocument":"{\\"Statement\\":[{\\"Action\\":[\\"logs:PutLogEvents\\",\\"logs:CreateLogStream\\"],\\"Effect\\":\\"Allow\\",\\"Principal\\":{\\"Service\\":\\"events.amazonaws.com\\"},\\"Resource\\":\\"",
+              {
+                "Fn::GetAtt": [
+                  "trackingpokereventbuslogs6CBA2270",
+                  "Arn",
+                ],
+              },
+              "\\"}],\\"Version\\":\\"2012-10-17\\"}"},"physicalResourceId":{"id":"EventsLogGroupPolicyEventBusStacktrackingpokereventbuslogsrule1465BDC7"}}",
+            ],
+          ],
+        },
+      },
+      "Type": "Custom::CloudwatchLogResourcePolicy",
+      "UpdateReplacePolicy": "Delete",
+    },
+    "EventsLogGroupPolicyEventBusStacktrackingpokereventbuslogsrule1465BDC7CustomResourcePolicy26169DFE": {
+      "Properties": {
+        "PolicyDocument": {
+          "Statement": [
+            {
+              "Action": "logs:PutResourcePolicy",
+              "Effect": "Allow",
+              "Resource": "*",
+            },
+            {
+              "Action": "logs:DeleteResourcePolicy",
+              "Effect": "Allow",
+              "Resource": "*",
+            },
+          ],
+          "Version": "2012-10-17",
+        },
+        "PolicyName": "EventsLogGroupPolicyEventBusStacktrackingpokereventbuslogsrule1465BDC7CustomResourcePolicy26169DFE",
+        "Roles": [
+          {
+            "Ref": "AWS679f53fac002430cb0da5b7982bd2287ServiceRoleC1EA0FF2",
+          },
+        ],
+      },
+      "Type": "AWS::IAM::Policy",
+    },
+    "trackingpokereventbus48F73914": {
+      "Properties": {
+        "Name": "tracking-poker-event-bus",
+        "Tags": [
+          {
+            "Key": "ServiceName",
+            "Value": "EventBus",
+          },
+        ],
+      },
+      "Type": "AWS::Events::EventBus",
+    },
+    "trackingpokereventbusarchiveArchive7162FBA6": {
+      "Properties": {
+        "ArchiveName": "tracking-poker-event-bus-archive",
+        "EventPattern": {
+          "source": [
+            {
+              "prefix": "",
+            },
+          ],
+        },
+        "RetentionDays": 0,
+        "SourceArn": {
+          "Fn::GetAtt": [
+            "trackingpokereventbus48F73914",
+            "Arn",
+          ],
+        },
+      },
+      "Type": "AWS::Events::Archive",
+    },
+    "trackingpokereventbuslogs6CBA2270": {
+      "DeletionPolicy": "Retain",
+      "Properties": {
+        "LogGroupName": "tracking-poker-event-bus-logs",
+        "RetentionInDays": 731,
+        "Tags": [
+          {
+            "Key": "ServiceName",
+            "Value": "EventBus",
+          },
+        ],
+      },
+      "Type": "AWS::Logs::LogGroup",
+      "UpdateReplacePolicy": "Retain",
+    },
+    "trackingpokereventbuslogsruleF4B1BFFE": {
+      "Properties": {
+        "EventBusName": {
+          "Ref": "trackingpokereventbus48F73914",
+        },
+        "EventPattern": {
+          "source": [
+            {
+              "prefix": "",
+            },
+          ],
+        },
+        "Name": "tracking-poker-event-bus-logs-rule",
+        "State": "ENABLED",
+        "Targets": [
+          {
+            "Arn": {
+              "Fn::Join": [
+                "",
+                [
+                  "arn:",
+                  {
+                    "Ref": "AWS::Partition",
+                  },
+                  ":logs:ap-southeast-2:851725576490:log-group:",
+                  {
+                    "Ref": "trackingpokereventbuslogs6CBA2270",
+                  },
+                ],
+              ],
+            },
+            "Id": "Target0",
+          },
+        ],
+      },
+      "Type": "AWS::Events::Rule",
+    },
+  },
+  "Rules": {
+    "CheckBootstrapVersion": {
+      "Assertions": [
+        {
+          "Assert": {
+            "Fn::Not": [
+              {
+                "Fn::Contains": [
+                  [
+                    "1",
+                    "2",
+                    "3",
+                    "4",
+                    "5",
+                  ],
+                  {
+                    "Ref": "BootstrapVersion",
+                  },
+                ],
+              },
+            ],
+          },
+          "AssertDescription": "CDK bootstrap stack version 6 required. Please run 'cdk bootstrap' with a recent version of the CDK CLI.",
+        },
+      ],
+    },
+  },
+}
+`;
+
+exports[`Stack 4`] = `
+{
+  "Parameters": {
+    "BootstrapVersion": {
+      "Default": "/cdk-bootstrap/hnb659fds/version",
+      "Description": "Version of the CDK Bootstrap resources in this environment, automatically retrieved from SSM Parameter Store. [cdk:skip]",
+      "Type": "AWS::SSM::Parameter::Value<String>",
+    },
+  },
+  "Resources": {
+    "assetrippercommandrule98DA7664": {
+      "Properties": {
+        "EventBusName": {
+          "Fn::ImportValue": "CommandBusStack:ExportsOutputReftrackingpokercommandbusC06804CCA8340A95",
+        },
+        "EventPattern": {
+          "detail-type": [
+            "StartAssetRipByVideoId",
+            "StartAssetRipByVideoUrl",
+          ],
+        },
+        "Name": "asset-ripper-command-rule",
+        "State": "ENABLED",
+        "Targets": [
+          {
+            "Arn": {
+              "Fn::GetAtt": [
+                "assetripperlambda2C29A89F",
+                "Arn",
+              ],
+            },
+            "Id": "Target0",
+          },
+        ],
+      },
+      "Type": "AWS::Events::Rule",
+    },
+    "assetrippercommandruleAllowEventRuleAssetRipperStackassetripperlambdaB10A98A0152C3F6D": {
+      "Properties": {
+        "Action": "lambda:InvokeFunction",
+        "FunctionName": {
+          "Fn::GetAtt": [
+            "assetripperlambda2C29A89F",
+            "Arn",
+          ],
+        },
+        "Principal": "events.amazonaws.com",
+        "SourceArn": {
+          "Fn::GetAtt": [
+            "assetrippercommandrule98DA7664",
+            "Arn",
+          ],
+        },
+      },
+      "Type": "AWS::Lambda::Permission",
+    },
+    "assetripperlambda2C29A89F": {
+      "DependsOn": [
+        "assetripperlambdaServiceRoleDefaultPolicy7307F79D",
+        "assetripperlambdaServiceRole55D31C95",
+      ],
+      "Properties": {
+        "Code": {
+          "ImageUri": {
+            "Fn::Sub": "851725576490.dkr.ecr.ap-southeast-2.\${AWS::URLSuffix}/cdk-hnb659fds-container-assets-851725576490-ap-southeast-2:0f5ab368c278666d215fc5fbdde219e26be2f8b4b1fab5f7c049f7c115c215f4",
+          },
+        },
+        "Environment": {
+          "Variables": {
+            "BUCKET_NAME": "tracking-poker-asset-ripper-assets-prod",
+            "COMMAND_BUS_ARN": {
+              "Fn::ImportValue": "CommandBusStack:ExportsOutputFnGetAtttrackingpokercommandbusC06804CCArn4FB9E1AC",
+            },
+            "EVENT_BUS_BUS_ARN": {
+              "Fn::ImportValue": "EventBusStack:ExportsOutputFnGetAtttrackingpokereventbus48F73914Arn12BC4594",
+            },
+          },
+        },
+        "EphemeralStorage": {
+          "Size": 10240,
+        },
+        "ImageConfig": {
+          "Command": [
+            "index.handler",
+          ],
+          "EntryPoint": [
+            "/lambda-entrypoint.sh",
+          ],
+        },
+        "MemorySize": 3008,
+        "PackageType": "Image",
+        "Role": {
+          "Fn::GetAtt": [
+            "assetripperlambdaServiceRole55D31C95",
+            "Arn",
+          ],
+        },
+        "Tags": [
+          {
+            "Key": "ServiceName",
+            "Value": "AssetRipper",
+          },
+        ],
+        "Timeout": 900,
+        "TracingConfig": {
+          "Mode": "Active",
+        },
+      },
+      "Type": "AWS::Lambda::Function",
+    },
+    "assetripperlambdaServiceRole55D31C95": {
+      "Properties": {
+        "AssumeRolePolicyDocument": {
+          "Statement": [
+            {
+              "Action": "sts:AssumeRole",
+              "Effect": "Allow",
+              "Principal": {
+                "Service": "lambda.amazonaws.com",
+              },
+            },
+          ],
+          "Version": "2012-10-17",
+        },
+        "ManagedPolicyArns": [
+          {
+            "Fn::Join": [
+              "",
+              [
+                "arn:",
+                {
+                  "Ref": "AWS::Partition",
+                },
+                ":iam::aws:policy/service-role/AWSLambdaBasicExecutionRole",
+              ],
+            ],
+          },
+          {
+            "Fn::Join": [
+              "",
+              [
+                "arn:",
+                {
+                  "Ref": "AWS::Partition",
+                },
+                ":iam::aws:policy/AWSXRayDaemonWriteAccess",
+              ],
+            ],
+          },
+        ],
+        "Tags": [
+          {
+            "Key": "ServiceName",
+            "Value": "AssetRipper",
+          },
+        ],
+      },
+      "Type": "AWS::IAM::Role",
+    },
+    "assetripperlambdaServiceRoleDefaultPolicy7307F79D": {
+      "Properties": {
+        "PolicyDocument": {
+          "Statement": [
+            {
+              "Action": [
+                "xray:PutTraceSegments",
+                "xray:PutTelemetryRecords",
+              ],
+              "Effect": "Allow",
+              "Resource": "*",
+            },
+          ],
+          "Version": "2012-10-17",
+        },
+        "PolicyName": "assetripperlambdaServiceRoleDefaultPolicy7307F79D",
+        "Roles": [
+          {
+            "Ref": "assetripperlambdaServiceRole55D31C95",
+          },
+        ],
+      },
+      "Type": "AWS::IAM::Policy",
+    },
+    "assetripperputcommandbuspolicy70B06561": {
+      "Properties": {
+        "PolicyDocument": {
+          "Statement": [
+            {
+              "Action": "events:PutEvents",
+              "Effect": "Allow",
+              "Resource": {
+                "Fn::ImportValue": "CommandBusStack:ExportsOutputFnGetAtttrackingpokercommandbusC06804CCArn4FB9E1AC",
+              },
+            },
+          ],
+          "Version": "2012-10-17",
+        },
+        "PolicyName": "asset-ripper-put-command-bus-policy",
+        "Roles": [
+          {
+            "Ref": "assetripperlambdaServiceRole55D31C95",
+          },
+        ],
+      },
+      "Type": "AWS::IAM::Policy",
+    },
+    "assetripperputeventbuspolicy9D2641AC": {
+      "Properties": {
+        "PolicyDocument": {
+          "Statement": [
+            {
+              "Action": "events:PutEvents",
+              "Effect": "Allow",
+              "Resource": {
+                "Fn::ImportValue": "EventBusStack:ExportsOutputFnGetAtttrackingpokereventbus48F73914Arn12BC4594",
+              },
+            },
+          ],
+          "Version": "2012-10-17",
+        },
+        "PolicyName": "asset-ripper-put-event-bus-policy",
+        "Roles": [
+          {
+            "Ref": "assetripperlambdaServiceRole55D31C95",
+          },
+        ],
+      },
+      "Type": "AWS::IAM::Policy",
+    },
+    "trackingpokerassetripperassetsprodbucket2C38D6AA": {
+      "DeletionPolicy": "Delete",
+      "Properties": {
+        "BucketEncryption": {
+          "ServerSideEncryptionConfiguration": [
+            {
+              "ServerSideEncryptionByDefault": {
+                "SSEAlgorithm": "aws:kms",
+              },
+            },
+          ],
+        },
+        "BucketName": "tracking-poker-asset-ripper-assets-prod",
+        "PublicAccessBlockConfiguration": {
+          "BlockPublicAcls": true,
+          "BlockPublicPolicy": true,
+          "IgnorePublicAcls": true,
+          "RestrictPublicBuckets": true,
+        },
+        "Tags": [
+          {
+            "Key": "ServiceName",
+            "Value": "AssetRipper",
+          },
+        ],
+      },
+      "Type": "AWS::S3::Bucket",
+      "UpdateReplacePolicy": "Delete",
+    },
+    "trackingpokerassetripperassetsprodbucketwritepolicy533AAADC": {
+      "Properties": {
+        "PolicyDocument": {
+          "Statement": [
+            {
+              "Action": "s3:PutObject",
+              "Effect": "Allow",
+              "Resource": {
+                "Fn::Join": [
+                  "",
+                  [
+                    "arn:aws:s3:::",
+                    {
+                      "Ref": "trackingpokerassetripperassetsprodbucket2C38D6AA",
+                    },
+                    "/*",
+                  ],
+                ],
+              },
+            },
+          ],
+          "Version": "2012-10-17",
+        },
+        "PolicyName": {
+          "Fn::Join": [
+            "",
+            [
+              {
+                "Ref": "trackingpokerassetripperassetsprodbucket2C38D6AA",
+              },
+              "-write-policy",
+            ],
+          ],
+        },
+        "Roles": [
+          {
+            "Ref": "assetripperlambdaServiceRole55D31C95",
+          },
+        ],
+      },
+      "Type": "AWS::IAM::Policy",
+    },
+  },
+  "Rules": {
+    "CheckBootstrapVersion": {
+      "Assertions": [
+        {
+          "Assert": {
+            "Fn::Not": [
+              {
+                "Fn::Contains": [
+                  [
+                    "1",
+                    "2",
+                    "3",
+                    "4",
+                    "5",
+                  ],
+                  {
+                    "Ref": "BootstrapVersion",
+                  },
+                ],
+              },
+            ],
+          },
+          "AssertDescription": "CDK bootstrap stack version 6 required. Please run 'cdk bootstrap' with a recent version of the CDK CLI.",
+        },
+      ],
+    },
+  },
+}
+`;
+
+exports[`Stack 5`] = `
+{
+  "Parameters": {
+    "BootstrapVersion": {
+      "Default": "/cdk-bootstrap/hnb659fds/version",
+      "Description": "Version of the CDK Bootstrap resources in this environment, automatically retrieved from SSM Parameter Store. [cdk:skip]",
+      "Type": "AWS::SSM::Parameter::Value<String>",
+    },
+  },
+  "Resources": {
+    "bucketreadpolicy81ACB938": {
+      "Properties": {
+        "PolicyDocument": {
+          "Statement": [
+            {
+              "Action": "s3:GetObject",
+              "Effect": "Allow",
+              "Resource": "arn:aws:s3:::tracking-poker-asset-ripper-assets-prod/*",
+            },
+          ],
+          "Version": "2012-10-17",
+        },
+        "PolicyName": "frame-analysis-asset-ripper-read-policy",
+        "Roles": [
+          {
+            "Ref": "frameanalysislambdaServiceRole07302769",
+          },
+        ],
+      },
+      "Type": "AWS::IAM::Policy",
+    },
+    "frameanalysisblocksbucket95608B60": {
+      "DeletionPolicy": "Delete",
+      "Properties": {
+        "BucketEncryption": {
+          "ServerSideEncryptionConfiguration": [
+            {
+              "ServerSideEncryptionByDefault": {
+                "SSEAlgorithm": "aws:kms",
+              },
+            },
+          ],
+        },
+        "BucketName": "tracking-poker-frame-analysis-blocks-prod",
+        "PublicAccessBlockConfiguration": {
+          "BlockPublicAcls": true,
+          "BlockPublicPolicy": true,
+          "IgnorePublicAcls": true,
+          "RestrictPublicBuckets": true,
+        },
+        "Tags": [
+          {
+            "Key": "ServiceName",
+            "Value": "FrameAnalysis",
+          },
+        ],
+      },
+      "Type": "AWS::S3::Bucket",
+      "UpdateReplacePolicy": "Delete",
+    },
+    "frameanalysisblocksbucketbucketreadpolicy3892A6D3": {
+      "Properties": {
+        "PolicyDocument": {
+          "Statement": [
+            {
+              "Action": "s3:GetObject",
+              "Effect": "Allow",
+              "Resource": {
+                "Fn::Join": [
+                  "",
+                  [
+                    "arn:aws:s3:::",
+                    {
+                      "Ref": "frameanalysisblocksbucket95608B60",
+                    },
+                    "/*",
+                  ],
+                ],
+              },
+            },
+          ],
+          "Version": "2012-10-17",
+        },
+        "PolicyName": {
+          "Fn::Join": [
+            "",
+            [
+              {
+                "Ref": "frameanalysisblocksbucket95608B60",
+              },
+              "-read-policy",
+            ],
+          ],
+        },
+        "Roles": [
+          {
+            "Ref": "frameanalysislambdaServiceRole07302769",
+          },
+        ],
+      },
+      "Type": "AWS::IAM::Policy",
+    },
+    "frameanalysisblocksbucketbucketwritepolicy7E23C976": {
+      "Properties": {
+        "PolicyDocument": {
+          "Statement": [
+            {
+              "Action": "s3:PutObject",
+              "Effect": "Allow",
+              "Resource": {
+                "Fn::Join": [
+                  "",
+                  [
+                    "arn:aws:s3:::",
+                    {
+                      "Ref": "frameanalysisblocksbucket95608B60",
+                    },
+                    "/*",
+                  ],
+                ],
+              },
+            },
+          ],
+          "Version": "2012-10-17",
+        },
+        "PolicyName": {
+          "Fn::Join": [
+            "",
+            [
+              {
+                "Ref": "frameanalysisblocksbucket95608B60",
+              },
+              "-write-policy",
+            ],
+          ],
+        },
+        "Roles": [
+          {
+            "Ref": "frameanalysislambdaServiceRole07302769",
+          },
+        ],
+      },
+      "Type": "AWS::IAM::Policy",
+    },
+    "frameanalysiscommandruleAllowEventRuleFrameAnalysisStackframeanalysislambda8F5318BEA69C2945": {
+      "Properties": {
+        "Action": "lambda:InvokeFunction",
+        "FunctionName": {
+          "Fn::GetAtt": [
+            "frameanalysislambda9DEEB2CB",
+            "Arn",
+          ],
+        },
+        "Principal": "events.amazonaws.com",
+        "SourceArn": {
+          "Fn::GetAtt": [
+            "frameanalysiscommandruleBBB83031",
+            "Arn",
+          ],
+        },
+      },
+      "Type": "AWS::Lambda::Permission",
+    },
+    "frameanalysiscommandruleBBB83031": {
+      "Properties": {
+        "EventBusName": {
+          "Fn::ImportValue": "CommandBusStack:ExportsOutputReftrackingpokercommandbusC06804CCA8340A95",
+        },
+        "EventPattern": {
+          "detail-type": [
+            "StartAnalysisOfFrame",
+          ],
+        },
+        "Name": "frame-analysis-command-rule",
+        "State": "ENABLED",
+        "Targets": [
+          {
+            "Arn": {
+              "Fn::GetAtt": [
+                "frameanalysislambda9DEEB2CB",
+                "Arn",
+              ],
+            },
+            "Id": "Target0",
+          },
+        ],
+      },
+      "Type": "AWS::Events::Rule",
+    },
+    "frameanalysislambda9DEEB2CB": {
+      "DependsOn": [
+        "frameanalysislambdaServiceRoleDefaultPolicy3993FDEA",
+        "frameanalysislambdaServiceRole07302769",
+      ],
+      "Properties": {
+        "Architectures": [
+          "arm64",
+        ],
+        "Code": {
+          "S3Bucket": "cdk-hnb659fds-assets-851725576490-ap-southeast-2",
+          "S3Key": "8162a78ba48aad6dd06c86569424e804dacf27148416a8a2300efe6fcc6b4c4d.zip",
+        },
+        "Environment": {
+          "Variables": {
+            "ANALYSIS_BLOCKS_BUCKET_NAME": "tracking-poker-frame-analysis-blocks-prod",
+            "AWS_NODEJS_CONNECTION_REUSE_ENABLED": "1",
+            "COMMAND_BUS_ARN": {
+              "Fn::ImportValue": "CommandBusStack:ExportsOutputFnGetAtttrackingpokercommandbusC06804CCArn4FB9E1AC",
+            },
+            "EVENT_BUS_BUS_ARN": {
+              "Fn::ImportValue": "EventBusStack:ExportsOutputFnGetAtttrackingpokereventbus48F73914Arn12BC4594",
+            },
+          },
+        },
+        "EphemeralStorage": {
+          "Size": 512,
+        },
+        "Handler": "index.handler",
+        "MemorySize": 3008,
+        "Role": {
+          "Fn::GetAtt": [
+            "frameanalysislambdaServiceRole07302769",
+            "Arn",
+          ],
+        },
+        "Runtime": "nodejs20.x",
+        "Tags": [
+          {
+            "Key": "ServiceName",
+            "Value": "FrameAnalysis",
+          },
+        ],
+        "Timeout": 120,
+        "TracingConfig": {
+          "Mode": "Active",
+        },
+      },
+      "Type": "AWS::Lambda::Function",
+    },
+    "frameanalysislambdaServiceRole07302769": {
+      "Properties": {
+        "AssumeRolePolicyDocument": {
+          "Statement": [
+            {
+              "Action": "sts:AssumeRole",
+              "Effect": "Allow",
+              "Principal": {
+                "Service": "lambda.amazonaws.com",
+              },
+            },
+          ],
+          "Version": "2012-10-17",
+        },
+        "ManagedPolicyArns": [
+          {
+            "Fn::Join": [
+              "",
+              [
+                "arn:",
+                {
+                  "Ref": "AWS::Partition",
+                },
+                ":iam::aws:policy/service-role/AWSLambdaBasicExecutionRole",
+              ],
+            ],
+          },
+          {
+            "Fn::Join": [
+              "",
+              [
+                "arn:",
+                {
+                  "Ref": "AWS::Partition",
+                },
+                ":iam::aws:policy/AWSXRayDaemonWriteAccess",
+              ],
+            ],
+          },
+          {
+            "Fn::Join": [
+              "",
+              [
+                "arn:",
+                {
+                  "Ref": "AWS::Partition",
+                },
+                ":iam::aws:policy/AmazonTextractFullAccess",
+              ],
+            ],
+          },
+        ],
+        "Tags": [
+          {
+            "Key": "ServiceName",
+            "Value": "FrameAnalysis",
+          },
+        ],
+      },
+      "Type": "AWS::IAM::Role",
+    },
+    "frameanalysislambdaServiceRoleDefaultPolicy3993FDEA": {
+      "Properties": {
+        "PolicyDocument": {
+          "Statement": [
+            {
+              "Action": [
+                "xray:PutTraceSegments",
+                "xray:PutTelemetryRecords",
+              ],
+              "Effect": "Allow",
+              "Resource": "*",
+            },
+          ],
+          "Version": "2012-10-17",
+        },
+        "PolicyName": "frameanalysislambdaServiceRoleDefaultPolicy3993FDEA",
+        "Roles": [
+          {
+            "Ref": "frameanalysislambdaServiceRole07302769",
+          },
+        ],
+      },
+      "Type": "AWS::IAM::Policy",
+    },
+    "frameanalysisputcommandbuspolicyF0C0E735": {
+      "Properties": {
+        "PolicyDocument": {
+          "Statement": [
+            {
+              "Action": "events:PutEvents",
+              "Effect": "Allow",
+              "Resource": {
+                "Fn::ImportValue": "CommandBusStack:ExportsOutputFnGetAtttrackingpokercommandbusC06804CCArn4FB9E1AC",
+              },
+            },
+          ],
+          "Version": "2012-10-17",
+        },
+        "PolicyName": "frame-analysis-put-command-bus-policy",
+        "Roles": [
+          {
+            "Ref": "frameanalysislambdaServiceRole07302769",
+          },
+        ],
+      },
+      "Type": "AWS::IAM::Policy",
+    },
+    "frameanalysisputeventbuspolicy7DC2165B": {
+      "Properties": {
+        "PolicyDocument": {
+          "Statement": [
+            {
+              "Action": "events:PutEvents",
+              "Effect": "Allow",
+              "Resource": {
+                "Fn::ImportValue": "EventBusStack:ExportsOutputFnGetAtttrackingpokereventbus48F73914Arn12BC4594",
+              },
+            },
+          ],
+          "Version": "2012-10-17",
+        },
+        "PolicyName": "frame-analysis-put-event-bus-policy",
+        "Roles": [
+          {
+            "Ref": "frameanalysislambdaServiceRole07302769",
+          },
+        ],
+      },
+      "Type": "AWS::IAM::Policy",
+    },
+  },
+  "Rules": {
+    "CheckBootstrapVersion": {
+      "Assertions": [
+        {
+          "Assert": {
+            "Fn::Not": [
+              {
+                "Fn::Contains": [
+                  [
+                    "1",
+                    "2",
+                    "3",
+                    "4",
+                    "5",
+                  ],
+                  {
+                    "Ref": "BootstrapVersion",
+                  },
+                ],
+              },
+            ],
+          },
+          "AssertDescription": "CDK bootstrap stack version 6 required. Please run 'cdk bootstrap' with a recent version of the CDK CLI.",
+        },
+      ],
+    },
+  },
+}
+`;
+
+exports[`Stack 6`] = `
+{
+  "Parameters": {
+    "BootstrapVersion": {
+      "Default": "/cdk-bootstrap/hnb659fds/version",
+      "Description": "Version of the CDK Bootstrap resources in this environment, automatically retrieved from SSM Parameter Store. [cdk:skip]",
+      "Type": "AWS::SSM::Parameter::Value<String>",
+    },
+  },
+  "Resources": {
+    "hourlytrigger8E7006D7": {
+      "Properties": {
+        "ScheduleExpression": "cron(5 * * * ? *)",
+        "State": "ENABLED",
+        "Targets": [
+          {
+            "Arn": {
+              "Fn::GetAtt": [
+                "ingestscheduledlambda9760D468",
+                "Arn",
+              ],
+            },
+            "Id": "Target0",
+            "Input": "{"detail-type":"CheckForNewStreams"}",
+          },
+        ],
+      },
+      "Type": "AWS::Events::Rule",
+    },
+    "hourlytriggerAllowEventRuleIngestStackingestscheduledlambdaEE519FD9CE253463": {
+      "Properties": {
+        "Action": "lambda:InvokeFunction",
+        "FunctionName": {
+          "Fn::GetAtt": [
+            "ingestscheduledlambda9760D468",
+            "Arn",
+          ],
+        },
+        "Principal": "events.amazonaws.com",
+        "SourceArn": {
+          "Fn::GetAtt": [
+            "hourlytrigger8E7006D7",
+            "Arn",
+          ],
+        },
+      },
+      "Type": "AWS::Lambda::Permission",
+    },
+    "ingestlambdaputcommandbuspolicy161BB76F": {
+      "Properties": {
+        "PolicyDocument": {
+          "Statement": [
+            {
+              "Action": "events:PutEvents",
+              "Effect": "Allow",
+              "Resource": {
+                "Fn::ImportValue": "CommandBusStack:ExportsOutputFnGetAtttrackingpokercommandbusC06804CCArn4FB9E1AC",
+              },
+            },
+          ],
+          "Version": "2012-10-17",
+        },
+        "PolicyName": "ingest-lambda-put-command-bus-policy",
+        "Roles": [
+          {
+            "Ref": "ingestscheduledlambdaServiceRoleF28BB3AC",
+          },
+        ],
+      },
+      "Type": "AWS::IAM::Policy",
+    },
+    "ingestlambdaputeventbuspolicy40A82BB2": {
+      "Properties": {
+        "PolicyDocument": {
+          "Statement": [
+            {
+              "Action": "events:PutEvents",
+              "Effect": "Allow",
+              "Resource": {
+                "Fn::ImportValue": "EventBusStack:ExportsOutputFnGetAtttrackingpokereventbus48F73914Arn12BC4594",
+              },
+            },
+          ],
+          "Version": "2012-10-17",
+        },
+        "PolicyName": "ingest-lambda-put-event-bus-policy",
+        "Roles": [
+          {
+            "Ref": "ingestscheduledlambdaServiceRoleF28BB3AC",
+          },
+        ],
+      },
+      "Type": "AWS::IAM::Policy",
+    },
+    "ingestlogDFD6FE27": {
+      "DeletionPolicy": "Retain",
+      "Properties": {
+        "AttributeDefinitions": [
+          {
+            "AttributeName": "pk",
+            "AttributeType": "S",
+          },
+          {
+            "AttributeName": "sk",
+            "AttributeType": "S",
+          },
+        ],
+        "BillingMode": "PAY_PER_REQUEST",
+        "KeySchema": [
+          {
+            "AttributeName": "pk",
+            "KeyType": "HASH",
+          },
+          {
+            "AttributeName": "sk",
+            "KeyType": "RANGE",
+          },
+        ],
+        "TableName": "ingest-log",
+        "Tags": [
+          {
+            "Key": "ServiceName",
+            "Value": "Ingest",
+          },
+        ],
+      },
+      "Type": "AWS::DynamoDB::Table",
+      "UpdateReplacePolicy": "Retain",
+    },
+    "ingestprojectionhandlerlambdaF89B5CA7": {
+      "DependsOn": [
+        "ingestprojectionhandlerlambdaServiceRoleDefaultPolicy2551A5CB",
+        "ingestprojectionhandlerlambdaServiceRole0FDBD452",
+      ],
+      "Properties": {
+        "Architectures": [
+          "arm64",
+        ],
+        "Code": {
+          "S3Bucket": "cdk-hnb659fds-assets-851725576490-ap-southeast-2",
+          "S3Key": "7ae566f306dd5161083919a04ffd58e5eb3a2cf44c081cc81be24f4abda70ed8.zip",
+        },
+        "Environment": {
+          "Variables": {
+            "AWS_NODEJS_CONNECTION_REUSE_ENABLED": "1",
+          },
+        },
+        "Handler": "index.handler",
+        "MemorySize": 128,
+        "Role": {
+          "Fn::GetAtt": [
+            "ingestprojectionhandlerlambdaServiceRole0FDBD452",
+            "Arn",
+          ],
+        },
+        "Runtime": "nodejs20.x",
+        "Tags": [
+          {
+            "Key": "ServiceName",
+            "Value": "Ingest",
+          },
+        ],
+        "Timeout": 20,
+        "TracingConfig": {
+          "Mode": "Active",
+        },
+      },
+      "Type": "AWS::Lambda::Function",
+    },
+    "ingestprojectionhandlerlambdaServiceRole0FDBD452": {
+      "Properties": {
+        "AssumeRolePolicyDocument": {
+          "Statement": [
+            {
+              "Action": "sts:AssumeRole",
+              "Effect": "Allow",
+              "Principal": {
+                "Service": "lambda.amazonaws.com",
+              },
+            },
+          ],
+          "Version": "2012-10-17",
+        },
+        "ManagedPolicyArns": [
+          {
+            "Fn::Join": [
+              "",
+              [
+                "arn:",
+                {
+                  "Ref": "AWS::Partition",
+                },
+                ":iam::aws:policy/service-role/AWSLambdaBasicExecutionRole",
+              ],
+            ],
+          },
+          {
+            "Fn::Join": [
+              "",
+              [
+                "arn:",
+                {
+                  "Ref": "AWS::Partition",
+                },
+                ":iam::aws:policy/AWSXRayDaemonWriteAccess",
+              ],
+            ],
+          },
+          {
+            "Fn::Join": [
+              "",
+              [
+                "arn:",
+                {
+                  "Ref": "AWS::Partition",
+                },
+                ":iam::aws:policy/AmazonDynamoDBFullAccess",
+              ],
+            ],
+          },
+        ],
+        "Tags": [
+          {
+            "Key": "ServiceName",
+            "Value": "Ingest",
+          },
+        ],
+      },
+      "Type": "AWS::IAM::Role",
+    },
+    "ingestprojectionhandlerlambdaServiceRoleDefaultPolicy2551A5CB": {
+      "Properties": {
+        "PolicyDocument": {
+          "Statement": [
+            {
+              "Action": [
+                "xray:PutTraceSegments",
+                "xray:PutTelemetryRecords",
+              ],
+              "Effect": "Allow",
+              "Resource": "*",
+            },
+          ],
+          "Version": "2012-10-17",
+        },
+        "PolicyName": "ingestprojectionhandlerlambdaServiceRoleDefaultPolicy2551A5CB",
+        "Roles": [
+          {
+            "Ref": "ingestprojectionhandlerlambdaServiceRole0FDBD452",
+          },
+        ],
+      },
+      "Type": "AWS::IAM::Policy",
+    },
+    "ingestprojectioninvokeonalleventsAllowEventRuleIngestStackingestprojectionhandlerlambdaAF1AE421EBCAD785": {
+      "Properties": {
+        "Action": "lambda:InvokeFunction",
+        "FunctionName": {
+          "Fn::GetAtt": [
+            "ingestprojectionhandlerlambdaF89B5CA7",
+            "Arn",
+          ],
+        },
+        "Principal": "events.amazonaws.com",
+        "SourceArn": {
+          "Fn::GetAtt": [
+            "ingestprojectioninvokeonalleventsBE949339",
+            "Arn",
+          ],
+        },
+      },
+      "Type": "AWS::Lambda::Permission",
+    },
+    "ingestprojectioninvokeonalleventsBE949339": {
+      "Properties": {
+        "EventBusName": {
+          "Fn::ImportValue": "EventBusStack:ExportsOutputReftrackingpokereventbus48F739144449EC9A",
+        },
+        "EventPattern": {
+          "source": [
+            {
+              "prefix": "",
+            },
+          ],
+        },
+        "Name": "ingest-invoke-on-all-events",
+        "State": "ENABLED",
+        "Targets": [
+          {
+            "Arn": {
+              "Fn::GetAtt": [
+                "ingestprojectionhandlerlambdaF89B5CA7",
+                "Arn",
+              ],
+            },
+            "Id": "Target0",
+          },
+        ],
+      },
+      "Type": "AWS::Events::Rule",
+    },
+    "ingestscheduledlambda9760D468": {
+      "DependsOn": [
+        "ingestscheduledlambdaServiceRoleDefaultPolicyBE786CA0",
+        "ingestscheduledlambdaServiceRoleF28BB3AC",
+      ],
+      "Properties": {
+        "Architectures": [
+          "arm64",
+        ],
+        "Code": {
+          "S3Bucket": "cdk-hnb659fds-assets-851725576490-ap-southeast-2",
+          "S3Key": "cb405dc1fcb171a0217e8ecf3089fed5b5366c85af9a01d35d7df7f925e0032d.zip",
+        },
+        "Environment": {
+          "Variables": {
+            "AWS_NODEJS_CONNECTION_REUSE_ENABLED": "1",
+            "COMMAND_BUS_ARN": {
+              "Fn::ImportValue": "CommandBusStack:ExportsOutputFnGetAtttrackingpokercommandbusC06804CCArn4FB9E1AC",
+            },
+            "EVENT_BUS_BUS_ARN": {
+              "Fn::ImportValue": "EventBusStack:ExportsOutputFnGetAtttrackingpokereventbus48F73914Arn12BC4594",
+            },
+            "YOUTUBE_API_KEY": {
+              "Fn::Join": [
+                "",
+                [
+                  "{{resolve:secretsmanager:",
+                  {
+                    "Ref": "youtubeapikey57ABBA43",
+                  },
+                  ":SecretString:::}}",
+                ],
+              ],
+            },
+          },
+        },
+        "Handler": "index.handler",
+        "MemorySize": 128,
+        "Role": {
+          "Fn::GetAtt": [
+            "ingestscheduledlambdaServiceRoleF28BB3AC",
+            "Arn",
+          ],
+        },
+        "Runtime": "nodejs20.x",
+        "Tags": [
+          {
+            "Key": "ServiceName",
+            "Value": "Ingest",
+          },
+        ],
+        "Timeout": 120,
+        "TracingConfig": {
+          "Mode": "Active",
+        },
+      },
+      "Type": "AWS::Lambda::Function",
+    },
+    "ingestscheduledlambdaServiceRoleDefaultPolicyBE786CA0": {
+      "Properties": {
+        "PolicyDocument": {
+          "Statement": [
+            {
+              "Action": [
+                "xray:PutTraceSegments",
+                "xray:PutTelemetryRecords",
+              ],
+              "Effect": "Allow",
+              "Resource": "*",
+            },
+          ],
+          "Version": "2012-10-17",
+        },
+        "PolicyName": "ingestscheduledlambdaServiceRoleDefaultPolicyBE786CA0",
+        "Roles": [
+          {
+            "Ref": "ingestscheduledlambdaServiceRoleF28BB3AC",
+          },
+        ],
+      },
+      "Type": "AWS::IAM::Policy",
+    },
+    "ingestscheduledlambdaServiceRoleF28BB3AC": {
+      "Properties": {
+        "AssumeRolePolicyDocument": {
+          "Statement": [
+            {
+              "Action": "sts:AssumeRole",
+              "Effect": "Allow",
+              "Principal": {
+                "Service": "lambda.amazonaws.com",
+              },
+            },
+          ],
+          "Version": "2012-10-17",
+        },
+        "ManagedPolicyArns": [
+          {
+            "Fn::Join": [
+              "",
+              [
+                "arn:",
+                {
+                  "Ref": "AWS::Partition",
+                },
+                ":iam::aws:policy/service-role/AWSLambdaBasicExecutionRole",
+              ],
+            ],
+          },
+          {
+            "Fn::Join": [
+              "",
+              [
+                "arn:",
+                {
+                  "Ref": "AWS::Partition",
+                },
+                ":iam::aws:policy/AWSXRayDaemonWriteAccess",
+              ],
+            ],
+          },
+          {
+            "Fn::Join": [
+              "",
+              [
+                "arn:",
+                {
+                  "Ref": "AWS::Partition",
+                },
+                ":iam::aws:policy/AmazonDynamoDBFullAccess",
+              ],
+            ],
+          },
+        ],
+        "Tags": [
+          {
+            "Key": "ServiceName",
+            "Value": "Ingest",
+          },
+        ],
+      },
+      "Type": "AWS::IAM::Role",
+    },
+    "youtubeapikey57ABBA43": {
+      "DeletionPolicy": "Delete",
+      "Properties": {
+        "GenerateSecretString": {},
+        "Name": "youtube-api-key",
+        "Tags": [
+          {
+            "Key": "ServiceName",
+            "Value": "Ingest",
+          },
+        ],
+      },
+      "Type": "AWS::SecretsManager::Secret",
+      "UpdateReplacePolicy": "Delete",
+    },
+  },
+  "Rules": {
+    "CheckBootstrapVersion": {
+      "Assertions": [
+        {
+          "Assert": {
+            "Fn::Not": [
+              {
+                "Fn::Contains": [
+                  [
+                    "1",
+                    "2",
+                    "3",
+                    "4",
+                    "5",
+                  ],
+                  {
+                    "Ref": "BootstrapVersion",
+                  },
+                ],
+              },
+            ],
+          },
+          "AssertDescription": "CDK bootstrap stack version 6 required. Please run 'cdk bootstrap' with a recent version of the CDK CLI.",
+        },
+      ],
+    },
+  },
+}
+`;
+
+exports[`Stack 7`] = `
+{
+  "Outputs": {
+    "inventorykickscript": {
+      "Value": {
+        "Fn::Join": [
+          "",
+          [
+            "ssh -i ~/.ssh/tp-prod.pem ec2-user@",
+            {
+              "Fn::GetAtt": [
+                "inventoryinstance5F5DF467",
+                "PublicDnsName",
+              ],
+            },
+            " sudo /var/lib/cloud/instance/scripts/part-001",
+          ],
+        ],
+      },
+    },
+  },
+  "Parameters": {
+    "BootstrapVersion": {
+      "Default": "/cdk-bootstrap/hnb659fds/version",
+      "Description": "Version of the CDK Bootstrap resources in this environment, automatically retrieved from SSM Parameter Store. [cdk:skip]",
+      "Type": "AWS::SSM::Parameter::Value<String>",
+    },
+  },
+  "Resources": {
+    "inventory6DBB118B": {
+      "DeletionPolicy": "Retain",
+      "Properties": {
+        "AttributeDefinitions": [
+          {
+            "AttributeName": "pk",
+            "AttributeType": "S",
+          },
+          {
+            "AttributeName": "sk",
+            "AttributeType": "S",
+          },
+          {
+            "AttributeName": "gsi1pk",
+            "AttributeType": "S",
+          },
+          {
+            "AttributeName": "gsi1sk",
+            "AttributeType": "S",
+          },
+          {
+            "AttributeName": "gsi2pk",
+            "AttributeType": "S",
+          },
+          {
+            "AttributeName": "gsi2sk",
+            "AttributeType": "S",
+          },
+        ],
+        "BillingMode": "PAY_PER_REQUEST",
+        "GlobalSecondaryIndexes": [
+          {
+            "IndexName": "gsi1",
+            "KeySchema": [
+              {
+                "AttributeName": "gsi1pk",
+                "KeyType": "HASH",
+              },
+              {
+                "AttributeName": "gsi1sk",
+                "KeyType": "RANGE",
+              },
+            ],
+            "Projection": {
+              "ProjectionType": "ALL",
+            },
+          },
+          {
+            "IndexName": "gsi2",
+            "KeySchema": [
+              {
+                "AttributeName": "gsi2pk",
+                "KeyType": "HASH",
+              },
+              {
+                "AttributeName": "gsi2sk",
+                "KeyType": "RANGE",
+              },
+            ],
+            "Projection": {
+              "ProjectionType": "ALL",
+            },
+          },
+        ],
+        "KeySchema": [
+          {
+            "AttributeName": "pk",
+            "KeyType": "HASH",
+          },
+          {
+            "AttributeName": "sk",
+            "KeyType": "RANGE",
+          },
+        ],
+        "TableName": "inventory",
+        "Tags": [
+          {
+            "Key": "ServiceName",
+            "Value": "Inventory",
+          },
+        ],
+      },
+      "Type": "AWS::DynamoDB::Table",
+      "UpdateReplacePolicy": "Retain",
+    },
+    "inventoryapidistribution9960339C": {
+      "Properties": {
+        "DistributionConfig": {
+          "Aliases": [
+            "poker-api.sam152.com",
+          ],
+          "DefaultCacheBehavior": {
+            "CachePolicyId": "658327ea-f89d-4fab-a63d-7e88639e58f6",
+            "Compress": true,
+            "TargetOriginId": "InventoryStackinventoryapidistributionOrigin1D9F94402",
+            "ViewerProtocolPolicy": "redirect-to-https",
+          },
+          "Enabled": true,
+          "HttpVersion": "http2",
+          "IPV6Enabled": true,
+          "Origins": [
+            {
+              "CustomOriginConfig": {
+                "OriginProtocolPolicy": "http-only",
+                "OriginSSLProtocols": [
+                  "TLSv1.2",
+                ],
+              },
+              "DomainName": {
+                "Fn::GetAtt": [
+                  "inventoryinstance5F5DF467",
+                  "PublicDnsName",
+                ],
+              },
+              "Id": "InventoryStackinventoryapidistributionOrigin1D9F94402",
+            },
+          ],
+          "ViewerCertificate": {
+            "AcmCertificateArn": "arn:aws:acm:us-east-1:851725576490:certificate/6eaca751-a39d-4be6-9cb6-fa5a953ab0c9",
+            "MinimumProtocolVersion": "TLSv1.2_2021",
+            "SslSupportMethod": "sni-only",
+          },
+        },
+        "Tags": [
+          {
+            "Key": "ServiceName",
+            "Value": "Inventory",
+          },
+        ],
+      },
+      "Type": "AWS::CloudFront::Distribution",
+    },
+    "inventoryinstance5F5DF467": {
+      "DependsOn": [
+        "inventoryinstancerole2EC74192",
+      ],
+      "Properties": {
+        "AvailabilityZone": "dummy1a",
+        "BlockDeviceMappings": [
+          {
+            "DeviceName": "/dev/xvda",
+            "Ebs": {
+              "VolumeSize": 8,
+            },
+          },
+        ],
+        "IamInstanceProfile": {
+          "Ref": "inventoryinstanceInstanceProfile314986CC",
+        },
+        "ImageId": "dummy-value-for-/aws/service/ami-amazon-linux-latest/al2023-ami-kernel-default-x86_64",
+        "InstanceType": "t3.nano",
+        "KeyName": "tp-prod",
+        "SecurityGroupIds": [
+          {
+            "Fn::GetAtt": [
+              "inventorysecuritygroup4B8E5527",
+              "GroupId",
+            ],
+          },
+        ],
+        "SubnetId": "s-12345",
+        "Tags": [
+          {
+            "Key": "Name",
+            "Value": "InventoryStack/inventory-instance",
+          },
+          {
+            "Key": "ServiceName",
+            "Value": "Inventory",
+          },
+        ],
+        "UserData": {
+          "Fn::Base64": {
+            "Fn::Join": [
+              "",
+              [
+                "#!/bin/bash
+yum install -y docker
+systemctl start docker
+aws ecr get-login-password --region ap-southeast-2 | docker login --username AWS --password-stdin 851725576490.dkr.ecr.ap-southeast-2.amazonaws.com
+docker system prune -a -f
+docker pull ",
+                {
+                  "Fn::Sub": "851725576490.dkr.ecr.ap-southeast-2.\${AWS::URLSuffix}/cdk-hnb659fds-container-assets-851725576490-ap-southeast-2:f1f422992266a6fbeb604cf25c66c14504ec3ca18d5f37184c74a257bade5017",
+                },
+                "
+docker container run -d -e DYNAMO_TABLE_REGION='ap-southeast-2' --publish 80:80 ",
+                {
+                  "Fn::Sub": "851725576490.dkr.ecr.ap-southeast-2.\${AWS::URLSuffix}/cdk-hnb659fds-container-assets-851725576490-ap-southeast-2:f1f422992266a6fbeb604cf25c66c14504ec3ca18d5f37184c74a257bade5017",
+                },
+              ],
+            ],
+          },
+        },
+      },
+      "Type": "AWS::EC2::Instance",
+    },
+    "inventoryinstanceInstanceProfile314986CC": {
+      "Properties": {
+        "Roles": [
+          {
+            "Ref": "inventoryinstancerole2EC74192",
+          },
+        ],
+      },
+      "Type": "AWS::IAM::InstanceProfile",
+    },
+    "inventoryinstancerole2EC74192": {
+      "Properties": {
+        "AssumeRolePolicyDocument": {
+          "Statement": [
+            {
+              "Action": "sts:AssumeRole",
+              "Effect": "Allow",
+              "Principal": {
+                "Service": "ec2.amazonaws.com",
+              },
+            },
+          ],
+          "Version": "2012-10-17",
+        },
+        "ManagedPolicyArns": [
+          {
+            "Fn::Join": [
+              "",
+              [
+                "arn:",
+                {
+                  "Ref": "AWS::Partition",
+                },
+                ":iam::aws:policy/AmazonDynamoDBFullAccess",
+              ],
+            ],
+          },
+          {
+            "Fn::Join": [
+              "",
+              [
+                "arn:",
+                {
+                  "Ref": "AWS::Partition",
+                },
+                ":iam::aws:policy/AmazonEC2ContainerRegistryReadOnly",
+              ],
+            ],
+          },
+        ],
+        "Tags": [
+          {
+            "Key": "ServiceName",
+            "Value": "Inventory",
+          },
+        ],
+      },
+      "Type": "AWS::IAM::Role",
+    },
+    "inventoryprojectionhandlerlambda2B8A9329": {
+      "DependsOn": [
+        "inventoryprojectionhandlerlambdaServiceRoleDefaultPolicyDD0612BD",
+        "inventoryprojectionhandlerlambdaServiceRole68F98A43",
+      ],
+      "Properties": {
+        "Architectures": [
+          "arm64",
+        ],
+        "Code": {
+          "S3Bucket": "cdk-hnb659fds-assets-851725576490-ap-southeast-2",
+          "S3Key": "55cdfccf4c4ba6cbaccfc8c167340f882c40e017bf9599168f42bab26c1ae7ba.zip",
+        },
+        "Environment": {
+          "Variables": {
+            "AWS_NODEJS_CONNECTION_REUSE_ENABLED": "1",
+          },
+        },
+        "Handler": "index.handler",
+        "MemorySize": 128,
+        "Role": {
+          "Fn::GetAtt": [
+            "inventoryprojectionhandlerlambdaServiceRole68F98A43",
+            "Arn",
+          ],
+        },
+        "Runtime": "nodejs20.x",
+        "Tags": [
+          {
+            "Key": "ServiceName",
+            "Value": "Inventory",
+          },
+        ],
+        "Timeout": 20,
+        "TracingConfig": {
+          "Mode": "Active",
+        },
+      },
+      "Type": "AWS::Lambda::Function",
+    },
+    "inventoryprojectionhandlerlambdaServiceRole68F98A43": {
+      "Properties": {
+        "AssumeRolePolicyDocument": {
+          "Statement": [
+            {
+              "Action": "sts:AssumeRole",
+              "Effect": "Allow",
+              "Principal": {
+                "Service": "lambda.amazonaws.com",
+              },
+            },
+          ],
+          "Version": "2012-10-17",
+        },
+        "ManagedPolicyArns": [
+          {
+            "Fn::Join": [
+              "",
+              [
+                "arn:",
+                {
+                  "Ref": "AWS::Partition",
+                },
+                ":iam::aws:policy/service-role/AWSLambdaBasicExecutionRole",
+              ],
+            ],
+          },
+          {
+            "Fn::Join": [
+              "",
+              [
+                "arn:",
+                {
+                  "Ref": "AWS::Partition",
+                },
+                ":iam::aws:policy/AWSXRayDaemonWriteAccess",
+              ],
+            ],
+          },
+          {
+            "Fn::Join": [
+              "",
+              [
+                "arn:",
+                {
+                  "Ref": "AWS::Partition",
+                },
+                ":iam::aws:policy/AmazonDynamoDBFullAccess",
+              ],
+            ],
+          },
+        ],
+        "Tags": [
+          {
+            "Key": "ServiceName",
+            "Value": "Inventory",
+          },
+        ],
+      },
+      "Type": "AWS::IAM::Role",
+    },
+    "inventoryprojectionhandlerlambdaServiceRoleDefaultPolicyDD0612BD": {
+      "Properties": {
+        "PolicyDocument": {
+          "Statement": [
+            {
+              "Action": [
+                "xray:PutTraceSegments",
+                "xray:PutTelemetryRecords",
+              ],
+              "Effect": "Allow",
+              "Resource": "*",
+            },
+          ],
+          "Version": "2012-10-17",
+        },
+        "PolicyName": "inventoryprojectionhandlerlambdaServiceRoleDefaultPolicyDD0612BD",
+        "Roles": [
+          {
+            "Ref": "inventoryprojectionhandlerlambdaServiceRole68F98A43",
+          },
+        ],
+      },
+      "Type": "AWS::IAM::Policy",
+    },
+    "inventoryprojectioninvokeonallevents065EFEAA": {
+      "Properties": {
+        "EventBusName": {
+          "Fn::ImportValue": "EventBusStack:ExportsOutputReftrackingpokereventbus48F739144449EC9A",
+        },
+        "EventPattern": {
+          "source": [
+            {
+              "prefix": "",
+            },
+          ],
+        },
+        "Name": "inventory-invoke-on-all-events",
+        "State": "ENABLED",
+        "Targets": [
+          {
+            "Arn": {
+              "Fn::GetAtt": [
+                "inventoryprojectionhandlerlambda2B8A9329",
+                "Arn",
+              ],
+            },
+            "Id": "Target0",
+          },
+        ],
+      },
+      "Type": "AWS::Events::Rule",
+    },
+    "inventoryprojectioninvokeonalleventsAllowEventRuleInventoryStackinventoryprojectionhandlerlambdaF4B55E11518E72E4": {
+      "Properties": {
+        "Action": "lambda:InvokeFunction",
+        "FunctionName": {
+          "Fn::GetAtt": [
+            "inventoryprojectionhandlerlambda2B8A9329",
+            "Arn",
+          ],
+        },
+        "Principal": "events.amazonaws.com",
+        "SourceArn": {
+          "Fn::GetAtt": [
+            "inventoryprojectioninvokeonallevents065EFEAA",
+            "Arn",
+          ],
+        },
+      },
+      "Type": "AWS::Lambda::Permission",
+    },
+    "inventorysecuritygroup4B8E5527": {
+      "Properties": {
+        "GroupDescription": "InventoryStack/inventory-security-group",
+        "SecurityGroupEgress": [
+          {
+            "CidrIp": "0.0.0.0/0",
+            "Description": "Allow all outbound traffic by default",
+            "IpProtocol": "-1",
+          },
+        ],
+        "SecurityGroupIngress": [
+          {
+            "CidrIp": "0.0.0.0/0",
+            "Description": "from 0.0.0.0/0:ALL TRAFFIC",
+            "IpProtocol": "-1",
+          },
+        ],
+        "Tags": [
+          {
+            "Key": "ServiceName",
+            "Value": "Inventory",
+          },
+        ],
+        "VpcId": "vpc-12345",
+      },
+      "Type": "AWS::EC2::SecurityGroup",
+    },
+  },
+  "Rules": {
+    "CheckBootstrapVersion": {
+      "Assertions": [
+        {
+          "Assert": {
+            "Fn::Not": [
+              {
+                "Fn::Contains": [
+                  [
+                    "1",
+                    "2",
+                    "3",
+                    "4",
+                    "5",
+                  ],
+                  {
+                    "Ref": "BootstrapVersion",
+                  },
+                ],
+              },
+            ],
+          },
+          "AssertDescription": "CDK bootstrap stack version 6 required. Please run 'cdk bootstrap' with a recent version of the CDK CLI.",
+        },
+      ],
+    },
+  },
+}
+`;
+
+exports[`Stack 8`] = `
+{
+  "Parameters": {
+    "BootstrapVersion": {
+      "Default": "/cdk-bootstrap/hnb659fds/version",
+      "Description": "Version of the CDK Bootstrap resources in this environment, automatically retrieved from SSM Parameter Store. [cdk:skip]",
+      "Type": "AWS::SSM::Parameter::Value<String>",
+    },
+  },
+  "Resources": {
+    "pipelineinvokeonalleventsAllowEventRulePipelineStackpipelinelambda6248F9A18AABEC34": {
+      "Properties": {
+        "Action": "lambda:InvokeFunction",
+        "FunctionName": {
+          "Fn::GetAtt": [
+            "pipelinelambdaA37730B9",
+            "Arn",
+          ],
+        },
+        "Principal": "events.amazonaws.com",
+        "SourceArn": {
+          "Fn::GetAtt": [
+            "pipelineinvokeonalleventsC2EF00FA",
+            "Arn",
+          ],
+        },
+      },
+      "Type": "AWS::Lambda::Permission",
+    },
+    "pipelineinvokeonalleventsC2EF00FA": {
+      "Properties": {
+        "EventBusName": {
+          "Fn::ImportValue": "CommandBusStack:ExportsOutputReftrackingpokercommandbusC06804CCA8340A95",
+        },
+        "EventPattern": {
+          "source": [
+            {
+              "prefix": "",
+            },
+          ],
+        },
+        "Name": "pipeline-invoke-on-all-events",
+        "State": "ENABLED",
+        "Targets": [
+          {
+            "Arn": {
+              "Fn::GetAtt": [
+                "pipelinelambdaA37730B9",
+                "Arn",
+              ],
+            },
+            "Id": "Target0",
+          },
+        ],
+      },
+      "Type": "AWS::Events::Rule",
+    },
+    "pipelinelambdaA37730B9": {
+      "DependsOn": [
+        "pipelinelambdaServiceRoleDefaultPolicy97AE38B0",
+        "pipelinelambdaServiceRole3B4D7B5B",
+      ],
+      "Properties": {
+        "Architectures": [
+          "arm64",
+        ],
+        "Code": {
+          "S3Bucket": "cdk-hnb659fds-assets-851725576490-ap-southeast-2",
+          "S3Key": "8665a169c0c010f9712356b1c3cf5292636d0855a7a6ab9ac4bebc5ab0ed9f27.zip",
+        },
+        "Environment": {
+          "Variables": {
+            "AWS_NODEJS_CONNECTION_REUSE_ENABLED": "1",
+            "COMMAND_BUS_ARN": {
+              "Fn::ImportValue": "CommandBusStack:ExportsOutputFnGetAtttrackingpokercommandbusC06804CCArn4FB9E1AC",
+            },
+          },
+        },
+        "Handler": "index.handler",
+        "MemorySize": 128,
+        "Role": {
+          "Fn::GetAtt": [
+            "pipelinelambdaServiceRole3B4D7B5B",
+            "Arn",
+          ],
+        },
+        "Runtime": "nodejs20.x",
+        "Tags": [
+          {
+            "Key": "ServiceName",
+            "Value": "Pipeline",
+          },
+        ],
+        "Timeout": 20,
+        "TracingConfig": {
+          "Mode": "Active",
+        },
+      },
+      "Type": "AWS::Lambda::Function",
+    },
+    "pipelinelambdaServiceRole3B4D7B5B": {
+      "Properties": {
+        "AssumeRolePolicyDocument": {
+          "Statement": [
+            {
+              "Action": "sts:AssumeRole",
+              "Effect": "Allow",
+              "Principal": {
+                "Service": "lambda.amazonaws.com",
+              },
+            },
+          ],
+          "Version": "2012-10-17",
+        },
+        "ManagedPolicyArns": [
+          {
+            "Fn::Join": [
+              "",
+              [
+                "arn:",
+                {
+                  "Ref": "AWS::Partition",
+                },
+                ":iam::aws:policy/service-role/AWSLambdaBasicExecutionRole",
+              ],
+            ],
+          },
+          {
+            "Fn::Join": [
+              "",
+              [
+                "arn:",
+                {
+                  "Ref": "AWS::Partition",
+                },
+                ":iam::aws:policy/AWSXRayDaemonWriteAccess",
+              ],
+            ],
+          },
+        ],
+        "Tags": [
+          {
+            "Key": "ServiceName",
+            "Value": "Pipeline",
+          },
+        ],
+      },
+      "Type": "AWS::IAM::Role",
+    },
+    "pipelinelambdaServiceRoleDefaultPolicy97AE38B0": {
+      "Properties": {
+        "PolicyDocument": {
+          "Statement": [
+            {
+              "Action": [
+                "xray:PutTraceSegments",
+                "xray:PutTelemetryRecords",
+              ],
+              "Effect": "Allow",
+              "Resource": "*",
+            },
+          ],
+          "Version": "2012-10-17",
+        },
+        "PolicyName": "pipelinelambdaServiceRoleDefaultPolicy97AE38B0",
+        "Roles": [
+          {
+            "Ref": "pipelinelambdaServiceRole3B4D7B5B",
+          },
+        ],
+      },
+      "Type": "AWS::IAM::Policy",
+    },
+    "pipelineputcommandbuspolicy8F46C251": {
+      "Properties": {
+        "PolicyDocument": {
+          "Statement": [
+            {
+              "Action": "events:PutEvents",
+              "Effect": "Allow",
+              "Resource": {
+                "Fn::ImportValue": "CommandBusStack:ExportsOutputFnGetAtttrackingpokercommandbusC06804CCArn4FB9E1AC",
+              },
+            },
+          ],
+          "Version": "2012-10-17",
+        },
+        "PolicyName": "pipeline-put-command-bus-policy",
+        "Roles": [
+          {
+            "Ref": "pipelinelambdaServiceRole3B4D7B5B",
+          },
+        ],
+      },
+      "Type": "AWS::IAM::Policy",
+    },
+  },
+  "Rules": {
+    "CheckBootstrapVersion": {
+      "Assertions": [
+        {
+          "Assert": {
+            "Fn::Not": [
+              {
+                "Fn::Contains": [
+                  [
+                    "1",
+                    "2",
+                    "3",
+                    "4",
+                    "5",
+                  ],
+                  {
+                    "Ref": "BootstrapVersion",
+                  },
+                ],
+              },
+            ],
+          },
+          "AssertDescription": "CDK bootstrap stack version 6 required. Please run 'cdk bootstrap' with a recent version of the CDK CLI.",
+        },
+      ],
+    },
+  },
+}
+`;

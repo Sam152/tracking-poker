@@ -1,8 +1,11 @@
 import { handler } from "./index";
-import { ripAssetsToS3 } from "./util/ripAssetsToS3";
+import { ripAssetsToS3 } from "./ripAssetsToS3";
 
-jest.mock("./util/ripAssetsToS3", () => ({
+jest.mock("./ripAssetsToS3", () => ({
     ripAssetsToS3: jest.fn(),
+}));
+jest.mock("tp-events", () => ({
+    recordThat: jest.fn(),
 }));
 
 describe("index", () => {

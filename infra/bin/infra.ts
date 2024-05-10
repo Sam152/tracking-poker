@@ -10,7 +10,7 @@ import { PipelineStack } from "../lib/PipelineStack";
 import { IngestStack } from "../lib/IngestStack";
 import { ClientStack } from "../lib/ClientStack";
 
-const app = new cdk.App();
+export const app = new cdk.App();
 
 const env: DeploymentEnvironment = app.node.tryGetContext("env") ?? DeploymentEnvironment.Prod;
 
