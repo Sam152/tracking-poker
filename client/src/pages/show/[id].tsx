@@ -5,6 +5,8 @@ import { useTabMenu } from "@/hooks/useTabMenu";
 import { DataTable } from "@/components/DataTable";
 import { PlayerLink } from "@/components/PlayerLink";
 import { MissingStat, StatFromType } from "@/components/Stat";
+import { HeadingOne } from "@/components/HeadingOne";
+import { PageTitle } from "@/components/PageTitle";
 
 export default function ShowPage() {
     const router = useTypedRouter<{ id: string }>();
@@ -18,6 +20,8 @@ export default function ShowPage() {
 
     return (
         <>
+            <HeadingOne loading={show.isLoading}>{show.data?.show.show_name}</HeadingOne>
+            <PageTitle title={show.data?.show.show_name} />
             {tabs}
             <DataTable
                 rows={show.data?.players

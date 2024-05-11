@@ -5,6 +5,8 @@ import { DataTable } from "@/components/DataTable";
 import { ShowLink } from "@/components/ShowLink";
 import { CwStat, MissingStat } from "@/components/Stat";
 import { useTabMenu } from "@/hooks/useTabMenu";
+import { HeadingOne } from "@/components/HeadingOne";
+import { PageTitle } from "@/components/PageTitle";
 
 export default function PlayerPage() {
     const router = useTypedRouter<{ id: string }>();
@@ -18,6 +20,9 @@ export default function PlayerPage() {
 
     return (
         <>
+            <HeadingOne loading={player.isLoading}>{player.data?.appearances[0].player_name}</HeadingOne>
+            <PageTitle title={"Highest VPIP"} />
+
             {tabs}
             <DataTable
                 rows={player.data?.appearances.map((appearance) => {

@@ -7,3 +7,4 @@ List of tasks to complete:
 -   [ ] Debug mode to link UI to pipeline assets.
 -   [ ] Create a list of players + search.
 -   [ ] Optimise inventory node container to use slim image.
+-   [ ] Add script to rebuild projections.
