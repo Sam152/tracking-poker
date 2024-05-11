@@ -15,6 +15,7 @@ export class SimpleBucket extends Construct {
             versioned: false,
             bucketName: props.bucketName,
             encryption: BucketEncryption.KMS_MANAGED,
+            bucketKeyEnabled: true,
             publicReadAccess: false,
             blockPublicAccess: BlockPublicAccess.BLOCK_ALL,
             removalPolicy: RemovalPolicy.DESTROY,
