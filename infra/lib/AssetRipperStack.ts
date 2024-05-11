@@ -35,7 +35,7 @@ export class AssetRipperStack extends Stack {
         const lambda = new DockerImageFunction(this, "asset-ripper-lambda", {
             ephemeralStorageSize: Size.mebibytes(10240),
             timeout: Duration.minutes(15),
-            memorySize: 3008,
+            memorySize: 10_000,
             tracing: Tracing.ACTIVE,
             environment: {
                 BUCKET_NAME: this.bucket.bucket.bucketName,
