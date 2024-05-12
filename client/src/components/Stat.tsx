@@ -1,19 +1,26 @@
 import { Text } from "@chakra-ui/react";
+import { formatMoney } from "@/util/formatMoney";
 
-function Stat({ value }: { value: number }) {
-    return <Text color="green.100">{Math.round(value)}</Text>;
+enum StatType {
+    Good = "green.400",
+    Neutral = "white",
+    Bad = "red.400",
+};
+
+function Stat({ value, type }: { value: number | string, type: StatType }) {
+    return <Text color={type}>{value}</Text>;
 }
 
 export function CwStat({ value }: { value: number }) {
-    return <Stat value={value} />;
+    return <Stat value={formatMoney(value)} type={value < 0 ? StatType.Bad : StatType.Good} />;
 }
 
 export function VpipStat({ value }: { value: number }) {
-    return <Stat value={value} />;
+    return <Stat value={Math.round(value)} />;
 }
 
 export function PfrStat({ value }: { value: number }) {
-    return <Stat value={value} />;
+    return <Stat value={Math.round(value)} />;
 }
 
 export function StatFromType({type, value}: {type: "cw" | "pfr" | "vpip", value: number}) {
