@@ -9,6 +9,7 @@ import { QueryExecutor } from "../dynamo/executeQuery";
 import { allDataForShow } from "./queries/allDataForShow";
 import * as PlayerAppearance from "./entity/playerAppearance";
 import { PlayerId } from "./entity/playerAppearance";
+import * as Player from "./entity/player";
 import { normalizeKey } from "../dynamo/normalizeKey";
 
 export async function handleEvent(eventName: BusEventName, event: BusEvent, putItem: ItemPutter, executeQuery: QueryExecutor) {
@@ -33,6 +34,14 @@ export async function handleEvent(eventName: BusEventName, event: BusEvent, putI
 
         for (const eventStat of event.stats) {
             const playerId = stamp<PlayerId>(normalizeKey(eventStat.playerName));
+
+            const player: Player.Player = {
+                player: playerId,
+                player_name: eventStat.playerName,
+                last_played_show: show.id,
+                last_played_date: show.date,
+            };
+            await putItem(Player.toStorage(player));
 
             const playerAppearance: PlayerAppearance.PlayerAppearance = {
                 player: playerId,

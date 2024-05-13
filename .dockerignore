@@ -1,3 +1,4 @@
 /infra
 /scratch
 /node_modules
+*/__fixtures__

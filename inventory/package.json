@@ -27,9 +27,11 @@
   "dependencies": {
     "@aws-sdk/client-dynamodb": "^3.552.0",
     "@aws-sdk/lib-dynamodb": "^3.552.0",
+    "@m31coding/fuzzy-search": "^1.0.1",
     "aws-xray-sdk": "^3.6.0",
     "cors": "^2.8.5",
     "express": "^4.19.2",
+    "node-cache": "^5.1.2",
     "tp-events": "file:../common/events"
   }
 }

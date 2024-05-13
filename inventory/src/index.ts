@@ -6,6 +6,7 @@ import AWSXRay from "aws-xray-sdk";
 import { errorHandler, errorNotFoundHandler } from "./middlewares/errorHandler";
 import { cacheMiddleware } from "./middlewares/cacheMiddleware";
 import cors from "cors";
+import { search } from "./routes/search";
 
 const app = express();
 
@@ -22,6 +23,7 @@ app.get("/", (req, res, next) => {
 app.use("/shows", shows);
 app.use("/players", players);
 app.use("/leaderboards", leaderboards);
+app.use("/search", search);
 
 app.use("/healthz", (req, res, next) => {
     res.send({ status: "healthy" });

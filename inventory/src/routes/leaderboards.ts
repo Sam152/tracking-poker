@@ -1,9 +1,9 @@
 import { executeQuery } from "../dynamo/executeQuery";
 import express from "express";
 import { allStatsOfType } from "../projection/queries/allStatsOfType";
-import { sumLeaderboard } from "./leaderboard/sumLeaderboard";
-import { averageLeaderboard } from "./leaderboard/averageLeaderboard";
 import { asyncCatch } from "../middlewares/asyncCatch";
+import { sumLeaderboard } from "../domain/leaderboard/sumLeaderboard";
+import { averageLeaderboard } from "../domain/leaderboard/averageLeaderboard";
 
 export const leaderboards = express.Router();
 

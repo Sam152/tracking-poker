@@ -7,6 +7,7 @@ import { PlayerLink } from "@/components/PlayerLink";
 import { MissingStat, StatFromType } from "@/components/Stat";
 import { HeadingOne } from "@/components/HeadingOne";
 import { PageTitle } from "@/components/PageTitle";
+import { shortShowTitle } from "@/domain/show/shortShowTitle";
 
 export default function ShowPage() {
     const router = useTypedRouter<{ id: string }>();
@@ -20,8 +21,8 @@ export default function ShowPage() {
 
     return (
         <>
-            <HeadingOne loading={show.isLoading}>{show.data?.show.show_name}</HeadingOne>
-            <PageTitle title={show.data?.show.show_name} />
+            <HeadingOne loading={show.isLoading}>{show.data && shortShowTitle(show.data.show)}</HeadingOne>
+            <PageTitle title={show.data?.show ? shortShowTitle(show.data.show) : undefined} />
             {tabs}
             <DataTable
                 rows={show.data?.players

@@ -4,6 +4,7 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
+    "dev-with-local": "NEXT_PUBLIC_INVENTORY_API=\"http://127.0.0.1:3001/\" next dev",
     "build": "next build",
     "start": "next start",
     "lint": "next lint"
@@ -12,6 +13,7 @@
     "@chakra-ui/react": "^2.8.2",
     "@emotion/react": "^11.11.4",
     "@emotion/styled": "^11.11.5",
+    "downshift": "^9.0.4",
     "framer-motion": "^11.1.5",
     "next": "14.2.2",
     "react": "^18",

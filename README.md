@@ -146,3 +146,10 @@ CloudWatch and X-Ray provide the foundation for logging and traces respectively.
 a useful visualisation for tracking down the root cause of errors as commands and events propagate through services:
 
 ![xray trace](./docs/img/xray.png)
+
+## The Results
+
+The results are a number of leaderboards refreshed daily, with the ability to drill down on the players and shows that are
+interesting:
+
+![result](./docs/img/result.png)

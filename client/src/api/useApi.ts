@@ -23,7 +23,7 @@ type Stat = {
     player: string;
     player_name: string;
     show: string;
-    type: string;
+    type: "cw" | "pfr" | "vpip";
     value: number;
 };
 
@@ -47,7 +47,7 @@ export function usePlayer(playerId?: string): SWRResponse<{
     return useApi(`players/${playerId}`);
 }
 
-type Show = {
+export type Show = {
     date: string;
     duration: number;
     id: string;
@@ -56,6 +56,16 @@ type Show = {
 };
 export function useShows(): SWRResponse<Array<Show>> {
     return useApi(`shows`);
+}
+
+export type PlayerSearchHit = {
+    player: string;
+    player_name: string;
+    last_played_date: string;
+    last_played_show: string;
+};
+export function usePlayerSearch(term: string): Promise<{ hits: Array<PlayerSearchHit> }> {
+    return apiFetcher(`search/players/${term}`);
 }
 
 type LeaderboardResponse = SWRResponse<

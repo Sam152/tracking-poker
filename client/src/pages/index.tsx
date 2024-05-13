@@ -8,6 +8,7 @@ import { PageTitle } from "@/components/PageTitle";
 
 export default function Home() {
     const items = useWinnersLeaderboard();
+
     return (
         <>
             <HeadingOne>Leaderboards</HeadingOne>

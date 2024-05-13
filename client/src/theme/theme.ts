@@ -3,6 +3,7 @@ import { mode } from "@chakra-ui/theme-tools";
 import { tabsTheme } from "@/theme/components/tabsTheme";
 import { containerTheme } from "@/theme/components/containerTheme";
 import { tableTheme } from "@/theme/components/tableTheme";
+import { autocompleteTheme } from "@/theme/components/autocompleteTheme";
 
 export const theme = extendTheme({
     initialColorMode: "dark",
@@ -11,6 +12,7 @@ export const theme = extendTheme({
         Container: containerTheme,
         Tabs: tabsTheme,
         Table: tableTheme,
+        Autocomplete: autocompleteTheme,
     },
     textStyles: {
         logo: {

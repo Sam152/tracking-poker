@@ -2,8 +2,8 @@ import express from "express";
 import { executeQuery } from "../dynamo/executeQuery";
 import { allShows } from "../projection/queries/allShows";
 import { allDataForShow } from "../projection/queries/allDataForShow";
-import { showIdFromUserInput } from "./validation/showIdFromUserInput";
 import { asyncCatch } from "../middlewares/asyncCatch";
+import { showIdFromUserInput } from "../domain/validation/showIdFromUserInput";
 
 export const shows = express.Router();
 

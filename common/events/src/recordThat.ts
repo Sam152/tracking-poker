@@ -32,7 +32,7 @@ export type BusEvents = {
         type: "cc" | "cw" | "pfr" | "vpip";
         stats: Array<{
             playerName: string;
-            stat: number | string;
+            stat: number;
         }>;
     };
 };

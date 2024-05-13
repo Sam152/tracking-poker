@@ -3,7 +3,7 @@ import { usePlayer } from "@/api/useApi";
 import { useTypedRouter } from "@/hooks/useTypedRouter";
 import { DataTable } from "@/components/DataTable";
 import { ShowLink } from "@/components/ShowLink";
-import { CwStat, MissingStat } from "@/components/Stat";
+import { MissingStat, StatFromType } from "@/components/Stat";
 import { useTabMenu } from "@/hooks/useTabMenu";
 import { HeadingOne } from "@/components/HeadingOne";
 import { PageTitle } from "@/components/PageTitle";
@@ -20,14 +20,17 @@ export default function PlayerPage() {
 
     return (
         <>
-            <HeadingOne loading={player.isLoading}>{player.data?.appearances[0].player_name}</HeadingOne>
+            <HeadingOne loading={player.isLoading}>{player.data?.appearances[0]?.player_name}</HeadingOne>
             <PageTitle title={"Highest VPIP"} />
 
             {tabs}
             <DataTable
                 rows={player.data?.appearances.map((appearance) => {
-                    const showCw = player.data?.stats[activeTab]?.find((stat) => stat.show === appearance.show);
-                    return [<ShowLink {...appearance} />, showCw ? <CwStat value={showCw.value} /> : <MissingStat />];
+                    const stat = player.data?.stats[activeTab]?.find((stat) => stat.show === appearance.show);
+                    return [
+                        <ShowLink {...appearance} />,
+                        stat ? <StatFromType type={stat.type} value={stat.value} /> : <MissingStat />,
+                    ];
                 })}
             />
         </>
