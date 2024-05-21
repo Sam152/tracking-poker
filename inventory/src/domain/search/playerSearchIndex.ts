@@ -14,17 +14,21 @@ const cache = new NodeCache({
 type Index = DynamicSearcher<Player, string>;
 
 export async function playerSearchIndex(): Promise<Index> {
-    if (cache.get("index")) {
-        return cache.get("index") as Index;
+    const cacheHit = cache.get<Index>("index");
+    if (cacheHit) {
+        return cacheHit;
     }
+
     const { players } = await executeQuery(allPlayers());
     const index = fuzzySearch.SearcherFactory.createDefaultSearcher<Player, string>();
+
     index.indexEntities(
         players,
         (player) => player.player,
         (player) => [player.player_name],
     );
     cache.set("index", index);
+
     return index;
 }
 

@@ -29,6 +29,8 @@ import { s3UriToParts } from "./util/s3UriToParts";
  *     -> Service B invoked: records BarEvent
  * ServiceCCommand
  *     -> Service C invoked: records BazEvent
+ *
+ * This is an example of "orchestrated services" as opposed to "choreographed services".
  */
 export async function handler<T extends keyof BusEvents>(
     event: EventBridgeEvent<T, BusEvents[T]>,

@@ -1,20 +1,38 @@
-import { resolveBlocks, testFrames } from "../../__fixtures__/fixturePath";
+import { getBlocksFromFrame } from "./getBlocksFromFrame";
+import { ProvisionedThroughputExceededException } from "@aws-sdk/client-textract";
+import { testPng } from "./__fixtures__/testPng";
 
-jest.setTimeout(60 * 60 * 1000);
+const send = jest.fn();
+
+jest.mock("@aws-sdk/client-textract", () => ({
+    ...jest.requireActual("@aws-sdk/client-textract"),
+    TextractClient: class Client {
+        send(...args: any[]) {
+            return send(...args);
+        }
+    },
+}));
+
+jest.mock("../../util/sleepRandom", () => ({
+    sleepRandom: () => null,
+}));
 
 describe("extractBlocksFromFrame", () => {
-    test("false positive frame can be extracted", async () => {
-        const ocrFalsePositive = testFrames().find((frame) => frame.videoId === "-aLsrDQUQZw" && frame.frameId === "zilch_0091")!;
-        const extraction = await resolveBlocks(ocrFalsePositive);
-        expect(extraction.length).toBeGreaterThan(0);
+    beforeEach(() => {
+        send.mockReset();
+        console.log = jest.fn();
+        console.error = jest.fn();
     });
 
-    testFrames()
-        .filter((frame) => frame.labelledType !== undefined)
-        .map((frame) => {
-            test(`${frame.videoId}/${frame.frameId} extracted blocks`, async () => {
-                const extraction = await resolveBlocks(frame);
-                expect(extraction.length).toBeGreaterThan(0);
-            });
+    test("analysis will be retried 5 times before returning", async () => {
+        const e = new ProvisionedThroughputExceededException({
+            message: "Too much juice",
+            $metadata: {},
         });
+        send.mockImplementation(() => {
+            throw e;
+        });
+        await expect(getBlocksFromFrame(testPng)).rejects.toThrow(e);
+        expect(send).toHaveBeenCalledTimes(5);
+    });
 });

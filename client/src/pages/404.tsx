@@ -30,10 +30,10 @@ export default function Custom404() {
 
     // In this state, we are in the process of determining if a given path is a route and will be redirected to.
     if (!isLegitimate404) {
-        return <div>loading</div>;
+        return null;
     }
 
-    return <div>Custom404</div>;
+    return <div>404 Page not found</div>;
 }
 
 async function pageExists(location: string) {

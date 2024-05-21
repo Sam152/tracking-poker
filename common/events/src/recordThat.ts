@@ -25,6 +25,7 @@ export type BusEvents = {
     FrameClassifiedAsJunk: {
         videoId: string;
         frameId: string;
+        junkedBecause?: string;
     };
     StatsExtractedFromFrame: {
         videoId: string;

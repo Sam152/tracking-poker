@@ -10,10 +10,11 @@ export async function handler(incomingEvent: ServiceInvocationEvents, context: P
     const frame = await fetchAsset(event["detail"].bucket, event["detail"].key);
 
     // Do a first pass with the cheap classifier to see if a frame is junk.
-    if (!(await isFrameOfInterest(frame))) {
+    if (!(await isFrameOfInterest(frame, event.detail.frameId))) {
         await recordThat("FrameClassifiedAsJunk", {
             videoId: event.detail.videoId,
             frameId: event.detail.frameId,
+            junkedBecause: "FRAME_OF_INTEREST_CHECK_FAILED",
         });
         return;
     }
@@ -24,6 +25,7 @@ export async function handler(incomingEvent: ServiceInvocationEvents, context: P
         await recordThat("FrameClassifiedAsJunk", {
             videoId: event.detail.videoId,
             frameId: event.detail.frameId,
+            junkedBecause: "TEXTRACT_DOCUMENT_CLASSIFIED_AS_JUNK",
         });
         return;
     }
