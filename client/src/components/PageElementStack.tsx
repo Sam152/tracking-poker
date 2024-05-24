@@ -5,7 +5,7 @@ import { PageTitle } from "@/components/PageTitle";
 export function PageElementStack({ children, pageTitle }: { children?: ReactNode; pageTitle?: string }) {
     return (
         <>
-            {pageTitle && <PageTitle title={"Not so winning"} />}
+            {pageTitle && <PageTitle title={pageTitle} />}
             <VStack w="full" alignItems="stretch" spacing={6} pb={12}>
                 {children}
             </VStack>
