@@ -4,6 +4,7 @@ import { tabsTheme } from "@/theme/components/tabsTheme";
 import { containerTheme } from "@/theme/components/containerTheme";
 import { tableTheme } from "@/theme/components/tableTheme";
 import { autocompleteTheme } from "@/theme/components/autocompleteTheme";
+import { codeTheme } from "@/theme/components/codeTheme";
 
 export const theme = extendTheme({
     initialColorMode: "dark",
@@ -13,6 +14,7 @@ export const theme = extendTheme({
         Tabs: tabsTheme,
         Table: tableTheme,
         Autocomplete: autocompleteTheme,
+        Code: codeTheme,
     },
     textStyles: {
         logo: {
@@ -25,6 +27,14 @@ export const theme = extendTheme({
         },
         accent: {
             fontFamily: "PT Mono,sans-serif",
+        },
+    },
+    layerStyles: {
+        boxed: {
+            border: "2px solid",
+            borderColor: "gray.900",
+            borderRadius: 10,
+            overflow: "hidden",
         },
     },
     styles: {

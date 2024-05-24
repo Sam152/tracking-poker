@@ -19,7 +19,7 @@ export function useShow(showId?: string): SWRResponse<{
     return useApi(showId ? `shows/${showId}` : null);
 }
 
-type Stat = {
+export type Stat = {
     player: string;
     player_name: string;
     show: string;
@@ -27,7 +27,7 @@ type Stat = {
     value: number;
 };
 
-type PlayerAppearance = {
+export type PlayerAppearance = {
     date: string;
     player: string;
     player_name: string;

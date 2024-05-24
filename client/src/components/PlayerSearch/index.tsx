@@ -1,30 +1,10 @@
 import { Box, Input } from "@chakra-ui/react";
 import { AutocompleteBox, AutocompleteItem } from "@/components/AutocompleteBox";
 import React from "react";
-import { useCombobox } from "downshift";
-import { usePlayerSearchState } from "@/components/PlayerSearch/usePlayerSearchState";
+import { usePlayerSearch } from "@/components/PlayerSearch/usePlayerSearch";
 
 export function PlayerSearch() {
-    const [state, dispatch] = usePlayerSearchState();
-
-    const { isOpen, getMenuProps, getInputProps, highlightedIndex, getItemProps, reset } = useCombobox({
-        onInputValueChange({ inputValue, selectedItem }) {
-            // Don't dispatch when this callback is triggered on an item selection, doing so will cause a new search
-            // to execute, when we are instead waiting for the page to navigate to the player.
-            if (inputValue !== selectedItem?.player_name) {
-                dispatch({ name: "SEARCH_INPUT_CHANGED", value: inputValue });
-            }
-        },
-        onSelectedItemChange({ selectedItem }) {
-            dispatch({ name: "SEARCH_HIT_SELECTED", hit: { ...selectedItem } });
-            reset();
-        },
-        items: state.hits,
-        itemToString(item) {
-            return item ? item.player_name : "";
-        },
-    });
-
+    const { state, isOpen, getMenuProps, getInputProps, highlightedIndex, getItemProps } = usePlayerSearch();
     return (
         <Box position="relative">
             <Input placeholder="Search for a player..." {...getInputProps()} />

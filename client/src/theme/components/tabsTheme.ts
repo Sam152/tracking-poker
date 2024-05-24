@@ -14,7 +14,7 @@ const baseStyle = definePartsStyle({
         _selected: {},
     },
     tablist: {
-        mb: 6,
+        mb: 0,
     },
 });
 

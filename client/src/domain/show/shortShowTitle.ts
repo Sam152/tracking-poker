@@ -57,6 +57,10 @@ const gameTypes: Array<{ match: RegExp; formatter: (show: Pick<Show, "show_name"
         formatter: () => "Pre-game Show",
     },
     {
+        match: /tournament/i,
+        formatter: () => "Tournament",
+    },
+    {
         match: stakesMatch,
         formatter: (show, date) => [dayOfTheWeek(date), extractStakes(show.show_name)].join(" "),
     },
