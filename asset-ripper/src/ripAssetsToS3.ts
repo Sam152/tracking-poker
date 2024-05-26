@@ -13,6 +13,7 @@ export async function ripAssetsToS3(video: YouTubeVideo) {
     const videoFilename = await video.downloadLastTenMinutes(workspace.directory());
     const metadata = await video.resolveMetadata();
     await createObject(`${video.id}/video.webm`, videoFilename);
+    await createObject(`${video.id}/metadata.json`, JSON.stringify(metadata));
 
     await recordThat("VideoAssetStored", {
         videoId: video.id,
