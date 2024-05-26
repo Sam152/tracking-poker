@@ -132,6 +132,23 @@ volume of data produced by a single operator, each partition could grow by some 
 query performance. Querying for all data points then aggregating on demand, may eventually prove to not scale, but works
 for the volume of data in the foreseeable future.
 
+### Client
+
+The client is an SPA deployed to an S3 bucket using the following key libraries:
+
+-   `swr` for data fetching.
+-   Next.js using the `export` bundling mode (SPA with no SSR or server component).
+-   Chakra UI as a component library.
+
+The client also ships with a debug mode that is switched on globally to show contextually relevant information for
+helping to debug and observe behaviour in the app. It shows responses from the inventory API for the current page and
+links directly to the logs of services, filtered by the content asset you are looking at:
+
+![client debug](./docs/img/client-debug.png)
+
+This mode is activated by spamming the `shift` key in rapid succession, inspired by the activation of Windows XP
+accessibility feature "sticky keys".
+
 ## Infrastructure
 
 Where possible, all components use on-demand pricing (DynamoDB, ECS, Fargate), to keep costs low when infrastructure is
