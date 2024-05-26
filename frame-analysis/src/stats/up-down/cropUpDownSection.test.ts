@@ -8,8 +8,8 @@ import fs from "fs";
 import { ApiLineBlock } from "amazon-textract-response-parser/dist/types/api-models/content";
 import { LineGeneric } from "amazon-textract-response-parser/dist/types/content";
 import { StatType } from "../types/StatType";
-import { buildStatsFromLookBackAndAhead } from "../block-parsing/buildStatsFromLookBack";
 import { looksLikeMoney } from "../util/looksLikeMoney";
+import { buildStatsFromLookBackAndAhead } from "../block-parsing/buildStatsFromLookBackAndAhead";
 
 expect.extend({ toMatchImageSnapshot });
 jest.setTimeout(6 * 60 * 60 * 1000);

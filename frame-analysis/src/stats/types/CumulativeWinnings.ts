@@ -4,8 +4,8 @@ import { ApiLineBlock } from "amazon-textract-response-parser/dist/types/api-mod
 import { LineGeneric } from "amazon-textract-response-parser/dist/types/content";
 import { cropUpDownSection } from "../up-down/cropUpDownSection";
 import { classifyUpDown } from "../up-down/classifyUpDown";
-import { buildStatsFromLookBackAndAhead } from "../block-parsing/buildStatsFromLookBack";
 import { looksLikeMoney, parseMoney } from "../util/looksLikeMoney";
+import { buildStatsFromLookBackAndAhead } from "../block-parsing/buildStatsFromLookBackAndAhead";
 
 export const CumulativeWinnings: StatMetadata = {
     type: StatType.CumulativeWinnings,

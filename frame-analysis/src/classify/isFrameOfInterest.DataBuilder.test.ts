@@ -14,10 +14,13 @@ jest.setTimeout(6 * 60 * 60 * 1000);
  *  - Counts the total number of false positives.
  */
 describe("classifyIsFrameOfInterest", () => {
+    beforeEach(() => {
+        console.log = jest.fn();
+        console.error = jest.fn();
+    });
+
     test("function returns correct classification", async () => {
-        expect(
-            await isFrameOfInterest(fs.readFileSync(fixturePath("frames/-_HPip8wiYk/cc_1.jpg"))),
-        ).toEqual(true);
+        expect(await isFrameOfInterest(fs.readFileSync(fixturePath("frames/-_HPip8wiYk/cc_1.jpg")))).toEqual(true);
     });
 
     // Cases that cannot be classified in our dataset. This is acceptable in small numbers given there
@@ -30,10 +33,7 @@ describe("classifyIsFrameOfInterest", () => {
                 const document = await resolveDocument(testFrame);
                 const result = documentContainsAnyTypeTriggerWord(document);
                 // Binary classification between interesting or not.
-                (testFrame.labelledType === undefined
-                    ? expect(result).not
-                    : expect(result)
-                ).toEqual(true);
+                (testFrame.labelledType === undefined ? expect(result).not : expect(result)).toEqual(true);
             });
         });
 

@@ -4,6 +4,7 @@ List of tasks to complete:
 
 -   [ ] Increase stat collection accuracy.
 -   [ ] Allow stat extraction to run again on pre-OCRd frames.
+-   [ ] Preserve video metadata in asset ripper service.
 -   [ ] Clear events and reimport?
     -   [ ] Possibly allow asset ripper to skip downloading already downloaded assets.
 -   [ ] Add aliases for names, for players who have used multiple names.

@@ -196,6 +196,10 @@ exports[`getAnalysisFromBlocks Analysis of from -_HPip8wiYk/cw_1 resolved: -_HPi
       "playerName": "DJ WASHBURN",
       "stat": -39500,
     },
+    {
+      "playerName": "KENNEDY",
+      "stat": -27725,
+    },
   ],
 ]
 `;
@@ -276,6 +280,10 @@ exports[`getAnalysisFromBlocks Analysis of from -_HPip8wiYk/cw_3 resolved: -_HPi
       "playerName": "DJ WASHBURN",
       "stat": -39500,
     },
+    {
+      "playerName": "KENNEDY",
+      "stat": -27725,
+    },
   ],
 ]
 `;
@@ -316,6 +324,10 @@ exports[`getAnalysisFromBlocks Analysis of from -_HPip8wiYk/cw_4 resolved: -_HPi
       "playerName": "DJ WASHBURN",
       "stat": -39500,
     },
+    {
+      "playerName": "KENNEDY",
+      "stat": -27725,
+    },
   ],
 ]
 `;
@@ -355,6 +367,10 @@ exports[`getAnalysisFromBlocks Analysis of from -_HPip8wiYk/cw_5 resolved: -_HPi
     {
       "playerName": "DJ WASHBURN",
       "stat": -39500,
+    },
+    {
+      "playerName": "KENNEDY",
+      "stat": -27725,
     },
   ],
 ]
@@ -972,6 +988,10 @@ exports[`getAnalysisFromBlocks Analysis of from -_tNYQNkPB0/cw_3 resolved: -_tNY
       "playerName": "HANKS",
       "stat": -392000,
     },
+    {
+      "playerName": "SANTHOSH",
+      "stat": -11390007,
+    },
   ],
 ]
 `;
@@ -1015,6 +1035,10 @@ exports[`getAnalysisFromBlocks Analysis of from -_tNYQNkPB0/cw_4 resolved: -_tNY
     {
       "playerName": "HANKS",
       "stat": -392000,
+    },
+    {
+      "playerName": "SANTHOSH",
+      "stat": -1139000,
     },
   ],
 ]
@@ -1147,6 +1171,10 @@ exports[`getAnalysisFromBlocks Analysis of from -_tNYQNkPB0/cw_7 resolved: -_tNY
     {
       "playerName": "HANKS",
       "stat": -392000,
+    },
+    {
+      "playerName": "SANTHOSH",
+      "stat": -1139000,
     },
   ],
 ]
@@ -2795,6 +2823,10 @@ exports[`getAnalysisFromBlocks Analysis of from -aLsrDQUQZw/cw_1 resolved: -aLsr
       "playerName": "CONNOR",
       "stat": -10000,
     },
+    {
+      "playerName": "ERIKA",
+      "stat": -10500,
+    },
   ],
 ]
 `;
@@ -2835,6 +2867,10 @@ exports[`getAnalysisFromBlocks Analysis of from -aLsrDQUQZw/cw_2 resolved: -aLsr
       "playerName": "CONNOR",
       "stat": -10000,
     },
+    {
+      "playerName": "ERIKA",
+      "stat": -10500,
+    },
   ],
 ]
 `;
@@ -2874,6 +2910,10 @@ exports[`getAnalysisFromBlocks Analysis of from -aLsrDQUQZw/cw_3 resolved: -aLsr
     {
       "playerName": "CONNOR",
       "stat": -10000,
+    },
+    {
+      "playerName": "ERIKA",
+      "stat": -10500,
     },
   ],
 ]
@@ -2954,6 +2994,10 @@ exports[`getAnalysisFromBlocks Analysis of from -aLsrDQUQZw/cw_5 resolved: -aLsr
     {
       "playerName": "CONNOR",
       "stat": -10000,
+    },
+    {
+      "playerName": "ERIKA",
+      "stat": -10500,
     },
   ],
 ]
@@ -5036,6 +5080,10 @@ exports[`getAnalysisFromBlocks Analysis of from -wx2d3EudeM/cw_1 resolved: -wx2d
       "playerName": "JUNGLEMAN",
       "stat": -148600,
     },
+    {
+      "playerName": "JIMMY",
+      "stat": -224800,
+    },
   ],
 ]
 `;
@@ -5071,6 +5119,10 @@ exports[`getAnalysisFromBlocks Analysis of from -wx2d3EudeM/cw_2 resolved: -wx2d
     {
       "playerName": "JUNGLEMAN",
       "stat": -148600,
+    },
+    {
+      "playerName": "JIMMY",
+      "stat": -224800,
     },
   ],
 ]
@@ -5108,6 +5160,10 @@ exports[`getAnalysisFromBlocks Analysis of from -wx2d3EudeM/cw_3 resolved: -wx2d
       "playerName": "JUNGLEMAN",
       "stat": -148600,
     },
+    {
+      "playerName": "JIMMY",
+      "stat": -224800,
+    },
   ],
 ]
 `;
@@ -5143,6 +5199,10 @@ exports[`getAnalysisFromBlocks Analysis of from -wx2d3EudeM/cw_4 resolved: -wx2d
     {
       "playerName": "JUNGLEMAN",
       "stat": -148600,
+    },
+    {
+      "playerName": "JIMMY",
+      "stat": -224800,
     },
   ],
 ]
@@ -5180,6 +5240,10 @@ exports[`getAnalysisFromBlocks Analysis of from -wx2d3EudeM/cw_5 resolved: -wx2d
       "playerName": "JUNGLEMAN",
       "stat": -148600,
     },
+    {
+      "playerName": "JIMMY",
+      "stat": -224800,
+    },
   ],
 ]
 `;
@@ -5216,6 +5280,10 @@ exports[`getAnalysisFromBlocks Analysis of from -wx2d3EudeM/cw_6 resolved: -wx2d
       "playerName": "JUNGLEMAN",
       "stat": -148600,
     },
+    {
+      "playerName": "JIMMY",
+      "stat": -224800,
+    },
   ],
 ]
 `;
@@ -5251,6 +5319,10 @@ exports[`getAnalysisFromBlocks Analysis of from -wx2d3EudeM/cw_7 resolved: -wx2d
     {
       "playerName": "JUNGLEMAN",
       "stat": -148600,
+    },
+    {
+      "playerName": "JIMMY",
+      "stat": -224800,
     },
   ],
 ]
@@ -5588,6 +5660,10 @@ exports[`getAnalysisFromBlocks Analysis of from -xxUat01rRc/cw_1 resolved: -xxUa
       "playerName": "WHOISWHO",
       "stat": -12180,
     },
+    {
+      "playerName": "BOBBY",
+      "stat": -15400,
+    },
   ],
 ]
 `;
@@ -5631,6 +5707,10 @@ exports[`getAnalysisFromBlocks Analysis of from -xxUat01rRc/cw_2 resolved: -xxUa
     {
       "playerName": "WHOISWHO",
       "stat": -12180,
+    },
+    {
+      "playerName": "BOBBY",
+      "stat": -15400,
     },
   ],
 ]
@@ -5676,6 +5756,10 @@ exports[`getAnalysisFromBlocks Analysis of from -xxUat01rRc/cw_3 resolved: -xxUa
       "playerName": "WHOISWHO",
       "stat": -12180,
     },
+    {
+      "playerName": "BOBBY",
+      "stat": -15400,
+    },
   ],
 ]
 `;
@@ -5719,6 +5803,10 @@ exports[`getAnalysisFromBlocks Analysis of from -xxUat01rRc/cw_4 resolved: -xxUa
     {
       "playerName": "WHOISWHO",
       "stat": -12180,
+    },
+    {
+      "playerName": "BOBBY",
+      "stat": -15400,
     },
   ],
 ]
@@ -6672,6 +6760,10 @@ exports[`getAnalysisFromBlocks Analysis of from 06cbriCEa-A/cw_2 resolved: 06cbr
       "playerName": "WESLEY",
       "stat": -217500,
     },
+    {
+      "playerName": "AUSSIE MATT",
+      "stat": -191500,
+    },
   ],
 ]
 `;
@@ -6708,6 +6800,10 @@ exports[`getAnalysisFromBlocks Analysis of from 06cbriCEa-A/cw_3 resolved: 06cbr
       "playerName": "WESLEY",
       "stat": -217500,
     },
+    {
+      "playerName": "AUSSIE MATT",
+      "stat": -191500,
+    },
   ],
 ]
 `;
@@ -6743,6 +6839,10 @@ exports[`getAnalysisFromBlocks Analysis of from 06cbriCEa-A/cw_4 resolved: 06cbr
     {
       "playerName": "WESLEY",
       "stat": -217500,
+    },
+    {
+      "playerName": "AUSSIE MATT",
+      "stat": -191500,
     },
   ],
 ]
@@ -7132,6 +7232,10 @@ exports[`getAnalysisFromBlocks Analysis of from 049-vzJIek8/cw_1 resolved: 049-v
       "playerName": "LUDA CHRIS",
       "stat": -83325,
     },
+    {
+      "playerName": "DYLAN",
+      "stat": -49975,
+    },
   ],
 ]
 `;
@@ -7171,6 +7275,10 @@ exports[`getAnalysisFromBlocks Analysis of from 049-vzJIek8/cw_2 resolved: 049-v
     {
       "playerName": "LUDA CHRIS",
       "stat": -83325,
+    },
+    {
+      "playerName": "DYLAN",
+      "stat": -49975,
     },
   ],
 ]
@@ -7212,6 +7320,10 @@ exports[`getAnalysisFromBlocks Analysis of from 049-vzJIek8/cw_3 resolved: 049-v
       "playerName": "LUDA CHRIS",
       "stat": -83325,
     },
+    {
+      "playerName": "DYLAN",
+      "stat": -49975,
+    },
   ],
 ]
 `;
@@ -7252,6 +7364,10 @@ exports[`getAnalysisFromBlocks Analysis of from 049-vzJIek8/cw_4 resolved: 049-v
       "playerName": "LUDA CHRIS",
       "stat": -83325,
     },
+    {
+      "playerName": "DYLAN",
+      "stat": -49975,
+    },
   ],
 ]
 `;
@@ -7291,6 +7407,10 @@ exports[`getAnalysisFromBlocks Analysis of from 049-vzJIek8/cw_5 resolved: 049-v
     {
       "playerName": "LUDA CHRIS",
       "stat": -83325,
+    },
+    {
+      "playerName": "DYLAN",
+      "stat": -49975,
     },
   ],
 ]
@@ -7712,6 +7832,10 @@ exports[`getAnalysisFromBlocks Analysis of from 0Dtd4UWcWek/cw_1 resolved: 0Dtd4
       "playerName": "CHIN",
       "stat": -84725,
     },
+    {
+      "playerName": "MICHAEL",
+      "stat": -44600,
+    },
   ],
 ]
 `;
@@ -7751,6 +7875,10 @@ exports[`getAnalysisFromBlocks Analysis of from 0Dtd4UWcWek/cw_2 resolved: 0Dtd4
     {
       "playerName": "CHIN",
       "stat": -84725,
+    },
+    {
+      "playerName": "MICHAEL",
+      "stat": -44600,
     },
   ],
 ]
@@ -7792,6 +7920,10 @@ exports[`getAnalysisFromBlocks Analysis of from 0Dtd4UWcWek/cw_3 resolved: 0Dtd4
       "playerName": "CHIN",
       "stat": -84725,
     },
+    {
+      "playerName": "MICHAEL",
+      "stat": -44600,
+    },
   ],
 ]
 `;
@@ -7831,6 +7963,10 @@ exports[`getAnalysisFromBlocks Analysis of from 0Dtd4UWcWek/cw_4 resolved: 0Dtd4
     {
       "playerName": "CHIN",
       "stat": -84725,
+    },
+    {
+      "playerName": "MICHAEL",
+      "stat": -44600,
     },
   ],
 ]
@@ -7872,6 +8008,10 @@ exports[`getAnalysisFromBlocks Analysis of from 0Dtd4UWcWek/cw_5 resolved: 0Dtd4
       "playerName": "CHIN",
       "stat": -84725,
     },
+    {
+      "playerName": "MICHAEL",
+      "stat": -44600,
+    },
   ],
 ]
 `;
@@ -7912,6 +8052,10 @@ exports[`getAnalysisFromBlocks Analysis of from 0Dtd4UWcWek/cw_6 resolved: 0Dtd4
       "playerName": "CHIN",
       "stat": -84725,
     },
+    {
+      "playerName": "MICHAEL",
+      "stat": -44600,
+    },
   ],
 ]
 `;
@@ -7951,6 +8095,10 @@ exports[`getAnalysisFromBlocks Analysis of from 0Dtd4UWcWek/cw_7 resolved: 0Dtd4
     {
       "playerName": "CHIN",
       "stat": -84725,
+    },
+    {
+      "playerName": "MICHAEL",
+      "stat": -44600,
     },
   ],
 ]
@@ -8392,6 +8540,10 @@ exports[`getAnalysisFromBlocks Analysis of from 0P4qt3KxkzI/cw_1 resolved: 0P4qt
       "playerName": "ISRAELI RON",
       "stat": -23350,
     },
+    {
+      "playerName": "JAMI",
+      "stat": -7660,
+    },
   ],
 ]
 `;
@@ -8435,6 +8587,10 @@ exports[`getAnalysisFromBlocks Analysis of from 0P4qt3KxkzI/cw_2 resolved: 0P4qt
     {
       "playerName": "ISRAELI RON",
       "stat": -23350,
+    },
+    {
+      "playerName": "JAMI",
+      "stat": -7660,
     },
   ],
 ]
@@ -8480,6 +8636,10 @@ exports[`getAnalysisFromBlocks Analysis of from 0P4qt3KxkzI/cw_3 resolved: 0P4qt
       "playerName": "ISRAELI RON",
       "stat": -23350,
     },
+    {
+      "playerName": "JAMI",
+      "stat": -7660,
+    },
   ],
 ]
 `;
@@ -8524,6 +8684,10 @@ exports[`getAnalysisFromBlocks Analysis of from 0P4qt3KxkzI/cw_4 resolved: 0P4qt
       "playerName": "ISRAELI RON",
       "stat": -23350,
     },
+    {
+      "playerName": "JAMI",
+      "stat": -7660,
+    },
   ],
 ]
 `;
@@ -8567,6 +8731,10 @@ exports[`getAnalysisFromBlocks Analysis of from 0P4qt3KxkzI/cw_5 resolved: 0P4qt
     {
       "playerName": "ISRAELI RON",
       "stat": -23350,
+    },
+    {
+      "playerName": "JAMI",
+      "stat": -7660,
     },
   ],
 ]
@@ -12872,6 +13040,10 @@ exports[`getAnalysisFromBlocks Analysis of from 1nSm98xicug/cw_1 resolved: 1nSm9
       "playerName": "DGAF",
       "stat": -10080,
     },
+    {
+      "playerName": "RANDY",
+      "stat": -7760,
+    },
   ],
 ]
 `;
@@ -12999,6 +13171,10 @@ exports[`getAnalysisFromBlocks Analysis of from 1nSm98xicug/cw_4 resolved: 1nSm9
     {
       "playerName": "RANDY",
       "stat": -12440,
+    },
+    {
+      "playerName": "NIKOS",
+      "stat": -15430,
     },
   ],
 ]
@@ -13996,6 +14172,10 @@ exports[`getAnalysisFromBlocks Analysis of from 12hi1AHMdd8/cw_1 resolved: 12hi1
       "playerName": "RAMPAGE",
       "stat": -24390,
     },
+    {
+      "playerName": "CRAZY DREW",
+      "stat": -17740,
+    },
   ],
 ]
 `;
@@ -14035,6 +14215,10 @@ exports[`getAnalysisFromBlocks Analysis of from 12hi1AHMdd8/cw_2 resolved: 12hi1
     {
       "playerName": "RAMPAGE",
       "stat": -24390,
+    },
+    {
+      "playerName": "CRAZY DREW",
+      "stat": -17740,
     },
   ],
 ]
@@ -14076,6 +14260,10 @@ exports[`getAnalysisFromBlocks Analysis of from 12hi1AHMdd8/cw_3 resolved: 12hi1
       "playerName": "RAMPAGE",
       "stat": -24390,
     },
+    {
+      "playerName": "CRAZY DREW",
+      "stat": -17740,
+    },
   ],
 ]
 `;
@@ -14115,6 +14303,10 @@ exports[`getAnalysisFromBlocks Analysis of from 12hi1AHMdd8/cw_4 resolved: 12hi1
     {
       "playerName": "RAMPAGE",
       "stat": -24390,
+    },
+    {
+      "playerName": "CRAZY DREW",
+      "stat": -17740,
     },
   ],
 ]
@@ -14156,6 +14348,10 @@ exports[`getAnalysisFromBlocks Analysis of from 12hi1AHMdd8/cw_5 resolved: 12hi1
       "playerName": "RAMPAGE",
       "stat": -24390,
     },
+    {
+      "playerName": "CRAZY DREW",
+      "stat": -17740,
+    },
   ],
 ]
 `;
@@ -14195,6 +14391,10 @@ exports[`getAnalysisFromBlocks Analysis of from 12hi1AHMdd8/cw_6 resolved: 12hi1
     {
       "playerName": "RAMPAGE",
       "stat": -24390,
+    },
+    {
+      "playerName": "CRAZY DREW",
+      "stat": -17740,
     },
   ],
 ]
@@ -14528,6 +14728,18 @@ exports[`getAnalysisFromBlocks Analysis of from Ge3ZvqPSNBk/cw_1 resolved: Ge3Zv
       "playerName": "HANDZ",
       "stat": -543000,
     },
+    {
+      "playerName": "PAV",
+      "stat": -960000,
+    },
+    {
+      "playerName": "BEN",
+      "stat": -640000,
+    },
+    {
+      "playerName": "STANLEY",
+      "stat": -1000000,
+    },
   ],
 ]
 `;
@@ -14552,6 +14764,10 @@ exports[`getAnalysisFromBlocks Analysis of from Ge3ZvqPSNBk/cw_2 resolved: Ge3Zv
       "playerName": "STANLEY",
       "stat": -1000000,
     },
+    {
+      "playerName": "BEN",
+      "stat": -640000,
+    },
   ],
 ]
 `;
@@ -14563,6 +14779,22 @@ exports[`getAnalysisFromBlocks Analysis of from Ge3ZvqPSNBk/cw_3 resolved: Ge3Zv
     {
       "playerName": "WESLEY",
       "stat": -0,
+    },
+    {
+      "playerName": "PAV",
+      "stat": -960000,
+    },
+    {
+      "playerName": "BEN",
+      "stat": -640000,
+    },
+    {
+      "playerName": "HANDZ",
+      "stat": -956000,
+    },
+    {
+      "playerName": "STANLEY",
+      "stat": -1000000,
     },
   ],
 ]
@@ -14588,6 +14820,10 @@ exports[`getAnalysisFromBlocks Analysis of from Ge3ZvqPSNBk/cw_4 resolved: Ge3Zv
       "playerName": "HANDZ",
       "stat": -543000,
     },
+    {
+      "playerName": "STANLEY",
+      "stat": -1000000,
+    },
   ],
 ]
 `;
@@ -14608,6 +14844,14 @@ exports[`getAnalysisFromBlocks Analysis of from Ge3ZvqPSNBk/cw_5 resolved: Ge3Zv
       "playerName": "BEN",
       "stat": -360000,
     },
+    {
+      "playerName": "HANDZ",
+      "stat": -956000,
+    },
+    {
+      "playerName": "STANLEY",
+      "stat": -1000000,
+    },
   ],
 ]
 `;
@@ -14619,6 +14863,22 @@ exports[`getAnalysisFromBlocks Analysis of from Ge3ZvqPSNBk/cw_6 resolved: Ge3Zv
     {
       "playerName": "WESLEY",
       "stat": 0,
+    },
+    {
+      "playerName": "PAV",
+      "stat": -960000,
+    },
+    {
+      "playerName": "BEN",
+      "stat": -640000,
+    },
+    {
+      "playerName": "HANDZ",
+      "stat": -956000,
+    },
+    {
+      "playerName": "STANLEY",
+      "stat": -1000000,
     },
   ],
 ]
@@ -14639,6 +14899,14 @@ exports[`getAnalysisFromBlocks Analysis of from Ge3ZvqPSNBk/cw_7 resolved: Ge3Zv
     {
       "playerName": "STANLEY",
       "stat": -1000000,
+    },
+    {
+      "playerName": "BEN",
+      "stat": -640000,
+    },
+    {
+      "playerName": "HANDZ",
+      "stat": -956000,
     },
   ],
 ]
@@ -14663,6 +14931,10 @@ exports[`getAnalysisFromBlocks Analysis of from Ge3ZvqPSNBk/cw_8 resolved: Ge3Zv
     {
       "playerName": "HANDZ",
       "stat": -543000,
+    },
+    {
+      "playerName": "STANLEY",
+      "stat": -1000000,
     },
   ],
 ]
@@ -14972,6 +15244,14 @@ exports[`getAnalysisFromBlocks Analysis of from LaD_b_YPnDk/cw_1 resolved: LaD_b
       "playerName": "DGAF",
       "stat": -9420,
     },
+    {
+      "playerName": "RAD CHANCE",
+      "stat": -2630,
+    },
+    {
+      "playerName": "WADE",
+      "stat": -9740,
+    },
   ],
 ]
 `;
@@ -15011,6 +15291,14 @@ exports[`getAnalysisFromBlocks Analysis of from LaD_b_YPnDk/cw_2 resolved: LaD_b
     {
       "playerName": "DGAF",
       "stat": -9420,
+    },
+    {
+      "playerName": "RAD CHANCE",
+      "stat": -2630,
+    },
+    {
+      "playerName": "WADE",
+      "stat": -9740,
     },
   ],
 ]
@@ -15052,6 +15340,14 @@ exports[`getAnalysisFromBlocks Analysis of from LaD_b_YPnDk/cw_3 resolved: LaD_b
       "playerName": "DGAF",
       "stat": -9420,
     },
+    {
+      "playerName": "RAD CHANCE",
+      "stat": -2630,
+    },
+    {
+      "playerName": "WADE",
+      "stat": -9740,
+    },
   ],
 ]
 `;
@@ -15092,6 +15388,14 @@ exports[`getAnalysisFromBlocks Analysis of from LaD_b_YPnDk/cw_4 resolved: LaD_b
       "playerName": "DGAF",
       "stat": -9420,
     },
+    {
+      "playerName": "RAD CHANCE",
+      "stat": -2630,
+    },
+    {
+      "playerName": "WADE",
+      "stat": -9740,
+    },
   ],
 ]
 `;
@@ -15131,6 +15435,14 @@ exports[`getAnalysisFromBlocks Analysis of from LaD_b_YPnDk/cw_5 resolved: LaD_b
     {
       "playerName": "DGAF",
       "stat": -9420,
+    },
+    {
+      "playerName": "RAD CHANCE",
+      "stat": -2630,
+    },
+    {
+      "playerName": "WADE",
+      "stat": -9740,
     },
   ],
 ]
@@ -16084,6 +16396,14 @@ exports[`getAnalysisFromBlocks Analysis of from Qal9--4B2Gk/cw_1 resolved: Qal9-
       "playerName": "DR. H",
       "stat": -42000,
     },
+    {
+      "playerName": "SANTA",
+      "stat": -19600,
+    },
+    {
+      "playerName": "BIG JOHN",
+      "stat": -22050,
+    },
   ],
 ]
 `;
@@ -16119,6 +16439,14 @@ exports[`getAnalysisFromBlocks Analysis of from Qal9--4B2Gk/cw_2 resolved: Qal9-
     {
       "playerName": "DR. H",
       "stat": -42000,
+    },
+    {
+      "playerName": "SANTA",
+      "stat": -19600,
+    },
+    {
+      "playerName": "BIG JOHN",
+      "stat": -22050,
     },
   ],
 ]
@@ -16156,6 +16484,10 @@ exports[`getAnalysisFromBlocks Analysis of from Qal9--4B2Gk/cw_3 resolved: Qal9-
       "playerName": "DR. H",
       "stat": -42000,
     },
+    {
+      "playerName": "BIG JOHN",
+      "stat": -22050,
+    },
   ],
 ]
 `;
@@ -16191,6 +16523,10 @@ exports[`getAnalysisFromBlocks Analysis of from Qal9--4B2Gk/cw_4 resolved: Qal9-
     {
       "playerName": "DR. H",
       "stat": -42000,
+    },
+    {
+      "playerName": "BIG JOHN",
+      "stat": -22050,
     },
   ],
 ]
@@ -16228,6 +16564,14 @@ exports[`getAnalysisFromBlocks Analysis of from Qal9--4B2Gk/cw_5 resolved: Qal9-
       "playerName": "DR. H",
       "stat": -42000,
     },
+    {
+      "playerName": "SANTA",
+      "stat": -19600,
+    },
+    {
+      "playerName": "BIG JOHN",
+      "stat": -22050,
+    },
   ],
 ]
 `;
@@ -16263,6 +16607,14 @@ exports[`getAnalysisFromBlocks Analysis of from Qal9--4B2Gk/cw_6 resolved: Qal9-
     {
       "playerName": "DR. H",
       "stat": -42000,
+    },
+    {
+      "playerName": "SANTA",
+      "stat": -19600,
+    },
+    {
+      "playerName": "BIG JOHN",
+      "stat": -22050,
     },
   ],
 ]
@@ -16300,6 +16652,10 @@ exports[`getAnalysisFromBlocks Analysis of from Qal9--4B2Gk/cw_7 resolved: Qal9-
       "playerName": "DR. H",
       "stat": -42000,
     },
+    {
+      "playerName": "SANTA",
+      "stat": -19600,
+    },
   ],
 ]
 `;
@@ -16335,6 +16691,10 @@ exports[`getAnalysisFromBlocks Analysis of from Qal9--4B2Gk/cw_8 resolved: Qal9-
     {
       "playerName": "DR. H",
       "stat": -42000,
+    },
+    {
+      "playerName": "BIG JOHN",
+      "stat": -22050,
     },
   ],
 ]
@@ -17168,6 +17528,14 @@ exports[`getAnalysisFromBlocks Analysis of from sWfmWkvUV6k/cw_1 resolved: sWfmW
       "playerName": "BROWN BALLA",
       "stat": -28350,
     },
+    {
+      "playerName": "BABA",
+      "stat": -53450,
+    },
+    {
+      "playerName": "GASTON",
+      "stat": -86000,
+    },
   ],
 ]
 `;
@@ -17199,6 +17567,14 @@ exports[`getAnalysisFromBlocks Analysis of from sWfmWkvUV6k/cw_2 resolved: sWfmW
     {
       "playerName": "BROWN BALLA",
       "stat": -28350,
+    },
+    {
+      "playerName": "BABA",
+      "stat": -53450,
+    },
+    {
+      "playerName": "GASTON",
+      "stat": -86000,
     },
   ],
 ]
@@ -17232,6 +17608,14 @@ exports[`getAnalysisFromBlocks Analysis of from sWfmWkvUV6k/cw_3 resolved: sWfmW
       "playerName": "BROWN BALLA",
       "stat": -28350,
     },
+    {
+      "playerName": "BABA",
+      "stat": -53450,
+    },
+    {
+      "playerName": "GASTON",
+      "stat": -86000,
+    },
   ],
 ]
 `;
@@ -17263,6 +17647,14 @@ exports[`getAnalysisFromBlocks Analysis of from sWfmWkvUV6k/cw_4 resolved: sWfmW
     {
       "playerName": "BROWN BALLA",
       "stat": -28350,
+    },
+    {
+      "playerName": "BABA",
+      "stat": -53450,
+    },
+    {
+      "playerName": "GASTON",
+      "stat": -86000,
     },
   ],
 ]
@@ -17296,6 +17688,14 @@ exports[`getAnalysisFromBlocks Analysis of from sWfmWkvUV6k/cw_5 resolved: sWfmW
       "playerName": "BROWN BALLA",
       "stat": -28350,
     },
+    {
+      "playerName": "BABA",
+      "stat": -53450,
+    },
+    {
+      "playerName": "GASTON",
+      "stat": -86000,
+    },
   ],
 ]
 `;
@@ -17327,6 +17727,14 @@ exports[`getAnalysisFromBlocks Analysis of from sWfmWkvUV6k/cw_6 resolved: sWfmW
     {
       "playerName": "BROWN BALLA",
       "stat": -28350,
+    },
+    {
+      "playerName": "BABA",
+      "stat": -53450,
+    },
+    {
+      "playerName": "GASTON",
+      "stat": -86000,
     },
   ],
 ]
@@ -17568,6 +17976,14 @@ exports[`getAnalysisFromBlocks Analysis of from t0i1wrO9JLw/cw_1 resolved: t0i1w
       "playerName": "CRAZY DREW",
       "stat": -11890,
     },
+    {
+      "playerName": "TANA",
+      "stat": -2620,
+    },
+    {
+      "playerName": "RAY J",
+      "stat": -4970,
+    },
   ],
 ]
 `;
@@ -17607,6 +18023,14 @@ exports[`getAnalysisFromBlocks Analysis of from t0i1wrO9JLw/cw_2 resolved: t0i1w
     {
       "playerName": "CRAZY DREW",
       "stat": -11890,
+    },
+    {
+      "playerName": "TANA",
+      "stat": -2620,
+    },
+    {
+      "playerName": "RAY J",
+      "stat": -4970,
     },
   ],
 ]
@@ -17648,6 +18072,14 @@ exports[`getAnalysisFromBlocks Analysis of from t0i1wrO9JLw/cw_3 resolved: t0i1w
       "playerName": "CRAZY DREW",
       "stat": -11890,
     },
+    {
+      "playerName": "TANA",
+      "stat": -2620,
+    },
+    {
+      "playerName": "RAY J",
+      "stat": -4970,
+    },
   ],
 ]
 `;
@@ -17687,6 +18119,14 @@ exports[`getAnalysisFromBlocks Analysis of from t0i1wrO9JLw/cw_4 resolved: t0i1w
     {
       "playerName": "CRAZY DREW",
       "stat": -11890,
+    },
+    {
+      "playerName": "TANA",
+      "stat": -2620,
+    },
+    {
+      "playerName": "RAY J",
+      "stat": -4970,
     },
   ],
 ]
@@ -17728,6 +18168,14 @@ exports[`getAnalysisFromBlocks Analysis of from t0i1wrO9JLw/cw_5 resolved: t0i1w
       "playerName": "CRAZY DREW",
       "stat": -11890,
     },
+    {
+      "playerName": "TANA",
+      "stat": -2620,
+    },
+    {
+      "playerName": "RAY J",
+      "stat": -4970,
+    },
   ],
 ]
 `;
@@ -17767,6 +18215,14 @@ exports[`getAnalysisFromBlocks Analysis of from t0i1wrO9JLw/cw_6 resolved: t0i1w
     {
       "playerName": "CRAZY DREW",
       "stat": -11890,
+    },
+    {
+      "playerName": "TANA",
+      "stat": -2620,
+    },
+    {
+      "playerName": "RAY J",
+      "stat": -4970,
     },
   ],
 ]
@@ -17808,6 +18264,14 @@ exports[`getAnalysisFromBlocks Analysis of from t0i1wrO9JLw/cw_7 resolved: t0i1w
       "playerName": "CRAZY DREW",
       "stat": -11890,
     },
+    {
+      "playerName": "TANA",
+      "stat": -2620,
+    },
+    {
+      "playerName": "RAY J",
+      "stat": -4970,
+    },
   ],
 ]
 `;
@@ -17847,6 +18311,14 @@ exports[`getAnalysisFromBlocks Analysis of from t0i1wrO9JLw/cw_8 resolved: t0i1w
     {
       "playerName": "CRAZY DREW",
       "stat": -11890,
+    },
+    {
+      "playerName": "TANA",
+      "stat": -2620,
+    },
+    {
+      "playerName": "RAY J",
+      "stat": -4970,
     },
   ],
 ]
@@ -17888,6 +18360,14 @@ exports[`getAnalysisFromBlocks Analysis of from t0i1wrO9JLw/cw_9 resolved: t0i1w
       "playerName": "CRAZY DREW",
       "stat": -11890,
     },
+    {
+      "playerName": "TANA",
+      "stat": -2620,
+    },
+    {
+      "playerName": "RAY J",
+      "stat": -4970,
+    },
   ],
 ]
 `;
@@ -17927,6 +18407,14 @@ exports[`getAnalysisFromBlocks Analysis of from t0i1wrO9JLw/cw_10 resolved: t0i1
     {
       "playerName": "CRAZY DREW",
       "stat": -11890,
+    },
+    {
+      "playerName": "TANA",
+      "stat": -2620,
+    },
+    {
+      "playerName": "RAY J",
+      "stat": -4970,
     },
   ],
 ]
@@ -17968,6 +18456,14 @@ exports[`getAnalysisFromBlocks Analysis of from t0i1wrO9JLw/cw_11 resolved: t0i1
       "playerName": "CRAZY DREW",
       "stat": -11890,
     },
+    {
+      "playerName": "TANA",
+      "stat": -2620,
+    },
+    {
+      "playerName": "RAY J",
+      "stat": -4970,
+    },
   ],
 ]
 `;
@@ -18008,6 +18504,14 @@ exports[`getAnalysisFromBlocks Analysis of from t0i1wrO9JLw/cw_12 resolved: t0i1
       "playerName": "CRAZY DREW",
       "stat": -11890,
     },
+    {
+      "playerName": "TANA",
+      "stat": -2620,
+    },
+    {
+      "playerName": "RAY J",
+      "stat": -4970,
+    },
   ],
 ]
 `;
@@ -18047,6 +18551,14 @@ exports[`getAnalysisFromBlocks Analysis of from t0i1wrO9JLw/cw_13 resolved: t0i1
     {
       "playerName": "CRAZY DREW",
       "stat": -11890,
+    },
+    {
+      "playerName": "TANA",
+      "stat": -2620,
+    },
+    {
+      "playerName": "RAY J",
+      "stat": -4970,
     },
   ],
 ]

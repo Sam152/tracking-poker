@@ -58,7 +58,10 @@ analysis:
 
 1. A frame is taken as input.
     1. The service was tested with [35 random samples](./frame-analysis/src/__fixtures__/frames/) from the corpus.
-    2. The samples were pre-labelled or validated at each stage of the analysis.
+    2. The samples were pre-labelled or validated at each stage of the analysis with tests specifically suffixed with "
+       DataBuilder".
+    3. These tests assisted with an exploratory approach to understanding the data, and are thus distinct from the other
+       tests, which have much more focused test cases.
 2. Frames are [preprocessed](./frame-analysis/src/preprocess/).
     1. The center area
        is [cropped](./frame-analysis/src/preprocess/__image_snapshots__/crop-middle-test-ts-crop-middle-crop-middle-of-0-pty-2-kp-rc-cw-3-jpg-1-snap.png).
@@ -149,7 +152,8 @@ a useful visualisation for tracking down the root cause of errors as commands an
 
 ## The Results
 
-The results are a number of leaderboards refreshed daily, with the ability to drill down on the players and shows that are
+The results are a number of leaderboards refreshed daily, with the ability to drill down on the players and shows that
+are
 interesting:
 
 ![result](./docs/img/result.png)

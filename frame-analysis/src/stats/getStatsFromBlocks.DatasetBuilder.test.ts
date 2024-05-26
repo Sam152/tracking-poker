@@ -7,10 +7,7 @@ describe("getAnalysisFromBlocks", () => {
         .filter((frame) => frame.labelledType !== undefined)
         .map((testFrame) => {
             test(`Analysis of from ${testFrame.videoId}/${testFrame.frameId} resolved`, async () => {
-                const analysis = await getStatsFromBlocks(
-                    await resolveBlocks(testFrame),
-                    fs.readFileSync(testFrame.framePath),
-                );
+                const analysis = await getStatsFromBlocks(await resolveBlocks(testFrame), fs.readFileSync(testFrame.framePath));
                 expect(analysis).toMatchSnapshot(`${testFrame.videoId}/${testFrame.frameId}`);
             });
         });
