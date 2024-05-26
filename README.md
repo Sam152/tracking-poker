@@ -154,6 +154,4 @@ a useful visualisation for tracking down the root cause of errors as commands an
 
 The results are a number of leaderboards refreshed daily, with the ability to drill down on the players and shows that
 are
-interesting:
-
-![result](./docs/img/result.png)
+interesting. Currently hosted at [poker.sam152.com](https://poker.sam152.com).
