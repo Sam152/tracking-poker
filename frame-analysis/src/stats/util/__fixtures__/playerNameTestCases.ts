@@ -664,7 +664,7 @@ export const playerNameTestCases: Record<string, boolean> = {
     RYAN: true,
     "RYAN GARCIA": true,
     RYUSUKE: true,
-    S: true,
+    S: false,
     SAFIA: true,
     SALIM: true,
     SAM: true,
