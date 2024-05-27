@@ -55,6 +55,7 @@ export class AssetRipperStack extends Stack {
 
         // Allow the lambda to write to S3.
         lambdaRole.attachInlinePolicy(this.bucket.getWritePolicy());
+        lambdaRole.attachInlinePolicy(this.bucket.getReadPolicy());
 
         // Allow the lambda to push events to the buses.
         addPutEventsPolicies(this, "asset-ripper", lambdaRole, this.props.eventBusStack.bus, this.props.commandBusStack.bus);

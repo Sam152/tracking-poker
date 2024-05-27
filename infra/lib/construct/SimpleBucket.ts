@@ -46,6 +46,11 @@ export class SimpleBucket extends Construct {
                 statements: [
                     new iam.PolicyStatement({
                         effect: iam.Effect.ALLOW,
+                        actions: ["s3:ListBucket"],
+                        resources: [`arn:aws:s3:::${this.bucket.bucketName}`],
+                    }),
+                    new iam.PolicyStatement({
+                        effect: iam.Effect.ALLOW,
                         actions: ["s3:GetObject"],
                         resources: [`arn:aws:s3:::${this.bucket.bucketName}/*`],
                     }),

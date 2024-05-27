@@ -1,4 +1,5 @@
-const util = require("node:util");
+import util from "node:util";
+
 const promiseExec = util.promisify(require("node:child_process").exec);
 
 export type ExecOutput = Promise<{

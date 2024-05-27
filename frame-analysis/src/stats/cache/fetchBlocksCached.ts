@@ -5,10 +5,12 @@ import { fetchAsset } from "../../s3/fetchAsset";
 
 export async function fetchBlocksCached(videoId: string, frameId: string, fetchBlocks: () => Promise<Block[]>) {
     if (!(await blocksExistInCache(videoId, frameId))) {
+        console.log(`${videoId}/${frameId} blocks not found in cache, fetching from remote`);
         const blocks = await fetchBlocks();
         await cacheBlocks(videoId, frameId, blocks);
         return blocks;
     }
+    console.log(`${videoId}/${frameId} blocks found in cache`);
     return await fetchBlocksFromCache(videoId, frameId);
 }
 
