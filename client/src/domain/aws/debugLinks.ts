@@ -3,7 +3,7 @@ const base = `https://${region}.console.aws.amazon.com`;
 
 export const debugLinks = {
     logGroup: (logGroup: string, filterParam: string) =>
-        `${base}/cloudwatch/home?region=${region}#logsV2:log-groups/log-group/${logGroup}/log-events$3FfilterPattern$3D${filterParam}$26start$3D-31104000000`,
+        `${base}/cloudwatch/home?region=${region}#logsV2:log-groups/log-group/${logGroup}/log-events$3FfilterPattern$3D$2522${filterParam}$2522$26start$3D-31104000000`,
     bucket: (bucketName: string, prefix: string) =>
         `${base}/s3/buckets/${bucketName}?region=${region}&bucketType=general&prefix=${prefix}`,
     lambdaTest: (lambda: string) => `${base}/lambda/home?region=${region}#/functions/${lambda}?tab=testing`,
