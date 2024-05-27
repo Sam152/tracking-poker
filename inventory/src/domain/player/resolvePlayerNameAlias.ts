@@ -6,6 +6,7 @@ const aliases = {
     "MARIANO O": "MARIANO",
     "LEX 0": "LEX O",
     "4 HILARY": "HILARY",
+    "S MARS": "MARS",
 };
 
 /**
