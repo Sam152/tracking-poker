@@ -1,6 +1,6 @@
 import { YouTubeVideo } from "./youtube/YouTubeVideo";
 import { Workspace } from "./files/Workspace";
-import { createObject } from "./util/createObject";
+import { createObject, createObjectFromContents } from "./util/createObject";
 import { recordThat } from "tp-events";
 import { Slicer } from "./video/Slicer";
 import { listFiles } from "./files/listFiles";
@@ -13,7 +13,7 @@ export async function ripAssetsToS3(video: YouTubeVideo) {
     const videoFilename = await video.downloadLastTenMinutes(workspace.directory());
     const metadata = await video.resolveMetadata();
     await createObject(`${video.id}/video.webm`, videoFilename);
-    await createObject(`${video.id}/metadata.json`, JSON.stringify(metadata));
+    await createObjectFromContents(`${video.id}/metadata.json`, JSON.stringify(metadata));
 
     await recordThat("VideoAssetStored", {
         videoId: video.id,

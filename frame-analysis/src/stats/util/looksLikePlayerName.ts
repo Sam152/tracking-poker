@@ -1,6 +1,6 @@
 export function looksLikePlayerName(candidate: string): boolean {
     // Detect incorrectly classified bounties.
-    if (candidate.match(/HAND WITH|HANDS IN A/) !== null) {
+    if (candidate.match(/^BOUNTY POOL$|HAND WITH|HANDS IN A/) !== null) {
         return false;
     }
 

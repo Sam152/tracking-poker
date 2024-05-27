@@ -125,7 +125,7 @@ export const playerNameTestCases: Record<string, boolean> = {
     BORIS: true,
     "BOSTON JIMMY": true,
     BOTEZ: true,
-    "BOUNTY POOL": true,
+    "BOUNTY POOL": false,
     BOXBOX: true,
     BRAD: true,
     BRANDON: true,
