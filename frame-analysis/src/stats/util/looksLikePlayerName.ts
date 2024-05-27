@@ -10,7 +10,7 @@ export function looksLikePlayerName(candidate: string): boolean {
     }
 
     // Detect incorrectly classified artefacts in the image.
-    if (candidate.match(/^VPIP$|^I$|^C$|^O$|^PRE-FLOP RAISE$|^\d+ BB$/)) {
+    if (candidate.match(/^VPIP$|^I$|^C$|^O$|^LIVE$|^KUNGJ$|^PRE-FLOP RAISE$|^\d+ BB$/)) {
         return false;
     }
 
