@@ -61,4 +61,20 @@ describe("CumulativeWinnings", () => {
             { stat: -1000000, playerName: "STANLEY" },
         ]);
     });
+
+    test("extracting stats from frame that does not include any chip counts", async () => {
+        expect(
+            await CumulativeWinnings.getStatsFromDocument(loadBlockFixture("no-chip-count"), loadFrameFixture("no-chip-count")),
+        ).toEqual([
+            { stat: 91575, playerName: "TAL" },
+            { stat: 69725, playerName: "NICK NITUCCI" },
+            { stat: 32575, playerName: "NIK AIRBALL" },
+            { stat: 6890, playerName: "RONNIE" },
+            { stat: 4250, playerName: "PATRICK" },
+            { stat: -14975, playerName: "JBOOGS" },
+            { stat: -49500, playerName: "KRISH" },
+            { stat: -66800, playerName: "WESLEY" },
+            { stat: -73740, playerName: "BRIAN" },
+        ]);
+    });
 });

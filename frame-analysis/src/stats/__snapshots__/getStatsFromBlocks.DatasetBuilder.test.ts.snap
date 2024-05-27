@@ -9589,10 +9589,6 @@ exports[`getAnalysisFromBlocks Analysis of from 0bkHGcVRmKM/cw_1 resolved: 0bkHG
       "stat": -20050,
     },
     {
-      "playerName": "LIVE",
-      "stat": -18105,
-    },
-    {
       "playerName": "MIKE NIA",
       "stat": 2130,
     },
@@ -14789,6 +14785,10 @@ exports[`getAnalysisFromBlocks Analysis of from Ge3ZvqPSNBk/cw_1 resolved: Ge3Zv
       "stat": 1100000,
     },
     {
+      "playerName": "RAMPAGE",
+      "stat": 588000,
+    },
+    {
       "playerName": "NIK AIRBALL",
       "stat": 341000,
     },
@@ -14797,20 +14797,16 @@ exports[`getAnalysisFromBlocks Analysis of from Ge3ZvqPSNBk/cw_1 resolved: Ge3Zv
       "stat": -0,
     },
     {
-      "playerName": "HANDZ",
-      "stat": -543000,
-    },
-    {
-      "playerName": "RAMPAGE",
-      "stat": 1600000,
-    },
-    {
       "playerName": "PAV",
-      "stat": -960000,
+      "stat": -289000,
     },
     {
       "playerName": "BEN",
-      "stat": -640000,
+      "stat": -360000,
+    },
+    {
+      "playerName": "HANDZ",
+      "stat": -543000,
     },
     {
       "playerName": "STANLEY",
@@ -14829,6 +14825,10 @@ exports[`getAnalysisFromBlocks Analysis of from Ge3ZvqPSNBk/cw_2 resolved: Ge3Zv
       "stat": 1100000,
     },
     {
+      "playerName": "RAMPAGE",
+      "stat": 588000,
+    },
+    {
       "playerName": "NIK AIRBALL",
       "stat": 341000,
     },
@@ -14841,20 +14841,16 @@ exports[`getAnalysisFromBlocks Analysis of from Ge3ZvqPSNBk/cw_2 resolved: Ge3Zv
       "stat": -289000,
     },
     {
+      "playerName": "BEN",
+      "stat": -360000,
+    },
+    {
       "playerName": "HANDZ",
       "stat": -543000,
     },
     {
       "playerName": "STANLEY",
       "stat": -1000000,
-    },
-    {
-      "playerName": "RAMPAGE",
-      "stat": 1600000,
-    },
-    {
-      "playerName": "BEN",
-      "stat": -640000,
     },
   ],
 ]
@@ -14882,15 +14878,15 @@ exports[`getAnalysisFromBlocks Analysis of from Ge3ZvqPSNBk/cw_3 resolved: Ge3Zv
     },
     {
       "playerName": "PAV",
-      "stat": -960000,
+      "stat": -289000,
     },
     {
       "playerName": "BEN",
-      "stat": -640000,
+      "stat": -360000,
     },
     {
       "playerName": "HANDZ",
-      "stat": -956000,
+      "stat": -543000,
     },
     {
       "playerName": "STANLEY",
@@ -14913,6 +14909,10 @@ exports[`getAnalysisFromBlocks Analysis of from Ge3ZvqPSNBk/cw_4 resolved: Ge3Zv
       "stat": 588000,
     },
     {
+      "playerName": "NIK AIRBALL",
+      "stat": 341000,
+    },
+    {
       "playerName": "WESLEY",
       "stat": -0,
     },
@@ -14927,10 +14927,6 @@ exports[`getAnalysisFromBlocks Analysis of from Ge3ZvqPSNBk/cw_4 resolved: Ge3Zv
     {
       "playerName": "HANDZ",
       "stat": -543000,
-    },
-    {
-      "playerName": "NIK AIRBALL",
-      "stat": 1300000,
     },
     {
       "playerName": "STANLEY",
@@ -14970,7 +14966,7 @@ exports[`getAnalysisFromBlocks Analysis of from Ge3ZvqPSNBk/cw_5 resolved: Ge3Zv
     },
     {
       "playerName": "HANDZ",
-      "stat": -956000,
+      "stat": -543000,
     },
     {
       "playerName": "STANLEY",
@@ -14989,6 +14985,10 @@ exports[`getAnalysisFromBlocks Analysis of from Ge3ZvqPSNBk/cw_6 resolved: Ge3Zv
       "stat": 1100000,
     },
     {
+      "playerName": "RAMPAGE",
+      "stat": 588000,
+    },
+    {
       "playerName": "NIK AIRBALL",
       "stat": 341000,
     },
@@ -14997,20 +14997,16 @@ exports[`getAnalysisFromBlocks Analysis of from Ge3ZvqPSNBk/cw_6 resolved: Ge3Zv
       "stat": 0,
     },
     {
-      "playerName": "RAMPAGE",
-      "stat": 1600000,
-    },
-    {
       "playerName": "PAV",
-      "stat": -960000,
+      "stat": -289000,
     },
     {
       "playerName": "BEN",
-      "stat": -640000,
+      "stat": -360000,
     },
     {
       "playerName": "HANDZ",
-      "stat": -956000,
+      "stat": -543000,
     },
     {
       "playerName": "STANLEY",
@@ -15029,6 +15025,10 @@ exports[`getAnalysisFromBlocks Analysis of from Ge3ZvqPSNBk/cw_7 resolved: Ge3Zv
       "stat": 1100000,
     },
     {
+      "playerName": "RAMPAGE",
+      "stat": 588000,
+    },
+    {
       "playerName": "NIK AIRBALL",
       "stat": 341000,
     },
@@ -15041,20 +15041,16 @@ exports[`getAnalysisFromBlocks Analysis of from Ge3ZvqPSNBk/cw_7 resolved: Ge3Zv
       "stat": -289000,
     },
     {
-      "playerName": "STANLEY",
-      "stat": -1000000,
-    },
-    {
-      "playerName": "RAMPAGE",
-      "stat": 1600000,
-    },
-    {
       "playerName": "BEN",
-      "stat": -640000,
+      "stat": -360000,
     },
     {
       "playerName": "HANDZ",
-      "stat": -956000,
+      "stat": -543000,
+    },
+    {
+      "playerName": "STANLEY",
+      "stat": -1000000,
     },
   ],
 ]

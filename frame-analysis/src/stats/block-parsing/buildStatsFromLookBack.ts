@@ -18,10 +18,11 @@ export function buildStatsFromLookBack<T extends string | number>(
     const page = extract.pageNumber(1);
     const lines = [...page.iterLines()];
     return lines.reduce((stats: PlayerStatCollection<T>, line: LineGeneric<Page>, index) => {
-        if (matchCondition(line.text) && looksLikePlayerName(lines[index - 1].text)) {
+        const nameCandidate = lines[index - 1]?.text.trim();
+        if (matchCondition(line.text) && looksLikePlayerName(nameCandidate)) {
             stats.push({
                 stat: parser(line),
-                playerName: lines[index - 1].text,
+                playerName: nameCandidate,
             });
         }
         return stats;

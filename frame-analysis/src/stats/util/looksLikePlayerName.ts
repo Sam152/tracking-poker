@@ -14,5 +14,5 @@ export function looksLikePlayerName(candidate: string): boolean {
         return false;
     }
 
-    return candidate.trim().match(/^[0-9A-Z-.#' ]+$/) !== null;
+    return candidate.match(/^[0-9A-Z-.#' ]+$/) !== null;
 }

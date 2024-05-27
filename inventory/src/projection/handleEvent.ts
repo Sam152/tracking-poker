@@ -11,6 +11,8 @@ import * as PlayerAppearance from "./entity/playerAppearance";
 import { PlayerId } from "./entity/playerAppearance";
 import * as Player from "./entity/player";
 import { normalizeKey } from "../dynamo/normalizeKey";
+import { resolvePlayerName } from "../domain/player/resolvePlayerName";
+import { playerNameShouldNotBeRepresented } from "../domain/player/playerNameShouldNotBeRepresented";
 
 export async function handleEvent(eventName: BusEventName, event: BusEvent, putItem: ItemPutter, executeQuery: QueryExecutor) {
     if (eventIs("VideoAssetStored", eventName, event)) {
@@ -33,11 +35,18 @@ export async function handleEvent(eventName: BusEventName, event: BusEvent, putI
         }
 
         for (const eventStat of event.stats) {
-            const playerId = stamp<PlayerId>(normalizeKey(eventStat.playerName));
+            // Resolve aliased names.
+            const resolvedPlayerName = resolvePlayerName(eventStat.playerName);
+            // Allow some name-like words to be skipped in the dataset.
+            if (playerNameShouldNotBeRepresented(resolvedPlayerName)) {
+                continue;
+            }
+
+            const playerId = stamp<PlayerId>(normalizeKey(resolvedPlayerName));
 
             const player: Player.Player = {
                 player: playerId,
-                player_name: eventStat.playerName,
+                player_name: resolvedPlayerName,
                 last_played_show: show.id,
                 last_played_date: show.date,
             };
@@ -45,7 +54,7 @@ export async function handleEvent(eventName: BusEventName, event: BusEvent, putI
 
             const playerAppearance: PlayerAppearance.PlayerAppearance = {
                 player: playerId,
-                player_name: eventStat.playerName,
+                player_name: resolvedPlayerName,
                 show: show.id,
                 show_name: show.show_name,
                 date: show.date,
@@ -55,7 +64,7 @@ export async function handleEvent(eventName: BusEventName, event: BusEvent, putI
             const stat: Stat.Stat = {
                 show: show.id,
                 player: playerId,
-                player_name: eventStat.playerName,
+                player_name: resolvedPlayerName,
                 type: event.type,
                 value: eventStat.stat,
             };

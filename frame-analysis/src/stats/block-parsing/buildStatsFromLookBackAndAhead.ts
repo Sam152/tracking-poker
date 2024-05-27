@@ -33,7 +33,7 @@ export function buildStatsFromLookBackAndAhead<T extends string | number>(
 
     // If the document has no two consecutive lines that match the condition, we are likely dealing with a document that
     // is formatted according to `buildStatsFromLookBack`. This is required because the CW stats are in two formats,
-    // one that contains the chip count and one that does not. @todo, grab a test case for this scenario.
+    // one that contains the chip count and one that does not.
     const containsAnyTwoConsecutiveMatchingLines = lines.find((line, index) => {
         if (index === 0) {
             return false;
@@ -46,11 +46,12 @@ export function buildStatsFromLookBackAndAhead<T extends string | number>(
 
     const stats = lines.reduce((stats: PlayerStatCollection<T>, line: LineGeneric<Page>, index) => {
         // If the current line and the line before match the condition.
-        if (matchCondition(line.text) && matchCondition(lines[index - 1].text) && looksLikePlayerName(lines[index - 2].text)) {
+        const nameCandidate = lines[index - 2]?.text.trim();
+        if (matchCondition(line.text) && matchCondition(lines[index - 1].text) && looksLikePlayerName(nameCandidate)) {
             stats.push({
                 stat: parser(line),
                 // Look back two places.
-                playerName: lines[index - 2].text,
+                playerName: nameCandidate,
             });
         }
         return stats;
@@ -60,14 +61,11 @@ export function buildStatsFromLookBackAndAhead<T extends string | number>(
     // but no chip stack).
     const playersThatDidNotBust = stats.map((stat) => stat.playerName);
     const bustedPlayerStats = lines.reduce((stats: PlayerStatCollection<T>, line: LineGeneric<Page>, index) => {
-        if (
-            matchCondition(line.text) &&
-            looksLikePlayerName(lines[index - 1].text) &&
-            !playersThatDidNotBust.includes(lines[index - 1].text)
-        ) {
+        const nameCandidate = lines[index - 1]?.text.trim();
+        if (matchCondition(line.text) && looksLikePlayerName(nameCandidate) && !playersThatDidNotBust.includes(nameCandidate)) {
             stats.push({
                 stat: parser(line),
-                playerName: lines[index - 1].text,
+                playerName: nameCandidate,
             });
         }
         return stats;
