@@ -46,4 +46,19 @@ describe("CumulativeWinnings", () => {
             },
         ]);
     });
+
+    test("extracting stats from frame that includes a zero", async () => {
+        expect(
+            await CumulativeWinnings.getStatsFromDocument(loadBlockFixture("problematic-1"), loadFrameFixture("problematic-1")),
+        ).toEqual([
+            { stat: 1100000, playerName: "HUSS" },
+            { stat: 588000, playerName: "RAMPAGE" },
+            { stat: 341000, playerName: "NIK AIRBALL" },
+            { stat: 0, playerName: "WESLEY" },
+            { stat: -289000, playerName: "PAV" },
+            { stat: -360000, playerName: "BEN" },
+            { stat: -543000, playerName: "HANDZ" },
+            { stat: -1000000, playerName: "STANLEY" },
+        ]);
+    });
 });
