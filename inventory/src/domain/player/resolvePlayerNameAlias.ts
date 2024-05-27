@@ -1,6 +1,7 @@
 const aliases = {
     "FRANCISCO C": "FRANCISCO",
-    "JBOOGS C": "FRANCISCO",
+    "JBOOGS C": "JEREMY",
+    JBOOGS: "JEREMY",
     "NICK NITUCCI": "NICK VERTUCCI",
     "NICK V": "NICK VERTUCCI",
     "MARIANO O": "MARIANO",
