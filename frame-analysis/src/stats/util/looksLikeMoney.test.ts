@@ -7,6 +7,7 @@ const cases = [
     ["$956K", true, 956000],
     ["$14,400 V", true, 14400],
     ["$689,000 A", true, 689000],
+    ["$1.4M", true, 1400000],
     // The "A" is often a misidentified "up arrow" in the cumulative winnings stat.
     ["$335,000 A", true, 335000],
     ["BLINDS $25 / $50/$100 - $50 - (BB)", false, null],
@@ -16,7 +17,7 @@ const cases = [
 ] as const;
 
 describe.each(cases)("looksLikeMoney", (input, expected, parsedValue) => {
-    test(`money that looks like ${input} is correctly identified as ${expected ? "true" : "false"}`, () => {
+    test(`identified if ${input} ${expected ? "looks like" : "does not look like"} money`, () => {
         expect(looksLikeMoney(input)).toEqual(expected);
         if (parsedValue === null) {
             expect(() => parseMoney(input)).toThrow();
