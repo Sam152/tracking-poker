@@ -41,6 +41,15 @@ export type BusEvents = {
 export type BusEventName = keyof BusEvents;
 export type BusEvent = BusEvents[BusEventName];
 
+declare global {
+    namespace NodeJS {
+        interface ProcessEnv {
+            COMMAND_BUS_ARN: string;
+            EVENT_BUS_BUS_ARN: string;
+        }
+    }
+}
+
 export async function recordThat<T extends keyof BusEvents>(eventName: T, payload: BusEvents[T]): Promise<any> {
     console.log("Recording event", eventName, payload);
     return Promise.all([
