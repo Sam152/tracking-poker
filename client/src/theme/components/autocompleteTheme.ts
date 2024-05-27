@@ -17,6 +17,7 @@ export const autocompleteTheme = helpers.defineMultiStyleConfig({
         item: {
             p: 2,
             borderRadius: 5,
+            cursor: "pointer",
         },
     },
     sizes: {},
