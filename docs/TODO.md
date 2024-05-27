@@ -14,5 +14,6 @@ List of tasks to complete:
 -   [x] Debug mode to link UI to pipeline assets.
 -   [x] Create a list of players + search.
 -   [x] Optimise inventory node container to use slim image.
+-   [ ] Add a leaderboard for BB/hour.
 -   [ ] Add script to rebuild projections.
 -   [ ] Tighten VPC on inventory EC2 instance.
