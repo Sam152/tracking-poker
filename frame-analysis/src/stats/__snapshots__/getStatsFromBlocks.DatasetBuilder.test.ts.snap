@@ -9577,6 +9577,10 @@ exports[`getAnalysisFromBlocks Analysis of from 0bkHGcVRmKM/cw_1 resolved: 0bkHG
   "cw",
   [
     {
+      "playerName": "BIG JOHN",
+      "stat": 54.5,
+    },
+    {
       "playerName": "LUDA CHRIS",
       "stat": -22340,
     },
@@ -14585,6 +14589,18 @@ exports[`getAnalysisFromBlocks Analysis of from Ge3ZvqPSNBk/cc_1 resolved: Ge3Zv
       "stat": 3000000,
     },
     {
+      "playerName": "HUSS",
+      "stat": 2100000,
+    },
+    {
+      "playerName": "RAMPAGE",
+      "stat": 1600000,
+    },
+    {
+      "playerName": "NIK AIRBALL",
+      "stat": 1300000,
+    },
+    {
       "playerName": "STANLEY",
       "stat": 1000000,
     },
@@ -14611,6 +14627,18 @@ exports[`getAnalysisFromBlocks Analysis of from Ge3ZvqPSNBk/cc_2 resolved: Ge3Zv
     {
       "playerName": "WESLEY",
       "stat": 3000000,
+    },
+    {
+      "playerName": "HUSS",
+      "stat": 2100000,
+    },
+    {
+      "playerName": "RAMPAGE",
+      "stat": 1600000,
+    },
+    {
+      "playerName": "NIK AIRBALL",
+      "stat": 1300000,
     },
     {
       "playerName": "STANLEY",
@@ -14641,6 +14669,18 @@ exports[`getAnalysisFromBlocks Analysis of from Ge3ZvqPSNBk/cc_3 resolved: Ge3Zv
       "stat": 3000000,
     },
     {
+      "playerName": "HUSS",
+      "stat": 2100000,
+    },
+    {
+      "playerName": "RAMPAGE",
+      "stat": 1600000,
+    },
+    {
+      "playerName": "NIK AIRBALL",
+      "stat": 1300000,
+    },
+    {
       "playerName": "STANLEY",
       "stat": 1000000,
     },
@@ -14667,6 +14707,18 @@ exports[`getAnalysisFromBlocks Analysis of from Ge3ZvqPSNBk/cc_4 resolved: Ge3Zv
     {
       "playerName": "WESLEY",
       "stat": 3000000,
+    },
+    {
+      "playerName": "HUSS",
+      "stat": 2100000,
+    },
+    {
+      "playerName": "RAMPAGE",
+      "stat": 1600000,
+    },
+    {
+      "playerName": "NIK AIRBALL",
+      "stat": 1300000,
     },
     {
       "playerName": "STANLEY",
@@ -14697,6 +14749,18 @@ exports[`getAnalysisFromBlocks Analysis of from Ge3ZvqPSNBk/cc_5 resolved: Ge3Zv
       "stat": 3000000,
     },
     {
+      "playerName": "HUSS",
+      "stat": 2100000,
+    },
+    {
+      "playerName": "RAMPAGE",
+      "stat": 1600000,
+    },
+    {
+      "playerName": "NIK AIRBALL",
+      "stat": 1300000,
+    },
+    {
       "playerName": "STANLEY",
       "stat": 1000000,
     },
@@ -14721,12 +14785,24 @@ exports[`getAnalysisFromBlocks Analysis of from Ge3ZvqPSNBk/cw_1 resolved: Ge3Zv
   "cw",
   [
     {
+      "playerName": "HUSS",
+      "stat": 1100000,
+    },
+    {
+      "playerName": "NIK AIRBALL",
+      "stat": 341000,
+    },
+    {
       "playerName": "WESLEY",
       "stat": -0,
     },
     {
       "playerName": "HANDZ",
       "stat": -543000,
+    },
+    {
+      "playerName": "RAMPAGE",
+      "stat": 1600000,
     },
     {
       "playerName": "PAV",
@@ -14749,6 +14825,14 @@ exports[`getAnalysisFromBlocks Analysis of from Ge3ZvqPSNBk/cw_2 resolved: Ge3Zv
   "cw",
   [
     {
+      "playerName": "HUSS",
+      "stat": 1100000,
+    },
+    {
+      "playerName": "NIK AIRBALL",
+      "stat": 341000,
+    },
+    {
       "playerName": "WESLEY",
       "stat": 0,
     },
@@ -14765,6 +14849,10 @@ exports[`getAnalysisFromBlocks Analysis of from Ge3ZvqPSNBk/cw_2 resolved: Ge3Zv
       "stat": -1000000,
     },
     {
+      "playerName": "RAMPAGE",
+      "stat": 1600000,
+    },
+    {
       "playerName": "BEN",
       "stat": -640000,
     },
@@ -14776,6 +14864,18 @@ exports[`getAnalysisFromBlocks Analysis of from Ge3ZvqPSNBk/cw_3 resolved: Ge3Zv
 [
   "cw",
   [
+    {
+      "playerName": "HUSS",
+      "stat": 1100000,
+    },
+    {
+      "playerName": "RAMPAGE",
+      "stat": 588000,
+    },
+    {
+      "playerName": "NIK AIRBALL",
+      "stat": 341000,
+    },
     {
       "playerName": "WESLEY",
       "stat": -0,
@@ -14805,6 +14905,14 @@ exports[`getAnalysisFromBlocks Analysis of from Ge3ZvqPSNBk/cw_4 resolved: Ge3Zv
   "cw",
   [
     {
+      "playerName": "HUSS",
+      "stat": 1100000,
+    },
+    {
+      "playerName": "RAMPAGE",
+      "stat": 588000,
+    },
+    {
       "playerName": "WESLEY",
       "stat": -0,
     },
@@ -14821,6 +14929,10 @@ exports[`getAnalysisFromBlocks Analysis of from Ge3ZvqPSNBk/cw_4 resolved: Ge3Zv
       "stat": -543000,
     },
     {
+      "playerName": "NIK AIRBALL",
+      "stat": 1300000,
+    },
+    {
       "playerName": "STANLEY",
       "stat": -1000000,
     },
@@ -14832,6 +14944,18 @@ exports[`getAnalysisFromBlocks Analysis of from Ge3ZvqPSNBk/cw_5 resolved: Ge3Zv
 [
   "cw",
   [
+    {
+      "playerName": "HUSS",
+      "stat": 1100000,
+    },
+    {
+      "playerName": "RAMPAGE",
+      "stat": 588000,
+    },
+    {
+      "playerName": "NIK AIRBALL",
+      "stat": 341000,
+    },
     {
       "playerName": "WESLEY",
       "stat": -0,
@@ -14861,8 +14985,20 @@ exports[`getAnalysisFromBlocks Analysis of from Ge3ZvqPSNBk/cw_6 resolved: Ge3Zv
   "cw",
   [
     {
+      "playerName": "HUSS",
+      "stat": 1100000,
+    },
+    {
+      "playerName": "NIK AIRBALL",
+      "stat": 341000,
+    },
+    {
       "playerName": "WESLEY",
       "stat": 0,
+    },
+    {
+      "playerName": "RAMPAGE",
+      "stat": 1600000,
     },
     {
       "playerName": "PAV",
@@ -14889,6 +15025,14 @@ exports[`getAnalysisFromBlocks Analysis of from Ge3ZvqPSNBk/cw_7 resolved: Ge3Zv
   "cw",
   [
     {
+      "playerName": "HUSS",
+      "stat": 1100000,
+    },
+    {
+      "playerName": "NIK AIRBALL",
+      "stat": 341000,
+    },
+    {
       "playerName": "WESLEY",
       "stat": 0,
     },
@@ -14899,6 +15043,10 @@ exports[`getAnalysisFromBlocks Analysis of from Ge3ZvqPSNBk/cw_7 resolved: Ge3Zv
     {
       "playerName": "STANLEY",
       "stat": -1000000,
+    },
+    {
+      "playerName": "RAMPAGE",
+      "stat": 1600000,
     },
     {
       "playerName": "BEN",
@@ -14916,6 +15064,18 @@ exports[`getAnalysisFromBlocks Analysis of from Ge3ZvqPSNBk/cw_8 resolved: Ge3Zv
 [
   "cw",
   [
+    {
+      "playerName": "HUSS",
+      "stat": 1100000,
+    },
+    {
+      "playerName": "RAMPAGE",
+      "stat": 588000,
+    },
+    {
+      "playerName": "NIK AIRBALL",
+      "stat": 341000,
+    },
     {
       "playerName": "WESLEY",
       "stat": 0,
@@ -14944,6 +15104,18 @@ exports[`getAnalysisFromBlocks Analysis of from Ge3ZvqPSNBk/cw_9 resolved: Ge3Zv
 [
   "cw",
   [
+    {
+      "playerName": "HUSS",
+      "stat": 1100000,
+    },
+    {
+      "playerName": "RAMPAGE",
+      "stat": 588000,
+    },
+    {
+      "playerName": "NIK AIRBALL",
+      "stat": 341000,
+    },
     {
       "playerName": "WESLEY",
       "stat": -0,
