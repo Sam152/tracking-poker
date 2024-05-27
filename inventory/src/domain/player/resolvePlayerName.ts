@@ -19,6 +19,7 @@ const aliases: Record<string, string> = {
     "MARS O": "MARS",
     "PATRICK O": "PATRICK",
     "SANTA O": "SANTA",
+    MARG: "MARC",
 };
 
 export function resolvePlayerName(name: string): string {
