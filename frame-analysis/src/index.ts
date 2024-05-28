@@ -1,13 +1,14 @@
 import { ServiceInvocationEvents, serviceInvocationEventsSchema } from "./api";
 import { Callback, Context } from "aws-lambda";
 import { isFrameOfInterest } from "./classify/isFrameOfInterest";
-import { fetchAsset } from "./s3/fetchAsset";
 import { recordThat } from "tp-events";
 import { getStatsFromFrame } from "./stats/getStatsFromFrame";
+import { S3Client } from "objects";
 
 export async function handler(incomingEvent: ServiceInvocationEvents, context: Pick<Context, "awsRequestId">, callback: Callback) {
     const event = serviceInvocationEventsSchema.parse(incomingEvent);
-    const frame = await fetchAsset(event["detail"].bucket, event["detail"].key);
+    const s3 = new S3Client(event["detail"].bucket);
+    const frame = await s3.get(event["detail"].key);
 
     // Do a first pass with the cheap classifier to see if a frame is junk.
     if (!(await isFrameOfInterest(frame, event.detail.frameId))) {

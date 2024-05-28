@@ -35,9 +35,7 @@ export class S3Client implements ObjectStorage {
         // size, to optimise for cost.
         const storageClass = fileSize > 55 * 1000 ? StorageClass.ONEZONE_IA : StorageClass.STANDARD;
 
-        console.log(
-            `Creating object "s3://${process.env.BUCKET_NAME}/${key}" from string (${fileSize} bytes, ${storageClass} storage class).`,
-        );
+        console.log(`Creating object "s3://${this.bucket}/${key}" from string (${fileSize} bytes, ${storageClass} storage class).`);
 
         return this.client.putObject({
             Bucket: this.bucket,
@@ -69,7 +67,7 @@ export class S3Client implements ObjectStorage {
     async exists(key: string): Promise<boolean> {
         try {
             await this.client.headObject({
-                Bucket: process.env.BUCKET_NAME,
+                Bucket: this.bucket,
                 Key: key,
             });
             return true;
@@ -81,7 +79,7 @@ export class S3Client implements ObjectStorage {
         const objects =
             (
                 await this.client.listObjects({
-                    Bucket: process.env.BUCKET_NAME,
+                    Bucket: this.bucket,
                     Prefix: prefix,
                 })
             ).Contents || [];

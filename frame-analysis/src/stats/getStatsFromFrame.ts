@@ -1,5 +1,5 @@
 import { PlayerStatCollection, StatType } from "./types/StatType";
-import { fetchBlocksCached } from "./cache/fetchBlocksCached";
+import { wrapFetchBlocksWithCache } from "./cache/wrapFetchBlocksWithCache";
 import { getStatsFromBlocks } from "./getStatsFromBlocks";
 import { getBlocksFromFrame } from "./textract/getBlocksFromFrame";
 
@@ -11,7 +11,7 @@ export async function getStatsFromFrame(
     try {
         // Ensure failures from either the extraction process or identifying stats associated with the blocks, result
         // in reporting undefined stats for the whole frame.
-        const blocks = await fetchBlocksCached(videoId, frameId, () => getBlocksFromFrame(frame));
+        const blocks = await wrapFetchBlocksWithCache(videoId, frameId, () => getBlocksFromFrame(frame));
         const [type, stats] = await getStatsFromBlocks(blocks, frame);
 
         // Let each stat type decide if there are a valid set of stats that can be extracted.

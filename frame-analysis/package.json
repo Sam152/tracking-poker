@@ -25,6 +25,7 @@
     "amazon-textract-response-parser": "^0.4.0",
     "aws-xray-sdk": "^3.6.0",
     "js-levenshtein": "^1.1.6",
+    "objects": "file:../common/objects",
     "sharp": "^0.33.3",
     "tesseract.js": "^5.0.5",
     "tp-events": "file:../common/events",
