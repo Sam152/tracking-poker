@@ -7,9 +7,9 @@ List of tasks to complete:
 -   [x] Preserve video metadata in asset ripper service.
 -   [ ] Clear events and reimport?
     -   [ ] Possibly allow asset ripper to skip downloading already downloaded assets.
--   [ ] Add aliases for names, for players who have used multiple names.
+-   [x] Add aliases for names, for players who have used multiple names.
 -   [ ] Add disclaimers and methodology to client.
--   [ ] Extract and generalise an S3 client from `asset-ripper/src/util/S3.ts`, use to refactor `frame-analysis/src/stats/cache/fetchBlocksCached.ts`.
+-   [x] Extract and generalise an S3 client from `asset-ripper/src/util/S3.ts`, use to refactor `frame-analysis/src/stats/cache/fetchBlocksCached.ts`.
 -   [ ] Create some more useful loggers and refactor prefixed log messages.
 -   [x] Cache textract extractions for refinement.
 -   [x] Debug mode to link UI to pipeline assets.
