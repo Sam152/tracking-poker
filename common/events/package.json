@@ -5,8 +5,7 @@
   "main": "src/index.ts",
   "types": "src/index.ts",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "esbuild --platform=node --target=node20 src/index.ts --bundle --outfile=build/index.js && tsc src/index.ts --emitDeclarationOnly --declaration --outDir build"
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
   "license": "ISC",

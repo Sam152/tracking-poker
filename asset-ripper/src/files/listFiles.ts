@@ -1,6 +1,6 @@
-import * as fs from "fs";
+import { BasicFs } from "objects";
 
-export function listFiles(directory: string) {
+export function listFiles(fs: BasicFs, directory: string) {
     return fs
         .readdirSync(directory, { withFileTypes: true })
         .filter((item) => !item.isDirectory())

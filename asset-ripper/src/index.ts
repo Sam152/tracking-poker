@@ -3,6 +3,7 @@ import { YouTubeVideo } from "./youtube/YouTubeVideo";
 import { ServiceInvocationEvents, serviceInvocationEventsSchema } from "./api";
 import { recordThat } from "tp-events";
 import { ripAssetsToS3 } from "./ripAssetsToS3";
+import { basicFs, S3Client } from "objects";
 
 export async function handler(incomingEvent: ServiceInvocationEvents, context: Pick<Context, "awsRequestId">, callback: Callback) {
     const event = serviceInvocationEventsSchema.parse(incomingEvent);
@@ -14,5 +15,5 @@ export async function handler(incomingEvent: ServiceInvocationEvents, context: P
     await recordThat("VideoAssetRipStarted", {
         videoId: video.id,
     });
-    await ripAssetsToS3(video);
+    await ripAssetsToS3(video, new S3Client(process.env.BUCKET_NAME), basicFs);
 }

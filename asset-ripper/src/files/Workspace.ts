@@ -1,15 +1,17 @@
 import { randomUUID } from "crypto";
-import * as fs from "fs";
+import { BasicFs } from "objects";
 
 export class Workspace {
     private readonly id: string;
+    private fs: BasicFs;
 
-    private constructor(id: string) {
+    private constructor(id: string, fs: BasicFs) {
         this.id = id;
+        this.fs = fs;
     }
 
-    static create(): Workspace {
-        return new Workspace(randomUUID());
+    static create(fs: BasicFs): Workspace {
+        return new Workspace(randomUUID(), fs);
     }
 
     public directory(): string {
@@ -17,13 +19,13 @@ export class Workspace {
     }
 
     public cleanUp(): void {
-        fs.rmSync(this.directory(), { recursive: true, force: true });
+        this.fs.rmSync(this.directory(), { recursive: true, force: true });
     }
 
     public createSubDirectory(folder: string) {
         const path = `${this.directory()}/${folder}`;
-        if (!fs.existsSync(path)) {
-            fs.mkdirSync(path);
+        if (!this.fs.existsSync(path)) {
+            this.fs.mkdirSync(path);
         }
         return path;
     }
