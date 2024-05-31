@@ -2,6 +2,7 @@
 
 List of tasks to complete:
 
+-   [x] Investigate detect document text vs detect table for pricing.
 -   [x] Increase stat collection accuracy.
 -   [x] Allow stat extraction to run again on pre-OCRd frames.
 -   [x] Preserve video metadata in asset ripper service.
