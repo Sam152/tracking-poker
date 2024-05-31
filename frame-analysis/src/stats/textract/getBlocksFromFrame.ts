@@ -1,4 +1,4 @@
-import { AnalyzeDocumentCommand, FeatureType, ProvisionedThroughputExceededException, TextractClient } from "@aws-sdk/client-textract";
+import { DetectDocumentTextCommand, ProvisionedThroughputExceededException, TextractClient } from "@aws-sdk/client-textract";
 import { Block } from "@aws-sdk/client-textract/dist-types/models/models_0";
 import { cropMiddle } from "../../preprocess/cropMiddle";
 import { sleepRandom } from "../../util/sleepRandom";
@@ -13,9 +13,8 @@ export async function getBlocksFromFrame(data: Buffer, attempt: number = 1): Pro
 
     try {
         const result = await client.send(
-            new AnalyzeDocumentCommand({
+            new DetectDocumentTextCommand({
                 Document: { Bytes: middleCropped },
-                FeatureTypes: [FeatureType.TABLES],
             }),
         );
         if (!result.Blocks) {
