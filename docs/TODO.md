@@ -6,7 +6,7 @@ List of tasks to complete:
 -   [x] Allow stat extraction to run again on pre-OCRd frames.
 -   [x] Preserve video metadata in asset ripper service.
 -   [ ] Clear events and reimport?
-    -   [ ] Possibly allow asset ripper to skip downloading already downloaded assets.
+    -   [x] Possibly allow asset ripper to skip downloading already downloaded assets.
 -   [x] Add aliases for names, for players who have used multiple names.
 -   [ ] Add disclaimers and methodology to client.
 -   [x] Extract and generalise an S3 client from `asset-ripper/src/util/S3.ts`, use to refactor `frame-analysis/src/stats/cache/fetchBlocksCached.ts`.
