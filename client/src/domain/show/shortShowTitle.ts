@@ -5,6 +5,10 @@ import { stringFromParts } from "@/util/conditionalString";
 
 const gameTypes: Array<{ match: RegExp; formatter: (show: Pick<Show, "show_name" | "date">, date: Date) => string }> = [
     {
+        match: /pre-game/i,
+        formatter: () => "Pre-game Show",
+    },
+    {
         match: /ante game/i,
         formatter: (show, date) => stringFromParts([dayOfTheWeek(date), extractStakes(show.show_name), "Ante Game"]),
     },
@@ -51,10 +55,6 @@ const gameTypes: Array<{ match: RegExp; formatter: (show: Pick<Show, "show_name"
     {
         match: /24-HOUR STREAM/i,
         formatter: () => "24 Hour Stream",
-    },
-    {
-        match: /pre-game/i,
-        formatter: () => "Pre-game Show",
     },
     {
         match: /tournament/i,
