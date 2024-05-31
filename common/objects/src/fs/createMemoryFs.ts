@@ -7,7 +7,9 @@ import { readdirSync, writeFileSync } from "node:fs";
 export function createMemoryFs(json?: DirectoryJSON, cwd?: string): BasicFs {
     const vol = Volume.fromJSON(json || {}, cwd);
     return {
-        // Reconcile some differences in the types, the differences seem superficial and the implementation is tested.
+        // Reconcile some differences in the types, the differences seem superficial (such as some optional params
+        // accepting both null and undefined) and the implementation is tested within the scope of how we're using the
+        // fs functions.
         readFileSync: vol.readFileSync.bind(vol) as typeof readFileSync,
         rmSync: vol.rmSync.bind(vol),
         writeFileSync: vol.writeFileSync.bind(vol) as typeof writeFileSync,
